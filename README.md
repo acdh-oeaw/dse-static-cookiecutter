@@ -24,6 +24,7 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
 
 * copy you XML/TEI encoded files you'd like to publish into `data/editions`
 * adapt/modify the XSLTs
+* adapt/modify global params in `xslt/partials/params.xsl`
 * push to github repo and activate github-pages
 
 
