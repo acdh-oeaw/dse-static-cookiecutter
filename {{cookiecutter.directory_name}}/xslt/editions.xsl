@@ -31,43 +31,7 @@
                                 <h1><xsl:value-of select="$doc_title"/></h1>
                             </div>
                             <div class="card-body">                                
-                                <xsl:for-each select="//tei:div[@xml:id='transcription']">
-                                    <xsl:for-each-group select="*" group-starting-with="tei:pb">
-                                        <div class="transcript row">
-                                            <div class="col-md-6">     
-                                                <hr/>                                                
-                                                <div class="card-body">                                                                                       
-                                                    <xsl:for-each select="current-group()[self::tei:p]">
-                                                        <p><xsl:apply-templates/></p>
-                                                    </xsl:for-each>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <hr/>                                                
-                                                <div class="card-body">
-                                                    <xsl:variable name="osd_container_id" select="concat(@type, '_container_', generate-id())"/>
-                                                    <xsl:variable name="osd_container_id2" select="concat(@type, '_container2_', generate-id())"/>
-                                                    <div id="{$osd_container_id}" style="padding:.5em;">
-                                                        <!-- image container accessed by OSD script -->
-                                                        <script type="text/javascript" src="js/osd_single.js"></script>
-                                                        <div id="{$osd_container_id2}">
-                                                            <xsl:if test="@facs">    
-                                                                <xsl:variable name="iiif-ext" select="'full/full/0/default.jpg'"/> 
-                                                                <xsl:variable name="facs_id" select="concat(@type, '_img_', generate-id())"/>
-                                                                <img id="{$facs_id}" onload="load_image('{$facs_id}','{$osd_container_id}','{$osd_container_id2}')">
-                                                                    <xsl:attribute name="src">
-                                                                        <xsl:value-of select="concat(@facs , $iiif-ext)"/>
-                                                                    </xsl:attribute>
-                                                                </img>                                                                
-                                                            </xsl:if>                                
-                                                        </div>                                
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </xsl:for-each-group>
-                                    
-                                </xsl:for-each>
+                                <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
                             </div>
                         </div>                       
                     </div>
@@ -76,8 +40,13 @@
             </body>
         </html>
     </xsl:template>
-                    
-    
+
+    <xsl:template match="tei:p">
+        <p id="{generate-id()}"><xsl:apply-templates/></p>
+    </xsl:template>
+    <xsl:template match="tei:div">
+        <div id="{generate-id()}"><xsl:apply-templates/></div>
+    </xsl:template>
     <xsl:template match="tei:lb">
         <br/>
     </xsl:template>

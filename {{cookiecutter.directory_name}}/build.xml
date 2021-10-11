@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." name="tei2html">
     <property name="editions" value="./data/editions"/>
+    <property name="meta" value="./data/meta"/>
     <property name="index" value="./data/meta/about.xml"/>
     <property name="target" value="./html"/>
     <property name="xsl_editions" value="./xslt/editions.xsl"/>
@@ -11,6 +12,10 @@
     </delete>
     <delete dir="${target}/static-search"/>
     <xslt style="${xsl_editions}"  basedir="${editions}" destdir="${target}" includes="*.xml">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+    </xslt>
+    <xslt style="${xsl_editions}"  basedir="${meta}" destdir="${target}" includes="*.xml">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
     </xslt>
