@@ -1,0 +1,31 @@
+name: Build and publish
+
+on: 
+  push:
+
+jobs:
+  build_pages:
+    name: Publish Edition as GitHub Pages Website
+    runs-on: ubuntu-latest
+    steps:
+    - name: Perform Checkout
+      uses: actions/checkout@v2
+    - name: Install Saxon, Ant and Fundament
+      run: |
+        apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
+        ./script.sh
+    - name: Install Ant-Contrib
+      run: |
+        wget https://repo1.maven.org/maven2/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar
+        mv ant-contrib-1.0b3.jar /usr/share/ant/lib
+    - name: Build
+      run: |
+        ant
+    - name: Build Index
+      run: |
+        ./build_index.sh
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ "{{" }}secrets.GITHUB_TOKEN{{ "}}" }}
+        publish_dir: ./html

@@ -1,0 +1,120 @@
+/* Datatables, provided by https://github.com/babslgam*/
+
+div.dataTables_filter {
+  text-align:left !important;
+}
+
+.btn-link {
+  font-size:20px;
+}
+
+.exportbuttons {
+  text-align: right;
+}
+
+.navbar {
+    border-bottom: 5px solid {{cookiecutter.color_main}} !important;
+}
+
+.dataTables_info {
+  text-align: center;
+}
+
+.filters input {
+  width:100%;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.dataTables_wrapper table {
+  width:100%;
+}
+
+/**** Font Aweseome ***/
+.far {
+    font-family: "Font Awesome 5 Free" !important;
+}
+
+.img-fluid {
+    max-width: 160% !important;
+    max-height: 160% !important;
+}
+
+.card {
+    margin-top: 1em;
+    box-shadow: 4px 4px 9px 0 rgba(0, 0, 0, .1);
+}
+
+.index-card {
+    border-top: 5px solid {{cookiecutter.color_main}}; 
+    transition: transform .2s;
+}
+
+.index-card:hover {
+    transform: scale(1.05);
+}
+
+.index-link:hover {
+    text-decoration: none !important;
+}
+
+.btn-round {
+    border: 1px solid white;
+}
+
+.btn-round:hover {
+    background-color: {{cookiecutter.color_hover}} !important;
+}
+
+.btn-round a {
+    color: white;
+}
+
+p {
+    display: block;
+}
+
+.carousel-indicators {
+    cursor: pointer;
+}
+
+.container-fluid {
+    max-width: 1024px;
+}
+
+span.ssQueryAndButton {
+    margin: 2em auto 0.25em auto !important;
+    max-width: 50% !important;
+    width: 50% !important;
+}
+
+input#ssQuery {
+    font-size: .9rem !important;
+    border-radius: 30px !important;
+    padding: .3rem 1.75rem .3rem .75rem !important;
+    border: 1px solid rgba(0,0,0,.075) !important;
+    background-color: #fff !important;
+    color: rgba(0,0,0,.9) !important;
+}
+
+button#ssDoSearch {
+    border: 0 !important;
+    padding: 0 !important;
+    background: 0 0 !important;
+    cursor: pointer !important;
+    color: rgba(0,0,0,.6) !important;
+    margin-left: -4.1em !important;
+    margin-top: .1em !important;
+}
+
+#github-logo {
+    width: 10%;
+    height: auto;
+    padding: 10px 0 10px 0;
+    transition: transform .2s;
+    margin-left: 1em;
+}
+
+#github-logo:hover {
+    transform: scale(1.05);
+}
