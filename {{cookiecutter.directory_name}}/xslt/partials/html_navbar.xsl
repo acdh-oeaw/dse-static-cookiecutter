@@ -4,7 +4,6 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xsl tei xs" version="2.0">
-    <xsl:include href="./params.xsl"/>
     <xsl:template match="/" name="nav_bar">
         <div class="wrapper-fluid wrapper-navbar sticky-navbar" id="wrapper-navbar" >
             <a class="skip-link screen-reader-text sr-only" href="#content">Skip to content</a>

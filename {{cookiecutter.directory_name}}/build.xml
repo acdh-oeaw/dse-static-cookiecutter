@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." name="tei2html">
     <property name="editions" value="./data/editions"/>
-    <property name="meta" value="./data/meta"/>
     <property name="index" value="./data/meta/about.xml"/>
     <property name="target" value="./html"/>
     <property name="xsl_editions" value="./xslt/editions.xsl"/>
     <property name="xsl_index" value="./xslt/index.xsl"/>
-    <property name="xsl_tox" value="./xslt/toc.xsl"/>
+    <property name="xsl_toc" value="./xslt/toc.xsl"/>
+    <property name="xsl_search" value="./xslt/search.xsl"/>
     <delete>
         <fileset dir="${target}" includes="*.html"/>
     </delete>
@@ -15,15 +15,15 @@
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
     </xslt>
-    <xslt style="${xsl_editions}"  basedir="${meta}" destdir="${target}" includes="*.xml">
-        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="${basedir}/saxon/saxon9he.jar"/>
-    </xslt>
     <xslt in="${index}" out="${target}/index.html" style="${xsl_index}">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
     </xslt>
-    <xslt in="${index}" out="${target}/toc.html" style="${xsl_tox}">
+    <xslt in="${index}" out="${target}/toc.html" style="${xsl_toc}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+    </xslt>
+    <xslt in="${index}" out="${target}/search.html" style="${xsl_search}">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
     </xslt>
@@ -31,5 +31,4 @@
         <include name="*.html"/>
         <replacetoken> xmlns=""</replacetoken>
     </replace>
-    <!-- <move file="search.html" tofile="html/search.html"/> -->
 </project>
