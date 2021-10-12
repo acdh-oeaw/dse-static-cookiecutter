@@ -3,6 +3,8 @@
 !search.html
 /saxon
 data/imprint.xml
+/static-search
+html/static-search
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -15,12 +15,19 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
     "directory_name": "dse-static",
     "project_title": "Digital Scholarly Editions Static Site Cookiecutter",
     "project_short_title": "DSE Static-Site",
-    "github_url": "https://github.com/acdh-oeaw/dse-static-cookiecutter",
+    "github_url": "https://github.com/csae8092/dse-static",
     "color_main": "#88dbdf",
     "color_hover": "#fff",
-    "title_xpath": ".//tei:title[@type='main'][1]/text()"
+    "title_xpath": ".//tei:title[@type='main'][1]/text()",
+    "redmine_id": "18716"
 } 
 ```
+* change into the new created repo, by default `$ cd dse-static`
+* run `$ ./script.sh` to download needed libraries/files
+* run `$ ant` to build the HTML-Files
+* run `$ ./build_index.sh` to build the fulltext search index. Be aware, you'll need to have ant-contrib installed.
+* create a git repo and commit to github
+
 
 * copy you XML/TEI encoded files you'd like to publish into `data/editions`
 * adapt/modify the XSLTs
