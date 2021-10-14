@@ -2,10 +2,15 @@
 <project basedir="." name="tei2html">
     <property name="index" value="./data/meta/about.xml"/>
     <property name="target" value="./html"/>
+    <property name="target_xml" value="./html/xml-view"/>
     <delete>
         <fileset dir="${target}" includes="*.html"/>
     </delete>
     <delete dir="${target}/static-search"/>
+    <xslt style="./xslt/editions-xml.xsl"  basedir="./data/editions" destdir="${target_xml}" includes="*.xml">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+    </xslt>
     <xslt style="./xslt/editions.xsl"  basedir="./data/editions" destdir="${target}" includes="*.xml">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
