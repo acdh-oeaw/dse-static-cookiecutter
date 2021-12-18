@@ -10,7 +10,7 @@
     <xsl:import href="./partials/html_footer.xsl"/>
     <xsl:template match="/">
         <xsl:variable name="doc_title">
-            <xsl:value-of select="{{ cookiecutter.title_xpath }}"/>
+            <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
         </xsl:variable>
 
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
@@ -77,46 +77,46 @@
                     <div class="container" style="margin-top:1em;">
                         <div class="row">
                             <div class="col-md-4">
-                                <a href="toc.html" class="index-link">                                   
+                                <a href="listperson.html" class="index-link">                                   
                                     <div class="card index-card">
                                         <div class="card-body">
-                                            <img src="images/project_logo.png" class="d-block w-100" alt="..."/>
+                                            <img src="dist/fundament/images/example-img-1.jpg" class="d-block w-100" alt="..."/>
                                         </div>
                                         <div class="card-header">                                            
-                                            <p>
-                                                Some representative placeholder content for the third slide.
-                                            </p>                                            
+                                            <h3>
+                                                <i class="fas fa-user-friends"></i> Personenregister
+                                            </h3>                                            
                                         </div>
                                     </div>                                     
                                 </a>                                    
                             </div>
                             <div class="col-md-4">
-                                <a href="toc.html" class="index-link">                                                     
+                                <a href="listplace.html" class="index-link">                                   
                                     <div class="card index-card">
                                         <div class="card-body">
-                                            <img src="images/project_logo.png" class="d-block w-100" alt="..."/>
+                                            <img src="dist/fundament/images/example-img-2.jpg" class="d-block w-100" alt="..."/>
                                         </div>
                                         <div class="card-header">                                            
-                                            <p>
-                                                Some representative placeholder content for the third slide.
-                                            </p>                                            
+                                            <h3>
+                                                <i class="fas fa-map-marker-alt"></i> Ortsregister
+                                            </h3>                                            
                                         </div>
-                                    </div>                                 
-                                </a>
+                                    </div>                                     
+                                </a>                                    
                             </div>
                             <div class="col-md-4">
-                                <a href="toc.html" class="index-link">  
+                                <a href="listorg.html" class="index-link">                                   
                                     <div class="card index-card">
                                         <div class="card-body">
-                                            <img src="images/project_logo.png" class="d-block w-100" alt="..."/>
+                                            <img src="dist/fundament/images/example-img-1.jpg" class="d-block w-100" alt="..."/>
                                         </div>
                                         <div class="card-header">                                            
-                                            <p>
-                                                Some representative placeholder content for the third slide.
-                                            </p>                                            
+                                            <h3>
+                                                <i class="fas fa-university"></i>  Institutionenregister
+                                            </h3>                                            
                                         </div>
-                                    </div>                                    
-                                </a>
+                                    </div>                                     
+                                </a>                                    
                             </div>
                         </div>
                     </div>

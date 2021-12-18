@@ -1,4 +1,9 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+   xml:base="{{cookiecutter.github_url}}/data/editions"
+   xml:id="f_0002.xml"
+   prev="{{cookiecutter.github_url}}/data/editions/f_001.xml"
+   next="{{cookiecutter.github_url}}/data/editions/f_003.xml"
+>
     <teiHeader>
         <fileDesc>
            <titleStmt>

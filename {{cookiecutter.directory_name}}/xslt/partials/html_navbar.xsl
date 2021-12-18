@@ -31,10 +31,13 @@
                                 <a title="Indexes" href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Register <span class="caret"></span></a>
                                 <ul class=" dropdown-menu" role="menu">
                                     <li class="nav-item dropdown-submenu">
-                                        <a title="Personen" href="#" class="nav-link">Personen</a>
+                                        <a title="Personen" href="listperson.html" class="nav-link">Personen</a>
                                     </li>
                                     <li class="nav-item dropdown-submenu">
-                                        <a title="Orte" href="#" class="nav-link">Orte</a>
+                                        <a title="Orte" href="listplace.html" class="nav-link">Orte</a>
+                                    </li>
+                                    <li class="nav-item dropdown-submenu">
+                                        <a title="Orte" href="listorg.html" class="nav-link">Institutionen</a>
                                     </li>
                                 </ul>                                
                             </li>                            

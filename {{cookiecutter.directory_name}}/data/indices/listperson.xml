@@ -1,0 +1,98 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Personenverzeichnis</title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>born digital</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <listPerson>
+                    <person xml:id="pmb3978">
+                        <persName>
+                            <surname>Rétif de la Bretonne</surname>
+                            <forename>Nicolas</forename>
+                        </persName>
+                        <birth>
+                            <date when="1734-10-23">23. 10. 1734</date>
+                            <placeName>
+                                <settlement>Sacy</settlement>
+                                <idno type="PMB">#pmb47064</idno>
+                                <idno type="geonames">https://www.geonames.org/2982034/</idno>
+                            </placeName>
+                        </birth>
+                        <death>
+                            <date when="1806-02-03">3. 2. 1806</date>
+                            <placeName>
+                                <settlement>Paris</settlement>
+                                <idno type="PMB">#pmb182</idno>
+                                <idno type="geonames">https://www.geonames.org/2988507/</idno>
+                            </placeName>
+                        </death>
+                        <occupation code="Schriftsteller*in"/>
+                        <sex>male</sex>
+                        <idno type="gnd">https://d-nb.info/gnd/11864193X/</idno>
+                        <idno type="schnitzler-briefe"
+                            >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb3978</idno>
+                        <idno type="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb3978</idno>
+                        <listEvent>
+                            <event type="mentioned">
+                                <p>erwähnt in <title>Arthur Schnitzler an Richard Beer-Hofmann, 11. 3. 1892</title>
+                                </p>
+                                <linkGrp>
+                                    <link type="ARCHE"
+                                        target="https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler/letters/L041377.xml"/>
+                                </linkGrp>
+                            </event>
+                        </listEvent>
+                    </person>
+                    <person xml:id="pmb12511">
+                        <persName>
+                            <surname>Reumann</surname>
+                            <forename>Jakob</forename>
+                        </persName>
+                        <birth>
+                            <date when="1853-12-31">31. 12. 1853</date>
+                            <placeName>
+                                <settlement>Wien</settlement>
+                                <idno type="PMB">#pmb50</idno>
+                                <idno type="geonames">https://www.geonames.org/2761369/</idno>
+                            </placeName>
+                        </birth>
+                        <death>
+                            <date when="1925-07-29">29. 7. 1925</date>
+                            <placeName>
+                                <settlement>Klagenfurt</settlement>
+                                <idno type="PMB">#pmb875</idno>
+                                <idno type="geonames">https://www.geonames.org/2774321/</idno>
+                            </placeName>
+                        </death>
+                        <occupation code="Politiker*in"/>
+                        <sex>male</sex>
+                        <idno type="gnd">https://d-nb.info/gnd/1014062276/</idno>
+                        <idno type="schnitzler-tagebuch"
+                            >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19209</idno>
+                        <idno type="bahrschnitzler"
+                            >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb12511</idno>
+                        <listEvent>
+                            <event type="mentioned">
+                                <p>erwähnt in <title>Tagebuch von Arthur Schnitzler, 21. 1. 1922</title></p>
+                                <linkGrp>
+                                    <link type="ARCHE" target="https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler/diaries/D041341.xml"/>
+                                </linkGrp>
+                            </event>
+                        </listEvent>
+                    </person>
+                </listPerson>
+            </div>
+        </body>
+    </text>
+</TEI>

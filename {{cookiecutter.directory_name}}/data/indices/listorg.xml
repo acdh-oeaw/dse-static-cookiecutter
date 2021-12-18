@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Institutionsverzeichnis</title>
+            </titleStmt>
+            <publicationStmt>
+                <p />
+            </publicationStmt>
+            <sourceDesc>
+                <p>born digital</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <listOrg>
+                    <org xml:id="pmb29244">
+                        <orgName>Allgemeine Bodencreditanstalt</orgName>
+                        <place corresp="pmb51">
+                            <placeName>I., Innere Stadt</placeName>
+                            <location>
+                                <geo decls="LatLng">48.20769 16.37049</geo>
+                            </location>
+                        </place>
+                        <idno type="schnitzler-briefe">
+                            https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29244</idno>
+                        <idno type="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29244</idno>
+                        <listEvent>
+                            <event type="mentioned">
+                                <p>erwähnt in <title>Arthur an Olga Schnitzler, 7. 9. 1919</title>
+                                </p>
+                                <linkGrp>
+                                    <link type="ARCHE"
+                                        target="https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler/letters/L041652.xml" />
+                                </linkGrp>
+                            </event>
+                            <event type="mentioned">
+                                <p>erwähnt in <title>Olga an Arthur Schnitzler, 13. 9. 1919</title>
+                                </p>
+                                <linkGrp>
+                                    <link type="ARCHE"
+                                        target="https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler/letters/L041663.xml" />
+                                </linkGrp>
+                            </event>
+                            <event type="mentioned">
+                                <p>erwähnt in <title>Arthur Schnitzler: Max Burckhard, April 1912</title>
+                                </p>
+                                <linkGrp>
+                                    <link type="ARCHE"
+                                        target="https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler/texts/T030081.xml" />
+                                </linkGrp>
+                            </event>
+                        </listEvent>
+                    </org>
+                </listOrg>
+            </div>
+        </body>
+    </text>
+</TEI>
