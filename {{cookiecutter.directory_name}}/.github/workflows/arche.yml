@@ -1,0 +1,44 @@
+name: ARCHE
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      debugEnabled:
+        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
+        required: false
+        default: false
+
+jobs:
+  build_pages_and_ingest:
+    name: ARCHE Ingest
+    runs-on: ubuntu-latest
+    steps:
+    - name: get data
+      run: |
+        echo "do something to get your data"
+    - name: Perform Checkout
+      uses: actions/checkout@v2
+    - name: install python packages
+      run: |
+        pip install acdh-tei-pyutils
+    - name: Install Saxon and ANT
+      run: |
+        apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
+        echo "downloading saxon"
+        wget https://sourceforge.net/projects/saxon/files/Saxon-HE/9.9/SaxonHE9-9-1-7J.zip/download && unzip download -d saxon && rm -rf download
+    - name: Build
+      run: |
+        ant
+    # - name: Setup tmate session
+    #   uses: mxschmitt/action-tmate@v3
+    - name: ingestion  dependencies
+      run: |
+        composer require "acdh-oeaw/arche-lib-ingest ^2"
+    # - name: interactive console
+    #   uses: mxschmitt/action-tmate@v3
+    #   if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debugEnabled }}
+    - name: ingest to arche
+      run: |
+        php -f ingestion_script.php html/arche.rdf https://arche-dev.acdh-dev.oeaw.ac.at/api ${{ secrets.ARCHE_LOGIN }} ${{ secrets.ARCHE_PASSWORD }}
