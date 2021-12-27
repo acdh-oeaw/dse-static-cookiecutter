@@ -8,9 +8,26 @@
     
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
-    <xsl:import href="partials/html_footer.xsl"/>
-    <xsl:import href="partials/osd-container.xsl"/>
-    <xsl:import href="partials/tei-facsimile.xsl"/>
+    <xsl:import href="./partials/html_footer.xsl"/>
+    <xsl:import href="./partials/osd-container.xsl"/>
+    <xsl:import href="./partials/tei-facsimile.xsl"/>
+
+    <xsl:variable name="prev">
+        <xsl:value-of select="replace(tokenize(data(tei:TEI/@prev), '/')[last()], '.xml', '.html')"/>
+    </xsl:variable>
+    <xsl:variable name="next">
+        <xsl:value-of select="replace(tokenize(data(tei:TEI/@next), '/')[last()], '.xml', '.html')"/>
+    </xsl:variable>
+    <xsl:variable name="teiSource">
+        <xsl:value-of select="data(tei:TEI/@xml:id)"/>
+    </xsl:variable>
+    <xsl:variable name="link">
+        <xsl:value-of select="replace($teiSource, '.xml', '.html')"/>
+    </xsl:variable>
+    <xsl:variable name="doc_title">
+        <xsl:value-of select=".//tei:title[@type='label'][1]/text()"/>
+    </xsl:variable>
+
     <xsl:template match="/">
         <xsl:variable name="doc_title">
             <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
@@ -28,8 +45,46 @@
                     <div class="container-fluid">                        
                         <div class="card">
                             <div class="card-header">
-                                <h1><xsl:value-of select="$doc_title"/></h1>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <xsl:if test="ends-with($prev,'.html')">
+                                            <h1>
+                                                <a>
+                                                    <xsl:attribute name="href">
+                                                        <xsl:value-of select="$prev"/>
+                                                    </xsl:attribute>
+                                                    <i class="fas fa-chevron-left" title="prev"/>
+                                                </a>
+                                            </h1>
+                                        </xsl:if>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h2 align="center">
+                                            <xsl:value-of select="$doc_title"/>
+                                            <a href="{$teiSource}">
+                                                <i class="fas fa-download" title="show TEI source"/>
+                                            </a>
+                                        </h2>
+                                        
+                                        
+                                    </div>
+                                    <div class="col-md-2" style="text-align:right">
+                                        <xsl:if test="ends-with($next, '.html')">
+                                            <h1>
+                                                <a>
+                                                    <xsl:attribute name="href">
+                                                        <xsl:value-of select="$next"/>
+                                                    </xsl:attribute>
+                                                    <i class="fas fa-chevron-right" title="next"/>
+                                                </a>
+                                            </h1>
+                                        </xsl:if>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- <div class="card-header">
+                                <h1><xsl:value-of select="$doc_title"/></h1>
+                            </div> -->
                             <div class="card-body">                                
                                 <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
                             </div>
