@@ -13,6 +13,20 @@
             <small>geboren</small>:  <xsl:value-of select=".//tei:birth/tei:date/text()"/>
             <br />
             <small>gestorben</small>: <xsl:value-of select=".//tei:death/tei:date/text()"/>
+            <legend>erwähnt in</legend>
+            <ul>
+                <xsl:for-each select=".//tei:event">
+                    <xsl:variable name="linkToDocument">
+                        <xsl:value-of select="replace(tokenize(data(.//@target), '/')[last()], '.xml', '.html')"/>
+                    </xsl:variable>
+                    <li>
+                        <xsl:value-of select=".//tei:title"/><xsl:text> </xsl:text>
+                        <a href="{$linkToDocument}">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </li>
+                </xsl:for-each>
+            </ul>
         </div>
     </xsl:template>
 </xsl:stylesheet>

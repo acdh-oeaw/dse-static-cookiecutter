@@ -21,6 +21,7 @@
     <text>
         <body>
            <p>Some text here.</p>
+           <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
         </body>
     </text>
   </TEI>
