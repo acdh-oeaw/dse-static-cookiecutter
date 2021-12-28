@@ -59,14 +59,14 @@
                                         </xsl:if>
                                     </div>
                                     <div class="col-md-8">
-                                        <h2 align="center">
+                                        <h1 align="center">
                                             <xsl:value-of select="$doc_title"/>
+                                        </h1>
+                                        <h3 align="center">
                                             <a href="{$teiSource}">
                                                 <i class="fas fa-download" title="show TEI source"/>
                                             </a>
-                                        </h2>
-                                        
-                                        
+                                        </h3>
                                     </div>
                                     <div class="col-md-2" style="text-align:right">
                                         <xsl:if test="ends-with($next, '.html')">
