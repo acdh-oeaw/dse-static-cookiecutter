@@ -9,6 +9,7 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
+    <xsl:import href="./partials/place.xsl"/>
     <xsl:template match="/">
         <xsl:variable name="doc_title" select="'Ortsregister'"/>
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
@@ -73,7 +74,7 @@
         </html>
         <xsl:for-each select=".//tei:place">
             <xsl:variable name="filename" select="concat(./@xml:id, '.html')"/>
-            <xsl:variable name="name" select="normalize-space(string-join(./tei:placeName//text()))"></xsl:variable>
+            <xsl:variable name="name" select="./tei:placeName[1]/text()"></xsl:variable>
             <xsl:result-document href="{$filename}">
                 <html xmlns="http://www.w3.org/1999/xhtml">
                     <xsl:call-template name="html_head">
@@ -87,15 +88,12 @@
                             <div class="container-fluid">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h1>
+                                        <h1 align="center">
                                             <xsl:value-of select="$name"/>
                                         </h1>
                                     </div>
                                     <div class="card-body">
-                                        <small>Name</small>:  <xsl:value-of select=".//tei:placeName/text()"/>
-                                        <br />
-                                        <small>Koordinaten</small>: <xsl:value-of select=".//tei:geo/text()"/>
-                                        <br />
+                                        <xsl:call-template name="place_detail"/>
                                     </div>
                                 </div>
                             </div>
