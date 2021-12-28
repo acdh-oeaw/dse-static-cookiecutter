@@ -7,6 +7,8 @@ jobs:
   build_pages:
     name: Publish Edition as GitHub Pages Website
     runs-on: ubuntu-latest
+    env:
+      ANT_OPTS: -Xmx5g
     steps:
     - name: Perform Checkout
       uses: actions/checkout@v2
