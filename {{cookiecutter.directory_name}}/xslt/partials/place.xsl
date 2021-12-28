@@ -13,15 +13,25 @@
                     </xsl:for-each>
                 </ul>
             </xsl:if>
-
-            <small>Geonames ID:</small>
-            <xsl:if test=".//tei:idno/text()">
-                <xsl:text> </xsl:text>
-                <a>
-                    <xsl:attribute name="href"><xsl:value-of select=".//tei:idno/text()"/></xsl:attribute>
-                    <xsl:value-of select=".//tei:idno/text()"/>
-                </a>
+            
+            <xsl:if test="count(.//tei:idno) gt 0">
+                <small>Normdaten IDs</small>
+                <ul>
+                    <xsl:for-each select=".//tei:idno">
+                        <xsl:if test="./@type">
+                            <li>
+                                <small><xsl:value-of select="data(./@type)"/>:</small> <xsl:text> </xsl:text>
+                                <a>
+                                    <xsl:attribute name="href"><xsl:value-of select="./text()"/></xsl:attribute>
+                                    <xsl:value-of select="./text()"/>
+                                </a>
+                            </li>
+                        </xsl:if>
+                    </xsl:for-each>
+                </ul>
             </xsl:if>
+            
+            
             <br/>
             <small>Koordinaten:</small>
             <xsl:if test=".//tei:geo/text()">

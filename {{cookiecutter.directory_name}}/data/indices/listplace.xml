@@ -21,50 +21,52 @@
                         <location>
                             <geo decls="LatLng">46.63333 14.3</geo>
                         </location>
+                        <listEvent>
+                            <event type="mentioned">
+                                <p>erwähnt in <title>Sample File 002</title>
+                                </p>
+                                <linkGrp>
+                                    <link type="ARCHE"
+                                        target="https://id.acdh.oeaw.ac.at/some-radom-string/f_002.xml"/>
+                                </linkGrp>
+                            </event>
+                            <event type="mentioned">
+                                <p>erwähnt in <title>Sample File 003</title>
+                                </p>
+                                <linkGrp>
+                                    <link type="ARCHE"
+                                        target="https://id.acdh.oeaw.ac.at/some-radom-string/f_003.xml"/>
+                                </linkGrp>
+                            </event>
+                        </listEvent>
                         <idno type="geonames">https://www.geonames.org/2774321/</idno>
                         <idno type="wikidata">https://www.wikidata.org/wiki/wiki/Q41753/</idno>
                         <idno type="gnd">https://d-nb.info/gnd/4030921-6/</idno>
                         <idno type="schnitzler-briefe">
                             https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb875</idno>
-                        <listEvent>
-                            <event type="mentioned">
-                                <p>erwähnt in <title>Aufzeichnung von Hermann Bahr, 6. 11. 1904</title>
-                                </p>
-                                <linkGrp>
-                                    <link type="ARCHE"
-                                        target="https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler/diaries/D041471.xml" />
-                                </linkGrp>
-                            </event>
-                        </listEvent>
+                        
                     </place>
                     <place xml:id="pmb41212">
                         <placeName>Korfu</placeName>
                         <location>
                             <geo decls="LatLng">39.598055 19.852222</geo>
                         </location>
+                        <listEvent>
+                            <event type="mentioned">
+                                <p>erwähnt in <title>Sample File 001</title>
+                                </p>
+                                <linkGrp>
+                                    <link type="ARCHE"
+                                        target="https://id.acdh.oeaw.ac.at/some-radom-string/f_001.xml"/>
+                                </linkGrp>
+                            </event>
+                        </listEvent>
                         <idno type="geonames">https://www.geonames.org/2463678/</idno>
                         <idno type="wikidata">https://www.wikidata.org/wiki/wiki/Q121378/</idno>
                         <idno type="gnd">https://d-nb.info/gnd/4073728-7/</idno>
                         <idno type="schnitzler-briefe">
                             https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41212</idno>
-                        <listEvent>
-                            <event type="mentioned">
-                                <p>erwähnt in <title>Arthur Schnitzler an Hermann Bahr, 22. 2. 1904</title>
-                                </p>
-                                <linkGrp>
-                                    <link type="ARCHE"
-                                        target="https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler/letters/L041071.xml" />
-                                </linkGrp>
-                            </event>
-                            <event type="mentioned">
-                                <p>erwähnt in <title>Josef Redlich an Hermann Bahr, 29. 2. 1904</title>
-                                </p>
-                                <linkGrp>
-                                    <link type="ARCHE"
-                                        target="https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler/letters/L041568.xml" />
-                                </linkGrp>
-                            </event>
-                        </listEvent>
+                        
                     </place>
                 </listPlace>
             </div>
