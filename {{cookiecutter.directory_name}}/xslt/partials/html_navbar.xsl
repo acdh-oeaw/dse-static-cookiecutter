@@ -39,6 +39,10 @@
                                     <li class="nav-item dropdown-submenu">
                                         <a title="Orte" href="listorg.html" class="nav-link">Institutionen</a>
                                     </li>
+                                    <div class="dropdown-divider"></div>
+                                    <li class="nav-item dropdown-submenu">
+                                        <a title="GND-BEACON" href="beacon.txt" class="nav-link">GND-BEACON</a>
+                                    </li>
                                 </ul>                                
                             </li>                            
                             <li class="nav-item"><a title="Editionseinheiten" href="toc.html" class="nav-link">Editionseinheiten</a></li>
