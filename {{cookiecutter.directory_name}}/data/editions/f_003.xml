@@ -1,6 +1,6 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
    xml:base="{{cookiecutter.github_url}}/data/editions"
-   xml:id="f_0003.xml"
+   xml:id="f_003.xml"
    prev="{{cookiecutter.github_url}}/data/editions/f_002.xml"
 >
     <teiHeader>

@@ -55,4 +55,9 @@
         <include name="*.html"/>
         <replacetoken> xmlns=""</replacetoken>
     </replace>
+    <copy todir="${target}" flatten="true">
+        <fileset dir="./data/">
+            <include name="**/*.xml"/>
+        </fileset>
+    </copy>
 </project>

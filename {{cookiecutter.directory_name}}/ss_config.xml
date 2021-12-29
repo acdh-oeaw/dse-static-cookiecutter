@@ -22,4 +22,7 @@
         <indentJSON>false</indentJSON>
         <outputFolder>static-search</outputFolder>
     </params>
+    <rules>
+        <rule match="text()[not(ancestor::div[@data-index='true'])]" weight="0"/>
+    </rules>
 </config>
