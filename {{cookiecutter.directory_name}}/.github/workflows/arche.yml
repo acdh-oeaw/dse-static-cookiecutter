@@ -35,7 +35,7 @@ jobs:
     #   uses: mxschmitt/action-tmate@v3
     - name: ingestion  dependencies
       run: |
-        composer require "acdh-oeaw/arche-lib-ingest ^2"
+        composer require "acdh-oeaw/arche-lib-ingest ^3"
     # - name: interactive console
     #   uses: mxschmitt/action-tmate@v3
     #   if: ${{ "{{" }} github.event_name == 'workflow_dispatch' && github.event.inputs.debugEnabled{{ "}}" }}
