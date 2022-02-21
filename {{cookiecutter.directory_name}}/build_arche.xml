@@ -1,0 +1,8 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="tei2html">
+    <xslt in="./data/meta/arche_constants.rdf" out="./html/arche.rdf" style="./xslt/arche.xsl">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+    </xslt>
+</project>

@@ -5,18 +5,11 @@
       <acdh:DefaultLang>de</acdh:DefaultLang>
    </acdh:Constanst>
    <acdh:TopCollection rdf:about="https://id.acdh.oeaw.ac.at/{{cookiecutter.directory_name}}">
-      <!--<acdh:hasPid>https://hdl.handle.net/21.11115/0000-000E-8562-D</acdh:hasPid>-->
       <acdh:hasTitle xml:lang="de">{{cookiecutter.project_title}}</acdh:hasTitle>
       <acdh:hasDescription xml:lang="de">Projektbeschreibung</acdh:hasDescription>
-      <acdh:hasActor rdf:resource="http://d-nb.info/gnd/118609807"/>
-      <acdh:hasActor rdf:resource="http://d-nb.info/gnd/118505955"/>
-      <acdh:hasContact rdf:resource="https://d-nb.info/gnd/1050382196"/>
-      <acdh:hasMetadataCreator rdf:resource="https://d-nb.info/gnd/1050382196"/>
-      <acdh:hasDepositor rdf:resource="https://d-nb.info/gnd/1050382196"/>
-      <!-- <acdh:hasCoverageStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1889-01-01</acdh:hasCoverageStartDate>
-      <acdh:hasCoverageEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1931-01-01</acdh:hasCoverageEndDate>
-      <acdh:hasCreatedStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-07-01</acdh:hasCreatedStartDate>
-      <acdh:hasCreatedEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-31</acdh:hasCreatedEndDate> -->
+      <acdh:hasContact rdf:resource="xxx"/>
+      <acdh:hasMetadataCreator rdf:resource="xxx"/>
+      <acdh:hasDepositor rdf:resource="xxx"/>
       <acdh:hasSubject xml:lang="de">Edition</acdh:hasSubject>
       <acdh:hasLanguage rdf:resource="https://vocabs.acdh.oeaw.ac.at/iso6393/deu"/>
    </acdh:TopCollection>
@@ -26,41 +19,29 @@
          <acdh:hasTitle xml:lang="de">Editionen</acdh:hasTitle>
          <acdh:hasDescription xml:lang="de">XML/TEI Dokumente </acdh:hasDescription>
          <acdh:hasLanguage rdf:resource="https://vocabs.acdh.oeaw.ac.at/iso6393/deu"/>
-         <!-- <acdh:hasCoverageStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1889-01-01</acdh:hasCoverageStartDate>
-         <acdh:hasCoverageEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1931-01-01</acdh:hasCoverageEndDate>
-         <acdh:hasCreatedStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-07-01</acdh:hasCreatedStartDate>
-         <acdh:hasCreatedEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-31</acdh:hasCreatedEndDate> -->
       </acdh:Collection>
       <acdh:Collection rdf:about="https://id.acdh.oeaw.ac.at/{{cookiecutter.directory_name}}/meta">
          <acdh:isPartOf rdf:resource="https://id.acdh.oeaw.ac.at/{{cookiecutter.directory_name}}"/>
          <acdh:hasTitle xml:lang="de">Ergänzende Materialen</acdh:hasTitle>
          <acdh:hasDescription xml:lang="de">Ergänzende Materialen zur Edition</acdh:hasDescription>
          <acdh:hasLanguage rdf:resource="https://vocabs.acdh.oeaw.ac.at/iso6393/deu"/>
-         <!-- <acdh:hasCreatedStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-07-01</acdh:hasCreatedStartDate>
-         <acdh:hasCreatedEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-31</acdh:hasCreatedEndDate> -->
       </acdh:Collection>
       <acdh:Collection rdf:about="https://id.acdh.oeaw.ac.at/{{cookiecutter.directory_name}}/indices">
          <acdh:isPartOf rdf:resource="https://id.acdh.oeaw.ac.at/{{cookiecutter.directory_name}}"/>
          <acdh:hasTitle xml:lang="de">Register</acdh:hasTitle>
          <acdh:hasDescription xml:lang="de">XML/TEI kodiertes Orts-, Institutions- und Personenregister</acdh:hasDescription>
          <acdh:hasLanguage rdf:resource="https://vocabs.acdh.oeaw.ac.at/iso6393/deu"/>
-         <!-- <acdh:hasCreatedStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-07-01</acdh:hasCreatedStartDate>
-         <acdh:hasCreatedEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-31</acdh:hasCreatedEndDate> -->
       </acdh:Collection>
    </acdh:Cols>
    <!-- definition of agents mentioned in the Metadata as e.g. PI, Curator, ... but not yet in ARCHE -->
    <acdh:MetaAgents>
       <acdh:Resource rdf:about="https://id.acdh.oeaw.ac.at/{{cookiecutter.directory_name}}/title-img.jpg">
          <acdh:hasTitle xml:lang="de">Titelbild</acdh:hasTitle>
-         <acdh:hasCreator rdf:resource="https://id.acdh.oeaw.ac.at/slehecka"/>
+         <acdh:hasCreator rdf:resource="https://id.acdh.oeaw.ac.at/xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
          <acdh:hasRightsHolder rdf:resource="http://viaf.org/viaf/141440509"/>
-         <!-- ÖAW -->
          <acdh:hasContact rdf:resource="https://viaf.org/viaf/6515148451584915970000"/>
-         <!-- ACDH -->
          <acdh:hasOwner rdf:resource="https://viaf.org/viaf/6515148451584915970000"/>
-         <!-- ACDH -->
          <acdh:hasLicensor rdf:resource="https://viaf.org/viaf/6515148451584915970000"/>
-         <!-- ACDH -->
          <acdh:hasLicense rdf:resource="https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0"/>
          <acdh:hasCategory rdf:resource="https://vocabs.acdh.oeaw.ac.at/archecategory/image"/>
          <acdh:isPartOf rdf:resource="https://id.acdh.oeaw.ac.at/{{cookiecutter.directory_name}}/meta"/>
@@ -68,10 +49,10 @@
          <acdh:hasMetadataCreator rdf:resource="https://d-nb.info/gnd/1043833846"/>
          <acdh:hasDepositor rdf:resource="https://d-nb.info/gnd/1043833846"/>
       </acdh:Resource>
-      <acdh:Person rdf:about="https://id.acdh.oeaw.ac.at/slehecka">
-         <acdh:hasTitle xml:lang="und">Sandra Lehecka</acdh:hasTitle>
-         <acdh:hasLastName xml:lang="und">Lehecka</acdh:hasLastName>
-         <acdh:hasFirstName xml:lang="und">Sandra</acdh:hasFirstName>
+      <acdh:Person rdf:about="xxx">
+         <acdh:hasTitle xml:lang="und">MMMMMM NNNNNN</acdh:hasTitle>
+         <acdh:hasLastName xml:lang="und">NNNNNN</acdh:hasLastName>
+         <acdh:hasFirstName xml:lang="und">MMMMMM</acdh:hasFirstName>
       </acdh:Person>
       <acdh:Organisation rdf:about="https://d-nb.info/gnd/108889819X">
          <acdh:hasTitle xml:lang="de">Der Wissenschaftsfonds (Österreich)</acdh:hasTitle>
@@ -81,26 +62,14 @@
    <acdh:RepoObject>
       <acdh:hasLicense rdf:resource="https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0"/>
       <acdh:hasLicensor rdf:resource="https://id.acdh.oeaw.ac.at/acdh"/>
-      <!-- ACDH -->
       <acdh:hasContact rdf:resource="https://id.acdh.oeaw.ac.at/acdh"/>
-      <!-- ACDH -->
       <acdh:hasOwner rdf:resource="https://id.acdh.oeaw.ac.at/acdh"/>
       <acdh:hasRightsHolder rdf:resource="https://id.acdh.oeaw.ac.at/oeaw"/>
-      <!-- ÖAW -->
       <acdh:hasRelatedDiscipline rdf:resource="https://vocabs.acdh.oeaw.ac.at/oefosdisciplines/602014"/>
-      <!-- German Literature -->
-      <acdh:hasCreator rdf:resource="https://d-nb.info/gnd/1050382196"/>
-      <!-- Martin Anton Müller -->
-      <acdh:hasDepositor rdf:resource="https://d-nb.info/gnd/1050382196"/>
-      <acdh:hasCurator rdf:resource="https://d-nb.info/gnd/1050382196"/>
-      <!-- Müllacdh:Collectioner -->
-      <acdh:hasContributor rdf:resource="https://d-nb.info/gnd/1043833846"/>
-      <!-- Andorfer -->
-      <acdh:hasContributor rdf:resource="https://orcid.org/0000-0001-8294-2541"/>
-      <!-- Börner -->
-      <acdh:hasContributor rdf:resource="https://d-nb.info/gnd/132560496"/>
-      <!-- Ifkovits -->
-      <acdh:hasMetadataCreator rdf:resource="https://d-nb.info/gnd/1050382196"/>
+      <acdh:hasCreator rdf:resource="xxx"/>
+      <acdh:hasDepositor rdf:resource="xxx"/>
+      <acdh:hasCurator rdf:resource="xxx"/>
+      <acdh:hasMetadataCreator rdf:resource="xxx"/>
       <acdh:hasOaiSet rdf:resource="https://vocabs.acdh.oeaw.ac.at/archeoaisets/kulturpool"/>
       <acdh:hasOaiSet rdf:resource="https://vocabs.acdh.oeaw.ac.at/archeoaisets/clarin-vlo"/>
    </acdh:RepoObject>

@@ -1,44 +1,43 @@
-name: ARCHE
+name: ARCHE-Ingest
 
 on:
-  release:
-    types: [published]
-  workflow_dispatch:
-    inputs:
-      debugEnabled:
-        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
-        required: false
-        default: false
+  workflow_dispatch
 
 jobs:
-  build_pages_and_ingest:
-    name: ARCHE Ingest
+  build_pages:
+    name: Ingest Data into ARCHE
     runs-on: ubuntu-latest
+    env:
+      ANT_OPTS: -Xmx5g
     steps:
-    - name: get data
-      run: |
-        echo "do something to get your data"
     - name: Perform Checkout
       uses: actions/checkout@v2
-    - name: install python packages
-      run: |
-        pip install acdh-tei-pyutils
-    - name: Install Saxon and ANT
+    - name: Install Saxon, Ant and Fundament
       run: |
         apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
-        echo "downloading saxon"
-        wget https://sourceforge.net/projects/saxon/files/Saxon-HE/9.9/SaxonHE9-9-1-7J.zip/download && unzip download -d saxon && rm -rf download
+        ./script.sh
     - name: Build
       run: |
-        ant
-    # - name: Setup tmate session
-    #   uses: mxschmitt/action-tmate@v3
-    - name: ingestion  dependencies
+        ant -f build_arche.xml
+    - name: ingestion dependencies
       run: |
-        composer require "acdh-oeaw/arche-lib-ingest ^3"
-    # - name: interactive console
-    #   uses: mxschmitt/action-tmate@v3
-    #   if: ${{ "{{" }} github.event_name == 'workflow_dispatch' && github.event.inputs.debugEnabled{{ "}}" }}
-    - name: ingest to arche
+        composer require "acdh-oeaw/arche-ingest:^1"
+    - name: ingest resources
       run: |
-        php -f ingestion_script.php html/arche.rdf https://arche-dev.acdh-dev.oeaw.ac.at/api ${{ "{{" }}secrets.ARCHE_LOGIN{{ "}}" }} ${{ "{{" }}secrets.ARCHE_PASSWORD{{ "}}" }}
+        vendor/bin/arche-import-metadata html/arche.rdf https://arche-dev.acdh-dev.oeaw.ac.at/api ${{ "{{" }}secrets.ARCHE_LOGIN{{ "}}" }} ${{ "{{" }}secrets.ARCHE_PASSWORD{{ "}}" }}--retriesOnConflict 25
+    - name: Copy XML Files to to_ingest 
+      run: |
+        mkdir $PWD/to_ingest
+        find -path "./data/editions/*.xml" -exec cp -prv '{}' './to_ingest' ';'
+        find -path "./data/indices/*.xml" -exec cp -prv '{}' './to_ingest' ';'
+        find -path "./data/meta/*.xml" -exec cp -prv '{}' './to_ingest' ';'
+    - name: install repo-file-checker
+      run: |
+        composer require "acdh-oeaw/repo-file-checker:^2"
+        mkdir -p filechecker/tmp filechecker/reports
+    - name: run repo-file-checker
+      run: |
+        php -f vendor/acdh-oeaw/repo-file-checker/index.php -- --tmpDir filechecker/tmp --reportDir filechecker/reports to_ingest 0
+    - name: ingest binaries
+      run: |
+        vendor/bin/arche-import-binary to_ingest https://id.acdh.oeaw.ac.at/{{cookiecutter.directory_name}} https://arche-dev.acdh-dev.oeaw.ac.at/api ${{ "{{" }}secrets.ARCHE_LOGIN{{ "}}" }} ${{ "{{" }}secrets.ARCHE_PASSWORD{{ "}}" }} --skip not_exist
