@@ -34,6 +34,15 @@ cite {
     padding: 0 15%;
 }
 
+.intro_left h1, h5 {
+    padding: .5em 0;
+}
+
+.intro_left a {
+    display: inline-block;
+    padding: .5em 0 .5em .5em;
+}
+
 body {
     border-style: solid;
     border-top-width: 0;

@@ -28,11 +28,21 @@
                         <div class="row intro">
                             <div class="col-md-6 wp-intro_left">
                                 <div class="intro_left">
-                                    <h1>Scholarly Digital Edition Sample</h1>
-                                    <h5>A template to create static website.</h5>
-                                    <a href="toc.html" title="Edition">
+                                    <h1>Scholarly Digital Edition</h1>
+                                    <h5>Eine Vorlage für statische Wepp-App Entwicklung</h5>
+                                    <a href="toc.html" title="Edition ohne Faksimiles">
                                         <button class="btn btn-secondary" role="button" style="width: 200px;">
-                                            Explore
+                                            Edition ohne Faksimiles
+                                        </button>
+                                    </a>
+                                    <a href="toc_facs.html" title="Edition mit Faksimiles">
+                                        <button class="btn btn-secondary" role="button" style="width: 200px;">
+                                            Edition mit Faksimiles
+                                        </button>
+                                    </a>
+                                    <a href="toc_pag.html" title="Edition mit Paginaton">
+                                        <button class="btn btn-secondary" role="button" style="width: 200px;">
+                                            Edition mit Paginaton
                                         </button>
                                     </a>
                                 </div>
@@ -100,35 +110,35 @@
                                             </div>
                                             <div class="card-header">                                            
                                                 <p>
-                                                    Some representative placeholder content for the third slide.
+                                                    Vorlage für eine Edition ohne Faksimiles
                                                 </p>                                            
                                             </div>
                                         </div>                                     
                                     </a>                                    
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="toc.html" class="index-link">                                                     
+                                    <a href="toc_facs.html" class="index-link">                                                     
                                         <div class="card index-card">
                                             <div class="card-body">
                                                 <img src="images/example-img-2.jpg" class="d-block w-100" alt="..."/>
                                             </div>
                                             <div class="card-header">                                            
                                                 <p>
-                                                    Some representative placeholder content for the third slide.
+                                                    Vorlage für eine Edition mit Faksimiles
                                                 </p>                                            
                                             </div>
                                         </div>                                 
                                     </a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="toc.html" class="index-link">  
+                                    <a href="toc_pag.html" class="index-link">  
                                         <div class="card index-card">
                                             <div class="card-body">
                                                 <img src="images/example-img-2.jpg" class="d-block w-100" alt="..."/>
                                             </div>
                                             <div class="card-header">                                            
                                                 <p>
-                                                    Some representative placeholder content for the third slide.
+                                                    Vorlage für eine Edition mit Pagination
                                                 </p>                                            
                                             </div>
                                         </div>                                    

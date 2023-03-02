@@ -10,7 +10,7 @@
         <div class="wrapper fundament-default-footer hide-reading" id="wrapper-footer-full">
             <div class="container-fluid" id="footer-full-content" tabindex="-1">
                 <div class="footer-separator">
-                    CONTACT
+                    KONTAKT
                 </div>
                 <div class="row">
                     <div class="footer-widget col-lg-1 col-md-2 col-sm-2 col-xs-6  ml-auto  text-center ">
@@ -24,14 +24,14 @@
                             <p>
                                 ACDH-CH OEAW
                                 <br/>
-                                Austrian Centre for Digital Humanities and Cultural Heritage
+                                Österreichisches Zentrum für Digitale Geistenswissenschaften und Kulturerbe
                                 <br/>
-                                Austrian Academy of Sciences
+                                Österreichische Akademie der Wissenschaften
                             </p>
                             <p>
                                 Bäckerstraße 13
                                 <br/>
-                                1010 Vienna
+                                1010 Wien
                             </p>
                             <p>
                                 T: +43 1 51581-2200
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="footer-widget col-lg-4 col-md-3 col-sm-4">
-                        <h6 class="font-weight-bold">PROJECT PARTNERS</h6>
+                        <h6 class="font-weight-bold">PROJEKTPARTNER</h6>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12">

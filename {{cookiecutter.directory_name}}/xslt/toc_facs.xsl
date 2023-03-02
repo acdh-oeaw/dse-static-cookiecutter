@@ -10,7 +10,7 @@
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="partials/html_footer.xsl"/>
     <xsl:template match="/">
-        <xsl:variable name="doc_title" select="'Inhaltsverzeichnis'"/>
+        <xsl:variable name="doc_title" select="'Inhaltsverzeichnis (Faksimiles)'"/>
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
@@ -26,7 +26,7 @@
                     <div class="container-fluid">
                         <div class="card">
                             <div class="card-header">
-                                <h1>Inhaltsverzeichnis</h1>
+                                <h1>Inhaltsverzeichnis (Faksimiles)</h1>
                             </div>
                             <div class="card-body">
                                 <table class="table table-striped display" id="tocTable" style="width:100%">
@@ -45,7 +45,7 @@
                                                 <td>                                        
                                                     <a>
                                                         <xsl:attribute name="href">                                                
-                                                            <xsl:value-of select="replace(tokenize($full_path, '/')[last()], '.xml', '.html')"/>
+                                                            <xsl:value-of select="replace(tokenize($full_path, '/')[last()], '.xml', '_facsimile.html')"/>
                                                         </xsl:attribute>
                                                         <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
                                                     </a>

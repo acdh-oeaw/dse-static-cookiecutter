@@ -21,13 +21,13 @@
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Project
+                                    Projekt
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a class="dropdown-item" href="about.html"
                                             title="About the Project">
-                                            About the Project
+                                            Über das Projekt
                                         </a>
                                     </li>
                                 </ul>
@@ -35,51 +35,57 @@
                             
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Edition
+                                    Editionen
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a class="dropdown-item" href="toc.html"
-                                            title="Traktat">
-                                            Main
+                                            title="Ohne Faksimiles">
+                                            Ohne Faksimiles
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="toc.html"
+                                            title="Mit Faksimiles">
+                                            Mit Faksimiles
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown disabled">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Indexes
+                                    Register
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a class="dropdown-item" href="listperson.html"
-                                            title="Index of Persons">
-                                            Persons
+                                            title="Personen">
+                                            Personen
                                         </a>
                                     </li>
                                     <li>
                                         <a class="dropdown-item" href="listplace.html"
-                                            title="Index of Places">
-                                            Places
+                                            title="Orte">
+                                            Orte
                                         </a>
                                     </li>
                                     <li>
                                         <a class="dropdown-item" href="listorg.html"
-                                            title="Index of Organizations">
-                                            Organizations
+                                            title="Organisationen">
+                                            Organisationen
                                         </a>
                                     </li>
                                     <li>
                                         <a class="dropdown-item" href="listbibl.html"
-                                            title="Index of Works">
-                                            Works
+                                            title="Werke">
+                                            Werke
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             
                             <li class="nav-item">
-                                <a title="Search" class="nav-link" href="search.html">Search</a>
+                                <a title="Suche" class="nav-link" href="search.html">Suche</a>
                             </li>
                         </ul>
                     </div>

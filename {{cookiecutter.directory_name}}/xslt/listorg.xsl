@@ -13,9 +13,11 @@
         <xsl:variable name="doc_title" select="'Institutionenregister'"/>
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html>
-            <xsl:call-template name="html_head">
-                <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
-            </xsl:call-template>
+            <head>
+                <xsl:call-template name="html_head">
+                    <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
+                </xsl:call-template>
+            </head>
             
             <body class="page">
                 <div class="hfeed site" id="page">
@@ -61,7 +63,7 @@
                     <xsl:call-template name="html_footer"/>
                     <script>
                         $(document).ready(function () {
-                        createDataTable('tocTable')
+                        createDataTable('tocTable');
                         });
                     </script>
                 </div>

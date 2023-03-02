@@ -17,9 +17,11 @@
         </xsl:variable>
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html>
-            <xsl:call-template name="html_head">
-                <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
-            </xsl:call-template>
+            <head>
+                <xsl:call-template name="html_head">
+                    <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
+                </xsl:call-template>
+            </head>
             
             <body class="page">
                 <div class="hfeed site" id="page">
