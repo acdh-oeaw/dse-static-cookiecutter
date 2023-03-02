@@ -1,8 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-   xml:base="{{cookiecutter.github_url}}/data/editions"
-   xml:id="f_001.xml"
-   next="{{cookiecutter.github_url}}/data/editions/f_002.xml"
->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
            <titleStmt>
@@ -17,10 +13,113 @@
            </sourceDesc>
         </fileDesc>
     </teiHeader>
+    <surface>
+      <graphic url="images/example-img-1.jpg"></graphic>
+    </surface>
+    <surface>
+      <graphic url="images/example-img-2.jpg"></graphic>
+    </surface>
     <text>
         <body>
-           <p>Some text here.</p>
+            <div xml:id="transcription">
+               <pb n="1" facs="images/example-img-1.jpg"/>
+               <p>
+                     Some text here.<lb/>
+                     I'm a marked entity node <rs ref="#person_id_1" type="person">my name is Hal</rs>. 
+                     I'm a marked entity node <rs ref="#place_id_1" type="place">from space</rs>. 
+                     I'm a marked entity node <rs ref="#org_id_1" type="org">Space Station Org</rs>. 
+                     I'm a marked entity node <rs ref="#bibl_id_1" type="bibl">The book of Hal</rs>.
+               </p>
+               <p>
+                     Some text here.<lb/>
+                     I'm a marked entity node <rs ref="#person_id_1" type="person">my name is Hal</rs>. 
+                     I'm a marked entity node <rs ref="#place_id_1" type="place">from space</rs>. 
+                     I'm a marked entity node <rs ref="#org_id_1" type="org">Space Station Org</rs>. 
+                     I'm a marked entity node <rs ref="#bibl_id_1" type="bibl">The book of Hal</rs>.
+               </p>
+               <p>
+                     Some text here.<lb/>
+                     I'm a marked entity node <rs ref="#person_id_1" type="person">my name is Hal</rs>. 
+                     I'm a marked entity node <rs ref="#place_id_1" type="place">from space</rs>. 
+                     I'm a marked entity node <rs ref="#org_id_1" type="org">Space Station Org</rs>. 
+                     I'm a marked entity node <rs ref="#bibl_id_1" type="bibl">The book of Hal</rs>.
+               </p>
+               <p>
+                     Some text here.<lb/>
+                     I'm a marked entity node <rs ref="#person_id_1" type="person">my name is Hal</rs>. 
+                     I'm a marked entity node <rs ref="#place_id_1" type="place">from space</rs>. 
+                     I'm a marked entity node <rs ref="#org_id_1" type="org">Space Station Org</rs>. 
+                     I'm a marked entity node <rs ref="#bibl_id_1" type="bibl">The book of Hal</rs>.
+               </p>
+               <pb n="2" facs="images/example-img-2.jpg"/>
+               <p>
+                     Some text here.<lb/>
+                     I'm a marked entity node <hi rendition="#bold">my name is Hal</hi>.<lb/>
+                     I'm a marked entity node <hi rendition="#em">from space</hi>.<lb/>
+                     I'm a marked entity node <hi rendition="#italic">Space Station Org</hi>.<lb/>
+                     I'm a marked entity node <hi rendition="#smallcaps">The book of Hal</hi>.
+               </p>
+               <p>
+                     Some text here.<lb/>
+                     I'm a marked entity node <hi rendition="#bold">my name is Hal</hi>.<lb/>
+                     I'm a marked entity node <hi rendition="#em">from space</hi>.<lb/>
+                     I'm a marked entity node <hi rendition="#italic">Space Station Org</hi>.<lb/>
+                     I'm a marked entity node <hi rendition="#smallcaps">The book of Hal</hi>.
+               </p>
+               <p>
+                     Some text here.<lb/>
+                     I'm a marked entity node <hi rendition="#bold">my name is Hal</hi>.<lb/>
+                     I'm a marked entity node <hi rendition="#em">from space</hi>.<lb/>
+                     I'm a marked entity node <hi rendition="#italic">Space Station Org</hi>.<lb/>
+                     I'm a marked entity node <hi rendition="#smallcaps">The book of Hal</hi>.
+               </p>
+               <p>
+                     Some text here.<lb/>
+                     I'm a marked entity node <hi rendition="#bold">my name is Hal</hi>.<lb/>
+                     I'm a marked entity node <hi rendition="#em">from space</hi>.<lb/>
+                     I'm a marked entity node <hi rendition="#italic">Space Station Org</hi>.<lb/>
+                     I'm a marked entity node <hi rendition="#smallcaps">The book of Hal</hi>.
+               </p>
+               <lg>
+                  <l>I'm a verse line in a linegroup.</l>
+                  <l>I'm a verse line in a linegroup.</l>
+                  <l>I'm a verse line in a linegroup.</l>
+                  <l>I'm a verse line in a linegroup.</l>
+                  <l>I'm a verse line in a linegroup.</l>
+               </lg>
+               <p>
+                  Some text here with a note.<note n="1" type="footnote" place="foot" xml:id="note_1">I'm note text.</note>
+               </p>
+            </div>
         </body>
+        <back>
+            <listPerson>
+               <person xml:id="person_id_1">
+                  <persName>Hal 2000</persName>
+                  <idno type="GND">some gnd</idno>
+                  <idno type="WIKIDATA">some wikidata id</idno>
+               </person>
+            </listPerson>
+            <listPlace>
+               <place xml:id="place_id_1">
+                  <placeName>Hal 2000</placeName>
+                  <idno type="GND">some gnd</idno>
+                  <idno type="WIKIDATA">some wikidata id</idno>
+               </place>
+            </listPlace>
+            <listOrg>
+               <org xml:id="org_id_1">
+                  <orgName>Spaceship</orgName>
+                  <idno type="WIKIDATA">some wikidata id</idno>
+               </org>
+            </listOrg>
+            <listBibl>
+               <bibl xml:id="bibl_id_1">
+                  <title>Book of Hal 2000</title>
+                  <idno type="WIKIDATA">some wikidata id</idno>
+               </bibl>
+            </listBibl>
+        </back>
     </text>
   </TEI>
   
