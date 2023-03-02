@@ -11,7 +11,9 @@
     <xsl:import href="./partials/html_footer.xsl"/>
     <xsl:import href="./partials/place.xsl"/>
     <xsl:template match="/">
-        <xsl:variable name="doc_title" select="'Ortsregister'"/>
+        <xsl:variable name="doc_title">
+            <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
+        </xsl:variable>
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html>
             <head>

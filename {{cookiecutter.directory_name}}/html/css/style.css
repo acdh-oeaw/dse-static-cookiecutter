@@ -180,6 +180,10 @@ a.anchorFoot {
     color: {{cookiecutter.color_main}};
 }
 
+#text-resize {
+    min-height: 600px;
+}
+
 .navBarNavDropdown a {
     position: relative;
     display: block;

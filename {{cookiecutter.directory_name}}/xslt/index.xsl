@@ -71,6 +71,15 @@
                                                             <p>Some representative placeholder content for the second slide.</p>
                                                         </div>
                                                     </div>
+                                                    <div class="carousel-item">
+                                                        <img src="images/acdh_building.jpg" class="d-block w-100" alt="..."/>
+                                                        <div class="carousel-caption d-none d-md-block" style="background-image: linear-gradient(rgba(38.0, 35.3, 37.6, 0.5), rgba(38.0, 35.3, 37.6, 0.5));">
+                                                            <h1>Example Content Slide 3</h1>
+                                                            <h2>Example Subtitle Slide 3</h2>
+                                                            <h5>Third slide label</h5>
+                                                            <p>Some representative placeholder content for the second slide.</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <button class="carousel-control-prev" type="button" data-bs-target="#sampleIndexCarousel" data-bs-slide="prev">
                                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
