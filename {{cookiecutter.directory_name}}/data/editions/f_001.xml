@@ -1,4 +1,5 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="{{cookiecutter.github_url}}/data/editions"
+   xml:id="f_001.xml" next="{{cookiecutter.github_url}}/data/editions/f_002.xml">
     <teiHeader>
         <fileDesc>
            <titleStmt>
@@ -18,6 +19,9 @@
     </surface>
     <surface>
       <graphic url="images/example-img-2.jpg"></graphic>
+    </surface>
+    <surface>
+      <graphic url="images/acdh_building.jpg"></graphic>
     </surface>
     <text>
         <body>

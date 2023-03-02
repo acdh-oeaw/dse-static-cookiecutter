@@ -53,7 +53,7 @@
                                             <h1>
                                                 <a>
                                                     <xsl:attribute name="href">
-                                                        <xsl:value-of select="$prev"/>
+                                                        <xsl:value-of select="replace($prev, '.html', '_facsimile.html')"/>
                                                     </xsl:attribute>
                                                     <i class="fas fa-chevron-left" title="prev"/>
                                                 </a>
@@ -75,7 +75,7 @@
                                             <h1>
                                                 <a>
                                                     <xsl:attribute name="href">
-                                                        <xsl:value-of select="$next"/>
+                                                        <xsl:value-of select="replace($next, '.html', '_facsimile.html')"/>
                                                     </xsl:attribute>
                                                     <i class="fas fa-chevron-right" title="next"/>
                                                 </a>
