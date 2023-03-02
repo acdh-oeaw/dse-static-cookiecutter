@@ -100,7 +100,8 @@ a {
 }
 
 #viewer {
-    position: fixed;
+    position: sticky;
+    top: 10%;
     padding: 2em;
 }
 
@@ -116,7 +117,7 @@ a {
     margin-top: auto;
     display: flex;
     background-color:#fff;
-    z-index: 999;
+    z-index: 1;
 }
 
 .card {
@@ -161,18 +162,19 @@ a.anchorFoot {
 
 #editor-widget {
     position: fixed;
+    right: 10%;
     max-width: 100px;
     padding: .5em;
     background-color: {{cookiecutter.color_main}};
     color: {{cookiecutter.color_hover}};
     border-radius: 1rem;
     box-shadow: 4px 4px 9px 0 rgba(0, 0, 0, .1);
+    z-index: 2;
 }
 
 .navBarNavDropdown {
     position: relative;
-    z-index: 999;
-    display: flex;
+    display: block;
     text-align: center;
 }
 
@@ -187,18 +189,10 @@ a.anchorFoot {
 .navBarNavDropdown a {
     position: relative;
     display: block;
-    z-index: 0;
-}
-
-.navBarNavDropdown {
-    position: relative;
-    display: block;
-    z-index: 999;
 }
 
 .navBarNavDropdown ul li {
     margin: .5em auto;
-    z-index: 999;
 }
 
 #staticSearch {
