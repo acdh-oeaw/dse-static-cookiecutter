@@ -24,9 +24,9 @@
                             <p>
                                 ACDH-CH OEAW
                                 <br/>
-                                Österreichisches Zentrum für Digitale Geistenswissenschaften und Kulturerbe
+                                Austrian Centre for Digital Humanities and Cultural Heritage
                                 <br/>
-                                Österreichische Akademie der Wissenschaften
+                                Austrian Academy of Sciences
                             </p>
                             <p>
                                 Bäckerstraße 13

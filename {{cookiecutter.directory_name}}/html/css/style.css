@@ -374,7 +374,7 @@ resolution or low resolution screens
     .facsimiles {
         display: none;
     }
-    #aot-navbarNavDropdown .dropdown-menu li:nth-child(-n + 1) {
+    .navBarNavDropdown ul li:nth-child(-n + 2) {
         display: none !important;
     }
     .text {

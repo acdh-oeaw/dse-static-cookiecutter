@@ -12,6 +12,23 @@
     <xsl:import href="partials/osd-container.xsl"/>
     <xsl:import href="partials/tei-facsimile.xsl"/>
     <xsl:import href="partials/aot-options.xsl"/>
+
+    <xsl:variable name="prev">
+        <xsl:value-of select="replace(tokenize(data(tei:TEI/@prev), '/')[last()], '.xml', '.html')"/>
+    </xsl:variable>
+    <xsl:variable name="next">
+        <xsl:value-of select="replace(tokenize(data(tei:TEI/@next), '/')[last()], '.xml', '.html')"/>
+    </xsl:variable>
+    <xsl:variable name="teiSource">
+        <xsl:value-of select="data(tei:TEI/@xml:id)"/>
+    </xsl:variable>
+    <xsl:variable name="link">
+        <xsl:value-of select="replace($teiSource, '.xml', '.html')"/>
+    </xsl:variable>
+    <xsl:variable name="doc_title">
+        <xsl:value-of select=".//tei:title[@type='label'][1]/text()"/>
+    </xsl:variable>
+
     <xsl:template match="/">
         <xsl:variable name="doc_title">
             <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
@@ -30,7 +47,42 @@
                     <div class="container-fluid">                        
                         <div class="wp-transcript">
                             <div class="card-header">
-                                <h1><xsl:value-of select="$doc_title"/></h1>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <xsl:if test="ends-with($prev,'.html')">
+                                            <h1>
+                                                <a>
+                                                    <xsl:attribute name="href">
+                                                        <xsl:value-of select="$prev"/>
+                                                    </xsl:attribute>
+                                                    <i class="fas fa-chevron-left" title="prev"/>
+                                                </a>
+                                            </h1>
+                                        </xsl:if>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h1 align="center">
+                                            <xsl:value-of select="$doc_title"/>
+                                        </h1>
+                                        <h3 align="center">
+                                            <a href="{$teiSource}">
+                                                <i class="fas fa-download" title="show TEI source"/>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="col-md-2" style="text-align:right">
+                                        <xsl:if test="ends-with($next, '.html')">
+                                            <h1>
+                                                <a>
+                                                    <xsl:attribute name="href">
+                                                        <xsl:value-of select="$next"/>
+                                                    </xsl:attribute>
+                                                    <i class="fas fa-chevron-right" title="next"/>
+                                                </a>
+                                            </h1>
+                                        </xsl:if>
+                                    </div>
+                                </div>
                                 <div id="editor-widget">
                                     <p>Text Editor</p>
                                     <xsl:call-template name="annotation-options"></xsl:call-template>
@@ -52,7 +104,7 @@
                                                     <xsl:for-each select="current-group()[self::tei:p|self::tei:lg|self::tei:pb]">
                                                         <xsl:if test="name() = 'pb'">
                                                             <span class="anchor-pb"></span>
-                                                            <span class="pb" source="{tokenize(@facs, '/')[last()]}">[<xsl:value-of select="@n"/>]</span>
+                                                            <span class="pb" source="{tokenize(@facs, '/')[last()]}"><xsl:value-of select="@n"/></span>
                                                         </xsl:if>
                                                         <p><xsl:apply-templates/></p>
                                                     </xsl:for-each>
