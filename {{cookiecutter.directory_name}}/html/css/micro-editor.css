@@ -78,6 +78,10 @@ input:checked + .i-slider:before {
   margin-left:3em;
 }
 
+.bi-pencil-square {
+  color: {{cookiecutter.color_hover}};
+}
+
 .strikethrough {
   text-decoration: line-through;
 }
@@ -140,7 +144,7 @@ input:checked + .i-slider:before {
   top: 10%;
   left: 50%;
   border: 8px solid #f1f1f1; /* Light grey */
-  border-top: 8px solid #b59890; /* Blue */
+  border-top: 8px solid {{cookiecutter.color_main}};
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -185,11 +189,11 @@ input:checked + .i-slider:before {
 }
 
 .nav-link.active {
-  background-color: #f1f1f1 !important;
+  background-color: {{cookiecutter.color_hover}} !important;
 }
 
 .nav-link.btn.active {
-  background-color: #88dbdf !important;
+  background-color: {{cookiecutter.color_main}} !important;
 }
 
 .nav-link.btn {

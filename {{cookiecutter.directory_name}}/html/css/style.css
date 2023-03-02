@@ -40,7 +40,7 @@ cite {
 
 .intro_left a {
     display: inline-block;
-    padding: .5em 0 .5em .5em;
+    padding: .5em .5em .5em 0;
 }
 
 body {
@@ -167,7 +167,8 @@ a.anchorFoot {
     position: fixed;
     max-width: 100px;
     padding: .5em;
-    background-color: #88dbdf;
+    background-color: {{cookiecutter.color_main}};
+    color: {{cookiecutter.color_hover}};
     border-radius: 1rem;
     box-shadow: 4px 4px 9px 0 rgba(0, 0, 0, .1);
 }
@@ -215,7 +216,7 @@ div.dataTables_filter {
 }
 
 .navbar {
-    border-bottom: 3px solid {{cookiecutter.color_main}} !important;
+    border-bottom: 3px solid {{cookiecutter.color_main}};
     background-color: #fff;
 }
 
@@ -274,7 +275,7 @@ div.dataTables_filter {
 }
 
 .btn-round:hover {
-    background-color: {{cookiecutter.color_hover}} !important;
+    background-color: {{cookiecutter.color_hover}};
 }
 
 .btn-round a {
@@ -378,6 +379,9 @@ resolution or low resolution screens
     }
     .text {
         padding-left: 0;
+    }
+    .wp-transcript {
+        padding: 0 2em;
     }
     
 /* 

@@ -35,7 +35,7 @@
                             
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Editionen
+                                    Editionseinheiten
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
@@ -45,7 +45,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="toc.html"
+                                        <a class="dropdown-item" href="toc_facs.html"
                                             title="Mit Faksimiles">
                                             Mit Faksimiles
                                         </a>

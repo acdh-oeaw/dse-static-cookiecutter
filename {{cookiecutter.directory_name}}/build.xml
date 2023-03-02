@@ -15,7 +15,7 @@
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
     </xslt>
-    <xslt style="./xslt/editions-facsimiles.xsl" extension="_facsimile.xml"  basedir="./data/editions" destdir="${target}" includes="*.xml">
+    <xslt in="./data/editions/f_001.xml" out="${target}/f_001_facsimile.html" style="./xslt/editions-facsimiles.xsl">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
     </xslt>
