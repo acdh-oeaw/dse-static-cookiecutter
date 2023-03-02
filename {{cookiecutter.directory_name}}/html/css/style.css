@@ -176,6 +176,10 @@ a.anchorFoot {
     text-align: center;
 }
 
+.fas {
+    color: {{cookiecutter.color_main}};
+}
+
 .navBarNavDropdown a {
     position: relative;
     display: block;

@@ -75,12 +75,6 @@
                                             Organisationen
                                         </a>
                                     </li>
-                                    <li>
-                                        <a class="dropdown-item" href="listbibl.html"
-                                            title="Werke">
-                                            Werke
-                                        </a>
-                                    </li>
                                 </ul>
                             </li>
                             
