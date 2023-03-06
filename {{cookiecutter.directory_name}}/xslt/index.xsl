@@ -43,102 +43,69 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="intro_right">
-                                    <div class="wrapper" id="wrapper-hero-content" >
-                                        <div class="hero-dark" id="wrapper-hero-inner" tabindex="-1">
-                                            <div id="sampleIndexCarousel" class="carousel slide">
-                                                <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#sampleIndexCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#sampleIndexCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#sampleIndexCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                </div>
-                                                <div class="carousel-inner">
-                                                    <div class="carousel-item active">
-                                                        <img src="images/acdh_building.jpg" class="d-block w-100" alt="..."/>
-                                                        <div class="carousel-caption d-none d-md-block" style="background-image: linear-gradient(rgba(38.0, 35.3, 37.6, 0.5), rgba(38.0, 35.3, 37.6, 0.5));">
-                                                            <h1>Example Content Slide 1</h1>
-                                                            <h2>Example Subtitle Slide 1</h2>
-                                                            <h5>Second slide label</h5>
-                                                            <p>Some representative placeholder content for the second slide.</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="images/acdh_building.jpg" class="d-block w-100" alt="..."/>
-                                                        <div class="carousel-caption d-none d-md-block" style="background-image: linear-gradient(rgba(38.0, 35.3, 37.6, 0.5), rgba(38.0, 35.3, 37.6, 0.5));">
-                                                            <h1>Example Content Slide 2</h1>
-                                                            <h2>Example Subtitle Slide 2</h2>
-                                                            <h5>Second slide label</h5>
-                                                            <p>Some representative placeholder content for the second slide.</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="images/acdh_building.jpg" class="d-block w-100" alt="..."/>
-                                                        <div class="carousel-caption d-none d-md-block" style="background-image: linear-gradient(rgba(38.0, 35.3, 37.6, 0.5), rgba(38.0, 35.3, 37.6, 0.5));">
-                                                            <h1>Example Content Slide 3</h1>
-                                                            <h2>Example Subtitle Slide 3</h2>
-                                                            <h5>Third slide label</h5>
-                                                            <p>Some representative placeholder content for the second slide.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#sampleIndexCarousel" data-bs-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#sampleIndexCarousel" data-bs-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Next</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="intro_right wrapper">
+                                    <img src="images/29117929_XXL_height.jpg" class="d-block w-100" alt="..."/>
                                 </div>
                             </div>
                         </div>
-                        <div class="container-fluid" style="margin:2em auto;">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="toc.html" class="index-link">                                   
-                                        <div class="card index-card">
-                                            <div class="card-body">
-                                                <img src="images/example-img-1.jpg" class="d-block w-100" alt="..."/>
-                                            </div>
-                                            <div class="card-header">                                            
-                                                <p>
-                                                    Vorlage für eine Edition ohne Faksimiles
-                                                </p>                                            
-                                            </div>
-                                        </div>                                     
-                                    </a>                                    
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="toc_facs.html" class="index-link">                                                     
-                                        <div class="card index-card">
-                                            <div class="card-body">
-                                                <img src="images/example-img-2.jpg" class="d-block w-100" alt="..."/>
-                                            </div>
-                                            <div class="card-header">                                            
-                                                <p>
-                                                    Vorlage für eine Edition mit Faksimiles
-                                                </p>                                            
-                                            </div>
-                                        </div>                                 
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="about.html" class="index-link">  
-                                        <div class="card index-card">
-                                            <div class="card-body">
-                                                <img src="images/example-img-2.jpg" class="d-block w-100" alt="..."/>
-                                            </div>
-                                            <div class="card-header">                                            
-                                                <p>
-                                                    Über das Projekt
-                                                </p>                                            
-                                            </div>
-                                        </div>                                    
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="container-fluid" style="margin:2em auto;">
+                        <div class="row wrapper img_bottom">
+                            <div class="col-md-6">
+                                <a href="toc.html" class="index-link">                                   
+                                    <div class="card index-card">
+                                        <div class="card-body">
+                                            <img src="images/example-img-1.jpg" class="d-block w-100" alt="..."/>
+                                        </div>
+                                        <div class="card-header">                                            
+                                            <p>
+                                                Vorlage für eine Edition ohne Faksimiles
+                                            </p>                                            
+                                        </div>
+                                    </div>                                     
+                                </a>                                    
+                            </div>
+                            <div class="col-md-6">
+                                <a href="toc_facs.html" class="index-link">                                                     
+                                    <div class="card index-card">
+                                        <div class="card-body">
+                                            <img src="images/example-img-1.jpg" class="d-block w-100" alt="..."/>
+                                        </div>
+                                        <div class="card-header">                                            
+                                            <p>
+                                                Vorlage für eine Edition mit Faksimiles
+                                            </p>                                            
+                                        </div>
+                                    </div>                                 
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="about.html" class="index-link">  
+                                    <div class="card index-card">
+                                        <div class="card-body">
+                                            <img src="images/example-img-1.jpg" class="d-block w-100" alt="..."/>
+                                        </div>
+                                        <div class="card-header">                                            
+                                            <p>
+                                                Über das Projekt
+                                            </p>                                            
+                                        </div>
+                                    </div>                                    
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="about.html" class="index-link">  
+                                    <div class="card index-card">
+                                        <div class="card-body">
+                                            <img src="images/example-img-1.jpg" class="d-block w-100" alt="..."/>
+                                        </div>
+                                        <div class="card-header">                                            
+                                            <p>
+                                                Über das Projekt
+                                            </p>                                            
+                                        </div>
+                                    </div>                                    
+                                </a>
                             </div>
                         </div>
                     </div>

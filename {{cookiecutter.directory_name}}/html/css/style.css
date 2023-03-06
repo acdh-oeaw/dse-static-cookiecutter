@@ -44,7 +44,6 @@ cite {
 }
 
 body {
-    border-style: solid;
     border-top-width: 0;
     min-height: 100vh;
     display: flex;
@@ -118,10 +117,7 @@ a {
     display: flex;
     background-color:#fff;
     z-index: 1;
-}
-
-.card {
-    margin: 2em auto;
+    padding: 8em 0;
 }
 
 a.anchor, .anchor-pb {
@@ -247,7 +243,7 @@ div.dataTables_filter {
 }
 
 .card {
-    margin-top: 1em;
+    margin-top: 2em auto;
     box-shadow: 4px 4px 9px 0 rgba(0, 0, 0, .1);
 }
 
@@ -255,9 +251,34 @@ div.dataTables_filter {
     background-color: #fff;
 }
 
+.intro .col-md-6 {
+    padding: 0;
+}
+
 .index-card {
-    border-top: 5px solid {{cookiecutter.color_main}}; 
+    margin-top: 0 !important;
+    box-shadow: none !important;
     transition: transform .2s;
+    
+}
+
+.card-body img {
+    border-radius: .35rem .35rem 0 0;
+}
+
+.index-card .card-header {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: {{cookiecutter.color_main}}; 
+}
+
+.index-card .card-body {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 0;
+    
 }
 
 .index-card:hover {
