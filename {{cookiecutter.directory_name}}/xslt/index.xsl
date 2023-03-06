@@ -29,14 +29,14 @@
                             <div class="col-md-6 wp-intro_left">
                                 <div class="intro_left">
                                     <h1>Scholarly Digital Edition</h1>
-                                    <h5>Eine Vorlage für statische Wepp-App Entwicklung</h5>
+                                    <h3>Eine Vorlage für statische Wepp-App Entwicklung</h3>
                                     <a href="toc.html" title="Edition ohne Faksimiles">
-                                        <button class="btn btn-secondary" role="button" style="width: 200px;">
+                                        <button class="btn btn-secondary" role="button" style="width: 250px;">
                                             Edition ohne Faksimiles
                                         </button>
                                     </a>
                                     <a href="toc_facs.html" title="Edition mit Faksimiles">
-                                        <button class="btn btn-secondary" role="button" style="width: 200px;">
+                                        <button class="btn btn-secondary" role="button" style="width: 250px;">
                                             Edition mit Faksimiles
                                         </button>
                                     </a>
@@ -94,14 +94,14 @@
                                 </a>
                             </div>
                             <div class="col-md-6">
-                                <a href="about.html" class="index-link">  
+                                <a href="search.html" class="index-link">  
                                     <div class="card index-card">
                                         <div class="card-body">
                                             <img src="images/example-img-1.jpg" class="d-block w-100" alt="..."/>
                                         </div>
                                         <div class="card-header">                                            
                                             <p>
-                                                Über das Projekt
+                                                Datenbanksuche
                                             </p>                                            
                                         </div>
                                     </div>                                    
