@@ -10,6 +10,20 @@ a {
     color: {{cookiecutter.color_main}};
 }
 
+.navbar-nav ul li a, .navbar-nav ul li a:visited {
+    /* change navbar link color */
+}
+
+.navbar-nav ul li a:hover, .navbar-nav ul li a:active {
+    /* change navbar link color */
+    background-color: {{cookiecutter.color_main}};
+}
+
+.navbar-nav ul li.active a {
+    /* change navbar link color */
+    background-color: {{cookiecutter.color_main}};
+}
+
 cite {
     font-style: normal;
 }
@@ -20,6 +34,9 @@ cite {
 
 .intro {
     background-color: #fff;
+    height: 92.2vh;
+    overflow-x: hidden;
+    border-bottom: 5px solid {{cookiecutter.color_main}};
 }
 
 .intro .col-md-6 {
@@ -45,6 +62,10 @@ cite {
 .intro_left a {
     display: inline-block;
     padding: .5em .5em .5em 0;
+}
+
+.custom-logo-link {
+    margin-bottom: -2em;
 }
 
 body {
@@ -117,7 +138,7 @@ a {
 }
 
 #wrapper-footer-full {
-    border-top: 3px solid {{cookiecutter.color_main}};
+    border-top: 5px solid {{cookiecutter.color_main}};
     margin-top: auto;
     display: flex;
     background-color:#fff;
@@ -215,7 +236,7 @@ div.dataTables_filter {
 }
 
 .navbar {
-    border-bottom: 3px solid {{cookiecutter.color_main}};
+    border-bottom: 5px solid {{cookiecutter.color_main}};
     background-color: #fff;
 }
 
@@ -244,7 +265,7 @@ div.dataTables_filter {
 }
 
 .img-fluid {
-    max-width: 70px !important;
+    max-width: 100px !important;
 }
 
 .card {
@@ -285,15 +306,6 @@ div.dataTables_filter {
     text-align: center;
     padding: 0;
     
-}
-
-.intro {
-    background-color: #fff;
-    border-bottom: 3px solid {{cookiecutter.color_main}};
-}
-
-.intro .col-md-6 {
-    padding: 0;
 }
 
 .index-card {
@@ -445,6 +457,15 @@ resolution or low resolution screens
     }
     .img_bottom {
         padding: 1em;
+    }
+    .img_bottom .col-md-6 {
+        padding: 0;
+    }
+    .intro {
+        height: 100%;
+    }
+    #wrapper-footer-full {
+        padding: 1em 0;
     }
     
 /* 
