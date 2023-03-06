@@ -6,6 +6,10 @@ span {
     display: inline;
 }
 
+a {
+    color: {{cookiecutter.color_main}};
+}
+
 cite {
     font-style: normal;
 }
@@ -244,7 +248,7 @@ div.dataTables_filter {
 }
 
 .card {
-    margin-top: 2em auto;
+    margin: 2em auto;
     box-shadow: 4px 4px 9px 0 rgba(0, 0, 0, .1);
 }
 
