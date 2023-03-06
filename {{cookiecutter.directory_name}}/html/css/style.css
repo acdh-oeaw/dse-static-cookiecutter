@@ -247,6 +247,41 @@ div.dataTables_filter {
     box-shadow: 4px 4px 9px 0 rgba(0, 0, 0, .1);
 }
 
+.img_bottom {
+    padding: 5em 0;
+    margin: 0 auto;
+}
+
+.img_bottom .col-md-6 {
+    padding: 2em;
+}
+
+.index-card {
+    margin-top: 0 !important;
+    box-shadow: none !important;
+    transition: transform .2s;
+    
+}
+
+.card-body img {
+    border-radius: .35rem .35rem 0 0;
+}
+
+.index-card .card-header {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: #88dbdf;
+}
+
+.index-card .card-body {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 0;
+    
+}
+
 .intro {
     background-color: #fff;
 }
