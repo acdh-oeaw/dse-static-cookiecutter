@@ -34,7 +34,7 @@ cite {
 
 .intro {
     background-color: #fff;
-    height: 93.7vh;
+    height: 93vh;
     overflow: hidden;
     border-bottom: 3px solid {{cookiecutter.color_main}};
 }
@@ -238,7 +238,7 @@ div.dataTables_filter {
 .navbar {
     border-bottom: 5px solid {{cookiecutter.color_main}};
     background-color: #fff;
-    height: 6.3vh;
+    height: 7vh;
 }
 
 .dataTables_info {
@@ -266,7 +266,7 @@ div.dataTables_filter {
 }
 
 .img-fluid {
-    max-width: 100px !important;
+    max-width: 6rem !important;
 }
 
 .card {
@@ -435,6 +435,9 @@ resolution
         padding-top: 2rem;
         margin-top: .5rem;
     }
+    .img-fluid {
+        max-width: 3.5rem !important;
+    }
 /* 
 #########################################
 add rules for smallest tablet high
@@ -467,6 +470,12 @@ resolution or low resolution screens
     }
     #wrapper-footer-full {
         padding: 1em 0;
+    }
+    .img-fluid {
+        max-width: 2rem !important;
+    }
+    .custom-logo-link {
+        margin-bottom: 0;
     }
     
 /* 
