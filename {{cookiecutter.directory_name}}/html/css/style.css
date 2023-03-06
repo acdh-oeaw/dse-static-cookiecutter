@@ -113,6 +113,7 @@ a {
 }
 
 #wrapper-footer-full {
+    border-top: 3px solid {{cookiecutter.color_main}};
     margin-top: auto;
     display: flex;
     background-color:#fff;
@@ -284,6 +285,7 @@ div.dataTables_filter {
 
 .intro {
     background-color: #fff;
+    border-bottom: 3px solid {{cookiecutter.color_main}};
 }
 
 .intro .col-md-6 {
