@@ -10,6 +10,10 @@ a {
     color: {{cookiecutter.color_main}};
 }
 
+/* a:hover {
+    color: {{cookiecutter.color_hover}};
+} */
+
 .navbar-nav ul li a, .navbar-nav ul li a:visited {
     /* change navbar link color */
 }
@@ -17,6 +21,7 @@ a {
 .navbar-nav ul li a:hover, .navbar-nav ul li a:active {
     /* change navbar link color */
     background-color: {{cookiecutter.color_main}};
+    color: {{cookiecutter.color_hover}};
 }
 
 .navbar-nav ul li.active a {
@@ -41,6 +46,9 @@ cite {
 
 .intro .col-md-6 {
     padding: 0;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
 }
 
 .wp-intro_left {

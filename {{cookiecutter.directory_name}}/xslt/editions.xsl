@@ -12,11 +12,10 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
-    <xsl:import href="./partials/osd-container.xsl"/>
-    <xsl:import href="./partials/tei-facsimile.xsl"/>
     <xsl:import href="./partials/person.xsl"/>
     <xsl:import href="./partials/place.xsl"/>
     <xsl:import href="./partials/org.xsl"/>
+    <xsl:import href="partials/aot-options.xsl"/>
 
     <xsl:variable name="prev">
         <xsl:value-of select="replace(tokenize(data(tei:TEI/@prev), '/')[last()], '.xml', '.html')"/>
@@ -87,6 +86,10 @@
                                             </h1>
                                         </xsl:if>
                                     </div>
+                                </div>
+                                <div id="editor-widget">
+                                    <p>Text Editor</p>
+                                    <xsl:call-template name="annotation-options"></xsl:call-template>
                                 </div>
                             </div>
                             <div class="card-body">                                
@@ -205,6 +208,9 @@
                     </xsl:for-each>
                     <xsl:call-template name="html_footer"/>
                 </div>
+                <script src="https://unpkg.com/de-micro-editor@0.2.6/dist/de-editor.min.js"></script>
+                <script type="text/javascript" src="js/run.js"></script>
+                <script type="text/javascript" src="js/osd_scroll.js"></script>
             </body>
         </html>
     </xsl:template>
