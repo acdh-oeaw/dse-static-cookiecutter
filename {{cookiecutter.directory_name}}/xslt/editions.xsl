@@ -121,7 +121,12 @@
                             </div>
                         </div>                       
                     </div>
-                    <xsl:for-each select=".//tei:back//tei:org[@xml:id]">
+                    <xsl:for-each select="//tei:back">
+                        <div class="tei-back">
+                            <xsl:apply-templates/>
+                        </div>
+                    </xsl:for-each>
+                    <!-- <xsl:for-each select=".//tei:back//tei:org[@xml:id]">
                         
                         <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                             <xsl:attribute name="id">
@@ -205,7 +210,7 @@
                                 </div>
                             </div>
                         </div>
-                    </xsl:for-each>
+                    </xsl:for-each> -->
                     <xsl:call-template name="html_footer"/>
                 </div>
                 <script src="https://unpkg.com/de-micro-editor@0.2.6/dist/de-editor.min.js"></script>
@@ -216,7 +221,7 @@
     </xsl:template>
 
     <xsl:template match="tei:p">
-        <p id="{local:makeId(.)}">
+        <p id="{local:makeId(.)}" class="yes-index">
             <xsl:apply-templates/>
         </p>
     </xsl:template>
