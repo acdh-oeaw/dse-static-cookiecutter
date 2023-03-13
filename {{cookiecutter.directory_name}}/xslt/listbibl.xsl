@@ -84,7 +84,7 @@
         </html>
         <xsl:for-each select=".//tei:bibl">
             <xsl:variable name="filename" select="concat(./@xml:id, '.html')"/>
-            <xsl:variable name="name" select="./tei:placeName[1]/text()"></xsl:variable>
+            <xsl:variable name="name" select="./tei:title[1]/text()"></xsl:variable>
             <xsl:result-document href="{$filename}">
                 <html xmlns="http://www.w3.org/1999/xhtml">
                     <xsl:call-template name="html_head">

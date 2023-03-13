@@ -10,7 +10,7 @@
                 <xsl:if test="./tei:author">
                 <tr>
                     <th>
-                        Author(s)
+                        Autor(en)
                     </th>
                     <td>
                         <ul>
@@ -28,17 +28,17 @@
                 <xsl:if test="./tei:date">
                     <tr>
                         <th>
-                            Date
+                            Datum
                         </th>
                         <td>
-                            <xsl:value-of select="./tei:date/@when"/>
+                            <xsl:value-of select="./tei:date"/>
                         </td>
                     </tr>
                 </xsl:if>
                 <xsl:if test="./tei:idno[@type='GND']/text()">
                     <tr>
                         <th>
-                            GND
+                            GND ID
                         </th>
                         <td>
                             <a href="{./tei:idno[@type='GND']}" target="_blank">
@@ -50,7 +50,7 @@
                 <xsl:if test="./tei:idno[@type='WIKIDATA']/text()">
                     <tr>
                         <th>
-                            Wikidata
+                            Wikidata ID
                         </th>
                         <td>
                             <a href="{./tei:idno[@type='WIKIDATA']}" target="_blank">
@@ -62,7 +62,7 @@
                 <xsl:if test="./tei:idno[@type='GEONAMES']/text()">
                     <tr>
                         <th>
-                            Geonames
+                            Geonames ID
                         </th>
                         <td>
                             <a href="{./tei:idno[@type='GEONAMES']}" target="_blank">
