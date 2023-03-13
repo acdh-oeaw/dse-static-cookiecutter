@@ -5,7 +5,7 @@
     
     
     <xsl:template match="tei:bibl" name="bibl_detail">
-        <table>
+        <table class="table entity-table">
             <tbody>
                 <xsl:if test="./tei:author">
                 <tr>

@@ -137,8 +137,22 @@ a {
     padding: 2em;
 }
 
+/* entities */
 .entity {
     cursor: pointer;
+}
+
+.entity-table {
+margin: 4em auto;
+}
+
+.entity-table tbody tr td,
+.entity-table tbody tr th {
+border: none;
+}
+
+.entity-table tbody tr th {
+border-right: 1px solid lightgrey;
 }
 
 .modal-body table tbody tr th, .modal-body table tbody tr td {

@@ -5,7 +5,7 @@
     version="2.0" exclude-result-prefixes="xsl tei xs">
     
     <xsl:template match="tei:person" name="person_detail">
-        <table>
+        <table class="table entity-table">
             <tbody>
                 <xsl:if test="./tei:birth/tei:date">
                 <tr>
