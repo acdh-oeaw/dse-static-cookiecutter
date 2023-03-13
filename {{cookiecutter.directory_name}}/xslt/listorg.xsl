@@ -9,13 +9,18 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
+    <xsl:import href="./partials/org.xsl"/>
     <xsl:template match="/">
-        <xsl:variable name="doc_title" select="'Institutionenregister'"/>
+        <xsl:variable name="doc_title">
+            <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
+        </xsl:variable>
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html>
-            <xsl:call-template name="html_head">
-                <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
-            </xsl:call-template>
+            <head>
+                <xsl:call-template name="html_head">
+                    <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
+                </xsl:call-template>
+            </head>
             
             <body class="page">
                 <div class="hfeed site" id="page">
@@ -59,9 +64,11 @@
                         </div>                       
                     </div>
                     <xsl:call-template name="html_footer"/>
+                    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.0/b-2.0.0/b-html5-2.0.0/cr-1.5.4/r-2.2.9/sp-1.4.0/datatables.min.js"></script>
+                    <script type="text/javascript" src="js/dt.js"></script>
                     <script>
                         $(document).ready(function () {
-                        createDataTable('tocTable')
+                        createDataTable('tocTable');
                         });
                     </script>
                 </div>
@@ -88,7 +95,7 @@
                                         </h1>
                                     </div>
                                     <div class="card-body">
-                                        <small>Name</small>:  <xsl:value-of select=".//tei:orgName/text()"/>
+                                        <xsl:call-template name="org_detail"/>  
                                     </div>
                                 </div>
                             </div>

@@ -1,8 +1,5 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-   xml:base="{{cookiecutter.github_url}}/data/editions"
-   xml:id="f_001.xml"
-   next="{{cookiecutter.github_url}}/data/editions/f_002.xml"
->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="{{cookiecutter.github_url}}/data/editions"
+   xml:id="f_001.xml" next="{{cookiecutter.github_url}}/data/editions/f_002.xml">
     <teiHeader>
         <fileDesc>
            <titleStmt>
@@ -17,10 +14,308 @@
            </sourceDesc>
         </fileDesc>
     </teiHeader>
+    <surface>
+      <graphic url="images/example-img-1.jpg"></graphic>
+    </surface>
+    <surface>
+      <graphic url="images/example-img-2.jpg"></graphic>
+    </surface>
+    <surface>
+      <graphic url="images/acdh_building.jpg"></graphic>
+    </surface>
     <text>
         <body>
-           <p>Some text here.</p>
+            <pb n="[1]" facs="images/example-img-1.jpg"/>
+            <p>Some text here.<note>Thi is actually the first note</note></p>
+            <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+               und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
+               Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
+               Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
+               darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
+            <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
+            <p>Some text here.<note>Thi is actually the first note</note></p>
+            <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+               und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
+               Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
+               Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
+               darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
+            <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
+            <p>Some text here.<note>Thi is actually the first note</note></p>
+            <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
+            <p>Sehen Sie, die Zeit hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+               und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
+               Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
+               Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
+               darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
+            <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
+            <pb n="[2]" facs="images/example-img-2.jpg"/>
+            <p>Some text here.<note>Thi is actually the first note</note></p>
+            <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
+            <p>Sehen Sie, die Zeit hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+               und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
+               Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
+               Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
+               darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
+            <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
+            <p>Some text here.<note>Thi is actually the first note</note></p>
+            <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+               und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
+               Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
+               Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
+               darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
+            <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
+            <p>Some text here.<note>Thi is actually the first note</note></p>
+            <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+               und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
+               Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
+               Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
+               darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
+            <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
+            <pb n="[3]" facs="images/acdh_building.jpg"/>
+            <p>Some text here.<note>Thi is actually the first note</note></p>
+            <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+               und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
+               Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
+               Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
+               darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
+            <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
+            <p>Some text here.<note>Thi is actually the first note</note></p>
+            <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+               und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
+               Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
+               Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
+               darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
+            <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
+            <p>Some text here.<note>Thi is actually the first note</note></p>
+            <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+               und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
+               Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
+               Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
+               darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
+            <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
         </body>
+         <back>
+         <listPlace>
+            <place xml:id="pmb875">
+               <placeName>Klagenfurt</placeName>
+               <location>
+                  <geo decls="LatLng">46.63333 14.3</geo>
+               </location>
+               <listEvent>
+                  <event type="mentioned">
+                     <p>erwähnt in <title>Sample File 002</title>
+                     </p>
+                     <linkGrp>
+                        <link type="ARCHE"
+                           target="https://id.acdh.oeaw.ac.at/some-radom-string/f_002.xml"/>
+                     </linkGrp>
+                  </event>
+                  <event type="mentioned">
+                     <p>erwähnt in <title>Sample File 003</title>
+                     </p>
+                     <linkGrp>
+                        <link type="ARCHE"
+                           target="https://id.acdh.oeaw.ac.at/some-radom-string/f_003.xml"/>
+                     </linkGrp>
+                  </event>
+               </listEvent>
+               <idno type="GEONAMES">https://www.geonames.org/2774321/</idno>
+               <idno type="WIKIDATA">https://www.wikidata.org/wiki/wiki/Q41753/</idno>
+               <idno type="GND">https://d-nb.info/gnd/4030921-6/</idno>
+               <idno type="schnitzler-briefe">
+                  https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb875</idno>
+               
+            </place>
+            <place xml:id="pmb41212">
+               <placeName>Korfu</placeName>
+               <location>
+                  <geo decls="LatLng">39.598055 19.852222</geo>
+               </location>
+               <listEvent>
+                  <event type="mentioned">
+                     <p>erwähnt in <title>Sample File 001</title>
+                     </p>
+                     <linkGrp>
+                        <link type="ARCHE"
+                           target="https://id.acdh.oeaw.ac.at/some-radom-string/f_001.xml"/>
+                     </linkGrp>
+                  </event>
+               </listEvent>
+               <idno type="GEONAMES">https://www.geonames.org/2463678/</idno>
+               <idno type="WIKIDATA">https://www.wikidata.org/wiki/wiki/Q121378/</idno>
+               <idno type="GND">https://d-nb.info/gnd/4073728-7/</idno>
+               <idno type="schnitzler-briefe">
+                  https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41212</idno>
+               
+            </place>
+         </listPlace>
+         <listOrg>
+            <org xml:id="pmb29244">
+               <orgName>Allgemeine Bodencreditanstalt</orgName>
+               <place corresp="pmb51">
+                  <placeName>I., Innere Stadt</placeName>
+                  <location>
+                     <geo decls="LatLng">48.20769 16.37049</geo>
+                  </location>
+               </place>
+               <indo type="GEONAMES">a GEONAMES ID</indo>
+               <indo type="GND">a GND ID</indo>
+               <indo type="WIKIDATA">a WIKIDATA ID</indo>
+               <idno type="schnitzler-briefe">
+                  https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29244</idno>
+               <idno type="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29244</idno>
+               <listEvent>
+                  <event type="mentioned">
+                     <p>erwähnt in <title>Arthur an Olga Schnitzler, 7. 9. 1919</title>
+                     </p>
+                     <linkGrp>
+                        <link type="ARCHE"
+                           target="https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler/letters/L041652.xml" />
+                     </linkGrp>
+                  </event>
+                  <event type="mentioned">
+                     <p>erwähnt in <title>Olga an Arthur Schnitzler, 13. 9. 1919</title>
+                     </p>
+                     <linkGrp>
+                        <link type="ARCHE"
+                           target="https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler/letters/L041663.xml" />
+                     </linkGrp>
+                  </event>
+                  <event type="mentioned">
+                     <p>erwähnt in <title>Arthur Schnitzler: Max Burckhard, April 1912</title>
+                     </p>
+                     <linkGrp>
+                        <link type="ARCHE"
+                           target="https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler/texts/T030081.xml" />
+                     </linkGrp>
+                  </event>
+               </listEvent>
+            </org>
+         </listOrg>
+         <listPerson>
+            <person xml:id="pmb3978">
+               <persName>
+                  <surname>Rétif de la Bretonne</surname>
+                  <forename>Nicolas</forename>
+               </persName>
+               <birth>
+                  <date when="1734-10-23">23. 10. 1734</date>
+                  <placeName>
+                     <settlement>Sacy</settlement>
+                     <idno type="PMB">#pmb47064</idno>
+                     <idno type="geonames">https://www.geonames.org/2982034/</idno>
+                  </placeName>
+               </birth>
+               <death>
+                  <date when="1806-02-03">3. 2. 1806</date>
+                  <placeName>
+                     <settlement>Paris</settlement>
+                     <idno type="PMB">#pmb182</idno>
+                     <idno type="geonames">https://www.geonames.org/2988507/</idno>
+                  </placeName>
+               </death>
+               <occupation code="Schriftsteller*in"/>
+               <sex>male</sex>
+               <indo type="GEONAMES">a GEONAMES ID</indo>
+               <indo type="WIKIDATA">a WIKIDATA ID</indo>
+               <idno type="GND">https://d-nb.info/gnd/11864193X/</idno>
+               <idno type="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb3978</idno>
+               <idno type="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb3978</idno>
+               <listEvent>
+                  <event type="mentioned">
+                     <p>erwähnt in <title>Sample File 002</title>
+                     </p>
+                     <linkGrp>
+                        <link type="ARCHE"
+                           target="https://id.acdh.oeaw.ac.at/some-radom-string/f_002.xml"/>
+                     </linkGrp>
+                  </event>
+                  <event type="mentioned">
+                     <p>erwähnt in <title>Sample File 003</title>
+                     </p>
+                     <linkGrp>
+                        <link type="ARCHE"
+                           target="https://id.acdh.oeaw.ac.at/some-radom-string/f_003.xml"/>
+                     </linkGrp>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="pmb12511">
+               <persName>
+                  <surname>Reumann</surname>
+                  <forename>Jakob</forename>
+               </persName>
+               <birth>
+                  <date when="1853-12-31">31. 12. 1853</date>
+                  <placeName>
+                     <settlement>Wien</settlement>
+                     <idno type="PMB">#pmb50</idno>
+                     <idno type="geonames">https://www.geonames.org/2761369/</idno>
+                  </placeName>
+               </birth>
+               <death>
+                  <date when="1925-07-29">29. 7. 1925</date>
+                  <placeName>
+                     <settlement>Klagenfurt</settlement>
+                     <idno type="PMB">#pmb875</idno>
+                     <idno type="geonames">https://www.geonames.org/2774321/</idno>
+                  </placeName>
+               </death>
+               <occupation code="Politiker*in"/>
+               <sex>male</sex>
+               <indo type="GEONAMES">a GEONAMES ID</indo>
+               <indo type="WIKIDATA">a WIKIDATA ID</indo>
+               <idno type="GND">https://d-nb.info/gnd/1014062276/</idno>
+               <idno type="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19209</idno>
+               <idno type="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb12511</idno>
+               <listEvent>
+                  <event type="mentioned">
+                     <p>erwähnt in <title>Tagebuch von Arthur Schnitzler, 21. 1. 1922</title></p>
+                     <linkGrp>
+                        <link type="ARCHE" target="https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler/diaries/D041341.xml"/>
+                     </linkGrp>
+                  </event>
+               </listEvent>
+            </person>
+         </listPerson>
+         <listBibl>
+            <bibl xml:id="bibl123">
+               <title>I'm a book title</title>
+               <author><persName>I'm the book author</persName></author>
+               <date>1. Jänner 2023</date>
+               <indo type="GEONAMES">a GEONAMES ID</indo>
+               <indo type="WIKIDATA">a WIKIDATA ID</indo>
+               <idno type="GND">a GND ID</idno>
+            </bibl>
+            <bibl xml:id="bibl321">
+               <title>I'm a book title</title>
+               <author><persName>I'm the book author</persName></author>
+               <date>1. Jänner 2023</date>
+               <indo type="GEONAMES">a GEONAMES ID</indo>
+               <indo type="WIKIDATA">a WIKIDATA ID</indo>
+               <idno type="GND">a GND ID</idno>
+            </bibl>
+         </listBibl>
+      </back>
     </text>
   </TEI>
   

@@ -1,3 +1,248 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+span {
+    display: inline;
+}
+
+a {
+    color: {{cookiecutter.color_main}};
+}
+
+/* a:hover {
+    color: {{cookiecutter.color_hover}};
+} */
+
+.navbar-nav ul li a, .navbar-nav ul li a:visited {
+    /* change navbar link color */
+}
+
+.navbar-nav ul li a:hover, .navbar-nav ul li a:active {
+    /* change navbar link color */
+    background-color: {{cookiecutter.color_main}};
+    color: {{cookiecutter.color_hover}};
+}
+
+.navbar-nav ul li.active a {
+    /* change navbar link color */
+    background-color: {{cookiecutter.color_main}};
+}
+
+cite {
+    font-style: normal;
+}
+
+#wrapper-hero-content {
+    padding: 0;
+}
+
+.intro {
+    background-color: #fff;
+    height: 93vh;
+    overflow: hidden;
+    border-bottom: 3px solid {{cookiecutter.color_main}};
+}
+
+.intro .col-md-6 {
+    padding: 0;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+}
+
+.wp-intro_left {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.intro_left {
+    display: block;
+    margin: 2em auto;
+    padding: 0 15%;
+}
+
+.intro_left h1, h5 {
+    padding: .5em 0;
+}
+
+.intro_left a {
+    display: inline-block;
+    padding: .5em .5em .5em 0;
+}
+
+.custom-logo-link {
+    margin-bottom: -2em;
+}
+
+body {
+    border-top-width: 0;
+    min-height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+}
+
+p {
+    display: block;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.site>* {
+    width: 100%;
+}
+
+.site {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid {
+    max-width: 1200px;
+}
+
+.italic {
+    font-style: italic;
+}
+  
+.bold {
+    font-weight: bold;
+}
+
+.smallcaps {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
+
+.nounderline {
+    text-decoration: none;
+}
+
+#viewer {
+    position: sticky;
+    top: 10%;
+    padding: 2em;
+}
+
+/* entities */
+.entity {
+    cursor: pointer;
+}
+
+.entity-table {
+margin: 4em auto;
+}
+
+.entity-table tbody tr td,
+.entity-table tbody tr th {
+border: none;
+}
+
+.entity-table tbody tr th {
+border-right: 1px solid lightgrey;
+}
+
+.modal-body table tbody tr th, .modal-body table tbody tr td {
+    border: none;
+}
+
+#wrapper-footer-full {
+    border-top: 3px solid {{cookiecutter.color_main}};
+    margin-top: auto;
+    display: flex;
+    background-color:#fff;
+    z-index: 1;
+    padding: 8em 0;
+}
+
+a.anchor, .anchor-pb {
+    position: relative;
+    top: -120px;
+    visibility: hidden;
+}
+
+a.anchorFoot {
+    position: relative;
+    top: -110px;
+    visibility: hidden;
+}
+
+.footnote_link {
+    display: inline-block;
+    width: 2em;
+    text-align: right;
+    margin: 0 .7em 0 -2.7em;
+}
+
+.footnotes li {
+    list-style: none;
+    padding: .3em 0;
+}
+
+.footnotes {
+    padding: 1em;
+}
+
+.wp-transcript {
+    margin: 2em auto;
+}
+
+.wp-transcript .card-header {
+    padding: 2em 0;
+}
+
+#editor-widget {
+    position: fixed;
+    right: 10%;
+    max-width: 100px;
+    padding: .5em;
+    background-color: {{cookiecutter.color_main}};
+    color: {{cookiecutter.color_hover}};
+    border-radius: 1rem;
+    box-shadow: 4px 4px 9px 0 rgba(0, 0, 0, .1);
+    z-index: 2;
+}
+
+.navBarNavDropdown {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.fas {
+    color: {{cookiecutter.color_main}};
+}
+
+#text-resize {
+    min-height: 600px;
+}
+
+.navBarNavDropdown a {
+    position: relative;
+    display: block;
+}
+
+.navBarNavDropdown ul li {
+    margin: .5em auto;
+}
+
+#staticSearch {
+    padding: 2em;
+}
+
 /* Datatables, provided by https://github.com/babslgam*/
 
 div.dataTables_filter {
@@ -13,7 +258,9 @@ div.dataTables_filter {
 }
 
 .navbar {
-    border-bottom: 5px solid {{cookiecutter.color_main}} !important;
+    border-bottom: 5px solid {{cookiecutter.color_main}};
+    background-color: #fff;
+    height: 7vh;
 }
 
 .dataTables_info {
@@ -30,24 +277,84 @@ div.dataTables_filter {
   width:100%;
 }
 
+.footer-separator {
+    border-top: 1px solid #f1f1f1;
+    padding: 2em 0;
+}
+
 /**** Font Aweseome ***/
 .far {
     font-family: "Font Awesome 5 Free" !important;
 }
 
 .img-fluid {
-    max-width: 160% !important;
-    max-height: 160% !important;
+    max-width: 6rem !important;
 }
 
 .card {
-    margin-top: 1em;
+    margin: 2em auto;
     box-shadow: 4px 4px 9px 0 rgba(0, 0, 0, .1);
 }
 
+.img_bottom {
+    padding: 6em 0;
+    margin: 0 auto;
+}
+
+.img_bottom .col-md-6 {
+    padding: 2em;
+}
+
 .index-card {
-    border-top: 5px solid {{cookiecutter.color_main}}; 
+    margin-top: 0 !important;
+    box-shadow: none !important;
     transition: transform .2s;
+    
+}
+
+.card-body img {
+    border-radius: .35rem .35rem 0 0;
+}
+
+.index-card .card-header {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: #88dbdf;
+}
+
+.index-card .card-body {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 0;
+    
+}
+
+.index-card {
+    margin-top: 0 !important;
+    box-shadow: none !important;
+    transition: transform .2s;
+    
+}
+
+.card-body img {
+    border-radius: .35rem .35rem 0 0;
+}
+
+.index-card .card-header {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: {{cookiecutter.color_main}}; 
+}
+
+.index-card .card-body {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 0;
+    
 }
 
 .index-card:hover {
@@ -63,7 +370,7 @@ div.dataTables_filter {
 }
 
 .btn-round:hover {
-    background-color: {{cookiecutter.color_hover}} !important;
+    background-color: {{cookiecutter.color_hover}};
 }
 
 .btn-round a {
@@ -76,10 +383,6 @@ p {
 
 .carousel-indicators {
     cursor: pointer;
-}
-
-.container-fluid {
-    max-width: 1024px;
 }
 
 span.ssQueryAndButton {
@@ -117,4 +420,122 @@ button#ssDoSearch {
 
 #github-logo:hover {
     transform: scale(1.05);
+}
+
+/*
+####################################
+proposed mobile resolution handling
+####################################
+*/
+@media (max-width: 1920px) {
+    #editor-widget {
+        right: 5%;
+    }
+/* 
+#########################################
+add rules for HD screen resolution
+#########################################
+*/
+}
+
+@media (max-width: 1200px) {
+    #editor-widget {
+        right: 1%;
+        top: 12%;
+    }
+/* 
+#########################################
+add rules for screen medium to low
+resolution
+#########################################
+*/
+}
+
+@media (max-width: 1024px) {
+    .navbar .navbar-collapse {
+        border-top: 1px solid rgba(0,0,0,.075);
+        padding-top: 2rem;
+        margin-top: .5rem;
+    }
+    .img-fluid {
+        max-width: 3.5rem !important;
+    }
+/* 
+#########################################
+add rules for smallest tablet high
+resolution or low resolution screens
+#########################################
+*/
+}
+
+@media (max-width: 768px) {
+    .facsimiles {
+        display: none;
+    }
+    .navBarNavDropdown ul li:nth-child(-n + 2) {
+        display: none !important;
+    }
+    .text {
+        padding-left: 0;
+    }
+    .wp-transcript {
+        padding: 0 2em;
+    }
+    .img_bottom {
+        padding: 1em;
+    }
+    .img_bottom .col-md-6 {
+        padding: 0;
+    }
+    .intro {
+        height: 100%;
+    }
+    #wrapper-footer-full {
+        padding: 1em 0;
+    }
+    .img-fluid {
+        max-width: 2rem !important;
+    }
+    .custom-logo-link {
+        margin-bottom: 0;
+    }
+    
+/* 
+#########################################
+add rules for smallest smartphones 
+high resolution or tablet regular resolution
+#########################################
+*/
+}
+
+@media (max-width: 575px) {
+    br {
+        display: none;
+    }
+    li a br {
+        display: block !important;
+    }
+    .dropdown-menu li a {
+        max-width: 500px;
+        overflow: hidden;
+    }
+/* 
+#########################################
+add rules for smallest smartphones 
+regular resolution
+#########################################
+*/
+}
+
+@media (max-width: 480px) {
+    .dropdown-menu li a {
+        max-width: 400px;
+        overflow: hidden;
+    }
+/* 
+#########################################
+add rules for smallest smartphones 
+low resolution
+#########################################
+*/
 }

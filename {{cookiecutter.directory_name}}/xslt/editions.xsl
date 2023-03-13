@@ -12,11 +12,7 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
-    <xsl:import href="./partials/osd-container.xsl"/>
-    <xsl:import href="./partials/tei-facsimile.xsl"/>
-    <xsl:import href="./partials/person.xsl"/>
-    <xsl:import href="./partials/place.xsl"/>
-    <xsl:import href="./partials/org.xsl"/>
+    <xsl:import href="partials/aot-options.xsl"/>
 
     <xsl:variable name="prev">
         <xsl:value-of select="replace(tokenize(data(tei:TEI/@prev), '/')[last()], '.xml', '.html')"/>
@@ -40,10 +36,16 @@
         </xsl:variable>
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html>
-            <xsl:call-template name="html_head">
-                <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
-            </xsl:call-template>
-            
+            <head>
+                <xsl:call-template name="html_head">
+                    <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
+                </xsl:call-template>
+                <style>
+                    .navBarNavDropdown ul li:nth-child(2) {
+                        display: none !important;
+                    }
+                </style>
+            </head>
             <body class="page">
                 <div class="hfeed site" id="page">
                     <xsl:call-template name="nav_bar"/>
@@ -52,7 +54,7 @@
                         <div class="card" data-index="true">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-lg-2 col-sm-12">
                                         <xsl:if test="ends-with($prev,'.html')">
                                             <h1>
                                                 <a>
@@ -64,7 +66,7 @@
                                             </h1>
                                         </xsl:if>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 col-lg-8 col-sm-12">
                                         <h1 align="center">
                                             <xsl:value-of select="$doc_title"/>
                                         </h1>
@@ -74,7 +76,7 @@
                                             </a>
                                         </h3>
                                     </div>
-                                    <div class="col-md-2" style="text-align:right">
+                                    <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right">
                                         <xsl:if test="ends-with($next, '.html')">
                                             <h1>
                                                 <a>
@@ -86,6 +88,10 @@
                                             </h1>
                                         </xsl:if>
                                     </div>
+                                </div>
+                                <div id="editor-widget">
+                                    <p>Text Editor</p>
+                                    <xsl:call-template name="annotation-options"></xsl:call-template>
                                 </div>
                             </div>
                             <div class="card-body">                                
@@ -117,7 +123,12 @@
                             </div>
                         </div>                       
                     </div>
-                    <xsl:for-each select=".//tei:back//tei:org[@xml:id]">
+                    <xsl:for-each select="//tei:back">
+                        <div class="tei-back">
+                            <xsl:apply-templates/>
+                        </div>
+                    </xsl:for-each>
+                    <!-- <xsl:for-each select=".//tei:back//tei:org[@xml:id]">
                         
                         <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                             <xsl:attribute name="id">
@@ -201,15 +212,18 @@
                                 </div>
                             </div>
                         </div>
-                    </xsl:for-each>
+                    </xsl:for-each> -->
                     <xsl:call-template name="html_footer"/>
                 </div>
+                <script src="https://unpkg.com/de-micro-editor@0.2.6/dist/de-editor.min.js"></script>
+                <script type="text/javascript" src="js/run.js"></script>
+                <script type="text/javascript" src="js/osd_scroll.js"></script>
             </body>
         </html>
     </xsl:template>
 
     <xsl:template match="tei:p">
-        <p id="{local:makeId(.)}">
+        <p id="{local:makeId(.)}" class="yes-index">
             <xsl:apply-templates/>
         </p>
     </xsl:template>

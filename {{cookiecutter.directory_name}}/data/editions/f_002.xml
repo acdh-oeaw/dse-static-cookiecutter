@@ -15,8 +15,12 @@
          </sourceDesc>
       </fileDesc>
    </teiHeader>
+   <surface>
+      <graphic url="images/example-img-1.jpg"></graphic>
+   </surface>
    <text>
       <body>
+         <pb n="[1]" facs="images/example-img-1.jpg"/>
          <p>Some text here.<note>Thi is actually the first note</note></p>
          <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
          <p>Sehen Sie, die Zeit hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen

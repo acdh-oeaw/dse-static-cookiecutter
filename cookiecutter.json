@@ -2,7 +2,7 @@
     "directory_name": "dse-static",
     "project_title": "Digital Scholarly Editions Static Site Cookiecutter",
     "project_short_title": "DSE Static-Site",
-    "github_url": "https://github.com/csae8092/dse-static-cookiecutter",
+    "github_url": "https://github.com/acdh-oeaw/dse-static-cookiecutter",
     "base_url": "http://url-of-my-awesome-site",
     "color_main": "#88dbdf",
     "color_hover": "#fff",

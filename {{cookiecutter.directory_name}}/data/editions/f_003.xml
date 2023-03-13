@@ -17,10 +17,14 @@
            </sourceDesc>
         </fileDesc>
     </teiHeader>
+    <surface>
+      <graphic url="images/example-img-1.jpg"></graphic>
+    </surface>
     <text>
         <body>
-           <p>Some text here.</p>
-           <p>Und hier ist ein noch einal ein Verweis auf den <rs type="person" ref="#pmb3978">Rétif</rs></p>
+            <pb n="[1]" facs="images/example-img-1.jpg"/>
+            <p>Some text here.</p>
+            <p>Und hier ist ein noch einal ein Verweis auf den <rs type="person" ref="#pmb3978">Rétif</rs></p>
         </body>
     </text>
   </TEI>
