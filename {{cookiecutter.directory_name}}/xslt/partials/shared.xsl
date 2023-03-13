@@ -307,14 +307,12 @@
                                     </td>
                                 </tr>
                                 </xsl:if>
-                                <xsl:if test="count(.//tei:event) gt $showNumberOfMentions + 1">
                                 <tr>
                                     <th></th>
                                     <td>
                                         Anzahl der Erwähnungen limitiert, klicke <a href="{$selfLink}">hier</a> für eine vollständige Auflistung
                                     </td>
                                 </tr>
-                                </xsl:if>
                             </tbody>
                         </table>
                     </div>
@@ -417,14 +415,12 @@
                                     </td>
                                 </tr>
                                 </xsl:if>
-                                <xsl:if test="count(.//tei:event) gt $showNumberOfMentions + 1">
                                 <tr>
                                     <th></th>
                                     <td>
                                         Anzahl der Erwähnungen limitiert, klicke <a href="{$selfLink}">hier</a> für eine vollständige Auflistung
                                     </td>
                                 </tr>
-                                </xsl:if>
                             </tbody>
                         </table>
                     </div>
@@ -517,14 +513,12 @@
                                     </td>
                                 </tr>
                                 </xsl:if>
-                                <xsl:if test="count(.//tei:event) gt $showNumberOfMentions + 1">
                                 <tr>
                                     <th></th>
                                     <td>
                                         Anzahl der Erwähnungen limitiert, klicke <a href="{$selfLink}">hier</a> für eine vollständige Auflistung
                                     </td>
                                 </tr>
-                                </xsl:if>
                             </tbody>
                         </table>
                     </div>
@@ -634,14 +628,12 @@
                                     </td>
                                 </tr>
                                 </xsl:if>
-                                <xsl:if test="count(.//tei:event) gt $showNumberOfMentions + 1">
                                 <tr>
                                     <th></th>
                                     <td>
                                         Anzahl der Erwähnungen limitiert, klicke <a href="{$selfLink}">hier</a> für eine vollständige Auflistung
                                     </td>
                                 </tr>
-                                </xsl:if>
                             </tbody>
                         </table>
                     </div>
