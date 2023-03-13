@@ -300,7 +300,7 @@
          <listBibl>
             <bibl xml:id="bibl123">
                <title>I'm a book title</title>
-               <author>I'm the book author</author>
+               <author><persName>I'm the book author</persName></author>
                <date>1. Jänner 2023</date>
                <indo type="GEONAMES">a GEONAMES ID</indo>
                <indo type="WIKIDATA">a WIKIDATA ID</indo>
@@ -308,7 +308,7 @@
             </bibl>
             <bibl xml:id="bibl321">
                <title>I'm a book title</title>
-               <author>I'm the book author</author>
+               <author><persName>I'm the book author</persName></author>
                <date>1. Jänner 2023</date>
                <indo type="GEONAMES">a GEONAMES ID</indo>
                <indo type="WIKIDATA">a WIKIDATA ID</indo>

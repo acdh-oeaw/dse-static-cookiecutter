@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Werkverzeichnis</title>
+            </titleStmt>
+            <publicationStmt>
+                <p />
+            </publicationStmt>
+            <sourceDesc>
+                <p>born digital</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <listBibl>
+                    <bibl xml:id="bibl123">
+                        <title>I'm a book title</title>
+                        <author><persName>I'm the book author</persName></author>
+                        <date>1. Jänner 2023</date>
+                        <indo type="GEONAMES">a GEONAMES ID</indo>
+                        <indo type="WIKIDATA">a WIKIDATA ID</indo>
+                        <idno type="GND">a GND ID</idno>
+                    </bibl>
+                    <bibl xml:id="bibl321">
+                        <title>I'm a book title</title>
+                        <author><persName>I'm the book author</persName></author>
+                        <date>1. Jänner 2023</date>
+                        <indo type="GEONAMES">a GEONAMES ID</indo>
+                        <indo type="WIKIDATA">a WIKIDATA ID</indo>
+                        <idno type="GND">a GND ID</idno>
+                    </bibl>
+                </listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>
