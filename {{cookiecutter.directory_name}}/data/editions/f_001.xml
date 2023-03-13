@@ -28,11 +28,20 @@
             <pb n="[1]" facs="images/example-img-1.jpg"/>
             <p>Some text here.<note>Thi is actually the first note</note></p>
             <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
-            <p>Sehen Sie, die Zeit hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
                und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
                Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
                Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
-               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der Wiener Phantasie
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
+               darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
+            <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
+            <p>Some text here.<note>Thi is actually the first note</note></p>
+            <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+               und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
+               Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
+               Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
                darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
             <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
             <p>Some text here.<note>Thi is actually the first note</note></p>
@@ -41,16 +50,7 @@
                und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
                Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
                Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
-               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der Wiener Phantasie
-               darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
-            <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
-            <p>Some text here.<note>Thi is actually the first note</note></p>
-            <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
-            <p>Sehen Sie, die Zeit hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
-               und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
-               Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
-               Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
-               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der Wiener Phantasie
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
                darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
             <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
             <pb n="[2]" facs="images/example-img-2.jpg"/>
@@ -60,53 +60,53 @@
                und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
                Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
                Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
-               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der Wiener Phantasie
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
                darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
             <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
             <p>Some text here.<note>Thi is actually the first note</note></p>
             <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
-            <p>Sehen Sie, die Zeit hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
                und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
                Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
                Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
-               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der Wiener Phantasie
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
                darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
             <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
             <p>Some text here.<note>Thi is actually the first note</note></p>
             <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
-            <p>Sehen Sie, die Zeit hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
                und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
                Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
                Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
-               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der Wiener Phantasie
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
                darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
             <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
             <pb n="[3]" facs="images/acdh_building.jpg"/>
             <p>Some text here.<note>Thi is actually the first note</note></p>
             <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
-            <p>Sehen Sie, die Zeit hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
                und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
                Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
                Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
-               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der Wiener Phantasie
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
                darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
             <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
             <p>Some text here.<note>Thi is actually the first note</note></p>
             <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
-            <p>Sehen Sie, die Zeit hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
                und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
                Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
                Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
-               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der Wiener Phantasie
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
                darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
             <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
             <p>Some text here.<note>Thi is actually the first note</note></p>
             <p>Und hier ist ein Verweis auf den <rs type="person" ref="#pmb3978">König</rs></p>
-            <p>Sehen Sie, die Zeit hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
+            <p>Sehen Sie, die <rs type="bibl" ref="#bibl123">Zeit</rs> hat noch Liebe<note>first note</note>. Und ich hatte geglaubt, nur ihr Haß sei gewachsen
                und mit ihm ihr Hunger. Was aber die Dummheit anlangt, so tritt sie nur klarer in den
                Dimensionen hervor, die ich ihr längst zuerkannt habe. Wollen Sie das österreichische
                Antlitz sehen? Es ist zwar durch eigene Schuld unterernährt, aber es spiegelt sich
-               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der Wiener Phantasie
+               geistig in dem Knödel, den diese Ansichtskarte als ein Idealbild der <rs type="bibl" ref="#bibl321">Wiener Phantasie</rs>
                darbietet<note>some note</note>. Ich revanchiere mich, der Text dürfte von jenem Pipihendi sein.</p>
             <p>In <rs type="place" ref="#pmb875">dieser Stadt</rs> ist der Wurm drin.</p>
         </body>
@@ -135,9 +135,9 @@
                      </linkGrp>
                   </event>
                </listEvent>
-               <idno type="geonames">https://www.geonames.org/2774321/</idno>
-               <idno type="wikidata">https://www.wikidata.org/wiki/wiki/Q41753/</idno>
-               <idno type="gnd">https://d-nb.info/gnd/4030921-6/</idno>
+               <idno type="GEONAMES">https://www.geonames.org/2774321/</idno>
+               <idno type="WIKIDATA">https://www.wikidata.org/wiki/wiki/Q41753/</idno>
+               <idno type="GND">https://d-nb.info/gnd/4030921-6/</idno>
                <idno type="schnitzler-briefe">
                   https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb875</idno>
                
@@ -157,9 +157,9 @@
                      </linkGrp>
                   </event>
                </listEvent>
-               <idno type="geonames">https://www.geonames.org/2463678/</idno>
-               <idno type="wikidata">https://www.wikidata.org/wiki/wiki/Q121378/</idno>
-               <idno type="gnd">https://d-nb.info/gnd/4073728-7/</idno>
+               <idno type="GEONAMES">https://www.geonames.org/2463678/</idno>
+               <idno type="WIKIDATA">https://www.wikidata.org/wiki/wiki/Q121378/</idno>
+               <idno type="GND">https://d-nb.info/gnd/4073728-7/</idno>
                <idno type="schnitzler-briefe">
                   https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41212</idno>
                
@@ -174,6 +174,9 @@
                      <geo decls="LatLng">48.20769 16.37049</geo>
                   </location>
                </place>
+               <indo type="GEONAMES">a GEONAMES ID</indo>
+               <indo type="GND">a GND ID</indo>
+               <indo type="WIKIDATA">a WIKIDATA ID</indo>
                <idno type="schnitzler-briefe">
                   https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29244</idno>
                <idno type="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29244</idno>
@@ -229,7 +232,9 @@
                </death>
                <occupation code="Schriftsteller*in"/>
                <sex>male</sex>
-               <idno type="gnd">https://d-nb.info/gnd/11864193X/</idno>
+               <indo type="GEONAMES">a GEONAMES ID</indo>
+               <indo type="WIKIDATA">a WIKIDATA ID</indo>
+               <idno type="GND">https://d-nb.info/gnd/11864193X/</idno>
                <idno type="schnitzler-briefe"
                   >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb3978</idno>
                <idno type="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb3978</idno>
@@ -275,7 +280,9 @@
                </death>
                <occupation code="Politiker*in"/>
                <sex>male</sex>
-               <idno type="gnd">https://d-nb.info/gnd/1014062276/</idno>
+               <indo type="GEONAMES">a GEONAMES ID</indo>
+               <indo type="WIKIDATA">a WIKIDATA ID</indo>
+               <idno type="GND">https://d-nb.info/gnd/1014062276/</idno>
                <idno type="schnitzler-tagebuch"
                   >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19209</idno>
                <idno type="bahrschnitzler"
@@ -290,6 +297,24 @@
                </listEvent>
             </person>
          </listPerson>
+         <listBibl>
+            <bibl xml:id="bibl123">
+               <title>I'm a book title</title>
+               <author>I'm the book author</author>
+               <date>1. Jänner 2023</date>
+               <indo type="GEONAMES">a GEONAMES ID</indo>
+               <indo type="WIKIDATA">a WIKIDATA ID</indo>
+               <idno type="GND">a GND ID</idno>
+            </bibl>
+            <bibl xml:id="bibl321">
+               <title>I'm a book title</title>
+               <author>I'm the book author</author>
+               <date>1. Jänner 2023</date>
+               <indo type="GEONAMES">a GEONAMES ID</indo>
+               <indo type="WIKIDATA">a WIKIDATA ID</indo>
+               <idno type="GND">a GND ID</idno>
+            </bibl>
+         </listBibl>
       </back>
     </text>
   </TEI>

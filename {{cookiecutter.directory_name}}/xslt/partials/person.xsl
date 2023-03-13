@@ -13,7 +13,7 @@
                         Geburtsdatum
                     </th>
                     <td>
-                        <xsl:value-of select="./tei:birth/tei:date/@when-iso"/>
+                        <xsl:value-of select="./tei:birth/tei:date"/>
                     </td>
                 </tr>
                 </xsl:if>
@@ -23,7 +23,7 @@
                         Sterbedatum
                     </th>
                     <td>
-                        <xsl:value-of select="./tei:death/tei:date/@when-iso"/>
+                        <xsl:value-of select="./tei:death/tei:date"/>
                     </td>
                 </tr>
                 </xsl:if>
