@@ -48,7 +48,7 @@
                         <div class="wp-transcript">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-lg-2 col-sm-12">
                                         <xsl:if test="ends-with($prev,'.html')">
                                             <h1>
                                                 <a>
@@ -60,7 +60,7 @@
                                             </h1>
                                         </xsl:if>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 col-lg-8 col-sm-12">
                                         <h1 align="center">
                                             <xsl:value-of select="$doc_title"/>
                                         </h1>
@@ -70,7 +70,7 @@
                                             </a>
                                         </h3>
                                     </div>
-                                    <div class="col-md-2" style="text-align:right">
+                                    <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right">
                                         <xsl:if test="ends-with($next, '.html')">
                                             <h1>
                                                 <a>
@@ -89,14 +89,14 @@
                                 </div>
                             </div>
                             <div id="container-resize" class="row transcript active">
-                                <div id="img-resize" class="col-md-6 facsimiles">
+                                <div id="img-resize" class="col-md-6 col-lg-6 col-sm-12 facsimiles">
                                     <div id="viewer">
                                         <div id="container_facs_1">
                                             <!-- container and facs handling in js -->
                                         </div>
                                     </div>
                                 </div>
-                                <div id="text-resize" class="col-md-6 text yes-index">
+                                <div id="text-resize" class="col-md-6 col-lg-6 col-sm-12 text yes-index">
                                     <div id="section">
                                         <xsl:for-each select="//tei:body">
                                             <div class="card-body">

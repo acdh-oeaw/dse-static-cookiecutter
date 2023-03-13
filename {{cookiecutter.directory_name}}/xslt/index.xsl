@@ -26,7 +26,7 @@
 
                     <div class="container">
                         <div class="row intro">
-                            <div class="col-md-6 wp-intro_left">
+                            <div class="col-md-6 col-lg-6 col-sm-12 wp-intro_left">
                                 <div class="intro_left">
                                     <h1>Scholarly Digital Edition</h1>
                                     <h3>Eine Vorlage für statische Wepp-App Entwicklung</h3>
@@ -42,7 +42,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-lg-6 col-sm-12">
                                 <div class="intro_right wrapper">
                                     <img src="images/29117929_XXL_height.jpg" class="d-block w-100" alt="..."/>
                                 </div>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="container-fluid" style="margin:2em auto;">
                         <div class="row wrapper img_bottom">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-lg-6 col-sm-12">
                                 <a href="toc.html" class="index-link">                                   
                                     <div class="card index-card">
                                         <div class="card-body">
@@ -65,7 +65,7 @@
                                     </div>                                     
                                 </a>                                    
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-lg-6 col-sm-12">
                                 <a href="toc_facs.html" class="index-link">                                                     
                                     <div class="card index-card">
                                         <div class="card-body">
@@ -79,7 +79,7 @@
                                     </div>                                 
                                 </a>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-lg-6 col-sm-12">
                                 <a href="about.html" class="index-link">  
                                     <div class="card index-card">
                                         <div class="card-body">
@@ -93,7 +93,7 @@
                                     </div>                                    
                                 </a>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-lg-6 col-sm-12">
                                 <a href="search.html" class="index-link">  
                                     <div class="card index-card">
                                         <div class="card-body">

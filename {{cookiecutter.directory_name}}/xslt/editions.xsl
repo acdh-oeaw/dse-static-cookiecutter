@@ -53,7 +53,7 @@
                         <div class="card" data-index="true">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-lg-2 col-sm-12">
                                         <xsl:if test="ends-with($prev,'.html')">
                                             <h1>
                                                 <a>
@@ -65,7 +65,7 @@
                                             </h1>
                                         </xsl:if>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 col-lg-8 col-sm-12">
                                         <h1 align="center">
                                             <xsl:value-of select="$doc_title"/>
                                         </h1>
@@ -75,7 +75,7 @@
                                             </a>
                                         </h3>
                                     </div>
-                                    <div class="col-md-2" style="text-align:right">
+                                    <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right">
                                         <xsl:if test="ends-with($next, '.html')">
                                             <h1>
                                                 <a>
