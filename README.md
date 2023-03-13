@@ -15,7 +15,7 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
     "directory_name": "dse-static",
     "project_title": "Digital Scholarly Editions Static Site Cookiecutter",
     "project_short_title": "DSE Static-Site",
-    "github_url": "https://github.com/csae8092/dse-static",
+    "github_url": "https://github.com/acdh-oeaw/dse-static-cookiecutter",
     "color_main": "#88dbdf",
     "color_hover": "#fff",
     "title_xpath": ".//tei:title[@type='main'][1]/text()",
