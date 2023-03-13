@@ -123,13 +123,11 @@ function loadNewImage(new_item) {
         // source attribute hold image item id without url
         var new_image = new_item.getAttribute("source");
         var old_image = viewer.world.getItemAt(0);
+        console.log(old_image);
+        console.log(new_image);
         if (old_image) {
             // get url from current/old image and replace the image id with
             // new id of image to be loaded
-            var current1 = old_image.source.url;
-            var current2 = old_image.source.url;
-            var current3 = current2;
-            var new_image = current1.replace(current3, new_image);
             // access osd viewer and add simple image and remove current image
             viewer.addSimpleImage({
                 url: new_image,
