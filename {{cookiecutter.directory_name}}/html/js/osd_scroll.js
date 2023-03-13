@@ -123,8 +123,6 @@ function loadNewImage(new_item) {
         // source attribute hold image item id without url
         var new_image = new_item.getAttribute("source");
         var old_image = viewer.world.getItemAt(0);
-        console.log(old_image);
-        console.log(new_image);
         if (old_image) {
             // get url from current/old image and replace the image id with
             // new id of image to be loaded

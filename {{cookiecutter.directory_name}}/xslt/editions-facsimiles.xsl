@@ -105,7 +105,7 @@
                                                     <xsl:for-each select="current-group()[self::tei:p|self::tei:lg|self::tei:pb]">
                                                         <xsl:if test="name() = 'pb'">
                                                             <span class="anchor-pb"></span>
-                                                            <span class="pb" source="{tokenize(@facs, '/')[last()]}"><xsl:value-of select="@n"/></span>
+                                                            <span class="pb" source="{@facs}"><xsl:value-of select="@n"/></span>
                                                         </xsl:if>
                                                         <p><xsl:apply-templates/></p>
                                                     </xsl:for-each>

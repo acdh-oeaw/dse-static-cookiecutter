@@ -28,8 +28,8 @@
                         <div class="row intro">
                             <div class="col-md-6 col-lg-6 col-sm-12 wp-intro_left">
                                 <div class="intro_left">
-                                    <h1>Scholarly Digital Edition</h1>
-                                    <h3>Eine Vorlage für statische Wepp-App Entwicklung</h3>
+                                    <h1>{{ cookiecutter.project_title }}</h1>
+                                    <h3>{{ cookiecutter.project_short_title }}</h3>
                                     <a href="toc.html" title="Edition ohne Faksimiles">
                                         <button class="btn btn-secondary" role="button" style="width: 250px;">
                                             Edition ohne Faksimiles
