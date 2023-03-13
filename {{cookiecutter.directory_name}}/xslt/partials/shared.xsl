@@ -16,7 +16,7 @@
     
     <xsl:template match="tei:pb">
         <span class="anchor-pb"></span>
-        <span class="pb" source="{tokenize(@facs, '/')[last()]}"><xsl:value-of select="@n"/></span>
+        <span class="pb" source="{@facs}"><xsl:value-of select="./@n"/></span>
     </xsl:template>
     <xsl:template match="tei:unclear">
         <abbr title="unclear"><xsl:apply-templates/></abbr>
