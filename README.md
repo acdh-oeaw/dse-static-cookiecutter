@@ -23,9 +23,9 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
 } 
 ```
 * change into the new created repo, by default `$ cd dse-static`
-* run `$ ./script.sh` to download needed libraries/files
+* run `$ ./shellscripts/script.sh` to download needed libraries/files
 * run `$ ant` to build the HTML-Files
-* run `$ ./build_index.sh` to build the fulltext search index. Be aware, you'll need to have ant-contrib installed.
+* run `$ ./shellscripts/build_index.sh` to build the fulltext search index. Be aware, you'll need to have ant-contrib installed.
 * create a git repo and commit to github
 
 
@@ -39,7 +39,7 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
 
 tested for Linux
 
-* install Fundament, Saxon and Static-Search with `$ ./dl_fundament.sh`, `$ ./dl_saxon.sh` and `$ ./dl_staticsearch.sh` (or just run `$ ./script.sh`)
+* install Fundament, Saxon and Static-Search with `$ ./shellscripts/dl_fundament.sh`, `$ ./shellscripts/dl_saxon.sh` and `$ ./shellscripts/dl_staticsearch.sh` (or just run `$ ./shellscripts/script.sh`)
 * build the static files with `$ ant`
-* build the search index `$ build_index.sh`
+* build the search index `$ ./shellscripts/build_index.sh`
 

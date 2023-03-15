@@ -1,4 +1,4 @@
-# bin/bash
+#!/bin/bash
 
 echo "download and copy fundament"
 FUNDAMENT_VERSION=1.2.1
