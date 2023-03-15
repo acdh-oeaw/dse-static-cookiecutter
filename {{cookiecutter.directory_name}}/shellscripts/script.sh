@@ -1,4 +1,4 @@
-# bin/bash
+#!/bin/bash
 
 # hacky way to make shure the script 
 # gets allways run from parent-dir 
