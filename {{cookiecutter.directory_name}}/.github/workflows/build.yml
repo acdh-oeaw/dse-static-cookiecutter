@@ -11,11 +11,11 @@ jobs:
       ANT_OPTS: -Xmx5g
     steps:
     - name: Perform Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Install Saxon, Ant and Fundament
       run: |
         apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
-        ./script.sh
+        ./shellscripts/script.sh
     - name: Install Ant-Contrib
       run: |
         wget https://repo1.maven.org/maven2/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar
