@@ -15,7 +15,7 @@ jobs:
     - name: Install Saxon, Ant and Fundament
       run: |
         apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
-        ./script.sh
+        ./shellscripts/script.sh
     - name: Build
       run: |
         ant -f build_arche.xml
