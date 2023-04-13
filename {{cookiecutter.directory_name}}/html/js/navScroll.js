@@ -8,8 +8,6 @@ function minNav() {
     var img = document.getElementsByClassName("img-fluid")[0];
     var scroll = document.documentElement.scrollTop;
     if ((scroll - 20) > lastScrollTop && width > 768) {
-        console.log("top", scroll);
-        console.log("scroll", scroll);
         img.style.width = "50px";
         a.style.margin = "0";        
     } else {
