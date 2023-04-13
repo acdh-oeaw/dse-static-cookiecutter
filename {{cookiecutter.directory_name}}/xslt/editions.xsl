@@ -12,7 +12,7 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
-    <xsl:import href="partials/aot-options.xsl"/>
+    <xsl:import href="./partials/aot-options.xsl"/>
 
     <xsl:variable name="prev">
         <xsl:value-of select="replace(tokenize(data(tei:TEI/@prev), '/')[last()], '.xml', '.html')"/>

@@ -42,7 +42,7 @@
                     </xsl:for-each>
                 </acdh:Collection>
             </xsl:for-each>
-            <xsl:for-each select="collection('../data/editions')//tei:TEI">
+            <xsl:for-each select="collection('../data/editions?select=*.xml')//tei:TEI">
 
                 <xsl:variable name="partOf">
                     <xsl:value-of select="@xml:base"/>

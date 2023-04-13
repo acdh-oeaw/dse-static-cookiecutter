@@ -1,4 +1,4 @@
-# bin/bash
+#!/bin/bash
 
 echo "download static search"
 rm -rf ./static-search

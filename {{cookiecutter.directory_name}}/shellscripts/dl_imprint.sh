@@ -1,4 +1,4 @@
-# bin/bash
+#!/bin/bash
 
 REDMINE_ID={{cookiecutter.redmine_id}}
 IMPRINT_XML=./data/imprint.xml
