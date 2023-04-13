@@ -260,7 +260,7 @@ div.dataTables_filter {
 .navbar {
     border-bottom: 5px solid {{cookiecutter.color_main}};
     background-color: #fff;
-    height: 7vh;
+    max-height: 100vh;
 }
 
 .dataTables_info {
