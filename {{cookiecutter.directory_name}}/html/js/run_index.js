@@ -4,7 +4,7 @@ var editor = new LoadEditor({
       variants: [
         {
           opt: "de",
-          title: "German",
+          title: "DE",
           class: "multi-lang nav-link pointer",
           map: {
             "index-en.html": "index.html",
@@ -13,7 +13,7 @@ var editor = new LoadEditor({
         },
         {
           opt: "en",
-          title: "English",
+          title: "EN",
           class: "multi-lang nav-link pointer",
           map: {
             "index.html": "index-en.html",

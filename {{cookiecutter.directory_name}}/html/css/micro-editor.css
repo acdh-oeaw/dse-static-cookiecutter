@@ -204,16 +204,14 @@ input:checked + .i-slider:before {
   background-color: transparent !important;
 }
 
-.nav-link.lang_active {
-  background-color: {{cookiecutter.color_main}} !important;
-}
-
 .multi-lang {
-  display: inline;
   background-color: #f1f1f1;
-  padding: 0.2em;
   border-radius: 0.5rem;
   vertical-align: middle;
+}
+
+.nav-link.lang_active {
+  background-color: {{cookiecutter.color_main}} !important;
 }
 
 .pointer {
