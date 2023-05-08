@@ -83,9 +83,14 @@
                                     </li>
                                 </ul>
                             </li>
-                            
                             <li class="nav-item">
                                 <a title="Suche" class="nav-link" href="search.html">Suche</a>
+                            </li>
+                            <li class="nav-item">
+                                <multi-language opt="de"></multi-language>
+                            </li>
+                            <li class="nav-item">
+                                <multi-language opt="en"></multi-language>
                             </li>
                         </ul>
                     </div>

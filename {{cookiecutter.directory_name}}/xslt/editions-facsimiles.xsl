@@ -145,7 +145,7 @@
                     </div>
                     <xsl:call-template name="html_footer"/>
                 </div>
-                <script src="https://unpkg.com/de-micro-editor@0.2.6/dist/de-editor.min.js"></script>
+                <script src="https://unpkg.com/de-micro-editor@0.2.82/dist/de-editor.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script>
                 <script type="text/javascript" src="js/osd_scroll.js"></script>
                 <script type="text/javascript" src="js/run.js"></script>
