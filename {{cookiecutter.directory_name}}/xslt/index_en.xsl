@@ -111,6 +111,8 @@
                     </div>
                     <xsl:call-template name="html_footer"/>
                 </div>
+                <script src="https://unpkg.com/de-micro-editor@0.2.82/dist/de-editor.min.js"></script>
+                <script type="text/javascript" src="js/run_index.js"></script>
             </body>
         </html>
     </xsl:template>
