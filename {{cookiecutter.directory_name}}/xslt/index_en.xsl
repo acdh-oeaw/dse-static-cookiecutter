@@ -5,9 +5,9 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     version="2.0" exclude-result-prefixes="#all">
     <xsl:output encoding="UTF-8" media-type="text/html" method="xhtml" version="1.0" indent="yes" omit-xml-declaration="yes"/>
-    <xsl:import href="./partials/html_navbar.xsl"/>
+    <xsl:import href="./partials/html_navbar_en.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
-    <xsl:import href="./partials/html_footer.xsl"/>
+    <xsl:import href="./partials/html_footer_en.xsl"/>
     <xsl:template match="/">
         <xsl:variable name="doc_title">
             <xsl:value-of select="{{ cookiecutter.title_xpath }}"/>
@@ -22,7 +22,7 @@
             </head>            
             <body class="page" style="background-color:#f1f1f1;">
                 <div class="hfeed site" id="page">
-                    <xsl:call-template name="nav_bar"/>
+                    <xsl:call-template name="nav_bar_en"/>
 
                     <div class="container">
                         <div class="row intro">
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                     </div>
-                    <xsl:call-template name="html_footer"/>
+                    <xsl:call-template name="html_footer_en"/>
                 </div>
                 <script src="https://unpkg.com/de-micro-editor@0.2.82/dist/de-editor.min.js"></script>
                 <script type="text/javascript" src="js/run_index.js"></script>
