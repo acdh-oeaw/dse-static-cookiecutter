@@ -19,7 +19,8 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
     "color_main": "#88dbdf",
     "color_hover": "#fff",
     "title_xpath": ".//tei:title[@type='main'][1]/text()",
-    "redmine_id": "18716"
+    "redmine_id": "18716",
+    "update_favicons": ["yes", "no"] # if yes (default) a script to create favicons is added
 } 
 ```
 * change into the new created repo, by default `$ cd dse-static`

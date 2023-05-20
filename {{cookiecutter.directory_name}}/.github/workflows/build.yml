@@ -25,7 +25,9 @@ jobs:
         ant
     - name: Build Index
       run: |
-        ./build_index.sh
+        ./build_index.sh{% if cookiecutter.update_favicons == 'yes' %}
+    - name: Update Favicons
+      run: python update_favicons.py{% endif %}
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
