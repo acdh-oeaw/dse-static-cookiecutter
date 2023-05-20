@@ -7,5 +7,6 @@
     "color_main": "#88dbdf",
     "color_hover": "#fff",
     "title_xpath": ".//tei:title[@type='main'][1]/text()",
-    "redmine_id": "18716"
+    "redmine_id": "18716",
+    "update_favicons": ["yes", "no"]
 } 
