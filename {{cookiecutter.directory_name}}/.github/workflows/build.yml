@@ -15,7 +15,7 @@ jobs:
     - name: Install Saxon, Ant and Fundament
       run: |
         apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
-        ./shellscripts/script.sh
+        ./shellscripts/script.sh{% if cookiecutter.search_engine == 'staticsearch' %}
     - name: Install Ant-Contrib
       run: |
         wget https://repo1.maven.org/maven2/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar
@@ -25,7 +25,7 @@ jobs:
         ant
     - name: Build Index
       run: |
-        ./build_index.sh{% if cookiecutter.update_favicons == 'yes' %}
+        ./build_index.sh{% endif %}{% if cookiecutter.update_favicons == 'yes' %}
     - name: Update Favicons
       run: python update_favicons.py{% endif %}
     - name: Deploy
