@@ -11,3 +11,6 @@ if "{{ cookiecutter.search_engine }}" == "typesense":
     os.remove("./shellscripts/dl_staticsearch.sh")
     os.remove("./ss_config.xml")
     os.remove("./shellscripts/build_index.sh")
+
+if "{{ cookiecutter.search_engine }}" == "staticsearch":
+    os.remove("./make_ts_index.py")
