@@ -12,17 +12,18 @@ jobs:
     steps:
     - name: Perform Checkout
       uses: actions/checkout@v3
-    - name: Install Saxon, Ant and Fundament
+    - name: Install Saxon, Ant and Python
       run: |
         apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
-        ./shellscripts/script.sh{% if cookiecutter.search_engine == 'staticsearch' %}
+        ./shellscripts/script.sh
+        pip install -r requirements.txt{% if cookiecutter.search_engine == 'staticsearch' %}
     - name: Install Ant-Contrib
       run: |
         wget https://repo1.maven.org/maven2/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar
-        mv ant-contrib-1.0b3.jar /usr/share/ant/lib
+        mv ant-contrib-1.0b3.jar /usr/share/ant/lib{% endif %}
     - name: Build
       run: |
-        ant
+        ant{% if cookiecutter.search_engine == 'staticsearch' %}
     - name: Build Index
       run: |
         ./build_index.sh{% endif %}{% if cookiecutter.update_favicons == 'yes' %}
