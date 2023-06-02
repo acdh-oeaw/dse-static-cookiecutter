@@ -1,0 +1,15 @@
+{
+    "navbar": {
+        "project": "Project",
+        "about": "About the project",
+        "toc": "Documents",
+        "nofacs": "Without Facsimiles",
+        "withfacs": "With Facsimiles",
+        "register": "Indices",
+        "persons": "Persons",
+        "places": "Places",
+        "orgs": "Institutions",
+        "works": "Works",
+        "search": "Search"
+    }
+}

@@ -19,73 +19,47 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Projekt
-                                </a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar.project"/>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="about.html"
-                                            title="About the Project">
-                                            Über das Projekt
-                                        </a>
+                                        <a class="dropdown-item" href="about.html" data-i18n="navbar.about"/>
                                     </li>
                                 </ul>
                             </li>
                             
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Editionseinheiten
-                                </a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar.toc"/>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="toc.html"
-                                            title="Ohne Faksimiles">
-                                            Ohne Faksimiles
-                                        </a>
+                                        <a class="dropdown-item" href="toc.html" data-i18n="nav.nofacs" />
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="toc_facs.html"
-                                            title="Mit Faksimiles">
-                                            Mit Faksimiles
-                                        </a>
+                                        <a class="dropdown-item" href="toc_facs.html" data-i18n="withfacs" title="Mit Faksimiles"/>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown disabled">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Register
-                                </a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar.register"/>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="listperson.html"
-                                            title="Personen">
-                                            Personen
-                                        </a>
+                                        <a class="dropdown-item" href="listperson.html" data-i18n="navbar.persons" />
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listplace.html"
-                                            title="Orte">
-                                            Orte
-                                        </a>
+                                        <a class="dropdown-item" href="listplace.html" data-i18n="navbar.places"/>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listorg.html"
-                                            title="Organisationen">
-                                            Organisationen
-                                        </a>
+                                        <a class="dropdown-item" href="listorg.html" data-i18n="navbar.orgs"/>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listbibl.html"
-                                            title="Werke">
-                                            Werke
-                                        </a>
+                                        <a class="dropdown-item" href="listbibl.html" data-i18n="navbar.works"/>
                                     </li>
                                 </ul>
                             </li>
                             
                             <li class="nav-item">
-                                <a title="Suche" class="nav-link" href="search.html">Suche</a>
+                                <a title="Suche" class="nav-link" href="search.html" data-i18n="navbar.search"/>
                             </li>
+                            <select name="language" id="languageSwitcher"></select>
                         </ul>
                     </div>
                 </div>

@@ -1,0 +1,15 @@
+{
+    "navbar": {
+        "project": "Projekt",
+        "about": "Über das Projekt",
+        "toc": "Editionseinheiten",
+        "nofacs": "Ohne Faksimiles",
+        "withfacs": "Mit Faksimiles",
+        "register": "Register",
+        "persons": "Personen",
+        "places": "Orte",
+        "orgs": "Organisationen",
+        "works": "Werke",
+        "navbar": "Suche"
+    }
+}
