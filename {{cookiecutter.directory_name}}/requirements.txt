@@ -1,1 +1,3 @@
+acdh-tei-pyutils
 {% if cookiecutter.update_favicons == 'yes' %}favicons{% endif %}
+{% if cookiecutter.search_engine == 'typesense' %}acdh-cfts-pyutils{% endif %}
