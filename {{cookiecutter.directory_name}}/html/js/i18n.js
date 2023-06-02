@@ -5,8 +5,6 @@ const lngs = {
 
 const rerender = () => {
   $('body').localize();
-  $('title').text($.t('head.title'))
-  $('meta[name=description]').attr('content', $.t('head.description'))
 }
 
 $(function () {

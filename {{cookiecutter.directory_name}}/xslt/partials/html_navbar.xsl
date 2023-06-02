@@ -31,10 +31,10 @@
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar.toc"/>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="toc.html" data-i18n="nav.nofacs" />
+                                        <a class="dropdown-item" href="toc.html" data-i18n="navbar.nofacs" />
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="toc_facs.html" data-i18n="withfacs" title="Mit Faksimiles"/>
+                                        <a class="dropdown-item" href="toc_facs.html" data-i18n="navbar.withfacs" title="Mit Faksimiles"/>
                                     </li>
                                 </ul>
                             </li>
