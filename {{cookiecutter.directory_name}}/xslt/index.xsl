@@ -10,7 +10,7 @@
     <xsl:import href="./partials/html_footer.xsl"/>
     <xsl:template match="/">
         <xsl:variable name="doc_title">
-            <xsl:value-of select="{{ cookiecutter.title_xpath }}"/>
+            <xsl:value-of select='"{{ cookiecutter.project_short_title }}"'/>
         </xsl:variable>
 
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>

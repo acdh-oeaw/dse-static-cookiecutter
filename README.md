@@ -16,11 +16,12 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
     "project_title": "Digital Scholarly Editions Static Site Cookiecutter",
     "project_short_title": "DSE Static-Site",
     "github_url": "https://github.com/acdh-oeaw/dse-static-cookiecutter",
-    "color_main": "#88dbdf",
-    "color_hover": "#fff",
-    "title_xpath": ".//tei:title[@type='main'][1]/text()",
+    "base_url": "http://url-of-my-awesome-site",
     "redmine_id": "18716",
-    "update_favicons": ["yes", "no"] # if yes (default) a script to create favicons is added
+    "update_favicons": ["yes", "no"],
+    "darkmode": ["yes", "no"],
+    "translations": ["yes", "no"],
+    "search_engine": ["typesense", "staticsearch"]
 } 
 ```
 * change into the new created repo, by default `$ cd dse-static`

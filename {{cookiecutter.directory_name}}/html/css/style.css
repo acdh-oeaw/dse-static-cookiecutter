@@ -7,11 +7,11 @@ span {
 }
 
 a {
-    color: {{cookiecutter.color_main}};
+    color: #88dbdf;
 }
 
 /* a:hover {
-    color: {{cookiecutter.color_hover}};
+    color: #fff;
 } */
 
 .navbar-nav ul li a, .navbar-nav ul li a:visited {
@@ -20,13 +20,13 @@ a {
 
 .navbar-nav ul li a:hover, .navbar-nav ul li a:active {
     /* change navbar link color */
-    background-color: {{cookiecutter.color_main}};
-    color: {{cookiecutter.color_hover}};
+    background-color: #88dbdf;
+    color: #fff;
 }
 
 .navbar-nav ul li.active a {
     /* change navbar link color */
-    background-color: {{cookiecutter.color_main}};
+    background-color: #88dbdf;
 }
 
 cite {
@@ -41,7 +41,7 @@ cite {
     background-color: #fff;
     height: 93vh;
     overflow: hidden;
-    border-bottom: 3px solid {{cookiecutter.color_main}};
+    border-bottom: 3px solid #88dbdf;
 }
 
 .intro .col-md-6 {
@@ -160,7 +160,7 @@ border-right: 1px solid lightgrey;
 }
 
 #wrapper-footer-full {
-    border-top: 3px solid {{cookiecutter.color_main}};
+    border-top: 3px solid #88dbdf;
     margin-top: auto;
     display: flex;
     background-color:#fff;
@@ -209,8 +209,8 @@ a.anchorFoot {
     right: 10%;
     max-width: 100px;
     padding: .5em;
-    background-color: {{cookiecutter.color_main}};
-    color: {{cookiecutter.color_hover}};
+    background-color: #88dbdf;
+    color: #fff;
     border-radius: 1rem;
     box-shadow: 4px 4px 9px 0 rgba(0, 0, 0, .1);
     z-index: 2;
@@ -223,7 +223,7 @@ a.anchorFoot {
 }
 
 .fas {
-    color: {{cookiecutter.color_main}};
+    color: #88dbdf;
 }
 
 #text-resize {
@@ -258,7 +258,7 @@ div.dataTables_filter {
 }
 
 .navbar {
-    border-bottom: 5px solid {{cookiecutter.color_main}};
+    border-bottom: 5px solid #88dbdf;
     background-color: #fff;
     max-height: 100vh;
 }
@@ -346,7 +346,7 @@ div.dataTables_filter {
     background-color: transparent;
     border: none;
     text-align: center;
-    color: {{cookiecutter.color_main}}; 
+    color: #88dbdf; 
 }
 
 .index-card .card-body {
@@ -370,7 +370,7 @@ div.dataTables_filter {
 }
 
 .btn-round:hover {
-    background-color: {{cookiecutter.color_hover}};
+    background-color: #fff;
 }
 
 .btn-round a {
