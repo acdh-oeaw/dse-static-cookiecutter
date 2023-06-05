@@ -1,15 +1,13 @@
 {
-    "navbar": {
-        "project": "Project",
-        "about": "About the project",
-        "toc": "Documents",
-        "nofacs": "Without Facsimiles",
-        "withfacs": "With Facsimiles",
-        "register": "Indices",
-        "persons": "Persons",
-        "places": "Places",
-        "orgs": "Institutions",
-        "works": "Works",
-        "search": "Search"
-    }
+    "navbar__project": "Project",
+    "navbar__about": "About the project",
+    "navbar__toc": "Edition units",
+    "navbar__nofacs": "Without facsimiles",
+    "navbar__withfacs": "With facsimiles",
+    "navbar__register": "Register",
+    "navbar__persons": "Person",
+    "navbar__places": "Places",
+    "navbar__orgs": "Institutions",
+    "navbar__works": "Works",
+    "navbar__search": "Search"
 }

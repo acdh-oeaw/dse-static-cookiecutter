@@ -1,15 +1,13 @@
 {
-    "navbar": {
-        "project": "Projekt",
-        "about": "Über das Projekt",
-        "toc": "Editionseinheiten",
-        "nofacs": "Ohne Faksimiles",
-        "withfacs": "Mit Faksimiles",
-        "register": "Register",
-        "persons": "Personen",
-        "places": "Orte",
-        "orgs": "Organisationen",
-        "works": "Werke",
-        "search": "Suche"
-    }
+    "navbar__project": "Projekt",
+    "navbar__about": "Über das Projekt",
+    "navbar__toc": "Editionseinheiten",
+    "navbar__nofacs": "Ohne Faksimiles",
+    "navbar__withfacs": "Mit Faksimiles",
+    "navbar__register": "Register",
+    "navbar__persons": "Personen",
+    "navbar__places": "Orte",
+    "navbar__orgs": "Organisationen",
+    "navbar__works": "Werke",
+    "navbar__search": "Suche"
 }

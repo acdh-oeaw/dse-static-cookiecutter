@@ -19,45 +19,45 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar.project"/>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar__project"/>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="about.html" data-i18n="navbar.about"/>
+                                        <a class="dropdown-item" href="about.html" data-i18n="navbar__about"/>
                                     </li>
                                 </ul>
                             </li>
                             
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar.toc"/>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar__toc"/>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="toc.html" data-i18n="navbar.nofacs" />
+                                        <a class="dropdown-item" href="toc.html" data-i18n="navbar__nofacs" />
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="toc_facs.html" data-i18n="navbar.withfacs" title="Mit Faksimiles"/>
+                                        <a class="dropdown-item" href="toc_facs.html" data-i18n="navbar__withfacs" title="Mit Faksimiles"/>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown disabled">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar.register"/>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar__register"/>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="listperson.html" data-i18n="navbar.persons" />
+                                        <a class="dropdown-item" href="listperson.html" data-i18n="navbar__persons" />
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listplace.html" data-i18n="navbar.places"/>
+                                        <a class="dropdown-item" href="listplace.html" data-i18n="navbar__places"/>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listorg.html" data-i18n="navbar.orgs"/>
+                                        <a class="dropdown-item" href="listorg.html" data-i18n="navbar__orgs"/>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listbibl.html" data-i18n="navbar.works"/>
+                                        <a class="dropdown-item" href="listbibl.html" data-i18n="navbar__works"/>
                                     </li>
                                 </ul>
                             </li>
                             
                             <li class="nav-item">
-                                <a title="Suche" class="nav-link" href="search.html" data-i18n="navbar.search"/>
+                                <a title="Suche" class="nav-link" href="search.html" data-i18n="navbar__search"/>
                             </li>
                             <select name="language" id="languageSwitcher"></select>
                         </ul>

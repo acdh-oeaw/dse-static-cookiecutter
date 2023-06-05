@@ -1,6 +1,7 @@
 const lngs = {
   en: { nativeName: 'English' },
-  de: { nativeName: 'Deutsch' }
+  de: { nativeName: 'Deutsch' },
+  it: { nativeName: 'Italiano' }
 };
 
 const rerender = () => {
