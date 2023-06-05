@@ -19,47 +19,47 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar__project"/>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" {% if cookiecutter.translations == 'yes' %} data-i18n="navbar__project" {% endif %}>{% if cookiecutter.translations == 'no' %}Projekt{% endif %}</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="about.html" data-i18n="navbar__about"/>
+                                        <a class="dropdown-item" href="about.html" {% if cookiecutter.translations == 'yes' %} data-i18n="navbar__about" {% endif %}>{% if cookiecutter.translations == 'no' %}Über das Projekt{% endif %}</a>
                                     </li>
                                 </ul>
                             </li>
                             
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar__toc"/>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" {% if cookiecutter.translations == 'yes' %} data-i18n="navbar__toc" {% endif %}>{% if cookiecutter.translations == 'no' %}Editionseinheiten{% endif %}</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="toc.html" data-i18n="navbar__nofacs" />
+                                        <a class="dropdown-item" href="toc.html" {% if cookiecutter.translations == 'yes' %} data-i18n="navbar__nofacs"  {% endif %}>{% if cookiecutter.translations == 'no' %}Mit Faks{% endif %}</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="toc_facs.html" data-i18n="navbar__withfacs" title="Mit Faksimiles"/>
+                                        <a class="dropdown-item" href="toc_facs.html" {% if cookiecutter.translations == 'yes' %} data-i18n="navbar__withfacs" title="Mit Faksimiles" {% endif %}>{% if cookiecutter.translations == 'no' %}Ohne Faks{% endif %}</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown disabled">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar__register"/>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" {% if cookiecutter.translations == 'yes' %} data-i18n="navbar__register" {% endif %}>{% if cookiecutter.translations == 'no' %}Register{% endif %}</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="listperson.html" data-i18n="navbar__persons" />
+                                        <a class="dropdown-item" href="listperson.html" {% if cookiecutter.translations == 'yes' %} data-i18n="navbar__persons"  {% endif %}>{% if cookiecutter.translations == 'no' %}Personen{% endif %}</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listplace.html" data-i18n="navbar__places"/>
+                                        <a class="dropdown-item" href="listplace.html" {% if cookiecutter.translations == 'yes' %} data-i18n="navbar__places" {% endif %}>{% if cookiecutter.translations == 'no' %}Orte{% endif %}</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listorg.html" data-i18n="navbar__orgs"/>
+                                        <a class="dropdown-item" href="listorg.html" {% if cookiecutter.translations == 'yes' %} data-i18n="navbar__orgs" {% endif %}>{% if cookiecutter.translations == 'no' %}Institutionen{% endif %}</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listbibl.html" data-i18n="navbar__works"/>
+                                        <a class="dropdown-item" href="listbibl.html" {% if cookiecutter.translations == 'yes' %} data-i18n="navbar__works" {% endif %}>{% if cookiecutter.translations == 'no' %}Werke{% endif %}</a>
                                     </li>
                                 </ul>
                             </li>
                             
                             <li class="nav-item">
-                                <a title="Suche" class="nav-link" href="search.html" data-i18n="navbar__search"/>
-                            </li>
-                            <select name="language" id="languageSwitcher"></select>
+                                <a title="Suche" class="nav-link" href="search.html" {% if cookiecutter.translations == 'yes' %} data-i18n="navbar__search" {% endif %}>{% if cookiecutter.translations == 'no' %}Suche{% endif %}</a>
+                            </li>{% if cookiecutter.translations == 'yes' %}
+                            <select name="language" id="languageSwitcher"></select>{% endif %}
                         </ul>
                     </div>
                 </div>

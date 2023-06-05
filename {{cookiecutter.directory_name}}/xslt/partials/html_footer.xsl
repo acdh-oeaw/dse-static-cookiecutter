@@ -110,7 +110,7 @@
             window.addEventListener('load', addDarkmodeWidget);
         </script>
         {% endif %}
-        {% if cookiecutter.translations %}
+        {% if cookiecutter.translations == 'yes' %}
         <script src="js/i18n.js"></script>
         {% endif %}
     </xsl:template>
