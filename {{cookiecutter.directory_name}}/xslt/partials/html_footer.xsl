@@ -103,13 +103,15 @@
         <script src="js/listStopProp.js"></script>
         <script src="js/navScroll.js"></script>{% if cookiecutter.darkmode == 'yes' %}
         <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-        <script src="js/i18n.js"></script>
         <script>
             function addDarkmodeWidget() {
                 new Darkmode().showWidget();
             }
             window.addEventListener('load', addDarkmodeWidget);
         </script>
+        {% endif %}
+        {% if cookiecutter.translations %}
+        <script src="js/i18n.js"></script>
         {% endif %}
     </xsl:template>
 </xsl:stylesheet>

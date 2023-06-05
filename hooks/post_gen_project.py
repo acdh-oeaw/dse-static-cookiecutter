@@ -1,4 +1,5 @@
 import os
+import shutil
 
 
 if "{{ cookiecutter.update_favicons }}" == "yes":
@@ -16,3 +17,9 @@ if "{{ cookiecutter.search_engine }}" == "typesense":
 
 if "{{ cookiecutter.search_engine }}" == "staticsearch":
     os.remove("./make_ts_index.py")
+
+if "{{ cookiecutter.translations }}" == "no":
+    os.remove("./make_translations.py")
+    os.remove("./translations.csv")
+    os.remove("./html/js/i18n.js")
+    shutil.rmtree("./html/locales")

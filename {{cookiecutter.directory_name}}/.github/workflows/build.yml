@@ -28,9 +28,9 @@ jobs:
       run: |
         ./shellscripts/build_index.sh{% endif %}{% if cookiecutter.update_favicons == 'yes' %}
     - name: Update Favicons
-      run: python update_favicons.py{% endif %}
+      run: python update_favicons.py{% endif %}{% if cookiecutter.translations == 'yes' %}
     - name: Update Translations
-      run: python make_translations.py
+      run: python make_translations.py{% endif %}
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
