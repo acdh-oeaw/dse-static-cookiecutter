@@ -31,12 +31,14 @@
                             <div class="card-header">
                                 <h1><xsl:value-of select="$doc_title"/></h1>
                             </div>
-                            <div class="card-body">                                
-                                <table class="table table-striped display" id="tocTable" style="width:100%">
+                            <div class="card-body">           
+                                <div id="map"/>
+                                <table class="table table-striped display" id="myTable" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th scope="col">Ortsname</th>
-                                            <th scope="col">Lat/Lng</th>
+                                            <th scope="col">Lat</th>
+                                            <th scope="col">Long</th>
                                             <th scope="col">ID</th>
                                         </tr>
                                     </thead>
@@ -47,10 +49,21 @@
                                             </xsl:variable>
                                             <tr>
                                                 <td>
-                                                    <xsl:value-of select=".//tei:placeName[1]/text()"/>
+                                                    <a href="{concat($id, '.html')}"><xsl:value-of select=".//tei:placeName[1]/text()"/></a>
                                                 </td>
                                                 <td>
-                                                    <xsl:value-of select=".//tei:geo[1]/text()"/>
+                                                    <xsl:choose>
+                                                        <xsl:when test="./tei:location/tei:geo">
+                                                            <xsl:value-of select="tokenize(./tei:location/tei:geo/text(), ' ')[1]"/>
+                                                        </xsl:when>
+                                                    </xsl:choose>
+                                                </td>
+                                                <td>
+                                                    <xsl:choose>
+                                                        <xsl:when test="./tei:location/tei:geo">
+                                                            <xsl:value-of select="tokenize(./tei:location/tei:geo/text(), ' ')[last()]"/>
+                                                        </xsl:when>
+                                                    </xsl:choose>
                                                 </td>
                                                 <td>
                                                     <a>
@@ -68,13 +81,22 @@
                         </div>                       
                     </div>
                     <xsl:call-template name="html_footer"/>
-                    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.0/b-2.0.0/b-html5-2.0.0/cr-1.5.4/r-2.2.9/sp-1.4.0/datatables.min.js"></script>
-                    <script type="text/javascript" src="js/dt.js"></script>
-                    <script>
-                        $(document).ready(function () {
-                        createDataTable('tocTable');
-                        });
-                    </script>
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+                        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+                        crossorigin=""/>
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"/>
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"/>
+                    <!-- ############### leaflet script ################ -->
+                    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                        crossorigin=""></script>
+                    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+                    <link href="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/b-print-2.3.6/r-2.4.1/datatables.min.css" rel="stylesheet"/>
+                    
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+                    <script src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/b-print-2.3.6/r-2.4.1/datatables.min.js"></script>
+                    <script src="js/dt_map.js"></script>
                 </div>
             </body>
         </html>
