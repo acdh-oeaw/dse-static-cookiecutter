@@ -121,13 +121,36 @@
                                         </h1>
                                     </div>
                                     <div class="card-body">
-                                        <xsl:call-template name="place_detail"/>  
+                                        <xsl:call-template name="place_detail"/>
+                                        <xsl:if test="./tei:location/tei:geo">
+                                        <div id="map_detail"/>
+                                        </xsl:if>
                                     </div>
                                 </div>
                             </div>
                             
                             <xsl:call-template name="html_footer"/>
                         </div>
+                        <xsl:if test="./tei:location/tei:geo">
+                            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+                                integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+                                crossorigin=""/>
+                            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+                                crossorigin=""></script>
+                            <script>
+                                var lat = <xsl:value-of select="tokenize(.//tei:geo[1]/text(), ' ')[1]"/>;
+                                var long = <xsl:value-of select="tokenize(.//tei:geo[1]/text(), ' ')[last()]"/>;
+                                $("#map_detail").css("height", "500px");
+                                var map = L.map('map_detail').setView([Number(lat), Number(long)], 13);
+                                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                maxZoom: 19,
+                                attribution: '&amp;copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                                }).addTo(map);
+                                var marker = L.marker([Number(lat), Number(long)]).addTo(map);
+                            </script>
+                        </xsl:if>
+                        
                     </body>
                 </html>
             </xsl:result-document>
