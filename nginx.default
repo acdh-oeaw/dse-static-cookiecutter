@@ -1,0 +1,12 @@
+server {
+    listen 80;
+    client_max_body_size 30M;
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-Frame-Options https://acdh-oeaw.github.io/;
+
+    location / {
+        autoindex on;
+        alias /dse-static/html/;
+        add_header 'Access-Control-Allow-Origin' '*';
+    }
+}

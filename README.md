@@ -45,3 +45,7 @@ tested for Linux
 * build the static files with `$ ant`
 * build the search index `$ ./shellscripts/build_index.sh`
 
+
+
+`docker build -t dse-static:latest .`
+`docker run -d -p 80:80 --rm --name dse-static dse-static:latest`
