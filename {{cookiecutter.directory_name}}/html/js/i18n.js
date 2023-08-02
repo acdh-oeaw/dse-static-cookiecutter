@@ -18,7 +18,11 @@ $(function () {
     // for all options read: https://www.i18next.com/overview/configuration-options
     .init({
       debug: true,
-      fallbackLng: 'en'
+      fallbackLng: 'en',
+      load: 'languageOnly',
+      backend: {
+        loadPath: 'locales/{{lng}}/translation.json',
+      }
     }, (err, t) => {
       if (err) return console.error(err);
       jqueryI18next.init(i18next, $, { useOptionsAttr: true });
