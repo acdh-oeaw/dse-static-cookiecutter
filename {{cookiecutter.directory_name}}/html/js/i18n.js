@@ -21,7 +21,7 @@ $(function () {
       fallbackLng: 'en',
       load: 'languageOnly',
       backend: {
-        loadPath: 'locales/{{lng}}/translation.json',
+        loadPath: 'locales/{{ "{{" }}lng{{ "}}" }}/translation.json',
       }
     }, (err, t) => {
       if (err) return console.error(err);
