@@ -1,7 +1,7 @@
 import os
 from favicons import Favicons
 
-ICON = os.environ.get("ICON", "./html/images/fundament_logo.svg")
+ICON = os.environ.get("ICON", "./html/images/logo.jpg")
 OUT_DIR = os.environ.get("OUT_DIR", "html/images/favicons")
 if os.environ.get("NOT_TRANSPARENT"):
     TRANSPARENT = False
@@ -21,5 +21,5 @@ with Favicons(ICON, OUT_DIR, base_url=BASE_URL, transparent=TRANSPARENT) as favi
 with open(SNIPPET, "w") as f:
     f.write("<!-- favicon -->\n")
     for x in html:
-        f.write(f"{x}\n")
+        f.write(f"{x}\n".replace('html/', ''))
     f.write("<!-- favicon end -->")
