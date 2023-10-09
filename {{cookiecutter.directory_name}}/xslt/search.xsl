@@ -12,14 +12,14 @@
     <xsl:template match="/">
         <xsl:variable name="doc_title" select="'Volltextsuche'"/>
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
-        <html xmlns="http://www.w3.org/1999/xhtml">
+        <html {% if cookiecutter.translations == 'staticsearch' %} xmlns="http://www.w3.org/1999/xhtml" {% endif %} class="h-100">
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
             </head>
             
-            <body class="page">
+            <body>
                 <div class="hfeed site" id="page">
                     <xsl:call-template name="nav_bar"/>
                     

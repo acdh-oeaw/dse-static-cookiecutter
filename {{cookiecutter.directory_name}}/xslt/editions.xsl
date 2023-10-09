@@ -35,7 +35,7 @@
             <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
         </xsl:variable>
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
-        <html>
+        <html {% if cookiecutter.translations == 'staticsearch' %} xmlns="http://www.w3.org/1999/xhtml" {% endif %} class="h-100">
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
@@ -46,7 +46,7 @@
                     }
                 </style>
             </head>
-            <body class="page">
+            <body>
                 <div class="hfeed site" id="page">
                     <xsl:call-template name="nav_bar"/>
                     
