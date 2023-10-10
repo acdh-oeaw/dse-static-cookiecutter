@@ -18,7 +18,7 @@
         <xsl:variable name="doc_title">
             <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
         </xsl:variable>
-         {% if cookiecutter.search_engine == 'staticsearch' %} 
+        {% if cookiecutter.search_engine == 'staticsearch' %} 
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml" class="h-100">{% else %}
         <html class="h-100">{% endif %}
