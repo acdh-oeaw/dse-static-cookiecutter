@@ -75,6 +75,12 @@
         <include name="*.html"/>
         <replacetoken>&lt;/br&gt;</replacetoken>
     </replace>
+    {% if cookiecutter.search_engine == 'staticsearch' %}
+    <replace dir="${target}" value="">
+        <include name="*.html"/>
+        <replacetoken>xmlns="http://www.w3.org/1999/xhtml"</replacetoken>
+    </replace>
+    {% endif %}
     <copy todir="${target}" flatten="true">
         <fileset dir="./data/">
             <include name="**/*.xml"/>
