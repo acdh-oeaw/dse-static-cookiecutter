@@ -24,14 +24,10 @@
                                 </ul>
                             </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar__toc"/>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="toc.html" data-i18n="navbar__nofacs"/>
-                                    </li>
-                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="toc.html" data-i18n="navbar__nofacs"/>
                             </li>
+
                             <li class="nav-item dropdown disabled">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar__register"/>
                                 <ul class="dropdown-menu">
@@ -53,6 +49,7 @@
                             <li class="nav-item">
                                 <a title="Suche" class="nav-link" href="search.html" data-i18n="navbar__search"/>
                             </li>
+                            
                             <select name="language" id="languageSwitcher"/>
                         </ul>
                     </div>
