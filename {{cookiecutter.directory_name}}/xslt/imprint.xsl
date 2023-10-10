@@ -33,24 +33,15 @@
             </head>
             
             <body class="d-flex flex-column h-100">
+                <xsl:call-template name="nav_bar"/>
                 <main class="flex-shrink-0">
-                    <div>
-                        <xsl:call-template name="nav_bar"/>
-                        
-                        <div class="container-fluid">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h1><xsl:value-of select="$doc_title"/></h1>
-                                </div>
-                                <div class="card-body">
-                                    <xsl:for-each select=".//div">
-                                        <xsl:copy>
-                                            <xsl:copy-of select="."/>
-                                        </xsl:copy>
-                                    </xsl:for-each>                          
-                                </div>
-                            </div>
-                        </div>
+                    <div class="container">
+                        <h1><xsl:value-of select="$doc_title"/></h1>
+                        <xsl:for-each select=".//div">
+                            <xsl:copy>
+                                <xsl:copy-of select="."/>
+                            </xsl:copy>
+                        </xsl:for-each>                          
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>

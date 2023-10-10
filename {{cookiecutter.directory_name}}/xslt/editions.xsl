@@ -57,90 +57,86 @@
                 </style>
             </head>
             <body class="d-flex flex-column h-100">
+                <xsl:call-template name="nav_bar"/> 
                 <main class="flex-shrink-0">
-                    <div>
-                        <xsl:call-template name="nav_bar"/>
-                        
-                        <div class="container-fluid">                        
-                            <div class="card" data-index="true">
-                                <div class="card-header">
-                                    <div class="row">
-                                        <div class="col-md-2 col-lg-2 col-sm-12">
-                                            <xsl:if test="ends-with($prev,'.html')">
-                                                <h1>
-                                                    <a>
-                                                        <xsl:attribute name="href">
-                                                            <xsl:value-of select="$prev"/>
-                                                        </xsl:attribute>
-                                                        <i class="fas fa-chevron-left" title="prev"/>
-                                                    </a>
-                                                </h1>
-                                            </xsl:if>
-                                        </div>
-                                        <div class="col-md-8 col-lg-8 col-sm-12">
-                                            <h1 align="center">
-                                                <xsl:value-of select="$doc_title"/>
-                                            </h1>
-                                            <h3 align="center">
-                                                <a href="{$teiSource}">
-                                                    <i class="fas fa-download" title="show TEI source"/>
+                    <div class="container-fluid">                        
+                        <div class="card" data-index="true">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-md-2 col-lg-2 col-sm-12">
+                                        <xsl:if test="ends-with($prev,'.html')">
+                                            <h1>
+                                                <a>
+                                                    <xsl:attribute name="href">
+                                                        <xsl:value-of select="$prev"/>
+                                                    </xsl:attribute>
+                                                    <i class="fas fa-chevron-left" title="prev"/>
                                                 </a>
-                                            </h3>
-                                        </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right">
-                                            <xsl:if test="ends-with($next, '.html')">
-                                                <h1>
-                                                    <a>
-                                                        <xsl:attribute name="href">
-                                                            <xsl:value-of select="$next"/>
-                                                        </xsl:attribute>
-                                                        <i class="fas fa-chevron-right" title="next"/>
-                                                    </a>
-                                                </h1>
-                                            </xsl:if>
-                                        </div>
+                                            </h1>
+                                        </xsl:if>
                                     </div>
-                                    <div id="editor-widget">
-                                        <p>Text Editor</p>
-                                        <xsl:call-template name="annotation-options"></xsl:call-template>
+                                    <div class="col-md-8 col-lg-8 col-sm-12">
+                                        <h1 align="center">
+                                            <xsl:value-of select="$doc_title"/>
+                                        </h1>
+                                        <h3 align="center">
+                                            <a href="{$teiSource}">
+                                                <i class="fas fa-download" title="show TEI source"/>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right">
+                                        <xsl:if test="ends-with($next, '.html')">
+                                            <h1>
+                                                <a>
+                                                    <xsl:attribute name="href">
+                                                        <xsl:value-of select="$next"/>
+                                                    </xsl:attribute>
+                                                    <i class="fas fa-chevron-right" title="next"/>
+                                                </a>
+                                            </h1>
+                                        </xsl:if>
                                     </div>
                                 </div>
-                                <div class="card-body">                                
-                                    <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
+                                <div id="editor-widget">
+                                    <p>Text Editor</p>
+                                    <xsl:call-template name="annotation-options"></xsl:call-template>
                                 </div>
-                                <div class="card-footer">
-                                    <p style="text-align:center;">
-                                        <xsl:for-each select=".//tei:note[not(./tei:p)]">
-                                            <div class="footnotes" id="{local:makeId(.)}">
-                                                <xsl:element name="a">
-                                                    <xsl:attribute name="name">
-                                                        <xsl:text>fn</xsl:text>
+                            </div>
+                            <div class="card-body">                                
+                                <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
+                            </div>
+                            <div class="card-footer">
+                                <p style="text-align:center;">
+                                    <xsl:for-each select=".//tei:note[not(./tei:p)]">
+                                        <div class="footnotes" id="{local:makeId(.)}">
+                                            <xsl:element name="a">
+                                                <xsl:attribute name="name">
+                                                    <xsl:text>fn</xsl:text>
+                                                    <xsl:number level="any" format="1" count="tei:note"/>
+                                                </xsl:attribute>
+                                                <a>
+                                                    <xsl:attribute name="href">
+                                                        <xsl:text>#fna_</xsl:text>
                                                         <xsl:number level="any" format="1" count="tei:note"/>
                                                     </xsl:attribute>
-                                                    <a>
-                                                        <xsl:attribute name="href">
-                                                            <xsl:text>#fna_</xsl:text>
-                                                            <xsl:number level="any" format="1" count="tei:note"/>
-                                                        </xsl:attribute>
-                                                        <span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">
-                                                            <xsl:number level="any" format="1" count="tei:note"/>
-                                                        </span>
-                                                    </a>
-                                                </xsl:element>
-                                                <xsl:apply-templates/>
-                                            </div>
-                                        </xsl:for-each>
-                                    </p>
-                                </div>
-                            </div>                       
-                        </div>
-                        <xsl:for-each select="//tei:back">
-                            <div class="tei-back">
-                                <xsl:apply-templates/>
+                                                    <span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">
+                                                        <xsl:number level="any" format="1" count="tei:note"/>
+                                                    </span>
+                                                </a>
+                                            </xsl:element>
+                                            <xsl:apply-templates/>
+                                        </div>
+                                    </xsl:for-each>
+                                </p>
                             </div>
-                        </xsl:for-each>
-                        
+                        </div>                       
                     </div>
+                    <xsl:for-each select="//tei:back">
+                        <div class="tei-back">
+                            <xsl:apply-templates/>
+                        </div>
+                    </xsl:for-each>
                 </main>
                 <xsl:call-template name="html_footer"/>
                 <script src="https://unpkg.com/de-micro-editor@0.2.6/dist/de-editor.min.js"></script>
