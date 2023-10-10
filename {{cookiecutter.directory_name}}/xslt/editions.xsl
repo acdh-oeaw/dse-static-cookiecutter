@@ -5,7 +5,7 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:local="http://dse-static.foo.bar"
-    version="2.0" exclude-result-prefixes="xsl tei xs">
+    version="2.0" exclude-result-prefixes="xsl tei xs local">
     {% if cookiecutter.search_engine == 'staticsearch' %}
     <xsl:output encoding="UTF-8" media-type="text/html" method="xhtml" version="1.0" indent="yes" omit-xml-declaration="yes"/>
     {% else %}
@@ -34,16 +34,18 @@
         <xsl:value-of select=".//tei:title[@type='label'][1]/text()"/>
     </xsl:variable>
 
+
     <xsl:template match="/">
         <xsl:variable name="doc_title">
             <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
         </xsl:variable>
-        {% if cookiecutter.search_engine == 'staticsearch' %}
+
+    {% if cookiecutter.search_engine == 'staticsearch' %}
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml" class="h-100">
-        {% else %}
+    {% else %}
         <html class="h-100">
-        {% endif %}
+    {% endif %}
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
@@ -56,7 +58,7 @@
             </head>
             <body class="d-flex flex-column h-100">
                 <main class="flex-shrink-0">
-                    <div class="hfeed site" id="page">
+                    <div>
                         <xsl:call-template name="nav_bar"/>
                         
                         <div class="container-fluid">                        
