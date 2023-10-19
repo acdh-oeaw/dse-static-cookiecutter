@@ -134,13 +134,6 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-
-    <xsl:template match="tei:unclear">
-        <abbr title="unclear"><xsl:apply-templates/></abbr>
-    </xsl:template>
-    <xsl:template match="tei:del">
-        <del><xsl:apply-templates/></del>
-    </xsl:template>
     <xsl:template match="tei:rs">
         <xsl:choose>
             <xsl:when test="count(tokenize(@ref, ' ')) > 1">
