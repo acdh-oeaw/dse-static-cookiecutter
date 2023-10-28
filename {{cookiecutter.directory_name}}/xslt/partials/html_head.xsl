@@ -17,27 +17,27 @@
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="{$project_logo}" />
     <!-- favicon -->
-        <link rel="None" type="image/ico" href="html/image/favicons/favicon.ico" />
-        <link rel="icon" type="image/png" href="html/image/favicons/favicon-16x16.png" />
-        <link rel="icon" type="image/png" href="html/image/favicons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" href="html/image/favicons/favicon-64x64.png" />
-        <link rel="icon" type="image/png" href="html/image/favicons/favicon-96x96.png" />
-        <link rel="icon" type="image/png" href="html/image/favicons/favicon-180x180.png" />
-        <link rel="apple-touch-icon" type="image/png" href="html/image/favicons/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon" type="image/png" href="html/image/favicons/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon" type="image/png" href="html/image/favicons/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon" type="image/png" href="html/image/favicons/apple-touch-icon-76x76.png" />
-        <link rel="apple-touch-icon" type="image/png" href="html/image/favicons/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon" type="image/png" href="html/image/favicons/apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon" type="image/png" href="html/image/favicons/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon" type="image/png" href="html/image/favicons/apple-touch-icon-152x152.png" />
-        <link rel="apple-touch-icon" type="image/png" href="html/image/favicons/apple-touch-icon-167x167.png" />
-        <link rel="apple-touch-icon" type="image/png" href="html/image/favicons/apple-touch-icon-180x180.png" />
-        <link rel="None" type="image/png" href="html/image/favicons/mstile-70x70.png" />
-        <link rel="None" type="image/png" href="html/image/favicons/mstile-270x270.png" />
-        <link rel="None" type="image/png" href="html/image/favicons/mstile-310x310.png" />
-        <link rel="None" type="image/png" href="html/image/favicons/mstile-310x150.png" />
-        <link rel="shortcut icon" type="image/png" href="html/image/favicons/favicon-196x196.png" />
+        <!-- <link rel="None" type="image/ico" href="images/favicons/favicon.ico" />
+        <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" />
+        <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" href="images/favicons/favicon-64x64.png" />
+        <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" />
+        <link rel="icon" type="image/png" href="images/favicons/favicon-180x180.png" />
+        <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-touch-icon-167x167.png" />
+        <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-touch-icon-180x180.png" />
+        <link rel="None" type="image/png" href="images/favicons/mstile-70x70.png" />
+        <link rel="None" type="image/png" href="images/favicons/mstile-270x270.png" />
+        <link rel="None" type="image/png" href="images/favicons/mstile-310x310.png" />
+        <link rel="None" type="image/png" href="images/favicons/mstile-310x150.png" />
+        <link rel="shortcut icon" type="image/png" href="images/favicons/favicon-196x196.png" /> -->
     <!-- favicon end -->
         <link rel="icon" type="image/svg+xml" href="{$project_logo}" sizes="any" />
         <link rel="profile" href="http://gmpg.org/xfn/11"></link>
