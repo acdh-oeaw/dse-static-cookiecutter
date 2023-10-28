@@ -3,7 +3,7 @@
  * EDITIONS view properties 
  * ###########################*/
 
-.fade {
+ .fade {
   display: none;
 }
 
@@ -47,14 +47,13 @@
   transition: 0.4s;
 }
 
-input:checked + .i-slider {
-}
+input:checked+.i-slider {}
 
-input:focus + .i-slider {
+input:focus+.i-slider {
   box-shadow: 0 0 1px #f1f1f1;
 }
 
-input:checked + .i-slider:before {
+input:checked+.i-slider:before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(20px);
@@ -75,7 +74,7 @@ input:checked + .i-slider:before {
   color: #444;
   display: block;
   width: 50px;
-  margin-left:3em;
+  margin-left: 3em;
 }
 
 .bi-pencil-square {
@@ -86,8 +85,7 @@ input:checked + .i-slider:before {
   text-decoration: line-through;
 }
 
-.whitespace {
-}
+.whitespace {}
 
 .underline {
   text-decoration: underline;
@@ -143,7 +141,8 @@ input:checked + .i-slider:before {
   position: absolute;
   top: 10%;
   left: 50%;
-  border: 8px solid #f1f1f1; /* Light grey */
+  border: 8px solid #f1f1f1;
+  /* Light grey */
   border-top: 8px solid #88dbdf;
   border-radius: 50%;
   width: 50px;
@@ -158,6 +157,7 @@ input:checked + .i-slider:before {
 .times-new-roman {
   font-family: "Times New Roman", serif !important;
 }
+
 .courier-new {
   font-family: "Courier New", monospace !important;
 }
@@ -202,4 +202,12 @@ input:checked + .i-slider:before {
 
 .nav-link.btn-backlink {
   background-color: transparent !important;
+}
+
+
+#editor-widget {
+  position: fixed;
+  right: 5%;
+  max-width: 100px;
+  z-index: 1;
 }
