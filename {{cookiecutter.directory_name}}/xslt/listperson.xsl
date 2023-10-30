@@ -13,7 +13,7 @@
 
     <xsl:template match="/">
         <xsl:variable name="doc_title">
-            <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
+            <xsl:value-of select=".//tei:titleStmt/tei:title[1]/text()"/>
         </xsl:variable>
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html {% if cookiecutter.translations == 'staticsearch' %} xmlns="http://www.w3.org/1999/xhtml" {% endif %} class="h-100">
@@ -72,13 +72,17 @@
                     </div>
                 </main>
             <xsl:call-template name="html_footer"/>
-                <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.0/b-2.0.0/b-html5-2.0.0/cr-1.5.4/r-2.2.9/sp-1.4.0/datatables.min.js"/>
-                <script type="text/javascript" src="js/dt.js"/>
-                <script>
-                    $(document).ready(function () {
-                    createDataTable('tocTable');
-                    });
-                </script>
+            <link href="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/b-print-2.3.6/r-2.4.1/datatables.min.css" rel="stylesheet"/>
+                    
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+            <script src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/b-print-2.3.6/r-2.4.1/datatables.min.js"></script>
+            <script type="text/javascript" src="js/dt.js"/>
+            <script>
+                $(document).ready(function () {
+                createDataTable('tocTable');
+                });
+            </script>
             
             </body>
         </html>
@@ -86,14 +90,16 @@
 
         <xsl:for-each select=".//tei:person[@xml:id]">
             <xsl:variable name="filename" select="concat(./@xml:id, '.html')"/>
-            <xsl:variable name="name" select="normalize-space(string-join(./tei:persName//text()))"></xsl:variable>
+            <xsl:variable name="name" select="normalize-space(string-join(./tei:persName[1]//text()))"></xsl:variable>
             <xsl:result-document href="{$filename}">
+                <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
                 <html {% if cookiecutter.translations == 'staticsearch' %} xmlns="http://www.w3.org/1999/xhtml" {% endif %} class="h-100">
                     <head>
-                    <xsl:call-template name="html_head">
-                        <xsl:with-param name="html_title" select="$name"></xsl:with-param>
-                    </xsl:call-template>
+                        <xsl:call-template name="html_head">
+                            <xsl:with-param name="html_title" select="$name"></xsl:with-param>
+                        </xsl:call-template>
                     </head>
+
                     <body class="d-flex flex-column h-100">
                         <xsl:call-template name="nav_bar"/>
                         <main>
