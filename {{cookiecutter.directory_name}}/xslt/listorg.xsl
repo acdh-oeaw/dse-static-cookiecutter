@@ -96,7 +96,6 @@
                                     <xsl:value-of select="$name"/>
                                 </h1>
                                 <xsl:call-template name="org_detail"/>  
-                                </div>
                             </div>
                         </main>
                         <xsl:call-template name="html_footer"/>
