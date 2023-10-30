@@ -101,8 +101,11 @@
                                 <xsl:call-template name="annotation-options"></xsl:call-template>
                             </div>
                         </div>
-
-                        <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
+                        {% if cookiecutter.search_engine == 'staticsearch' %}
+                        <div data-index="true">
+                            <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
+                        </div>
+                        {% endif %}
 
                         <p style="text-align:center;">
                             <xsl:for-each select=".//tei:note[not(./tei:p)]">
