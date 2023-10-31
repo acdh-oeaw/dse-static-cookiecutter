@@ -13,6 +13,8 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
+    <xsl:import href="partials/tabulator_dl_buttons.xsl"/>
+    <xsl:import href="partials/tabulator_js.xsl"/>
     <xsl:import href="./partials/person.xsl"/>
 
     <xsl:template match="/">
@@ -42,9 +44,10 @@
                         <table class="table" id="myTable">
                             <thead>
                                 <tr>
-                                    <th scope="col">Nachname</th>
-                                    <th scope="col">Vorname</th>
-                                    <th scope="col">ID</th>
+                                    <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
+                                    <th scope="col" tabulator-headerFilter="input">Nachname</th>
+                                    <th scope="col" tabulator-headerFilter="input">Vorname</th>
+                                    <th scope="col" tabulator-headerFilter="input">ID</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -54,26 +57,31 @@
                                     </xsl:variable>
                                     <tr>
                                         <td>
+                                            <a>
+                                              <xsl:attribute name="href">
+                                              <xsl:value-of select="concat($id, '.html')"/>
+                                              </xsl:attribute>
+                                              <i class="bi bi-link-45deg"/>
+                                            </a>
+                                        </td>
+                                        <td>
                                             <xsl:value-of select=".//tei:surname/text()"/>
                                         </td>
                                         <td>
                                             <xsl:value-of select=".//tei:forename/text()"/>
                                         </td>
                                         <td>
-                                            <a>
-                                              <xsl:attribute name="href">
-                                              <xsl:value-of select="concat($id, '.html')"/>
-                                              </xsl:attribute>
-                                              <xsl:value-of select="$id"/>
-                                            </a>
+                                            <xsl:value-of select="$id"/>
                                         </td>
                                     </tr>
                                 </xsl:for-each>
                             </tbody>
                         </table>
+                        <xsl:call-template name="tabulator_dl_buttons"/>
                     </div>
                 </main>
-            <xsl:call-template name="html_footer"/>
+                <xsl:call-template name="html_footer"/>
+                <xsl:call-template name="tabulator_js"/>
             </body>
         </html>
 
