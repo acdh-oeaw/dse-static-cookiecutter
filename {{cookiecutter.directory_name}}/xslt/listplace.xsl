@@ -10,10 +10,12 @@
     <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0" indent="yes" omit-xml-declaration="yes"/>
     {% endif %}
 
-    <xsl:import href="./partials/html_navbar.xsl"/>
-    <xsl:import href="./partials/html_head.xsl"/>
-    <xsl:import href="./partials/html_footer.xsl"/>
-    <xsl:import href="./partials/place.xsl"/>
+    <xsl:import href="partials/html_navbar.xsl"/>
+    <xsl:import href="partials/html_head.xsl"/>
+    <xsl:import href="partials/html_footer.xsl"/>
+    <xsl:import href="partials/tabulator_dl_buttons.xsl"/>
+    <xsl:import href="partials/tabulator_js.xsl"/>
+    <xsl:import href="partials/place.xsl"/>
     
     <xsl:template match="/">
         <xsl:variable name="doc_title">
@@ -34,13 +36,14 @@
                     <div class="container">
                         <h1><xsl:value-of select="$doc_title"/></h1>
                         <div id="map"/>
-                        <table class="table table-striped display" id="myTable" style="width:100%">
+                        <table class="table" id="myTable">
                             <thead>
                                 <tr>
-                                    <th scope="col">Ortsname</th>
-                                    <th scope="col">Lat</th>
-                                    <th scope="col">Long</th>
-                                    <th scope="col">ID</th>
+                                    <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
+                                    <th scope="col" tabulator-headerFilter="input">Ortsname</th>
+                                    <th scope="col" tabulator-headerFilter="input">Lat</th>
+                                    <th scope="col" tabulator-headerFilter="input">Long</th>
+                                    <th scope="col" tabulator-headerFilter="input">ID</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -50,7 +53,15 @@
                                     </xsl:variable>
                                     <tr>
                                         <td>
-                                            <a href="{concat($id, '.html')}"><xsl:value-of select=".//tei:placeName[1]/text()"/></a>
+                                            <a>
+                                              <xsl:attribute name="href">
+                                              <xsl:value-of select="concat($id, '.html')"/>
+                                              </xsl:attribute>
+                                              <i class="bi bi-link-45deg"/>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of select=".//tei:placeName[1]/text()"/>
                                         </td>
                                         <td>
                                             <xsl:choose>
@@ -67,36 +78,17 @@
                                             </xsl:choose>
                                         </td>
                                         <td>
-                                            <a>
-                                                <xsl:attribute name="href">
-                                                    <xsl:value-of select="concat($id, '.html')"/>
-                                                </xsl:attribute>
-                                                <xsl:value-of select="$id"/>
-                                            </a> 
+                                            <xsl:value-of select="$id"/>
                                         </td>
                                     </tr>
                                 </xsl:for-each>
                             </tbody>
                         </table>
+                        <xsl:call-template name="tabulator_dl_buttons"/>
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
-                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-                    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-                    crossorigin=""/>
-                <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"/>
-                <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"/>
-                <!-- ############### leaflet script ################ -->
-                <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-                    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-                    crossorigin=""></script>
-                <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-                <link href="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/b-print-2.3.6/r-2.4.1/datatables.min.css" rel="stylesheet"/>
-                
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-                <script src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/b-print-2.3.6/r-2.4.1/datatables.min.js"></script>
-                <script src="js/dt_map.js"></script>
+                <xsl:call-template name="tabulator_js"/>
             </body>
         </html>
         <xsl:for-each select=".//tei:place[@xml:id]">

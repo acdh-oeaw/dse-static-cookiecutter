@@ -12,9 +12,11 @@
     <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0" indent="yes" omit-xml-declaration="yes"/>
     {% endif %}
     
-    <xsl:import href="./partials/html_navbar.xsl"/>
-    <xsl:import href="./partials/html_head.xsl"/>
+    <xsl:import href="partials/html_navbar.xsl"/>
+    <xsl:import href="partials/html_head.xsl"/>
     <xsl:import href="partials/html_footer.xsl"/>
+    <xsl:import href="partials/tabulator_dl_buttons.xsl"/>
+    <xsl:import href="partials/tabulator_js.xsl"/>
 
 
     <xsl:template match="/">
@@ -38,44 +40,48 @@
                 <main>
                     <div class="container">
                         <h1>Inhaltsverzeichnis</h1>
-                        <table class="table table-striped display" id="tocTable" style="width:100%">
+                        <table class="table" id="myTable">
                             <thead>
                                 <tr>
-                                    <th scope="col">Titel</th>
-                                    <th scope="col">Dateinname</th>
+                                    <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
+                                    <th scope="col" tabulator-headerFilter="input">Titel</th>
+                                    <th scope="col" tabulator-headerFilter="input">Dateinname</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <xsl:for-each select="collection('../data/editions?select=*.xml')//tei:TEI">
+                                <xsl:for-each
+                                    select="collection('../data/editions?select=*.xml')//tei:TEI">
                                     <xsl:variable name="full_path">
                                         <xsl:value-of select="document-uri(/)"/>
                                     </xsl:variable>
                                     <tr>
-                                        <td>                                        
+                                        <td>
                                             <a>
-                                                <xsl:attribute name="href">                                                
-                                                    <xsl:value-of select="replace(tokenize($full_path, '/')[last()], '.xml', '.html')"/>
+                                                <xsl:attribute name="href">
+                                                  <xsl:value-of
+                                                  select="replace(tokenize($full_path, '/')[last()], '.xml', '.html')"
+                                                  />
                                                 </xsl:attribute>
-                                                <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
+                                                <i class="bi bi-link-45deg"/>
                                             </a>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="tokenize($full_path, '/')[last()]"/>
-                                        </td>  
+                                            <xsl:value-of
+                                                select=".//tei:titleStmt/tei:title[1]/text()"/>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of select="tokenize($full_path, '/')[last()]"
+                                            />
+                                        </td>
                                     </tr>
                                 </xsl:for-each>
                             </tbody>
                         </table>
+                        <xsl:call-template name="tabulator_dl_buttons"/>
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
-                <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.0/b-2.0.0/b-html5-2.0.0/cr-1.5.4/r-2.2.9/sp-1.4.0/datatables.min.js"></script>
-                <script type="text/javascript" src="js/dt.js"></script>
-                <script>
-                    $(document).ready(function () {
-                        createDataTable('tocTable');
-                    });
-                </script>
+                <xsl:call-template name="tabulator_js"/>
             </body>
         </html>
     </xsl:template>

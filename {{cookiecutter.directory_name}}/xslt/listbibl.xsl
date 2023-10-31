@@ -13,6 +13,8 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
+    <xsl:import href="partials/tabulator_dl_buttons.xsl"/>
+    <xsl:import href="partials/tabulator_js.xsl"/>
     <xsl:import href="./partials/bibl.xsl"/>
 
     <xsl:template match="/">
@@ -36,13 +38,14 @@
                             <xsl:value-of select="$doc_title"/>
                         </h1>
                         
-                        <table class="table table-striped display" id="tocTable" style="width:100%">
+                        <table class="table" id="myTable">
                             <thead>
                                 <tr>
-                                    <th scope="col">Titel</th>
-                                    <th scope="col">Autor</th>
-                                    <th scope="col">Datum</th>
-                                    <th scope="col">ID</th>
+                                    <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
+                                    <th scope="col" tabulator-headerFilter="input">Titel</th>
+                                    <th scope="col" tabulator-headerFilter="input">Autor</th>
+                                    <th scope="col" tabulator-headerFilter="input">Datum</th>
+                                    <th scope="col" tabulator-headerFilter="input">ID</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -52,40 +55,35 @@
                                     </xsl:variable>
                                     <tr>
                                         <td>
+                                            <a>
+                                              <xsl:attribute name="href">
+                                              <xsl:value-of select="concat($id, '.html')"/>
+                                              </xsl:attribute>
+                                              <i class="bi bi-link-45deg"/>
+                                            </a>
+                                        </td>
+                                        <td>
                                             <xsl:value-of select=".//tei:title[1]/text()"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select=".//tei:author[1]/text()"/>
+                                            <xsl:value-of select=".//tei:author[1]//text()"/>
                                         </td>
                                         <td>
                                             <xsl:value-of select=".//tei:date[1]/text()"/>
                                         </td>
                                         <td>
-                                            <a>
-                                                <xsl:attribute name="href">
-                                                    <xsl:value-of select="concat($id, '.html')"/>
-                                                </xsl:attribute>
-                                                <xsl:value-of select="$id"/>
-                                            </a> 
+                                            <xsl:value-of select="$id"/>
                                         </td>
                                     </tr>
                                 </xsl:for-each>
                             </tbody>
                         </table>
+                        <xsl:call-template name="tabulator_dl_buttons"/>
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
-                <link href="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/b-print-2.3.6/r-2.4.1/datatables.min.css" rel="stylesheet"/>
-                    
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-            <script src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/b-print-2.3.6/r-2.4.1/datatables.min.js"></script>
-            <script type="text/javascript" src="js/dt.js"/>
-            <script>
-                $(document).ready(function () {
-                createDataTable('tocTable');
-                });
-            </script>
+                <xsl:call-template name="html_footer"/>
+                <xsl:call-template name="tabulator_js"/>
             </body>
         </html>
         <xsl:for-each select=".//tei:bibl[@xml:id]">
