@@ -1,5 +1,5 @@
 {
-    "directory_name": "dsetest-static",
+    "directory_name": "dse-static",
     "project_title": "Digital Scholarly Editions Static Site Cookiecutter",
     "project_short_title": "DSE Static-Site",
     "github_org": "acdh-oeaw",
@@ -10,7 +10,6 @@
     "darkmode": ["yes", "no"],
     "translations": ["no", "yes"],
     "search_engine": ["typesense", "staticsearch"],
-    "data_source": ["remote", "local"],
-    "data_dir": "{{ cookiecutter.directory_name }}-data",
+    "data_dir": "dse-static-data",
     "data_repo": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.data_dir }}"
 } 
