@@ -102,6 +102,8 @@
                         <div data-index="true">
                             <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
                         </div>
+                        {% else %}
+                            <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
                         {% endif %}
 
                         <p style="text-align:center;">
