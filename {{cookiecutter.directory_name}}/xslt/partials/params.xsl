@@ -7,5 +7,6 @@
     <xsl:param name="github_url">{{ cookiecutter.github_url }}</xsl:param>
     <xsl:param name="html_title">{{ cookiecutter.project_short_title }}</xsl:param>
     <xsl:param name="project_logo">images/logo.png</xsl:param>
-    <xsl:param name="base_url">{{ cookiecutter.base_url }}</xsl:param>
+    <xsl:param name="base_url">{{ cookiecutter.base_url }}</xsl:param>{% if cookiecutter.data_source == 'remote' %}
+    <xsl:param name="data_repo">{{ cookiecutter.data_repo }}</xsl:param>{% endif %}
 </xsl:stylesheet>

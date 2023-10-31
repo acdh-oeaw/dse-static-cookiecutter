@@ -1,12 +1,16 @@
 {
-    "directory_name": "dse-static",
+    "directory_name": "dsetest-static",
     "project_title": "Digital Scholarly Editions Static Site Cookiecutter",
     "project_short_title": "DSE Static-Site",
-    "github_url": "https://github.com/acdh-oeaw/dse-static-cookiecutter",
+    "github_org": "acdh-oeaw",
+    "github_url": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.directory_name }}",
     "base_url": "http://url-of-my-awesome-site",
     "redmine_id": "18716",
     "update_favicons": ["yes", "no"],
     "darkmode": ["yes", "no"],
     "translations": ["no", "yes"],
-    "search_engine": ["typesense", "staticsearch"]
+    "search_engine": ["typesense", "staticsearch"],
+    "data_source": ["remote", "local"],
+    "data_dir": "{{ cookiecutter.directory_name }}-data",
+    "data_repo": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.data_dir }}"
 } 
