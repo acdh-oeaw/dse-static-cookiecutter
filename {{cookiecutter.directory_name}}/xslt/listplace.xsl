@@ -34,7 +34,7 @@
                     <div class="container">
                         <h1><xsl:value-of select="$doc_title"/></h1>
                         <div id="map"/>
-                        <table class="table table-striped display" id="myTable" style="width:100%">
+                        <table class="table table-striped display" id="myTable">
                             <thead>
                                 <tr>
                                     <th scope="col">Ortsname</th>
@@ -81,22 +81,6 @@
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
-                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-                    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-                    crossorigin=""/>
-                <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"/>
-                <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"/>
-                <!-- ############### leaflet script ################ -->
-                <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-                    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-                    crossorigin=""></script>
-                <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-                <link href="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/b-print-2.3.6/r-2.4.1/datatables.min.css" rel="stylesheet"/>
-                
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-                <script src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/b-print-2.3.6/r-2.4.1/datatables.min.js"></script>
-                <script src="js/dt_map.js"></script>
             </body>
         </html>
         <xsl:for-each select=".//tei:place[@xml:id]">

@@ -31,14 +31,11 @@
         <xsl:value-of select="replace($teiSource, '.xml', '.html')"/>
     </xsl:variable>
     <xsl:variable name="doc_title">
-        <xsl:value-of select=".//tei:title[@type='label'][1]/text()"/>
+        <xsl:value-of select=".//tei:titleStmt/tei:title[1]/text()"/>
     </xsl:variable>
 
 
     <xsl:template match="/">
-        <xsl:variable name="doc_title">
-            <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
-        </xsl:variable>
 
     {% if cookiecutter.search_engine == 'staticsearch' %}
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>

@@ -38,7 +38,7 @@
                 <main>
                     <div class="container">
                         <h1>Inhaltsverzeichnis</h1>
-                        <table class="table table-striped display" id="tocTable" style="width:100%">
+                        <table class="table" id="tocTable">
                             <thead>
                                 <tr>
                                     <th scope="col">Titel</th>
@@ -56,7 +56,7 @@
                                                 <xsl:attribute name="href">                                                
                                                     <xsl:value-of select="replace(tokenize($full_path, '/')[last()], '.xml', '.html')"/>
                                                 </xsl:attribute>
-                                                <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
+                                                <xsl:value-of select=".//tei:titleStmt/tei:title[1]/text()"/>
                                             </a>
                                         </td>
                                         <td>
@@ -69,13 +69,6 @@
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
-                <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.0/b-2.0.0/b-html5-2.0.0/cr-1.5.4/r-2.2.9/sp-1.4.0/datatables.min.js"></script>
-                <script type="text/javascript" src="js/dt.js"></script>
-                <script>
-                    $(document).ready(function () {
-                        createDataTable('tocTable');
-                    });
-                </script>
             </body>
         </html>
     </xsl:template>
