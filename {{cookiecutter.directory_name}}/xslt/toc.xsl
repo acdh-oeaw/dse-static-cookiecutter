@@ -15,7 +15,8 @@
     <xsl:import href="partials/html_navbar.xsl"/>
     <xsl:import href="partials/html_head.xsl"/>
     <xsl:import href="partials/html_footer.xsl"/>
-    <xsl:import href="partials/tabulator.xsl"/>
+    <xsl:import href="partials/tabulator_dl_buttons.xsl"/>
+    <xsl:import href="partials/tabulator_js.xsl"/>
 
 
     <xsl:template match="/">
@@ -76,43 +77,11 @@
                                 </xsl:for-each>
                             </tbody>
                         </table>
-                        <h4>Download Table</h4>
-                        <div class="button-group">
-                            <button type="button" class="btn btn-outline-secondary" id="download-csv" title="Download CSV">
-                                <i class="bi bi-filetype-csv"></i>
-                                <span class="visually-hidden">Download CSV</span>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary" id="download-json" title="Download JSON">
-                                <i class="bi bi-filetype-json"></i>
-                                <span class="visually-hidden">Download JSON</span>
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary" id="download-html" title="Download HTML">
-                                <i class="bi bi-filetype-html"></i>
-                                <span class="visually-hidden">Download HTML</span>
-                            </button>
-                        </div>
+                        <xsl:call-template name="tabulator_dl_buttons"/>
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
-                <xsl:call-template name="tabulator"/>
-                <script src="tabulator-js/config.js"></script>
-                <script>
-                    var table = new Tabulator("#myTable", config);
-                    //trigger download of data.csv file
-                    document.getElementById("download-csv").addEventListener("click", function(){
-                    table.download("csv", "data.csv");
-                    });
-                    
-                    //trigger download of data.json file
-                    document.getElementById("download-json").addEventListener("click", function(){
-                    table.download("json", "data.json");
-                    });
-                    
-                    //trigger download of data.html file
-                    document.getElementById("download-html").addEventListener("click", function(){
-                    table.download("html", "data.html", {style:true});
-                    });
-                </script>
+                <xsl:call-template name="tabulator_js"/>
             </body>
         </html>
     </xsl:template>
