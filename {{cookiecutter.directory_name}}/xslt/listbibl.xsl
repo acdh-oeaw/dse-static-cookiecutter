@@ -36,7 +36,7 @@
                             <xsl:value-of select="$doc_title"/>
                         </h1>
                         
-                        <table class="table table-striped display" id="tocTable" style="width:100%">
+                        <table class="table" id="myTable">
                             <thead>
                                 <tr>
                                     <th scope="col">Titel</th>
