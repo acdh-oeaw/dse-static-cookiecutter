@@ -16,41 +16,39 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar__project"/>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projekt</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="about.html" data-i18n="navbar__about"/>
+                                        <a class="dropdown-item" href="about.html">Über das Projekt</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="toc.html" data-i18n="navbar__nofacs"/>
+                                <a class="nav-link" href="toc.html">Editionseinheiten</a>
                             </li>
 
                             <li class="nav-item dropdown disabled">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar__register"/>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Register</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="listperson.html" data-i18n="navbar__persons"/>
+                                        <a class="dropdown-item" href="listperson.html">Personen</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listplace.html" data-i18n="navbar__places"/>
+                                        <a class="dropdown-item" href="listplace.html">Orte</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listorg.html" data-i18n="navbar__orgs"/>
+                                        <a class="dropdown-item" href="listorg.html">Organisationen</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listbibl.html" data-i18n="navbar__works"/>
+                                        <a class="dropdown-item" href="listbibl.html">Werke</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <li class="nav-item">
-                                <a title="Suche" class="nav-link" href="search.html" data-i18n="navbar__search"/>
+                                <a title="Suche" class="nav-link" href="search.html">Suche</a>
                             </li>
-                            
-                            <select name="language" id="languageSwitcher"/>
                         </ul>
                     </div>
                 </div>

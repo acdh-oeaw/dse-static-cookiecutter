@@ -20,7 +20,7 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
     "redmine_id": "18716",
     "update_favicons": ["yes", "no"],
     "darkmode": ["yes", "no"],
-    "translations": ["yes", "no"],
+    "translations": ["no", "yes"],
     "search_engine": ["typesense", "staticsearch"]
 } 
 ```
