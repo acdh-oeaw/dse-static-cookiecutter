@@ -35,11 +35,9 @@
                 <main>
                     <div class="container">
 
-
                         <h1>
                             <xsl:value-of select="$doc_title"/>
                         </h1>
-
 
                         <table class="table" id="myTable">
                             <thead>
