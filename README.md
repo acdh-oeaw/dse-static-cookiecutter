@@ -15,13 +15,16 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
     "directory_name": "dse-static",
     "project_title": "Digital Scholarly Editions Static Site Cookiecutter",
     "project_short_title": "DSE Static-Site",
-    "github_url": "https://github.com/acdh-oeaw/dse-static-cookiecutter",
+    "github_org": "acdh-oeaw",  // or your GitHub user name
+    "github_url": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.directory_name }}",
     "base_url": "http://url-of-my-awesome-site",
-    "redmine_id": "18716",
+    "redmine_id": "18716",  // needed to create an ACDH-CH like imprint
     "update_favicons": ["yes", "no"],
     "darkmode": ["yes", "no"],
     "translations": ["no", "yes"],
-    "search_engine": ["typesense", "staticsearch"]
+    "search_engine": ["typesense", "staticsearch"],
+    "data_dir": "",  // leave blank if you don't want to load data from a different github repo
+    "data_repo": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.data_dir }}"
 } 
 ```
 * change into the new created repo, by default `$ cd dse-static`
@@ -29,22 +32,10 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
 * run `$ ant` to build the HTML-Files
 * run `$ ./shellscripts/build_index.sh` to build the fulltext search index. Be aware, you'll need to have ant-contrib installed.
 * create a git repo and commit to github
-
-
 * copy you XML/TEI encoded files you'd like to publish into `data/editions`
 * adapt/modify the XSLTs
 * adapt/modify global params in `xslt/partials/params.xsl`
 * push to github repo and activate github-pages
-
-
-## local development
-
-tested for Linux
-
-* install Fundament, Saxon and Static-Search with `$ ./shellscripts/dl_fundament.sh`, `$ ./shellscripts/dl_saxon.sh` and `$ ./shellscripts/dl_staticsearch.sh` (or just run `$ ./shellscripts/script.sh`)
-* build the static files with `$ ant`
-* build the search index `$ ./shellscripts/build_index.sh`
-
 
 
 `docker build -t dse-static:latest .`
