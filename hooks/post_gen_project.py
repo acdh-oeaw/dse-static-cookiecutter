@@ -24,3 +24,8 @@ if "{{ cookiecutter.translations }}" == "no":
     os.remove("./html/js/i18n.js")
     shutil.rmtree("./html/locales")
     os.rename("./xslt/partials/html_navbar_no_translations.xsl", "./xslt/partials/html_navbar.xsl")
+
+if "{{ cookiecutter.data_dir }}":
+    shutil.rmtree("./data/editions", ignore_errors=True)
+else:
+    os.remove("./fetch_data.sh")
