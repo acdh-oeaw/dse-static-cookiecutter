@@ -2,7 +2,9 @@
 <xsl:stylesheet 
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+    <xsl:param name="directory_name">{{ cookiecutter.directory_name }}</xsl:param>
     <xsl:param name="project_title">{{ cookiecutter.project_title }}</xsl:param>
+    <xsl:param name="redmine_id">{{ cookiecutter.redmine_id }}</xsl:param>
     <xsl:param name="project_short_title">{{ cookiecutter.project_short_title }}</xsl:param>
     <xsl:param name="github_url">{{ cookiecutter.github_url }}</xsl:param>
     <xsl:param name="html_title">{{ cookiecutter.project_short_title }}</xsl:param>
