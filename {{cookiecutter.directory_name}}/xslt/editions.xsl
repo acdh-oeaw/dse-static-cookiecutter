@@ -139,7 +139,12 @@
                 <xsl:call-template name="html_footer"/>
                 <script src="https://unpkg.com/de-micro-editor@0.2.6/dist/de-editor.min.js"></script>
                 <script type="text/javascript" src="js/run.js"></script>
+                {% if cookiecutter.facs == "many" %}
+
                 <script type="text/javascript" src="js/osd_scroll.js"></script>
+                {% elif cookiecutter.facs == "few" %}
+                <!-- <script type="text/javascript" src="js/osd_single.js"></script> -->
+                {% endif %}
             </body>
         </html>
     </xsl:template>
