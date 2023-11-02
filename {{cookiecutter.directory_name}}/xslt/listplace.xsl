@@ -61,19 +61,19 @@
                                             </a>
                                         </td>
                                         <td>
-                                            <xsl:value-of select=".//tei:placeName[1]/text()"/>
+                                            <xsl:value-of select="./tei:placeName[1]/text()"/>
                                         </td>
                                         <td>
                                             <xsl:choose>
-                                                <xsl:when test="./tei:location/tei:geo">
-                                                    <xsl:value-of select="tokenize(./tei:location/tei:geo/text(), ' ')[1]"/>
+                                                <xsl:when test="./tei:location[1]/tei:geo[1]">
+                                                    <xsl:value-of select="tokenize(./tei:location[1]/tei:geo[1]/text(), ' ')[1]"/>
                                                 </xsl:when>
                                             </xsl:choose>
                                         </td>
                                         <td>
                                             <xsl:choose>
-                                                <xsl:when test="./tei:location/tei:geo">
-                                                    <xsl:value-of select="tokenize(./tei:location/tei:geo/text(), ' ')[last()]"/>
+                                                <xsl:when test="./tei:location[1]/tei:geo[1]">
+                                                    <xsl:value-of select="tokenize(./tei:location[1]/tei:geo[1]/text(), ' ')[last()]"/>
                                                 </xsl:when>
                                             </xsl:choose>
                                         </td>
@@ -124,8 +124,8 @@
                                 integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
                                 crossorigin=""></script>
                             <script>
-                                var lat = <xsl:value-of select="tokenize(.//tei:geo[1]/text(), ' ')[1]"/>;
-                                var long = <xsl:value-of select="tokenize(.//tei:geo[1]/text(), ' ')[last()]"/>;
+                                var lat = <xsl:value-of select="tokenize(./tei:location[1]/tei:geo[1]/text(), ' ')[1]"/>;
+                                var long = <xsl:value-of select="tokenize(./tei:location[1]/tei:geo[1]/text(), ' ')[last()]"/>;
                                 $("#map_detail").css("height", "500px");
                                 var map = L.map('map_detail').setView([Number(lat), Number(long)], 13);
                                 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

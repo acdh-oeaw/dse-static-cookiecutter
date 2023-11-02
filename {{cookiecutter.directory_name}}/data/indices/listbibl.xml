@@ -5,7 +5,7 @@
                 <title type="main">Werkverzeichnis</title>
             </titleStmt>
             <publicationStmt>
-                <p />
+                <p/>
             </publicationStmt>
             <sourceDesc>
                 <p>born digital</p>
@@ -14,26 +14,114 @@
     </teiHeader>
     <text>
         <body>
-            <div>
-                <listBibl>
-                    <bibl xml:id="bibl123">
-                        <title>I'm a book title</title>
-                        <author><persName>I'm the book author</persName></author>
-                        <date>1. Jänner 2023</date>
-                        <indo type="GEONAMES">a GEONAMES ID</indo>
-                        <indo type="WIKIDATA">a WIKIDATA ID</indo>
-                        <idno type="GND">a GND ID</idno>
-                    </bibl>
-                    <bibl xml:id="bibl321">
-                        <title>I'm a book title</title>
-                        <author><persName>I'm the book author</persName></author>
-                        <date>1. Jänner 2023</date>
-                        <indo type="GEONAMES">a GEONAMES ID</indo>
-                        <indo type="WIKIDATA">a WIKIDATA ID</indo>
-                        <idno type="GND">a GND ID</idno>
-                    </bibl>
-                </listBibl>
-            </div>
+            <div><listBibl><bibl xml:id="lk_fackel__96" corresp="https://fackel.oeaw.ac.at/f/601,077" type="fackel"><title level="a">Für die Neue Freie Presse existiert keine
+                  Judenfrage</title><title level="s">Die Fackel</title><author key="pmb11988">Karl
+                  Kraus</author><editor key="pmb11988">Karl Kraus</editor><date when-iso="1922-11-01">November 1922</date><num type="volume">Jg. 24</num><num type="issue">Nr. 601–607</num><biblScope from="77" to="81">77–81</biblScope><ref target="https://fackel.oeaw.ac.at/f/601,077">2.3 Privatanklage von Karl Kraus
+                  gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer
+                  Berichtigung|D_000002-003-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,077">2.9 Berufungsausführung des
+                  Privatanklägers|D_000002-009-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,077">2.10 Urteil des Landesgerichts in
+                  Strafsachen I. Wien (G.Z. Bl XV 121/23, Vorsitz: Rudolf
+                  Wessely)|D_000002-010-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,077">2.2 Brief Samek an Reichspost
+                  (verantw. Red. Karl Schiffleitner)|D_000002-002-000.xml</ref><noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl>
+            <bibl xml:id="pmb62248">
+  <title type="main">Preisschrift über die Grundlage der Moral, nicht gekrönt von der königlich dänischen Sozietät der Wissenschaften</title>
+  <author key="person__5787" role="hat-geschaffen">Schopenhauer, Arthur</author>
+<date notBefore-iso="1841-01-01" when-iso="1841-07-02">1841</date>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62248/</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62248</idno>
+<note type="collections">
+  <bibl type="collections" n="5">legalkraus</bibl>
+</note>
+  <note type="work_kind">Philosophische Abhandlung</note>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb41244">
+  <title type="main">Die Fackel</title>
+  <title type="werk_link">https://fackel.oeaw.ac.at</title>
+  <author key="person__11988" role="hat-herausgegeben">Kraus, Karl</author>
+  <author key="person__10364" role="hat-einen-beitrag-geschaffen-zu">Viertel, Berthold</author>
+  <author key="person__11230" role="hat-einen-beitrag-geschaffen-zu">Ehrenstein, Albert</author>
+  <author key="person__12438" role="hat-einen-beitrag-geschaffen-zu">Adam, Robert</author>
+  <author key="person__10574" role="hat-einen-beitrag-geschaffen-zu">Wittels, Fritz</author>
+<date from-iso="1899-01-01" to-iso="1899-12-31">1899  – 1936</date>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41244/</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41244</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41244</idno>
+  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb41244.html</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41244</idno>
+<note type="collections">
+  <bibl type="collections" n="3">Manuell angelegt</bibl>
+  <bibl type="collections" n="5">legalkraus</bibl>
+</note>
+  <note type="work_kind">Publikationsorgan &gt;&gt; Zeitschrift</note>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb58510">
+  <title type="main">Theodor Herzl’s Tagebücher. 1895–1904</title>
+  <title type="werk_link">https://sammlungen.ub.uni-frankfurt.de/freimann/urn/urn:nbn:de:hebis:30:1-146009</title>
+  <author key="person__11673" role="hat-geschaffen">Herzl, Theodor</author>
+<date notBefore-iso="1922-01-01" when-iso="1922-07-02">1922</date>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58510/</idno>
+  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb58510.html</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb58510</idno>
+<note type="collections">
+  <bibl type="collections" n="3">Manuell angelegt</bibl>
+  <bibl type="collections" n="5">legalkraus</bibl>
+</note>
+  <note type="work_kind">Tagebuch</note>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb36374">
+  <title type="main">Neue Freie Presse</title>
+  <title type="werk_link-anno">http://anno.onb.ac.at/cgi-content/anno?aid=nfp</title>
+  <author key="person__10875" role="hat-herausgegeben">Benedikt, Moriz</author>
+  <author key="person__10872" role="hat-herausgegeben">Benedikt, Ernst</author>
+  <author key="person__10809" role="hat-herausgegeben">Bacher, Eduard</author>
+<date from-iso="1864-01-01" to-iso="1864-12-31">1864  – 1939</date>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36374/</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36374</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36374</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb36374</idno>
+<note type="collections">
+  <bibl type="collections" n="3">Manuell angelegt</bibl>
+  <bibl type="collections" n="5">legalkraus</bibl>
+</note>
+  <note type="work_kind">Publikationsorgan &gt;&gt; Tageszeitung</note>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,001" type="fackel"><title level="a">Vom großen Welttheaterschwindel</title><title level="s">Die
+                  Fackel</title><author key="pmb11988">Karl Kraus</author><editor key="pmb11988">Karl Kraus</editor><date when-iso="1922-11-01">November 1922</date><num type="volume">Jg. 24</num><num type="issue">Nr. 601–607</num><biblScope from="1" to="7">1–7</biblScope><ref target="https://fackel.oeaw.ac.at/f/601,001">2.3
+                  Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner)
+                  wegen Verweigerung einer Berichtigung|D_000002-003-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,005">2.3 Privatanklage von Karl Kraus
+                  gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer
+                  Berichtigung|D_000002-003-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,004">2.3 Privatanklage von Karl Kraus
+                  gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer
+                  Berichtigung|D_000002-003-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,001">2.10 Urteil des Landesgerichts in
+                  Strafsachen I. Wien (G.Z. Bl XV 121/23, Vorsitz: Rudolf
+                  Wessely)|D_000002-010-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,003">2.3 Privatanklage von Karl Kraus
+                  gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer
+                  Berichtigung|D_000002-003-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,001">2.2 Brief Samek an Reichspost
+                  (verantw. Red. Karl Schiffleitner)|D_000002-002-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,001">2.4 Urteil des Strafbezirksgerichts I
+                  Wien (G.Z. U I 3/23/4, Richter: Christoph Höflmayr, Verteidiger: Heinrich
+                  Foglar-Deinhardstein)|D_000002-004-000.xml</ref><noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl>
+            <bibl xml:id="pmb42850">
+  <title type="main">Reichspost</title>
+  <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=rpt</title>
+  <author key="person__53731" role="hat-herausgegeben">Funder, Friedrich</author>
+<date from-iso="1893-01-01" to-iso="1893-12-31">1893  – 1938</date>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42850/</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42850</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42850</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb42850</idno>
+<note type="collections">
+  <bibl type="collections" n="3">Manuell angelegt</bibl>
+  <bibl type="collections" n="5">legalkraus</bibl>
+</note>
+  <note type="work_kind">Publikationsorgan &gt;&gt; Tageszeitung</note>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb62204">
+  <title type="main">Ein Kreislauf</title>
+  <title type="werk_bibliografische-angabe">EIn Kreislauf, in:  Reichspost Nr. 319, 19.11.1922 (Morgenblatt), S. 3.</title>
+  <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=rpt&amp;datum=19221129&amp;seite=3</title>
+<date>1922-11-29  – 1922-11-29</date>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62204/</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62204</idno>
+<note type="collections">
+  <bibl type="collections" n="5">legalkraus</bibl>
+</note>
+  <note type="work_kind">Zeitungsbericht</note>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb29823"><title>Das Märchen. Schauspiel in drei Aufzügen</title><note type="bibliografische_angabe">Arthur Schnitzler: Das Märchen. Schauspiel in drei Aufzügen. Dresden, Leipzig: E. Pierson’s Verlag 1894.</note><note type="uri_worklink">https://babel.hathitrust.org/cgi/pt?id=coo.31924026341598&amp;view=1up&amp;seq=5</note><author ref="#pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author><date>1891  – 1891</date><idno type="URL" subtype="asaf">https://asaf.com/S.04.01.04</idno><idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1169917</idno><idno type="URL" subtype="theadok">https://theadok.at/work/38151</idno><idno type="URL" subtype="books">https://books.google.at/books?id=eUc8AQAAMAAJ&amp;q=arthur+schnitzler+das+märchen&amp;dq=arthur+schnitzler+das+märchen&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwjWwoD61YTgAhVLFCwKHfC-ApQQ6AEIKTAA</idno><idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29823</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29823</idno><idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29823</idno><idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29823.html</idno><note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note><noteGrp><note target="L041464.xml" type="mentions">Hugo von Hofmannsthal an Hermann Bahr, [23./24. 11. 1891]</note></noteGrp></bibl><bibl xml:id="pmb31261"><title>Neue Bücher. III. Hermann Bahr’s Russische Reise</title><author ref="#pmbperson__4804" role="hat-geschaffen">Hansson, Ola</author><date when="1891-11-01">01.11.1891</date><idno type="URL" subtype="books">https://books.google.at/books?redir_esc=y&amp;hl=de&amp;id=DgEDAAAAIAAJ&amp;focus=searchwithinvolume&amp;q=ola#v=onepage&amp;q&amp;f=false</idno><idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31261</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31261</idno><note type="work_kind">Text</note><noteGrp><note target="L041464.xml" type="mentions">Hugo von Hofmannsthal an Hermann Bahr, [23./24. 11. 1891]</note></noteGrp></bibl></listBibl></div>
         </body>
     </text>
 </TEI>

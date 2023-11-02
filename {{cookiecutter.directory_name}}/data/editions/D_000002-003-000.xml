@@ -1,0 +1,975 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="https://id.acdh.oeaw.ac.at/dse-static" xml:id="D_000002-003-000.xml" prev="https://id.acdh.oeaw.ac.at/legalkraus/D_000002-002-000.xml" next="https://id.acdh.oeaw.ac.at/dse-static/L041464.xml">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</title>
+                <editor ref="https://orcid.org/0000-0002-5049-0779">Isabel Langkabel</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>Austrian Centre for Digital Humanities and Cultural Heritage,
+                        Österreichische Akademie der Wissenschaften </name>
+                    <address>
+                        <street>Sonnenfelsgasse 19</street>
+                        <postCode>1010</postCode>
+                        <settlement>Wien</settlement>
+                        <country>Österreich</country>
+                    </address>
+                    <ref target="https://acdh.oeaw.ac.at">https://acdh.oeaw.ac.at</ref>
+                </publisher>
+                <publisher>
+                    <name>Ludwig Boltzmann Institut für Digital History</name>
+                    <address>
+                        <street>Hofburg, Batthianystiege</street>
+                        <postCode>1010</postCode>
+                        <settlement>Wien</settlement>
+                        <country>Österreich</country>
+                    </address>
+                    <ref target="https://geschichte.lbg.ac.at">https://geschichte.lbg.ac.at</ref>
+                </publisher>
+                <publisher>
+                    <name>Wienbibliothek im Rathaus</name>
+                    <address>
+                        <street>Friedrich-Schmidt-Platz 1</street>
+                        <postCode>1010</postCode>
+                        <country>Wien</country>
+                        <settlement>Österreich</settlement>
+                    </address>
+                    <ref target="https://www.wienbibliothek.at">https://www.wienbibliothek.at</ref>
+                </publisher>
+                <pubPlace>Wien, Österreich</pubPlace>
+                <date>2022</date>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0">Creative Commons
+                        Namensnennung 4.0 International Lizenz </licence>
+                </availability>
+                <idno subtype="legalkraus" type="URL">https://id.acdh.oeaw.ac.at/legalkraus/D_000002-003-000.xml</idno>
+                <idno subtype="krausonline" type="URL">http://www.kraus.wienbibliothek.at/node/1541</idno>
+                <idno subtype="transkribus" type="ID">365648</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title ref="https://id.acdh.oeaw.ac.at/legalkraus/C_000002" type="collection">Karl
+                    Kraus ca. Reichspost</title>
+            </seriesStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness facs="#D_000002-003-000-facs001" xml:id="D_000002-003-000-wit01"/>
+                </listWit>
+                <msDesc>
+                    <physDesc>
+                        <ab type="materiality">
+                            <objectType source="D_000002-003-000-wit01" ref="https://vocabs.acdh.oeaw.ac.at/legalkraus/v1.0/M.T.DHN">Durchschlag mit handschriftlichen Annotationen</objectType>
+                        </ab>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <creation>
+                <date notBefore="1922-11-30" subtype="produced" type="sortDate">30. November 1922
+               </date>
+            </creation>
+            <langUsage>
+                <language ident="de">Deutsch</language>
+            </langUsage>
+            <textClass>
+                <keywords>
+                    <term source="D_000002-003-000-wit01">Privatanklage</term>
+                </keywords>
+                <classCode source="D_000002-003-000-wit01" scheme="https://vocabs.acdh.oeaw.ac.at/legalkraus/v1.0/D.J.PKG">D.J.PKG</classCode>
+            </textClass>
+            <handNotes>
+                <handNote xml:id="D_000002-003-000-hand01" source="#D_000002-003-000-wit01" scribeRef="#38909" medium="pencil" cert="low" resp="#JK"/>
+            </handNotes>
+        </profileDesc>
+        <revisionDesc status="done">
+            <change type="intertexts" when-iso="2021-11-25" who="#IL"/>
+            <change type="header_facsimile" when-iso="2021-12-07" who="#IL"/>
+            <change type="structure" when-iso="2020-11-18" who="#IL"/>
+            <change type="references" when-iso="2020-11-22" who="#IL"/>
+            <change type="typography" when-iso="2021-12-07" who="#IL"/>
+            <change when-iso="2020-02-03T10:48:19.634Z" who="#IB">created by API</change>
+            <change when-iso="2020-02-03T11:08:27.548Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-02-03T11:08:29.212Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-02-03T11:08:31.818Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-02-03T11:08:33.746Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-02-03T11:08:35.074Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-02-03T11:08:37.482Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-02-03T11:08:38.553Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-02-03T11:08:40.803Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-02-03T11:08:42.586Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-02-03T11:08:43.962Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-02-03T11:08:45.298Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-02-03T11:08:46.705Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-02-03T11:08:48.737Z" who="#JM">Checked Images Wienbibliothek </change>
+            <change when-iso="2020-10-01T12:09:09.817Z" who="#IB">Replaced Text with Transcription
+                of Transkribus Document 365648. </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:id="D_000002-003-000-facs001">
+        <surfaceGrp xml:id="D_000002-003-000-facs001-l001">
+            <surface type="recto" xml:id="D_000002-003-000-facs001-l001-p001">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540032/full/full/0/default.jpg"/>
+            </surface>
+            <surface type="verso" xml:id="D_000002-003-000-facs001-l001-p002">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540034/full/full/0/default.jpg"/>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="D_000002-003-000-facs001-l002">
+            <surface type="recto" xml:id="D_000002-003-000-facs001-l002-p003">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540036/full/full/0/default.jpg"/>
+            </surface>
+            <surface type="verso" xml:id="D_000002-003-000-facs001-l002-p004">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540038/full/full/0/default.jpg"/>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="D_000002-003-000-facs001-l003">
+            <surface type="recto" xml:id="D_000002-003-000-facs001-l003-p005">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540040/full/full/0/default.jpg"/>
+            </surface>
+            <surface type="verso" xml:id="D_000002-003-000-facs001-l003-p006">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540042/full/full/0/default.jpg"/>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="D_000002-003-000-facs001-l004">
+            <surface type="recto" xml:id="D_000002-003-000-facs001-l004-p007">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540044/full/full/0/default.jpg"/>
+            </surface>
+            <surface type="verso" xml:id="D_000002-003-000-facs001-l004-p008">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540046/full/full/0/default.jpg"/>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="D_000002-003-000-facs001-l005">
+            <surface type="recto" xml:id="D_000002-003-000-facs001-l005-p009">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540048/full/full/0/default.jpg"/>
+            </surface>
+            <surface type="verso" xml:id="D_000002-003-000-facs001-l005-p010">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540050/full/full/0/default.jpg"/>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="D_000002-003-000-facs001-l006">
+            <surface type="recto" xml:id="D_000002-003-000-facs001-l006-p011">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540052/full/full/0/default.jpg"/>
+            </surface>
+            <surface type="verso" xml:id="D_000002-003-000-facs001-l006-p012">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540054/full/full/0/default.jpg"/>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="D_000002-003-000-facs001-l007">
+            <surface type="recto" xml:id="D_000002-003-000-facs001-l007-p013">
+                
+                <graphic ana="status:checked" source="wienbibliothek" url="https://www.digital.wienbibliothek.at/wbrobv02/i3f/v21/2540056/full/full/0/default.jpg"/>
+            </surface>
+        </surfaceGrp>
+    </facsimile>
+    <text>
+        <body>
+            <p><pb facs="#D_000002-003-000-facs001-l001-p001" n="1"/>
+                <lb/><note hand="#D_000002-003-000-hand01">U I 3/23</note>
+            </p>
+            <p>
+                <lb/>An das<lb/><rs ref="#pmb50491" type="institution"><hi rend="spaced">Strafbezirksgericht</hi> I<lb/><hi rend="spaced"><hi rend="underlined">Wien</hi></hi></rs>
+            </p>
+            <p>
+                <lb/>Privatankläger: <rs ref="#pmb11988" type="person">Karl <hi rend="spaced">Kraus</hi></rs>, Schriftsteller in<lb/><rs ref="#pmb50496" type="place">Wien, III. Hintere Zollamtsstraße 3</rs>
+            </p>
+            <p>
+                <lb/>Beschuldigter: <rs ref="#pmb40703" type="person">Karl <hi rend="spaced">Schiffleitner</hi></rs>,
+                    verant<lb break="no"/>wortlicher Redakteur der „<rs ref="#pmb29637" type="institution">Reichspost</rs>“
+                    in<lb/><rs ref="#pmb50653" type="place">Wien VIII. Strozzigasse 8</rs>
+            </p>
+            <p>
+                <lb/><hi rend="spaced">Privatanklage</hi>
+            </p>
+            <p>
+                <lb/>wegen Verweigerung einer
+                Berichtigung </p>
+            <p>
+                <lb/>einfach, 3 Beilagen. </p>
+            <pb facs="#D_000002-003-000-facs001-l001-p002" n="2"/>
+            <p>
+                <lb/>Der <rs ref="#pmb11988" type="person">Unterfertigte</rs>
+                erstattet hiemit im Sinne des<lb/><rs ref="https://alex.onb.ac.at/cgi-content/alex?aid=bgb&amp;datum=1922&amp;page=483&amp;size=45" type="law">§ 23 P. G.</rs> die Anzeige gegenden verantwortlichen <rs ref="#pmb40703" type="person">Redakteur</rs>
+                <lb/><note type="marginal" rend="marginLeft">a)</note>der „<rs ref="#pmb29637" type="institution">Reichspost</rs>“, die Aufnahme der sub a) angeschlossenen<lb/><note type="marginal" rend="marginLeft">b)</note><rs ref="https://id.acdh.oeaw.ac.at/legalkraus/D_000002-002-000.xml" type="work" subtype="legal-doc">Berichtigung</rs> des sub b) beigelegten Artikels „<rs ref="#pmb62204" type="work" subtype="pmb">Ein Kreis<lb break="no"/>lauf</rs>“ grundlos
+                verweigert zu haben. Zur Begründung der<lb/>Berechtigung des Verlangens
+                nach Aufnahme führt er schon<lb/>in der Klage das folgende aus: </p>
+            <p>
+                <lb/>Die Tatsachen, um die es
+                sich in dem berichtigten<lb/><rs ref="#pmb62204" type="work" subtype="pmb">Artikel</rs> handelt, und jene, die ihnen
+                in der <rs ref="https://id.acdh.oeaw.ac.at/legalkraus/D_000002-002-000.xml" type="work" subtype="legal-doc">Berichtigung</rs>
+                <lb/>entgegengestellt sind,
+                entstammen – mit Ausnahme der letz<lb break="no"/>ten – einer rein
+                stilistischen Materie, an deren durch<lb/>keinerlei Entstellung
+                beschädigten Bestand jedoch zweifel<lb break="no"/>los und vor allem für den
+                    <rs ref="#pmb11988" type="person">Schriftsteller</rs> ein ebenso wohl<lb/>begründetes sachliches
+                Interesse vorhanden ist wie gegen<lb break="no"/>über der Materie irgendeiner
+                anderen Tatächlichkeit. Der<lb/>zu erwartende Einwand des <rs type="person" ref="#pmb40703">Beklagten</rs>, daß in
+                den Zitaten<lb/>der „<rs ref="#pmb42850" type="work" subtype="pmb">Reichspost</rs>“, die samt und sonders
+                eine Vergröberung<lb/><note type="marginal" rend="marginLeft">c)</note>der Gedanken und Sätze des sub c)
+                beigeschlossenen <rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,001" type="work" subtype="fackel">Auf<lb break="no"/>satzes der Fackel</rs>
+                vorstellen, das „Wesentliche“, nämlich<lb/>die „Meinung“, die für den
+                Durchschnittsleser den Inhalt<lb/>bildet, wiedergegeben sei und dass eine Tageszeitung,<lb/>die zitieren will, genug
+                getan habe, wenn sie diese Meinung<lb/>referierend wiedergibt, so
+                daß es auf einzelne hinzugetane<lb/>oder weggenommene Worte und
+                überhaupt auf stilistische<lb/>Feinheiten nicht ankommen könne, selbst dann nicht, wenn<lb/>der verstümmelte Wortlaut
+                unter Anführungszeichen wieder<lb break="no"/>gegeben ist – dieser Einwand
+                einer „Irrelevanz“ der in<lb/>Frage kommenden Tatsachen wäre durchaus unstichhaltig. Läßt<lb/>sich schon vorweg sagen, daß
+                keine Tageszeitung genötigt<lb/>ist, im Rahmen ihrer lokalen Neuigkeiten über einen lite<lb break="no"/>rarischen Aufsatz zu
+                berichten und daß sie, wenn sie sich<lb/>dazu entschließt, eben
+                bemüht sein muß, die zitierten Ge<lb break="no"/>danken, was immer sie gegen
+                sie einzuwenden habe, wenigstens <pb facs="#D_000002-003-000-facs001-l002-p003" n="3"/>
+                <lb/>im vollen textlich
+                übereinstimmenden, genau kontrollierten<lb/>Wortlaut wiederzugeben,
+                zumal dort, wo sie unter Anfüh<lb break="no"/>rungszeichen zitiert – wobei
+                ja noch immer durch beliebige<lb/>Herausziehung von Sätzen Spielraum für eine Entstellung<lb/>des Grundgedankens bleibt –,
+                so muß es ganz gewiß dem<lb/>Schriftsteller überlassen werden, sein geistiges Recht<lb/>hier besser wahrzunehmen und
+                also darauf zu bestehen, daß,<lb/>wenn ihn eine Tageszeitung schon für die eigene Tendenz<lb/>zurichtet, sie doch nicht
+                seine einzelnen Sätze auf das<lb/>eigene stilistische Niveau herabsetze. Die Frage der<lb/>Relevanz, die in Dingen
+                eines rein geistigen Sachverhalts<lb/>nicht bereitwilliger
+                gestellt werden darf als in irgend<lb break="no"/>einer anderen Sphäre eines
+                verletzten tatsächlichen<lb/>Interesses, wäre hier nach Ansicht des <rs type="person" ref="#pmb11988">Berichtigungswer<lb break="no"/>bers</rs> schon durch
+                den Umstand abgetan, daß er eben mindes<lb break="no"/>tens so großen Wert darauf
+                legt und legen darf, diesen<lb/>oder jenen Satz geschrieben oder nicht geschrieben zu<lb/>haben wie diese oder jene
+                Handlung, die von ihm behauptet<lb/>würde, getan oder nicht
+                getan zu haben. Es bedarf wohl<lb/>keines Hinweises darauf, daß durch die Entstellung eines<lb/>einzigen Wortes, ja
+                Buchstabens oder Interpunktionszei<lb break="no"/>chens ein Gedanke, ein Satz
+                eine vollständig andere<lb/>Position und Kraft, ja einen wesentlich anderen Sinn er<lb break="no"/>halten mag, dass je nach
+                Wert und Wirkung des so oder so<lb/>gedruckten Satzes selbst die
+                Tatsächlichkeit einer Lebens<lb break="no"/>sphäre von der stilistischen
+                Veränderung alteriert werden<lb/>kann und daß sich durch die Methode absichtlich oder un<lb break="no"/>absichtlich fehlerhaften
+                Zitierens Sätzen, die man in<lb/>einer dem oberflächlichen Leser genehmen Tendenz darbieten<lb/>will, geradezu eine
+                Gesinnung imputieren läßt, die sogar<lb/>ein solcher Leser, wenn er
+                nachher das zitierte Original<lb/>kennen lernte, in diesem nicht wiederfinden würde. Dies<lb/>ist in dem berichtigten <rs ref="#pmb62204" type="work" subtype="pmb">Artikel</rs> Satz für Satz geschehen, <pb facs="#D_000002-003-000-facs001-l002-p004" n="4"/>
+                <lb/>und daß es der Fall ist,
+                soll im folgenden bewiesen wer<lb break="no"/>den: </p>
+            <p>
+                <lb/>Die Behauptung, in der <rs ref="#pmb41244" type="work" subtype="pmb">Fackel</rs> sei der Satz gestanden,<lb/><rs ref="#pmb11988" type="person">Karl Kraus</rs> sei
+                    „<quote source="#62204" xml:id="uuid_74f0c666-5c1d-4b35-a8bb-3ea55c087456">einst</quote>“ durch den leidigen Zufall der Geburt<lb/>in die jüdische
+                Glaubensgenossenschaft geraten, läßt die<lb break="no"/>ses Bekenntnis als einen
+                schlecht stilisierten Unsinn er<lb break="no"/>scheinen. (Siehe <rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,003" type="work" subtype="fackel">Fackel,
+                    S. 3.‚ Z. 20 ff.</rs>)</p>
+            <p><lb/>In der Behauptung, er habe
+                eine zeitlang „<hi rend="spaced">der</hi>
+                <lb/><hi rend="spaced">der</hi>
+                bequemen Konfessionslosigkeit“ <hi rend="spaced">gehuldigt</hi>,<lb/>ist, wiewohl das letzte Wort
+                nicht unter Anführungszeichen<lb/>zitiert erscheint‚ doch – ganz abgesehen von dem Unsinn<lb/>der äußeren Verstümmlung –
+                der Sinn des Originalsatzes<lb/>(<rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,003" type="work" subtype="fackel">S.
+                    3, Z. 23 ff</rs>) nicht wiederzuerkennen. Durch die Ver<lb break="no"/>kürzung des Zitats wird ein
+                zynisches Behagen in das Be<lb break="no"/>kenntnis eingeschmuggelt,
+                das man in ihm nicht finden<lb/>wird, da die weggelassenen Worte „<quote source="https://fackel.oeaw.ac.at/f/601,003" xml:id="uuid_eafc1928-f062-447c-8d81-5654ae076cda">und nie genug gewürdig<lb break="no"/>ten</quote>“
+                ihm erst seinen vollen Ernst verschaffen.</p>
+            <p><lb/>Noch anschaulicher wird die
+                Absicht, den herausge<lb break="no"/>rissenen Sätzen und
+                Satzteilen den üblen Geschmack zu<lb/>geben, den der berichtigte
+                    <rs ref="#pmb62204" type="work" subtype="pmb">Artikel</rs> mit den Einleitungs<lb break="no"/>worten, Kraus
+                mache „<quote source="#62204" xml:id="uuid_439ceae7-4a41-4584-8a4d-0a8993cfbab0">etliche, ihn ziemlich ausreichend<lb/>charakterisierende
+                    Angaben</quote>“ ihm nachsagt, in dem Zitat:<lb/>und zwar „<quote source="#62204" xml:id="uuid_b1179f5b-d9c3-417d-9b92-9f74395f674b">ohne
+                    zwingenden Grund</quote>“ des Glaubens oder des<lb/>Geschäftes. Wiewohl die
+                letzten Worte nicht innerhalb der<lb/>Anführungszeichen
+                untergebracht sind, so ist es doch ein<lb break="no"/>leuchtend, daß das den <rs ref="#pmb11988" type="person">Autor</rs> ziemlich
+                    ausreichend<lb/>charakterisierende Geständnis wiedergegeben werden soll,<lb/>daß er ernsthaft Glauben
+                    „<quote source="#62204" xml:id="uuid_2d801d54-6371-41ff-8055-4478e8414c56">oder
+                    Geschäft</quote>“ für zwingende<lb/>Gründe halte, die Religion
+                zu wechseln. Das gerade Gegen<lb break="no"/>teil erweist sich, wenn man
+                den Originalsatz (<rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,003" type="work" subtype="fackel">S. 3, Z. 26 ff</rs>)<lb/>betrachtet, in dem ganz
+                eindringlich die Ansicht des<lb/>Verfassers zum Ausdruck kommt, daß das Motiv des </p>
+            <pb facs="#D_000002-003-000-facs001-l003-p005" n="5"/>
+            <p>
+                <lb/>„<quote source="#62204" xml:id="uuid_ea4ea436-87c9-4e32-a8ec-82d6c495213f">politischen oder socialen
+                    Strebens</quote>“, das er die „<quote source="https://fackel.oeaw.ac.at/f/601,003" xml:id="uuid_0428a145-e1e1-4738-9c7b-8ab471e6dd45"> Konversi<lb break="no"/>on eines
+                    Geschäftes</quote>“ nennt, die er als das „<quote source="https://fackel.oeaw.ac.at/f/601,003" xml:id="uuid_c7580b3f-e6d3-41e9-9b16-82c2b51722f7">häufigere<lb/>Motiv</quote>“ und als
+                das schimpfliche ablehnt, nicht nur das<lb/>seine nicht gewesen sei,
+                sondern das seine nicht sein<lb/>könne. Er selbst <hi rend="spaced">zitiert</hi> solches Motiv als gemein<lb break="no"/>hin zwingenden
+                Grund im abfälligen Sinne, und der zitieren<lb break="no"/>de <rs ref="#pmb62204" type="work" subtype="pmb">Artikel der „Reichspost“</rs> zitiert ihn dabei so,
+                als ob<lb/>er es als ein
+                mögliches, ja auch ihn selber sonst zwingen<lb break="no"/>des Motiv betrachten würde,
+                aber eben die Frivolität be<lb break="no"/>sessen hätte, nicht einmal
+                ein solches Motiv für seinen<lb/>Übertritt gehabt zu haben, das er selbst doch gleichsam<lb/>grundsätzlich als zwingend
+                anerkennt. </p>
+            <p>
+                <lb/>Ganz ebenso relevant ist die
+                nun folgende Entstellung<lb/>durch das eingefügte Wort „<quote source="#62204" xml:id="uuid_d498d50c-2dee-4407-9ae6-d894db60c403">also</quote>“‚ das den
+                Eindruck erwecken<lb/>muß‚ als ob
+                der <rs ref="#pmb11988" type="person">Verfasser</rs> im Plauderton erzählen wollte,<lb/>er sei „also Katholik“
+                geworden, während die weggelassenen<lb/>Worte „<quote source="https://fackel.oeaw.ac.at/f/601,004" xml:id="uuid_a3f8880a-9e8b-4890-a44d-e1be731c9917">wie dem immer sei</quote>“
+                    (<rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,004" type="work" subtype="fackel">S.
+                    4, Z. 1 ff.</rs>) ganz deutlich be<lb break="no"/>sagen, daß hier der Schluß
+                einer ernsthaften Selbstbe<lb break="no"/>schuldigung gezogen wird. </p>
+            <p>
+                <lb/>Die nun folgende Verkürzung
+                macht den polemischen<lb/>Witz:
+                    „<quote source="https://fackel.oeaw.ac.at/f/601,004" xml:id="uuid_89874ab5-086f-47df-a0a1-b1f0b6bd25aa">sondern hauptsächlich aus
+                    Antisemitismus</quote>“ zu einer<lb/>schnodderigen Pointe und
+                indem sie die voraufgehenden<lb/>vorausgehenden Worte unterschlägt: „<quote source="https://fackel.oeaw.ac.at/f/601,005" xml:id="uuid_343bb7da-e280-4ee8-b660-0589b47f1160">nicht nur aus Gründen einer
+                        Mensch<lb break="no"/>lichkeit, die bei den Hirten in so schlechter Obhut ist</quote>“<lb/><rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,005" type="work" subtype="fackel">(S. 5, Z.
+                    5 ff.)</rs>, nimmt sie dem Bekenntnis des Austrittes<lb/>nicht allein einen
+                gewichtigen Beweggrund, sondern auch<lb/>alle Ernsthaftigkeit. </p>
+            <p>
+                <lb/>Mit dem Satz von dem „<quote source="#62204" xml:id="uuid_6c7761cd-1a39-4586-822b-627d7de3db53">Bannstrahl</quote>“, in welchem etwas<lb/>weggelassen ist, was ihm
+                erst das Fundament seines anklä<lb break="no"/>gerischen Sinnes verleiht,
+                nämlich sowohl das geringe<lb/>Opfer, das dieser Bannstrahl gekostet hätte, wie vor allem<lb/>dessen Berechtigung, wird
+                dem <rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,001" type="work" subtype="fackel">Aufsatz</rs> an jener Stelle<lb/><rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,004" type="work" subtype="fackel">(S. 4, Z.
+                    19 ff.)</rs> eine Zeitungsphrase unterschoben. Es ist <pb facs="#D_000002-003-000-facs001-l003-p006" n="6"/>
+            </p>
+            <p>
+                <lb/>ganz unmöglich, daß der Satz
+                dort ohne eine weitere<lb/><hi rend="spaced">Charakterisierung</hi> „<quote source="https://fackel.oeaw.ac.at/f/601,004" xml:id="uuid_b5261bd2-93ed-4f3f-9bfd-1affed1f50c8">der Dynasten</quote>“ ab<lb break="no"/>schließen konnte.
+                Der Relativsatz „<quote source="#62204" xml:id="uuid_07d498d6-7a87-4044-b0d7-26c8f985d5ec">die <rs ref="#pmb11988" type="person">Kraus</rs> für die<lb/>Urheber des
+                    Weltkriegsunglücks hält</quote>“ zitiert wohl eine<lb/>schon bekannte Auffassung
+                der <rs ref="#pmb41244" type="work" subtype="pmb">Fackel</rs>, gibt aber nicht zu<lb/>erkennen, daß an jener
+                Stelle eben die Tätigkeit der<lb/>Dynasten beschrieben war, die den Bannstrahl<lb/>erfordert hätte, nämlich daß
+                sie „<quote source="https://fackel.oeaw.ac.at/f/601,004" xml:id="uuid_185d0272-030a-4ec8-9ccd-f6c30b19ccc5">den Völkern das Ultimatum der
+                        Pest<lb/>und der Syphilis
+                    überbracht haben</quote>“. Die „<rs ref="#pmb29637" type="institution">Reichspost</rs>“ mag<lb/>Bedenken tragen, eine solche Charakterisierung der Dynas<lb break="no"/>ten auch nur zu zitieren,
+                sie muß es aber wohl oder übel<lb/>tun, wenn sie den Autor zitieren will, der auf Grund sol<lb break="no"/>cher Charakterisierung jenen
+                Bannstrahl vermißt, den die<lb/>„<rs ref="#pmb29637" type="institution">Reichspost</rs>“ doch als eine ihr
+                offenbar übertrieben<lb/>scheinende Forderung zitieren will. Sie muß überhaupt voll<lb break="no"/>ständig zitieren, und eine
+                etwaige Berufung darauf, daß<lb/>sie von den Dynasten eine Kränkung abhalten wollte, für<lb/>die ja der zitierte Autor
+                verantwortlich ist, dürfte ihr<lb/>weder vor dem Weltgericht noch vor einem solchen der Re<lb break="no"/>publik hingehen, ebensowenig
+                wie etwa die über den Welt<lb break="no"/>krieg hinaus durchgehaltene
+                Scheu, das Wort „Syphilis“<lb/>zu
+                drucken. Jenen Dynasten gegenüber als Objekten histori<lb break="no"/>scher Kritik dürfte wohl das
+                Moment der Beleidigung im<lb/>allgemeinen wie der Ehrfurchtverletzung im besondern so<lb/>wenig in Frage kommen wie
+                etwa gegenüber dem <rs ref="#pmb21853" type="person">Nero</rs>, der ja<lb/>auch ein verstorbenes
+                Mitglied eines Kaiserhauses ist. </p>
+            <p>
+                <lb/>Mit Rücksicht auf eine
+                juridische Materie, deren<lb/>Besonderheit und Schwierigkeit eine Klarlegung durch münd<lb break="no"/>liches Vorbringen kaum
+                ermöglichen würde, war der <rs type="person" ref="#pmb11988">Berich<lb break="no"/>tigungswerber</rs>
+                bemüht, schon in der Klage zu jedem einzel<lb break="no"/>nen Punkt mit aller
+                Eindringlichkeit Stelllung zu nehmen.<lb/>Wenn es noch einer
+                Bekräftigung der prinzipiellen Wich<lb break="no"/>tigkeit des Falles bedürfte
+                und der im Wesen der <pb facs="#D_000002-003-000-facs001-l004-p007" n="7"/>
+                <lb/>schriftstellerischen
+                Existenz beruhenden Notwendigkeit,<lb/>daß die literarische
+                Leistung nicht nur als geistiges<lb/>und materielles Gut durch
+                das Autorrecht, sondern auch als<lb/>ein Teil der Tatsachenwelt
+                durch das Berichtigungsrecht<lb/>geschützt sei, so kann auf ein Wort <rs ref="#pmb5787" type="person"><hi rend="spaced">Schopen<lb break="no"/>hauers</hi></rs>
+                verwiesen werden, durch das wohl in exemplar<lb break="no"/>ischer Art die
+                Wesentlichkeit dieses Interesses anerkannt<lb/>erscheint. <rs ref="#pmb5787" type="person">Schopenhauers</rs> Motto zu der „<rs ref="#pmb62248" type="work" subtype="pmb">Preisschrift über<lb/>die Grundlage der Moral,
+                    nicht gekrönt von der königlich dänischen<lb/>Sozietät der
+                    Wissenschaften</rs>“ war der Satz:<lb/>„<quote source="#62248" xml:id="uuid_83c8e55e-f33d-4643-b006-202625dff3c8">Moral predigen ist leicht,
+                    Moral begründen schwer.</quote>“ In<lb/>dem „<rs ref="#pmb62248" type="work" subtype="pmb">Judicium regiae Danicae Scientiarum Societatis</rs>“
+                    (das<lb/>dem Druck der <rs ref="#pmb62248" type="work" subtype="pmb">Preisschrift</rs> angehängt ist) er<lb break="no"/>schien dieses
+                Motto wie folgt zitiert: „<quote source="#62248" xml:id="uuid_73f7d9d0-16c1-4ad1-b6aa-1d7acf8b83ab">Moral predigen ist<lb/>leicht, Moral begründen
+                        <hi rend="spaced">ist</hi> schwer.</quote>“ Die „<rs ref="#pmb29637" type="institution">Reichspost</rs>“<lb/>hätte wohl, wenn sie derart
+                zitiert hätte, einer Berich<lb break="no"/>tigung mit dem Einwand sich
+                geweigert, daß sie ja doch<lb/>die Meinung des <rs ref="#pmb5787" type="person">Autors</rs> richtig wiedergegeben
+                habe und daß<lb/>es auf das
+                Wörtchen „<quote source="#62248" xml:id="uuid_21c25cde-4a31-4d72-bba5-7240bb582f82">ist</quote>“ als einen unerheblichen Unter<lb break="no"/>schied schon nicht ankommen
+                werde. <rs ref="#pmb5787" type="person">Schopenhauer</rs> aber macht<lb/>zu jenem <rs ref="#pmb62248" type="work" subtype="pmb">Judicium</rs> die Anmerkung: „<quote source="#62248" xml:id="uuid_453a9ed6-9268-4b67-b541-86892d9e0a49"><hi rend="spaced">Dieses
+                            zwei<lb break="no"/>te ‚<quote source="#62248" xml:id="uuid_7803bf05-524c-4857-bac5-f9228fa4b648">ist</quote>‘ hat die
+                        Akademie aus<lb/>eigenen
+                        Mitteln hinzugefügt,<lb/>um einen Beleg zu liefern zur<lb/>Lehre des Longinus,
+                        daß man<lb/>durch
+                        Hinzufügung oder Wegnah<lb break="no"/>me <hi rend="underlined">einer</hi> Silbe die ganze Ener<lb break="no"/>gie einer Sentenz
+                            vernichten<lb/>kann</hi> .</quote>“ Angesichts der Energie dieser Sentenz,<lb/>die durchgreifend dartut,
+                worauf es in der Literatur und<lb/>worauf es dem Schriftsteller ankommt, wäre es überflüssig,<lb/>auch noch auf <rs ref="#pmb5787" type="person">Schopenhauers</rs> bekanntere Flüche gegen die<lb/>Verstümmler seines Wortes
+                und des Wortes im allgemeinen <pb facs="#D_000002-003-000-facs001-l004-p008" n="8"/>
+                <lb/>hinzuweisen, mit denen er
+                sowohl jene Journalisten ge<lb break="no"/>troffen hat, die an der
+                Herabsetzung des Sprachniveaus<lb/>Schuld tragen, wie jene künftigen Herausgeber, die seine<lb/>Sprache auf jenes Niveau
+                herabsetzen. </p>
+            <p>
+                <lb/>Ebenso bedenkenlos und
+                ebenso bedenklich wie die<lb/>„<rs ref="#pmb29637" type="institution">Reichspost</rs>“ mit dem <rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,001" type="work" subtype="fackel">Aufsatz</rs>, den sie zitieren wollte,<lb/>verfahren ist, erscheint
+                demnach in allen Punkten die<lb/>Verweigerung der Aufnahme der ihr zugesandten <rs ref="https://id.acdh.oeaw.ac.at/legalkraus/D_000002-002-000.xml" type="work" subtype="legal-doc">Berichti<lb break="no"/>gung</rs>. Bliebe nur
+                noch der letzte Passus zu erörtern,<lb/>dessen Tatsächlichkeit
+                allerdings nicht der stilistischen<lb/>Materie zugehört, sondern
+                der Materie der Meinung. Vorweg<lb/>sei festgestellt, daß hier
+                eine Verwechslung der „Meinung“<lb/>als der <hi rend="spaced">Art</hi> des Vorbringens, also einer solchen<lb/>„Meinung“, die nach <rs type="law" ref="https://alex.onb.ac.at/cgi-content/alex?aid=bgb&amp;datum=1922&amp;page=483&amp;size=45">§ 23</rs> sicherlich nicht berichtigt wer<lb break="no"/>den kann, mit dem <hi rend="spaced">Stoff</hi> des Vorbringens platzgreifen<lb/>könnte und aller Voraussicht
+                nach auch der Verteidigung<lb/>zugrundeliegen wird. Die „<rs ref="#pmb29637" type="institution">Reichspost</rs>“
+                sagt, daß aus dem<lb/><rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,001" type="work" subtype="fackel">Aufsatz</rs> nicht hervorgehe, ob dessen <rs ref="#pmb11988" type="person">Verfasser</rs> zu
+                    einer<lb/>andern Konfession,
+                zur Konfessionslosigkeit oder wieder<lb/>zum Judentum übergehen
+                werde, aber „<quote source="#62204" xml:id="uuid_87bbc8e3-6ef9-4cab-89c9-2dc983bb0b06">eifrige Anlehnungen<lb/>in einem anderen <rs type="work" subtype="fackel" ref="#lk_fackel__96" corresp="https://fackel.oeaw.ac.at/f/601,077">Aufsatz der
+                        ‚Fackel‘</rs> an <rs ref="#pmb11673" type="person">Theodor Herzls</rs>
+                    <lb/><rs ref="#pmb58510" type="work" subtype="pmb">Tagebuch</rs> machen den Fall 3 zur
+                    Wahrscheinlichkeit. Ein<lb/>Kreislauf ist beendet.</quote>“ Der tatsächlichen Berichtigung<lb/>dieses Satzes, der
+                allerdings keine direkte Behauptung<lb/>einer Tatsache enthält, aber
+                auf Grund einer deutlich<lb/><hi rend="spaced">unterschobenen</hi> Tatsache eine satirische<lb/>Meinung vorbringt‚ wird
+                entgegengehalten werden, daß man<lb/>eine solche nicht
+                berichtigen kann. Dies würde aber eine<lb/>geradezu beispielhafte
+                Verwechslung sein jener <hi rend="underlined">Meinung</hi>,<lb/>die hier im Wege der
+                Konklusion vorgebracht wird und die<lb/>allerdings vom <rs type="law" ref="https://alex.onb.ac.at/cgi-content/alex?aid=bgb&amp;datum=1922&amp;page=483&amp;size=45">§ 23</rs> nicht erreichbar wäre, mit dem<lb/>Meinungs<hi rend="spaced">stoff</hi> des Vorbringens, der in seiner Tat<lb break="no"/>sächlichkeit, in seinem
+                konkreten Vorhandensein einfach </p>
+            <pb facs="#D_000002-003-000-facs001-l005-p009" n="9"/>
+            <p>
+                <lb/>nicht zu übersehen ist.
+                Gewiß, wer würde leugnen, daß die<lb/>Behauptung „<quote source="#62204" xml:id="uuid_88f2e808-2f16-46ca-a6ad-c22832448632">eifriger
+                    Anlehnungen</quote>“ <hi rend="spaced">an und für<lb/>sich</hi> nichts anderes
+                als eine Ansicht, eine mehr oder<lb/>minder ernsthafte Kritik
+                ist, die man als solche nicht mit<lb/>dem Berichtigungsparagraphen
+                bestreiten kann. Wer würde<lb/>des weiteren verkennen, daß die Setzung des „Falles 3“<lb/>als einer
+                „Wahrscheinlichkeit“ <hi rend="spaced">an und für sich</hi>
+                <lb/>eine nicht berichtigbare
+                Vermutung ist, zu der sie ja<lb/>schon das Wort „Wahrscheinlichkeit“ macht, und eine<lb/>satirisch gemeinte noch
+                dazu. Nichts wäre jedoch verfehl<lb break="no"/>ter‚ als sich durch die der
+                Urteilssphäre entnommenen<lb/>Worte von der Tatsachensphäre, die ihnen in Wahrheit<lb/>zugrundeliegt, ablenken zu
+                lassen. Es ist sehr wohl zu be<lb break="no"/>achten, daß die Berichtigung
+                sich weder darauf bezieht,<lb/>daß in der <rs ref="#pmb41244" type="work" subtype="pmb">Fackel</rs> eifrige
+                Anlehnungen an <rs ref="#pmb11673" type="person">Herzls</rs>
+                <rs ref="#pmb58510" type="work" subtype="pmb">Tagebuch</rs>
+                <lb/>enthalten oder daß ihre
+                Anlehnungen eifrige sind, noch<lb/>darauf, daß der Fall 3 nicht wahrscheinlich ist. Sondern<lb/>was berichtigt wird, ist <hi rend="spaced">ausschließlich</hi>
+                <lb/>der <hi rend="spaced">tatsächliche Zusammenhang</hi>, in<lb/>den diese beiden
+                Meinungselemente unverkennbar gestellt<lb/>sind. In dem <rs ref="#pmb62204" type="work" subtype="pmb">Artikel</rs> wird für jeden Leser, der
+                den zitier<lb break="no"/>ten <rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,001" type="work" subtype="fackel">Aufsatz</rs> nicht kennt, <hi rend="spaced">die Tatsache unter<lb break="no"/>schoben</hi>, daß der
+                    <rs ref="#pmb11988" type="person">Verfasser</rs>‚
+                der in demselben <rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,001" type="work" subtype="fackel">Heft</rs><lb/>sich von der katholischen Religion abwendet, ein jüdisch<lb break="no"/>nationales <rs ref="#pmb58510" type="work" subtype="pmb">Buch</rs> aus <hi rend="spaced">konfessionellen</hi>
+                <lb/>Motiven – für seine soeben
+                ausgesprochene Ansicht – heran<lb break="no"/>zieht. Es wird mit keinem
+                Wort dem Leser gesagt, aus wie<lb/>ganz anders gearteten Motiven diese Heranziehung erfolgt,<lb/>nämlich daß sie (<rs ref="#lk_fackel__96" corresp="https://fackel.oeaw.ac.at/f/601,077" type="work" subtype="fackel">S.
+                    77–81</rs>) zum Beweise der Korruption jener<lb/><rs ref="#pmb36374" type="work" subtype="pmb">Neuen Freien Presse</rs> erfolgt, die erst durch ein Inserat<lb/><rs ref="#pmb11673" type="person">Theodor Herzls</rs> zu einer Beachtung der zionistischen Sache<lb/>zu bewegen war und sich
+                hinterdrein auf dessen Hochschät<lb break="no"/>zung berufen möchte. Jeder
+                Leser der <rs ref="#pmb42850" type="work" subtype="pmb">Reichspost</rs> muß glauben, </p>
+            <pb facs="#D_000002-003-000-facs001-l005-p010" n="10"/>
+            <p>
+                <lb/>daß die <hi rend="spaced">Tatsache gesetzt</hi> ist, in der<lb/><rs ref="#pmb41244" type="work" subtype="pmb">Fackel</rs> sei <rs ref="#pmb11673" type="person">Herzls</rs>
+                <rs ref="#pmb58510" type="work" subtype="pmb">Tagebuch</rs> aus einer Sympathie für
+                    die<lb/>jüdische Sache
+                zitiert, aus der sich eben die Wahrschein<lb break="no"/>lichkeit einer Rückkehr zum
+                Judentum ergebe. Hinter der<lb/>satirischen Version steckt ganz gewiß für jeden, der den<lb/>Artikel der „<rs ref="#pmb42850" type="work" subtype="pmb">Reichspost</rs>“ gelesen hat, die <hi rend="spaced">Tatsache</hi>,<lb/>daß es sich um Anlehnungen
+                    <hi rend="spaced">mit jüdischer</hi>
+                <lb/><hi rend="spaced">Tendenz</hi> handle. Es ist klar, <hi rend="spaced">in welchem</hi>
+                <lb/><hi rend="spaced">Falle</hi>
+                die Behauptung „<quote source="#62204" xml:id="uuid_cdb3d09e-bbe2-4203-834f-1336643a8bd5">eifriger Anlehnungen</quote>“
+                    die<lb/><hi rend="spaced">Ansicht</hi>, die sie <hi rend="spaced">an und für sich</hi> schein<lb break="no"/>bar ist, auch
+                wirklich wäre und keine Tatsachenbehauptung<lb/>einschlösse: nämlich dann,
+                wenn tatsächlich Zitate<lb/><hi rend="spaced">zionistischer</hi> Tendenz in der <rs ref="#pmb41244" type="work" subtype="pmb">Fackel</rs> erschienen<lb/>wären. Das wird aber
+                indirekt ganz deutlich behauptet,<lb/>wenn von eifrigen
+                Anlehnungen in <hi rend="spaced">diesem</hi> Zusammen<lb break="no"/>hang die Rede ist. Dies ist
+                    <hi rend="spaced">als Tatsache</hi>
+                <lb/><hi rend="spaced">unterstellt</hi>, also indirekt behauptet, und das<lb/>Gesetz gestattet zweifellos
+                auch die Berichtigung solcher<lb/>Tatsachen. Ob es sich um eifrige Anlehnungen handelt, die<lb/>die Rückkehr zum Judentum
+                wahrscheinlich machen, wäre –<lb/>trotz der Meinungsfarbe der Worte – <hi rend="spaced">nur</hi> dann eine<lb/><hi rend="spaced">Ansichtssache</hi>, wenn <hi rend="spaced">solche</hi> Zitate<lb/><hi rend="spaced">tatsächlich</hi> vorlägen, wie sie eben <hi rend="spaced">nicht</hi>
+                <lb/>vorliegen, von denen aber
+                jeder Leser des berichtigten<lb/>Artikels annehmen muß, <hi rend="spaced">daß</hi> sie vorliegen. Die Tatsache,<lb/>die unterstellt, der
+                Zusammenhang, der hergestellt wird,<lb/>wären um nichts
+                handgreiflicher, wenn die „<rs ref="#pmb29637" type="institution">Reichspost</rs>“<lb/>statt von „<quote source="#62204" xml:id="uuid_c77c12c5-8aa1-4c38-a200-b0b2d5ab3074">eifrigen
+                    Anlehnungen</quote>“ von „Zitaten“ oder gar<lb/>von „zionistischen Zitaten“
+                und statt von „<quote source="#62204" xml:id="uuid_fc4ddba9-e286-4eda-bf1e-9c1e03837c27">Wahrscheinlich<lb break="no"/>keit</quote>“ von
+                „Gewißheit“ gesprochen hätte, weil es eben gar<lb/>nicht auf <hi rend="spaced">diese</hi> Behauptungen als solche, die ja auch<lb/>nicht berichtigt werden,
+                ankommt, sondern lediglich auf<lb/>die <hi rend="spaced">als Grundlage</hi> der Meinung und Vermutung </p>
+            <pb facs="#D_000002-003-000-facs001-l006-p011" n="11"/>
+            <p>
+                <lb/>gesetzte, <hi rend="spaced">unterstellte Tatsache</hi>. In<lb/>dem einem <rs ref="#lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,001" type="work" subtype="fackel">Aufsatz</rs> war von dem Verlassen der katholischen<lb/>Religion die Rede; in dem
+                    <rs type="work" subtype="fackel" ref="#lk_fackel__96" corresp="https://fackel.oeaw.ac.at/f/601,077">andern</rs> wird die von der<lb/><rs ref="#pmb36374" type="work" subtype="pmb">Neuen Freien Presse</rs> behauptete Intransigenz in
+                    Gesinnungsfragen<lb/>durch
+                den Umstand ad absurdum geführt, daß es <rs ref="#pmb11673" type="person">Herzl</rs>
+                    ge<lb break="no"/>lungen ist,
+                sie auf dem Geldweg für eine ihr verhaßte<lb/>Sache zu interessieren: der
+                Kronzeuge ihrer Unentwegtheit<lb/>wird als Kronzeuge ihrer Zugänglichkeit ausgespielt. Der<lb/><rs type="person" ref="#pmb11988">Autor</rs> beider Aufsätze hat ein Recht darauf, daß die abso<lb break="no"/>lute
+                Nichtzusammengehörigkeit beider festgestellt werde<lb/>gegen die Behauptung eines
+                Zusammenhanges durch die Unter<lb break="no"/>stellung, daß der zweite
+                zugunsten der zionistischen Sache<lb/>geschrieben sei, gleichsam
+                als eine Fortsetzung des ersten<lb/>Bekenntnisses. Eine
+                „Ansicht“ wäre die Bemerkung der<lb/>„<rs ref="#pmb29637" type="institution">Reichspost</rs>“ erst für den, der wüßte, daß der Zusammen<lb break="no"/>hang zum Zwecke
+                der sogenannten Satire erfunden ist, jeder<lb/>andere muß ihn als vorhanden
+                annehmen und meinen, daß es<lb/>sich um <hi rend="spaced">Anlehnungen an die Tendenz</hi>
+                <lb/>des <rs ref="#pmb58510" type="work" subtype="pmb">Tagebuchs</rs> handle, deren Bezeichnung als „<quote source="#62204" xml:id="uuid_abe94b0d-27b3-41e1-b0d2-e62500cc8646">eifrig</quote>“ schon<lb/>auf Religionseifer und Renegatentum hinweist. Eine „Satire“<lb/>ist wohl der Zusammenhang
+                einer solchen Anlehnung mit der<lb/>Vermutung der Rückkehr zum
+                alten Testament, aber die<lb/><hi rend="spaced">Tatsache</hi>, daß es sich um eine zionistische Anleh<lb break="no"/>nung handelt, ist
+                die klare <hi rend="spaced">Grundlage</hi> dieser<lb/>Satire. Kein Leser wird die
+                Möglichkeit auch nur ahnen<lb/>können, daß von einem Inseratengeschäft der <rs ref="#pmb36374" type="work" subtype="pmb">Neuen Freien<lb/>Presse</rs> die Rede ist und daß ausschließlich <hi rend="spaced">dieser</hi>
+                <lb/>Tatsache zuliebe alle
+                Exzerpte aus <rs ref="#pmb11673" type="person">Herzls</rs>
+                <rs ref="#pmb58510" type="work" subtype="pmb">Tagebüchern</rs>
+                <lb/>erfolgt sind. Wie sollte er
+                sich auch vorstellen, daß<lb/><hi rend="spaced">damit</hi> „<quote source="#62204" xml:id="uuid_5e88306a-330c-416c-854c-f4f3bcd1065b">ein Kreislauf
+                beendet</quote>“ sei? Der erscheint<lb/>aber beendet, wenn dem Leser
+                direkt oder indirekt mitge<lb break="no"/>teilt wird, daß jener dem
+                Katholizismus Abtrünnige nun<lb break="no"/>mehr die zionistische
+                Tendenz propagiere; wenn die </p>
+            <pb facs="#D_000002-003-000-facs001-l006-p012" n="12"/>
+            <p>
+                <lb/>Vorstellung solchen
+                Sachverhalts überdies durch den Titel<lb/>„<rs ref="#pmb62204" type="work" subtype="pmb"><hi rend="spaced">Ein Kreislauf</hi></rs>“, der ja die
+                Wiederkehr ins<lb/>Judentum
+                förmlich ankündigt, dem Leser geradezu aufgedrängt<lb/>wird. Die „<rs ref="#pmb29637" type="institution">Reichspost</rs>“ hätte bloß schreiben müssen: „An<lb break="no"/>lehnungen dieser
+                Art“, um die falsche Tatsache, die sie<lb/>suggerieren will, <hi rend="spaced">direkt</hi> zu behaupten. Nicht die<lb/>„<quote source="#62204" xml:id="uuid_416bc46d-2f26-41b9-ad9a-0c9f1c0aaf48">eifrigen Anlehnungen</quote>“
+                als solche, wohl aber <hi rend="spaced">die der</hi>
+                <lb/><hi rend="spaced">vorgestellten Art</hi> enthalten die Tatsache,<lb/>der als einer unwahren die
+                wahre Tatsache entgegengestellt<lb/>werden kann: daß es sich um
+                einen antikorruptionistischen<lb/>Aufsatz handelt, der ja ganz ebenso einem anderen Gebiet<lb/>entnommen sein könnte als
+                einem, wo zufällig der Juden<lb break="no"/>punkt eine Rolle spielt.
+                Wäre es nicht möglich, eine solche<lb/>Tatsache im Wege des
+                Gesetzes zu reklamieren, so bliebe,<lb/>um aus der Sphäre einer
+                konkreteren Stofflichkeit ein Bei<lb break="no"/>spiel zu holen, etwa der
+                Fall der Berichtigung unzugänglich,<lb/>daß einer schreibt, X., der
+                erzählt hat, er habe sich von<lb/>seiner Frau scheiden lassen‚ wolle sich nun wohl mit einer<lb/>anderen verheiraten: ein
+                eifriges Gespräch – das sich in<lb/>Wahrheit um ein Theaterstück
+                gedreht hat – mache diesen<lb/>Fall zur Wahrscheinlichkeit; ein Kreislauf ist beendet.<lb/>Dagegen wäre es zweifellos
+                eine nicht berichtigbare Satire,<lb/>wenn einer vorbringen
+                wollte, ein Journalist, der zufällig<lb/>der katholischen Religion
+                angehört, werde sich wahrschein<lb break="no"/>lich nie einer andern
+                zuwenden, denn er mache unter jede<lb/>bezahlte Notiz ein Kreuz –
+                wiewohl er sich dadurch<lb/>doch
+                gewiß nicht von Journalisten anderer Konfessionen unter<lb break="no"/>scheidet. </p>
+            <p>
+                <lb/>Jene <rs ref="#pmb62204" type="work" subtype="pmb">Notiz</rs> aber, die die „<rs ref="#pmb29637" type="institution">Reichspost</rs>“ aus redaktio<lb break="no"/>nellem Ermessen gebracht
+                hat, trägt Satz für Satz das<lb/>Merkmal einer Verleugnung der geistigen und stilistischen<lb/>Tatsächlichkeit, die die
+                Aufsätze der <rs ref="#pmb41244" type="work" subtype="pmb">Fackel</rs> enthalten.<lb/>Durch die Vorlage dieser
+                wird keineswegs der Versuch </p>
+            <pb facs="#D_000002-003-000-facs001-l007-p013" n="13"/>
+            <p>
+                <lb/>gemacht, in einen
+                Wahrheits-, respektive Unwahrheitsbeweis<lb/>einzugehen, den ja das
+                Berichtigungsverfahren ausschließt.<lb/>Sie ist aber unerläßlich zu
+                dem Zweck, einerseits den<lb/>falschen Zitierungen gegenüber die Relevanz der in Frage<lb/>kommenden Sachverhalte zu
+                erweisen, anderseits, um das<lb/>Wesen einer unterschobenen, indirekt behaupteten Tatsache<lb/>zu verdeutlichen. Der <rs type="person" ref="#pmb11988">Verfasser</rs> der in ihrem Wortlaut und<lb/>Sinn falsch wiedergegebenen
+                Aufsätze glaubt ein Recht zu<lb/>haben, im Wege des Preßgesetzes eine Richtigstellung der<lb/>entstellten Sätze und
+                Gedanken zu erreichen, hält die<lb/>Weigerung des <rs type="person" ref="#pmb40703">verantwortlichen Redakteurs</rs> der „<rs ref="#pmb29637" type="institution">Reichspost</rs>“<lb/>für grundlos und beantragt,
+                ihn gemäß <rs type="law" ref="https://alex.onb.ac.at/cgi-content/alex?aid=bgb&amp;datum=1922&amp;page=484&amp;size=45">§ 24</rs> zu verurteilen. </p>
+        </body>
+    <back><listPerson><person xml:id="pmb40703">
+  <persName>
+      <forename>Karl</forename>
+      <surname>Schiffleitner</surname>
+  </persName>
+  <sex value="male"/>
+  <occupation key="99">Journalist/Journalistin</occupation>
+  <occupation key="173">Redakteur/Redakteurin</occupation>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40703/</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40703</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/personen/pmb40703</idno>
+<affiliation>
+    <term key="1182">arbeitet für</term>
+    <orgName key="pmb29637">Reichspost</orgName>
+    <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29637.html</idno>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29637</idno>
+    <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/institutionen/pmb29637</idno>
+    <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q2139624</idno>
+</affiliation>
+<listBibl>
+    <bibl type="collections" n="5">legalkraus</bibl>
+</listBibl>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></person><person xml:id="pmb5787">
+  <persName>
+      <forename>Arthur</forename>
+      <surname>Schopenhauer</surname>
+  </persName>
+  <birth>
+    <date when-iso="1788-02-22">22.02.1788</date>
+      <settlement key="pmb42763">
+        <placeName type="pref">Danzig</placeName>
+        <location><geo>54.3611 18.6897</geo></location>
+      </settlement>
+  </birth>  
+  <death>
+    <date when-iso="1860-09-21">21.09.1860</date>
+      <settlement key="pmb146">
+        <placeName type="pref">Frankfurt am Main</placeName>
+        <location><geo>50.11552 8.68417</geo></location>
+      </settlement>
+  </death>
+  <sex value="male"/>
+  <occupation key="154">Philosoph/Philosophin</occupation>
+  <idno type="URL" subtype="gnd">https://d-nb.info/gnd/118610465</idno>
+  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19866</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/5787</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb5787</idno>
+  <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb5787.html</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/personen/pmb5787</idno>
+  <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38501</idno>
+  <idno type="URL" subtype="dritte-walpurgisnacht">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0214</idno>
+  <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q38193</idno>
+<listBibl>
+    <bibl type="collections" n="5">legalkraus</bibl>
+    <bibl type="collections" n="10">Karl Kraus 1933: Dritte Walpurgisnacht</bibl>
+    <bibl type="collections" n="12">Fackel</bibl>
+</listBibl>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></person><person xml:id="pmb11673">
+  <persName>
+      <forename>Theodor</forename>
+      <surname>Herzl</surname>
+  </persName>
+  <birth>
+    <date when-iso="1860-05-02">1860-05-02</date>
+      <settlement key="pmb43471">
+        <placeName type="pref">Budapest</placeName>
+        <location><geo>47.49835 19.04045</geo></location>
+      </settlement>
+  </birth>  
+  <death>
+    <date when-iso="1904-07-03">1904-07-03</date>
+      <settlement key="pmb470">
+        <placeName type="pref">Edlach</placeName>
+        <location><geo>47.69255 15.80915</geo></location>
+      </settlement>
+  </death>
+  <sex value="male"/>
+  <occupation key="90">Schriftsteller/Schriftstellerin</occupation>
+  <occupation key="99">Journalist/Journalistin</occupation>
+  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16165</idno>
+  <idno type="URL" subtype="gnd">https://d-nb.info/gnd/118550241</idno>
+  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11673.html</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11673</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11673</idno>
+  <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11673.html</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/personen/pmb11673</idno>
+  <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp41891</idno>
+  <idno type="URL" subtype="doiorg101553">https://doi.org/10.1553/0x00281de3</idno>
+  <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q44003</idno>
+<affiliation notBefore-iso="1891-10-01" when-iso="1891-10-16" notAfter-iso="1891-10-31">
+    <term key="1182">arbeitet für</term>
+    <orgName key="pmb29351">Neue Freie Presse</orgName>
+    <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29351.html</idno>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29351</idno>
+    <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29351</idno>
+    <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/institutionen/pmb29351</idno>
+</affiliation>
+<listBibl>
+    <bibl type="collections" n="3">Manuell angelegt</bibl>
+    <bibl type="collections" n="5">legalkraus</bibl>
+    <bibl type="collections" n="11">ÖBL nach 1850 geboren</bibl>
+    <bibl type="collections" n="12">Fackel</bibl>
+</listBibl>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></person><person xml:id="pmb11988">
+  <persName>
+      <forename>Karl</forename>
+      <surname>Kraus</surname>
+  </persName>
+  <persName type="person_pseudonym">Berdach J.</persName>
+  <birth>
+    <date when-iso="1874-04-28">28.04.1874</date>
+      <settlement key="pmb41660">
+        <placeName type="pref">Jičín</placeName>
+        <location><geo>50.43723 15.35162</geo></location>
+      </settlement>
+  </birth>  
+  <death>
+    <date when-iso="1936-06-12">12.06.1936</date>
+      <settlement key="pmb50">
+        <placeName type="pref">Wien</placeName>
+        <location><geo>48.2066 16.37341</geo></location>
+      </settlement>
+  </death>
+  <sex value="male"/>
+  <occupation key="90">Schriftsteller/Schriftstellerin</occupation>
+  <occupation key="237">Publizist/Publizistin</occupation>
+  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_17108</idno>
+  <idno type="URL" subtype="gnd">https://d-nb.info/gnd/118566288</idno>
+  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11988.html</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11988</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11988</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/personen/pmb11988</idno>
+  <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp47565</idno>
+  <idno type="URL" subtype="doiorg101553">https://doi.org/10.1553/0x00282496</idno>
+  <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q44328</idno>
+<affiliation>
+    <term key="1182">arbeitet für</term>
+    <orgName key="pmb29308">Die Fackel</orgName>
+    <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29308.html</idno>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29308</idno>
+    <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29308</idno>
+    <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/institutionen/pmb29308</idno>
+    <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q354576</idno>
+</affiliation>
+<affiliation>
+    <term key="1153">in Bezug zu</term>
+    <orgName key="pmb50728">Buchhandlung Richard Lányi</orgName>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50728/</idno>
+    <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/institutionen/pmb50728</idno>
+</affiliation>
+<affiliation>
+    <term key="1409">besitzt</term>
+    <orgName key="pmb43724">Verlag Die Fackel (Wien)</orgName>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43724/</idno>
+    <idno type="URL" subtype="gnd">https://d-nb.info/gnd/16063972-4</idno>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43724</idno>
+    <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/institutionen/pmb43724</idno>
+</affiliation>
+<affiliation>
+    <term key="1153">in Bezug zu</term>
+    <orgName key="pmb36757">Amtsgericht Hamburg</orgName>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36757/</idno>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36757</idno>
+    <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/institutionen/pmb36757</idno>
+    <idno type="URL" subtype="gnd">https://d-nb.info/gnd/2077565-9</idno>
+    <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q480732</idno>
+</affiliation>
+<affiliation>
+    <term key="1153">in Bezug zu</term>
+    <orgName key="pmb36828">Landgericht Hamburg</orgName>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36828/</idno>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36828</idno>
+    <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/institutionen/pmb36828</idno>
+    <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1429221</idno>
+</affiliation>
+<affiliation>
+    <term key="1153">in Bezug zu</term>
+    <orgName key="pmb60573">Karl Kraus-Gesellschaft</orgName>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60573/</idno>
+    <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/institutionen/pmb60573</idno>
+</affiliation>
+<affiliation>
+    <term key="1153">in Bezug zu</term>
+    <orgName key="pmb37159">Jahoda &amp; Siegel (Druckerei)</orgName>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/37159/</idno>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/37159</idno>
+    <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/institutionen/pmb37159</idno>
+</affiliation>
+<affiliation>
+    <term key="1153">in Bezug zu</term>
+    <orgName key="pmb87755">Max Goldschmidt (Büro für Zeitungsausschnitte)</orgName>
+    <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87755/</idno>
+    <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/institutionen/pmb87755</idno>
+</affiliation>
+<listBibl>
+    <bibl type="collections" n="3">Manuell angelegt</bibl>
+    <bibl type="collections" n="5">legalkraus</bibl>
+    <bibl type="collections" n="11">ÖBL nach 1850 geboren</bibl>
+    <bibl type="collections" n="12">Fackel</bibl>
+</listBibl>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></person><person xml:id="pmb21853">
+  <persName>
+      <surname>Nero</surname>
+  </persName>
+  <birth>
+    <date when-iso="37-12-15">0037-12-15</date>
+      <settlement key="pmb21854">
+        <placeName type="pref">Antium</placeName>
+      </settlement>
+  </birth>  
+  <death>
+    <date when-iso="68-06-09">0068-06-09</date>
+      <settlement key="pmb445">
+        <placeName type="pref">Rom</placeName>
+        <location><geo>41.89193 12.51133</geo></location>
+      </settlement>
+  </death>
+  <sex value="male"/>
+  <occupation key="167">Regent/Regentin &gt;&gt; Kaiser/Kaiserin</occupation>
+  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_18392</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/21853</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/personen/pmb21853</idno>
+<listBibl>
+    <bibl type="collections" n="3">Manuell angelegt</bibl>
+    <bibl type="collections" n="5">legalkraus</bibl>
+</listBibl>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></person></listPerson><listOrg><org xml:id="pmb29637">
+  <orgName>Reichspost</orgName>
+  <orgName type="werk_link-anno">http://anno.onb.ac.at/info/rpt_info.htm</orgName>
+  <desc type="entity_type">Tageszeitungsredaktion</desc>
+  <desc type="entity_type_id">972</desc>
+<location type="located_in_place">
+  <placeName key="pmb50">Wien</placeName>
+  <geo>48.2066 16.37341</geo>
+  <note type="IDNO" subtype="geonames">https://sws.geonames.org/2761369/</note>
+  <note type="IDNO" subtype="pmb">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</note>
+  <note type="IDNO" subtype="pmb">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</note>
+  <note type="IDNO" subtype="gnd">https://d-nb.info/gnd/4066009-6</note>
+  <note type="IDNO" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</note>
+  <note type="IDNO" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</note>
+  <note type="IDNO" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</note>
+  <note type="IDNO" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</note>
+  <note type="IDNO" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</note>
+  <note type="IDNO" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</note>
+  <note type="IDNO" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</note>
+  <note type="IDNO" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50</note>
+  <note type="IDNO" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</note>
+  <note type="IDNO" subtype="wikidata">https://www.wikidata.org/entity/Q1741</note>
+</location>
+<location type="located_in_place">
+  <placeName key="pmb50653">Strozzigasse</placeName>
+  <geo>48.20702 16.349371</geo>
+  <note type="IDNO" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50653/</note>
+  <note type="IDNO" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50653</note>
+</location>
+  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29637.html</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29637</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/institutionen/pmb29637</idno>
+  <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q2139624</idno>
+<listBibl>
+    <bibl type="collections" n="1">ASBW</bibl>
+    <bibl type="collections" n="2">Erster Import</bibl>
+    <bibl type="collections" n="5">legalkraus</bibl>
+</listBibl>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></org><org xml:id="pmb50491">
+  <orgName>Strafbezirksgericht I</orgName>
+  <orgName type="wien-geschichte-wiki">https://www.geschichtewiki.wien.gv.at/Bezirksgericht_Josefstadt</orgName>
+  <orgName type="legacy-name-merge">Strafbezirksgericht</orgName>
+  <desc type="entity_type">Gericht</desc>
+  <desc type="entity_type_id">1037</desc>
+<location type="located_in_place">
+  <placeName key="pmb58">VIII., Josefstadt</placeName>
+  <geo>48.21126 16.34706</geo>
+  <note type="IDNO" subtype="geonames">http://sws.geonames.org/2775027/</note>
+  <note type="IDNO" subtype="pmb">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/15566/</note>
+  <note type="IDNO" subtype="gnd">https://d-nb.info/gnd/4108158-4</note>
+  <note type="IDNO" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb58.html</note>
+  <note type="IDNO" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58</note>
+  <note type="IDNO" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/15566</note>
+  <note type="IDNO" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb58</note>
+  <note type="IDNO" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb58</note>
+  <note type="IDNO" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb58.html</note>
+  <note type="IDNO" subtype="wikidata">https://www.wikidata.org/entity/Q256778</note>
+</location>
+<location type="located_in_place">
+  <placeName key="pmb50664">Schiffamtsgasse</placeName>
+  <geo>48.218669 16.373101</geo>
+  <note type="IDNO" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50664/</note>
+  <note type="IDNO" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50664</note>
+</location>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36877/</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36877</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50491/</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/institutionen/pmb50491</idno>
+<listBibl>
+    <bibl type="collections" n="5">legalkraus</bibl>
+</listBibl>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></org></listOrg><listPlace><place xml:id="pmb50653">
+  <placeName>Strozzigasse</placeName>
+  <desc type="entity_type">Straße (K.STR)</desc>
+  <desc type="entity_type_id">26</desc>
+<location type="coords">
+  <geo>48.20702 16.349371</geo>
+</location>
+<location type="located_in_place">
+  <placeName key="pmb58">VIII., Josefstadt</placeName>
+  <geo>48.21126 16.34706</geo>
+</location>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50653/</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50653</idno>
+<listBibl>
+    <bibl type="collections" n="5">legalkraus</bibl>
+</listBibl>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></place><place xml:id="pmb50496">
+  <placeName>Hintere Zollamtsstraße</placeName>
+  <placeName type="person_namensvariante_nachname-komma-vorname">Hintere Zollamtstraße</placeName>
+  <desc type="entity_type">Straße (K.STR)</desc>
+  <desc type="entity_type_id">26</desc>
+<location type="coords">
+  <geo>48.211869 16.387333</geo>
+</location>
+<location type="located_in_place">
+  <placeName key="pmb53">III., Landstraße</placeName>
+  <geo>48.19811 16.39482</geo>
+</location>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50496/</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50496</idno>
+<listBibl>
+    <bibl type="collections" n="5">legalkraus</bibl>
+</listBibl>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></place></listPlace><listBibl><bibl xml:id="lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,001" type="fackel"><title level="a">Vom großen Welttheaterschwindel</title><title level="s">Die
+                  Fackel</title><author key="pmb11988">Karl Kraus</author><editor key="pmb11988">Karl Kraus</editor><date when-iso="1922-11-01">November 1922</date><num type="volume">Jg. 24</num><num type="issue">Nr. 601–607</num><biblScope from="1" to="7">1–7</biblScope><ref target="https://fackel.oeaw.ac.at/f/601,001">2.3
+                  Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner)
+                  wegen Verweigerung einer Berichtigung|D_000002-003-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,005">2.3 Privatanklage von Karl Kraus
+                  gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer
+                  Berichtigung|D_000002-003-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,004">2.3 Privatanklage von Karl Kraus
+                  gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer
+                  Berichtigung|D_000002-003-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,001">2.10 Urteil des Landesgerichts in
+                  Strafsachen I. Wien (G.Z. Bl XV 121/23, Vorsitz: Rudolf
+                  Wessely)|D_000002-010-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,003">2.3 Privatanklage von Karl Kraus
+                  gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer
+                  Berichtigung|D_000002-003-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,001">2.2 Brief Samek an Reichspost
+                  (verantw. Red. Karl Schiffleitner)|D_000002-002-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,001">2.4 Urteil des Strafbezirksgerichts I
+                  Wien (G.Z. U I 3/23/4, Richter: Christoph Höflmayr, Verteidiger: Heinrich
+                  Foglar-Deinhardstein)|D_000002-004-000.xml</ref><noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl>
+            <bibl xml:id="pmb58510">
+  <title type="main">Theodor Herzl’s Tagebücher. 1895–1904</title>
+  <title type="werk_link">https://sammlungen.ub.uni-frankfurt.de/freimann/urn/urn:nbn:de:hebis:30:1-146009</title>
+  <author key="person__11673" role="hat-geschaffen">Herzl, Theodor</author>
+<date notBefore-iso="1922-01-01" when-iso="1922-07-02">1922</date>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58510/</idno>
+  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb58510.html</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb58510</idno>
+<note type="collections">
+  <bibl type="collections" n="3">Manuell angelegt</bibl>
+  <bibl type="collections" n="5">legalkraus</bibl>
+</note>
+  <note type="work_kind">Tagebuch</note>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb36374">
+  <title type="main">Neue Freie Presse</title>
+  <title type="werk_link-anno">http://anno.onb.ac.at/cgi-content/anno?aid=nfp</title>
+  <author key="person__10875" role="hat-herausgegeben">Benedikt, Moriz</author>
+  <author key="person__10872" role="hat-herausgegeben">Benedikt, Ernst</author>
+  <author key="person__10809" role="hat-herausgegeben">Bacher, Eduard</author>
+<date from-iso="1864-01-01" to-iso="1864-12-31">1864  – 1939</date>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36374/</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36374</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36374</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb36374</idno>
+<note type="collections">
+  <bibl type="collections" n="3">Manuell angelegt</bibl>
+  <bibl type="collections" n="5">legalkraus</bibl>
+</note>
+  <note type="work_kind">Publikationsorgan &gt;&gt; Tageszeitung</note>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="lk_fackel__96" corresp="https://fackel.oeaw.ac.at/f/601,077" type="fackel"><title level="a">Für die Neue Freie Presse existiert keine
+                  Judenfrage</title><title level="s">Die Fackel</title><author key="pmb11988">Karl
+                  Kraus</author><editor key="pmb11988">Karl Kraus</editor><date when-iso="1922-11-01">November 1922</date><num type="volume">Jg. 24</num><num type="issue">Nr. 601–607</num><biblScope from="77" to="81">77–81</biblScope><ref target="https://fackel.oeaw.ac.at/f/601,077">2.3 Privatanklage von Karl Kraus
+                  gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer
+                  Berichtigung|D_000002-003-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,077">2.9 Berufungsausführung des
+                  Privatanklägers|D_000002-009-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,077">2.10 Urteil des Landesgerichts in
+                  Strafsachen I. Wien (G.Z. Bl XV 121/23, Vorsitz: Rudolf
+                  Wessely)|D_000002-010-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,077">2.2 Brief Samek an Reichspost
+                  (verantw. Red. Karl Schiffleitner)|D_000002-002-000.xml</ref><noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl>
+            <bibl xml:id="pmb41244">
+  <title type="main">Die Fackel</title>
+  <title type="werk_link">https://fackel.oeaw.ac.at</title>
+  <author key="person__11988" role="hat-herausgegeben">Kraus, Karl</author>
+  <author key="person__10364" role="hat-einen-beitrag-geschaffen-zu">Viertel, Berthold</author>
+  <author key="person__11230" role="hat-einen-beitrag-geschaffen-zu">Ehrenstein, Albert</author>
+  <author key="person__12438" role="hat-einen-beitrag-geschaffen-zu">Adam, Robert</author>
+  <author key="person__10574" role="hat-einen-beitrag-geschaffen-zu">Wittels, Fritz</author>
+<date from-iso="1899-01-01" to-iso="1899-12-31">1899  – 1936</date>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41244/</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41244</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41244</idno>
+  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb41244.html</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41244</idno>
+<note type="collections">
+  <bibl type="collections" n="3">Manuell angelegt</bibl>
+  <bibl type="collections" n="5">legalkraus</bibl>
+</note>
+  <note type="work_kind">Publikationsorgan &gt;&gt; Zeitschrift</note>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb42850">
+  <title type="main">Reichspost</title>
+  <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=rpt</title>
+  <author key="person__53731" role="hat-herausgegeben">Funder, Friedrich</author>
+<date from-iso="1893-01-01" to-iso="1893-12-31">1893  – 1938</date>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42850/</idno>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42850</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42850</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb42850</idno>
+<note type="collections">
+  <bibl type="collections" n="3">Manuell angelegt</bibl>
+  <bibl type="collections" n="5">legalkraus</bibl>
+</note>
+  <note type="work_kind">Publikationsorgan &gt;&gt; Tageszeitung</note>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb62248">
+  <title type="main">Preisschrift über die Grundlage der Moral, nicht gekrönt von der königlich dänischen Sozietät der Wissenschaften</title>
+  <author key="person__5787" role="hat-geschaffen">Schopenhauer, Arthur</author>
+<date notBefore-iso="1841-01-01" when-iso="1841-07-02">1841</date>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62248/</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62248</idno>
+<note type="collections">
+  <bibl type="collections" n="5">legalkraus</bibl>
+</note>
+  <note type="work_kind">Philosophische Abhandlung</note>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb62204">
+  <title type="main">Ein Kreislauf</title>
+  <title type="werk_bibliografische-angabe">EIn Kreislauf, in:  Reichspost Nr. 319, 19.11.1922 (Morgenblatt), S. 3.</title>
+  <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=rpt&amp;datum=19221129&amp;seite=3</title>
+<date>1922-11-29  – 1922-11-29</date>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62204/</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62204</idno>
+<note type="collections">
+  <bibl type="collections" n="5">legalkraus</bibl>
+</note>
+  <note type="work_kind">Zeitungsbericht</note>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl></listBibl></back></text>
+</TEI>

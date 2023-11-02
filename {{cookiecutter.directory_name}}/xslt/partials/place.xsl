@@ -103,7 +103,7 @@
                         Latitude
                     </th>
                     <td>
-                        <xsl:value-of select="tokenize(./tei:location/tei:geo, '\s')[1]"/>
+                        <xsl:value-of select="tokenize(./tei:location[1]/tei:geo[1], '\s')[1]"/>
                     </td>
                 </tr>
                 </xsl:if>
@@ -113,7 +113,7 @@
                         Longitude
                     </th>
                     <td>
-                        <xsl:value-of select="tokenize(./tei:location/tei:geo, '\s')[2]"/>
+                        <xsl:value-of select="tokenize(./tei:location[1]/tei:geo[1], '\s')[2]"/>
                     </td>
                 </tr>
                 </xsl:if>

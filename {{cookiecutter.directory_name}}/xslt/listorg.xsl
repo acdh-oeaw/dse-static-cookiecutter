@@ -15,7 +15,7 @@
     <xsl:import href="./partials/html_footer.xsl"/>
     <xsl:import href="partials/tabulator_dl_buttons.xsl"/>
     <xsl:import href="partials/tabulator_js.xsl"/>
-    <xsl:import href="./partials/org.xsl"/>
+    <xsl:import href="partials/org.xsl"/> 
     <xsl:template match="/">
         <xsl:variable name="doc_title">
             <xsl:value-of select=".//tei:titleStmt/tei:title[1]/text()"/>

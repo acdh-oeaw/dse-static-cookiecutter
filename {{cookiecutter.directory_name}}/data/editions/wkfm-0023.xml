@@ -1,0 +1,117 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="https://id.acdh.oeaw.ac.at/dse-static" xml:id="wkfm-0023.xml" prev="https://id.acdh.oeaw.ac.at/dse-static/L041464.xml" next="https://id.acdh.oeaw.ac.at/wkfm/wkfm-0024.xml">
+    <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Wiener Merkantilprotokoll Nr. 0023</title>
+            <title type="sub">Digitale Edition des: Merkantil und Wechselgericht Merkantilprotokoll</title>
+            <principal>
+               <persName>Peter Rauscher</persName>
+            </principal>
+            <funder>
+               <name>FWF - Der Wissenschaftsfonds</name>
+               <address>
+                  <street>Sensengasse 1</street>
+                  <postCode>1090 Wien</postCode>
+                  <placeName>
+                     <country>A</country>
+                     <settlement>Wien</settlement>
+                  </placeName>
+               </address>
+            </funder>
+            <respStmt>
+               <resp>Transkription und Annotation</resp>
+               <persName>Peter Rauscher</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Transkription und Annotation</resp>
+               <persName>Sandra Hoislbauer</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>
+               <idno type="transkribus_col_id">84522</idno>
+               <idno type="transkribus_doc_id">560225</idno>
+            </p>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc type="invetory">
+               <msIdentifier>
+                  <institution>Wiener Stadt- und Landesarchiv (WStLA)</institution>
+                  <repository>Bestand 2.3.2 - Merkantil- und Wechselgericht | 1725-1850-(1863)</repository>
+                  <idno type="archive">WStLA 2.3.2.B6.1</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus>0023</locus>
+                     <p/>
+                  </msItem>
+               </msContents>
+               <history>
+                  <origin notBefore="1725-01-01" notAfter="1758-12-31"/>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+    <surface ulx="0" uly="0" lrx="2934" lry="4530" xml:id="facs_18">
+         <graphic url="https://id.acdh.oeaw.ac.at/wkfm/Merkantil_und_Wechselgericht_Merkantilprotokoll_1_Reihe__Reihe_1_7_Protokoll_1_0023.jpg" width="2934px" height="4530px"/>
+         <zone points="416,321 416,3849 2820,3849 2820,321" rendition="TextRegion" xml:id="facs_18_r1">
+            <zone points="891,418 957,420 1024,422 1091,425 1158,427 1225,428 1292,428 1359,430 1426,430 1493,430 1560,430 1626,431 1693,431 1760,431 1827,431 1894,433 1961,434 2028,434 2095,436 2162,439 2229,440 2229,343 2162,342 2095,339 2028,337 1961,337 1894,336 1827,334 1760,334 1693,334 1626,334 1560,333 1493,333 1426,333 1359,333 1292,331 1225,331 1158,330 1091,328 1024,325 957,323 891,321" rendition="Line" xml:id="facs_18_r1l1"/>
+            <zone points="423,643 539,640 656,637 772,634 889,631 1005,628 1122,626 1238,623 1355,620 1471,617 1588,614 1705,611 1821,609 1938,605 2054,603 2171,600 2287,598 2404,595 2520,591 2637,587 2754,584 2754,487 2637,490 2520,494 2404,498 2287,501 2171,503 2054,506 1938,508 1821,512 1705,514 1588,517 1471,520 1355,523 1238,526 1122,529 1005,531 889,534 772,537 656,540 539,543 423,546" rendition="Line" xml:id="facs_18_r1l2"/>
+            <zone points="417,788 539,782 661,776 783,772 905,767 1027,764 1149,760 1271,757 1393,755 1515,752 1637,749 1759,745 1881,742 2003,737 2125,732 2247,727 2369,719 2491,710 2613,702 2736,691 2736,594 2613,605 2491,613 2369,622 2247,630 2125,635 2003,640 1881,645 1759,648 1637,652 1515,655 1393,658 1271,660 1149,663 1027,667 905,670 783,675 661,679 539,685 417,691" rendition="Line" xml:id="facs_18_r1l3"/>
+            <zone points="416,938 441,936 466,934 491,931 516,928 541,925 566,923 591,922 616,920 641,919 666,919 691,921 716,923 741,926 741,829 716,826 691,824 666,822 641,822 616,823 591,825 566,826 541,828 516,831 491,834 466,837 441,839 416,841" rendition="Line" xml:id="facs_18_r1l4"/>
+            <zone points="959,2104 994,2104 1029,2104 1064,2104 1099,2105 1134,2105 1169,2107 1205,2107 1240,2108 1275,2108 1310,2110 1345,2110 1380,2111 1415,2111 1451,2111 1486,2111 1521,2111 1556,2111 1591,2111 1626,2110 1662,2110 1662,2013 1626,2013 1591,2014 1556,2014 1521,2014 1486,2014 1451,2014 1415,2014 1380,2014 1345,2013 1310,2013 1275,2011 1240,2011 1205,2010 1169,2010 1134,2008 1099,2008 1064,2007 1029,2007 994,2007 959,2007" rendition="Line" xml:id="facs_18_r1l5"/>
+            <zone points="930,3455 960,3455 991,3455 1022,3455 1053,3455 1084,3455 1115,3455 1146,3455 1177,3455 1208,3455 1239,3455 1269,3455 1300,3457 1331,3457 1362,3458 1393,3458 1424,3460 1455,3461 1486,3463 1517,3464 1548,3466 1548,3387 1517,3385 1486,3384 1455,3382 1424,3381 1393,3379 1362,3379 1331,3378 1300,3378 1269,3376 1239,3376 1208,3376 1177,3376 1146,3376 1115,3376 1084,3376 1053,3376 1022,3376 991,3376 960,3376 930,3376" rendition="Line" xml:id="facs_18_r1l6"/>
+            <zone points="500,3572 614,3567 729,3563 843,3562 958,3562 1073,3563 1187,3566 1302,3569 1416,3574 1531,3579 1646,3584 1760,3589 1875,3592 1989,3595 2104,3596 2219,3596 2333,3595 2448,3592 2562,3585 2677,3576 2792,3565 2792,3486 2677,3497 2562,3506 2448,3513 2333,3516 2219,3517 2104,3517 1989,3516 1875,3513 1760,3510 1646,3505 1531,3500 1416,3495 1302,3490 1187,3487 1073,3484 958,3483 843,3483 729,3484 614,3488 500,3493" rendition="Line" xml:id="facs_18_r1l7"/>
+            <zone points="489,3694 604,3686 719,3679 834,3678 949,3676 1065,3678 1180,3682 1295,3687 1410,3691 1525,3699 1641,3704 1756,3711 1871,3715 1986,3720 2101,3722 2217,3723 2332,3721 2447,3718 2562,3710 2677,3700 2793,3685 2793,3601 2677,3616 2562,3626 2447,3634 2332,3637 2217,3639 2101,3638 1986,3636 1871,3631 1756,3627 1641,3620 1525,3615 1410,3607 1295,3603 1180,3598 1065,3594 949,3592 834,3594 719,3595 604,3602 489,3610" rendition="Line" xml:id="facs_18_r1l8"/>
+            <zone points="477,3810 594,3809 711,3810 828,3813 945,3816 1062,3819 1179,3824 1297,3830 1414,3834 1531,3839 1648,3842 1765,3846 1882,3848 1999,3849 2117,3849 2234,3846 2351,3842 2468,3835 2585,3826 2702,3814 2820,3798 2820,3708 2702,3724 2585,3736 2468,3745 2351,3752 2234,3756 2117,3759 1999,3759 1882,3758 1765,3756 1648,3752 1531,3749 1414,3744 1297,3740 1179,3734 1062,3729 945,3726 828,3723 711,3720 594,3719 477,3720" rendition="Line" xml:id="facs_18_r1l9"/>
+         </zone>
+      </surface>
+      
+   </facsimile>
+   <text>
+      <body>
+        <div>
+            <pb facs="#facs_18" n="18" xml:id="img_0018"/>
+            
+            <ab facs="#facs_18_r1">
+               <lb facs="#facs_18_r1l1" n="N001"/><seg type="orighead__contract">Societaets Contract und Interessenten</seg>
+               <lb facs="#facs_18_r1l2" n="N002"/>In obiger Erklährung dd<hi style="superscript">to</hi> 18<hi style="superscript">ten</hi> <choice><expan/><abbr>Apr:</abbr></choice> 725 N<hi style="superscript">o</hi> 9 hat der <rs type="person" ref="#wkfm__11199">Albrechts-
+               <lb break="no" facs="#facs_18_r1l3" n="N003"/>berger</rs> beykommen lassen, daß er seine Handlung für sich allein
+               <lb facs="#facs_18_r1l4" n="N004"/>führe.
+               <lb facs="#facs_18_r1l5" n="N005"/><seg type="orighead__wedding_contract">Heuraths Contract</seg>
+               <lb facs="#facs_18_r1l6" n="N006"/><seg type="orighead__other_notes">Anmerkungen</seg>
+               <lb facs="#facs_18_r1l7" n="N007"/><seg type="editorial_comment_seg">Der <rs type="person" ref="#wkfm__43788">Johann Georg <hi><unclear>Bus</unclear></hi> <unclear>Burckhhaimm</unclear></rs><unclear>Burckhhaimm<unclear/></unclear> hat in seiner untern 12<unclear/> hat in seiner untern 12<hi style="superscript">ten</hi>
+               <lb break="no" facs="#facs_18_r1l8" n="N008"/><choice><expan/><abbr>Jul.</abbr></choice> 729 eingereichten Erklährung N<hi style="superscript">o</hi> 85 beygebracht, daß er
+               <lb break="no" facs="#facs_18_r1l9" n="N009"/>des <rs type="person" ref="#wkfm__11199">Ferdinand Albrechtsberger</rs> seine Handlung <unclear>ubernohmen </unclear>habe.<note type="editorial_comment_note">Der gesamte Abschnitt ist in der Quelle gestrichen.</note></seg>
+            </ab>
+            
+        </div>
+      </body>
+    <back><listPerson><person xml:id="wkfm__11199">
+                     <persName>
+                        <forename>Ferdinand</forename>
+                        <surname>Albrechtsberger</surname>
+                     </persName>
+                     <death><date>1728</date></death>
+                     <occupation>Handelsmann</occupation>
+                     <occupation type="kaufmannsklasse">bürgerlich</occupation>
+                     <listBibl>
+                        <bibl>Huchler, Bürgeraufnahmen, 338 (20. Mai 1715).</bibl>
+                     </listBibl>
+               <noteGrp><note target="wkfm-0023.xml" type="mentions">Wiener Merkantilprotokoll Nr. 0023</note></noteGrp></person>
+                <person xml:id="wkfm__43788">
+                     <persName>
+                        <forename>Johann Georg</forename>
+                        <surname>Buchheim</surname>
+                        <surname type="alt">Buchhaimer</surname>
+                     </persName>
+                     <occupation>Handelsmann</occupation>
+                     <occupation type="kaufmannsklasse">bürgerlich</occupation>
+                     <listBibl>
+                        <bibl>Huchler, Bürgeraufnahmen, 353 (Dezember 1728).</bibl>
+                     </listBibl>
+               <noteGrp><note target="wkfm-0023.xml" type="mentions">Wiener Merkantilprotokoll Nr. 0023</note></noteGrp></person>
+                </listPerson></back></text>
+</TEI>

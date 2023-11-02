@@ -27,28 +27,6 @@
                         </td>
                     </tr>
                 </xsl:if>
-                <xsl:if test="./tei:location[@type='located_in_place']">
-                    <xsl:variable name="places" select="document('../data/indices/listplace.xml')//tei:TEI//tei:place"/>
-                    <tr>
-                        <th>
-                            Teil von
-                        </th>
-                        <td>
-                            <ul>
-                                <xsl:for-each select="./tei:location[@type='located_in_place']">
-                                    <xsl:variable name="key" select="./tei:placeName/@key"/>
-                                    <xsl:variable name="corr_place" select="$places//id($key)"/>
-                                    <xsl:variable name="coords" select="tokenize($corr_place/tei:location[@type='coords']/tei:geo, ', ')"/>
-                                    <li class="map-coordinates" lat="{$coords[1]}" long="{$coords[2]}" subtitle="{./tei:orgName}">
-                                        <a href="{$key}.html">
-                                            <xsl:value-of select="./tei:placeName"/>
-                                        </a>
-                                    </li>
-                                </xsl:for-each>
-                            </ul>
-                        </td>
-                    </tr>
-                </xsl:if>
                 <xsl:if test="./tei:idno[@type='GND']">
                     <tr>
                         <th>

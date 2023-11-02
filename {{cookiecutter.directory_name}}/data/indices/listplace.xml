@@ -2,10 +2,10 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Ortsverzeichnis</title>
+                <title type="main">Werkverzeichnis</title>
             </titleStmt>
             <publicationStmt>
-                <p />
+                <p/>
             </publicationStmt>
             <sourceDesc>
                 <p>born digital</p>
@@ -14,62 +14,40 @@
     </teiHeader>
     <text>
         <body>
-            <div>
-                <listPlace>
-                    <place xml:id="pmb875">
-                        <placeName>Klagenfurt</placeName>
-                        <location>
-                            <geo decls="LatLng">46.63333 14.3</geo>
-                        </location>
-                        <listEvent>
-                            <event type="mentioned">
-                                <p>erwähnt in <title>Sample File 002</title>
-                                </p>
-                                <linkGrp>
-                                    <link type="ARCHE"
-                                        target="https://id.acdh.oeaw.ac.at/some-radom-string/f_002.xml"/>
-                                </linkGrp>
-                            </event>
-                            <event type="mentioned">
-                                <p>erwähnt in <title>Sample File 003</title>
-                                </p>
-                                <linkGrp>
-                                    <link type="ARCHE"
-                                        target="https://id.acdh.oeaw.ac.at/some-radom-string/f_003.xml"/>
-                                </linkGrp>
-                            </event>
-                        </listEvent>
-                        <idno type="geonames">https://www.geonames.org/2774321/</idno>
-                        <idno type="wikidata">https://www.wikidata.org/wiki/wiki/Q41753/</idno>
-                        <idno type="gnd">https://d-nb.info/gnd/4030921-6/</idno>
-                        <idno type="schnitzler-briefe">
-                            https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb875</idno>
-                        
-                    </place>
-                    <place xml:id="pmb41212">
-                        <placeName>Korfu</placeName>
-                        <location>
-                            <geo decls="LatLng">39.598055 19.852222</geo>
-                        </location>
-                        <listEvent>
-                            <event type="mentioned">
-                                <p>erwähnt in <title>Sample File 001</title>
-                                </p>
-                                <linkGrp>
-                                    <link type="ARCHE"
-                                        target="https://id.acdh.oeaw.ac.at/some-radom-string/f_001.xml"/>
-                                </linkGrp>
-                            </event>
-                        </listEvent>
-                        <idno type="geonames">https://www.geonames.org/2463678/</idno>
-                        <idno type="wikidata">https://www.wikidata.org/wiki/wiki/Q121378/</idno>
-                        <idno type="gnd">https://d-nb.info/gnd/4073728-7/</idno>
-                        <idno type="schnitzler-briefe">
-                            https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41212</idno>
-                        
-                    </place>
-                </listPlace>
-            </div>
+            <div><listPlace><place xml:id="pmb50496">
+  <placeName>Hintere Zollamtsstraße</placeName>
+  <placeName type="person_namensvariante_nachname-komma-vorname">Hintere Zollamtstraße</placeName>
+  <desc type="entity_type">Straße (K.STR)</desc>
+  <desc type="entity_type_id">26</desc>
+<location type="coords">
+  <geo>48.211869 16.387333</geo>
+</location>
+<location type="located_in_place">
+  <placeName key="pmb53">III., Landstraße</placeName>
+  <geo>48.19811 16.39482</geo>
+</location>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50496/</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50496</idno>
+<listBibl>
+    <bibl type="collections" n="5">legalkraus</bibl>
+</listBibl>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></place><place xml:id="pmb50653">
+  <placeName>Strozzigasse</placeName>
+  <desc type="entity_type">Straße (K.STR)</desc>
+  <desc type="entity_type_id">26</desc>
+<location type="coords">
+  <geo>48.20702 16.349371</geo>
+</location>
+<location type="located_in_place">
+  <placeName key="pmb58">VIII., Josefstadt</placeName>
+  <geo>48.21126 16.34706</geo>
+</location>
+  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50653/</idno>
+  <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50653</idno>
+<listBibl>
+    <bibl type="collections" n="5">legalkraus</bibl>
+</listBibl>
+<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></place><place xml:id="pmb50"><placeName>Wien</placeName><placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName><placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName><placeName type="alternative-name">Bécs</placeName><placeName type="alternative-name">Land Wien</placeName><placeName type="alternative-name">Vídeň</placeName><placeName type="alternative-name">Wenia</placeName><placeName type="alternative-name">Beč</placeName><placeName type="alternative-name">Vindobona (Wien)</placeName><placeName type="legacy-name-merge">Vindobona</placeName><placeName type="alternative-name">Vienna</placeName><placeName type="legacy-name-merge">Wien?</placeName><desc type="entity_type">Besiedelter Ort (A.BSO)</desc><desc type="entity_type_id">14</desc><location type="coords"><geo>48,2066 16,37341</geo></location><location type="located_in_place"><placeName ref="#pmb41240">Österreich</placeName><geo>47,33333 13,33333</geo></location><idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno><idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno><idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno><idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno><idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno><idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno><noteGrp><note target="L041464.xml" type="mentions">Hugo von Hofmannsthal an Hermann Bahr, [23./24. 11. 1891]</note></noteGrp></place><place xml:id="pmb501"><placeName>Kärntnerring</placeName><desc type="entity_type">Straße (K.STR)</desc><desc type="entity_type_id">26</desc><location type="coords"><geo>48,201874800905 16,371985203093</geo></location><location type="located_in_place"><placeName ref="#pmb112">Ringstraße</placeName><geo>48,202432234197 16,371296264238</geo></location><location type="located_in_place"><placeName ref="#pmb51">I., Innere Stadt</placeName><geo>48,20769 16,37049</geo></location><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entities:K%C3%A4rntner_Ring</idno><idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb501</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/501</idno><idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb501</idno><noteGrp><note target="L041464.xml" type="mentions">Hugo von Hofmannsthal an Hermann Bahr, [23./24. 11. 1891]</note></noteGrp></place><place xml:id="pmb34"><placeName>Café Griensteidl</placeName><desc type="entity_type">Kaffeehaus (K.KAF)</desc><desc type="entity_type_id">20</desc><location type="coords"><geo>48,208258 16,366111</geo></location><location type="located_in_place"><placeName ref="#pmb51">I., Innere Stadt</placeName><geo>48,20769 16,37049</geo></location><idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb34</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34</idno><idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34</idno><noteGrp><note target="L041464.xml" type="mentions">Hugo von Hofmannsthal an Hermann Bahr, [23./24. 11. 1891]</note></noteGrp></place><place xml:id="pmb182"><placeName>Paris</placeName><placeName type="alternative-name">P'ariz</placeName><placeName type="legacy-uri-merge">http://d-nb.info/gnd/4044660-8</placeName><placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName><placeName type="alternative-name">Pariž</placeName><placeName type="alternative-name">Parisius</placeName><desc type="entity_type">Besiedelter Ort (A.BSO)</desc><desc type="entity_type_id">14</desc><location type="coords"><geo>48,85341 2,3488</geo></location><idno type="URL" subtype="geonames">http://sws.geonames.org/2988507/</idno><idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno><idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno><idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno><noteGrp><note target="L041464.xml" type="mentions">Hugo von Hofmannsthal an Hermann Bahr, [23./24. 11. 1891]</note></noteGrp></place></listPlace></div>
         </body>
     </text>
 </TEI>
