@@ -21,6 +21,9 @@
                                     <li>
                                         <a class="dropdown-item" href="about.html" data-i18n="navbar__about"/>
                                     </li>
+                                    <li>
+                                        <a class="dropdown-item" href="imprint.html" data-i18n="navbar__imprint"/>
+                                    </li>
                                 </ul>
                             </li>
 
