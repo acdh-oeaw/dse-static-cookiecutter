@@ -6,7 +6,6 @@
     "github_url": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.directory_name }}",
     "base_url": "http://url-of-my-awesome-site",
     "redmine_id": "18716",
-    "facs": ["yes", "few", "many"],
     "update_favicons": ["yes", "no"],
     "darkmode": ["yes", "no"],
     "translations": ["no", "yes"],
