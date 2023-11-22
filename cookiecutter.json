@@ -11,6 +11,6 @@
     "darkmode": ["yes", "no"],
     "translations": ["no", "yes"],
     "search_engine": ["typesense", "staticsearch"],
-    "data_dir": "",
+    "data_dir": "dse-static-data",
     "data_repo": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.data_dir }}"
 } 
