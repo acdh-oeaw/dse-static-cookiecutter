@@ -143,7 +143,7 @@
 
                 <script type="text/javascript" src="js/osd_scroll.js"></script>
                 {% elif cookiecutter.facs == "few" %}
-                <!-- <script type="text/javascript" src="js/osd_single.js"></script> -->
+                <script type="text/javascript" src="js/osd_single.js"></script>
                 {% endif %}
             </body>
         </html>
