@@ -137,7 +137,7 @@
                     </xsl:for-each>
                 </main>
                 <xsl:call-template name="html_footer"/>
-                <script src="https://unpkg.com/de-micro-editor@0.2.6/dist/de-editor.min.js"></script>
+                <script src="https://unpkg.com/de-micro-editor@0.3.4/dist/de-editor.min.js"></script>
                 <script type="text/javascript" src="js/run.js"></script>
                 {% if cookiecutter.facs == "many" %}
 
