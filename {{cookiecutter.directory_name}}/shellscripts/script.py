@@ -270,7 +270,7 @@ class DSESetup:
             logger.info("Building index ...")
             self.build_index()
         elif argument == "fd":
-            fetch_data()
+            self.fetch_data()
 
 
 if __name__ == "__main__":
