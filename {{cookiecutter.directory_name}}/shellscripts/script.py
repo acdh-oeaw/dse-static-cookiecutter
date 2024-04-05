@@ -49,7 +49,7 @@ class DSESetup:
         :raises HTTPError, URLError: raises an exception
         """
 
-        msg = ("Making request to %s ...", url)
+        msg = "Making request to {url}"
         logger.info(msg)
 
         try:
@@ -140,13 +140,11 @@ class DSESetup:
             content.extractall(saxon_destination_directory)
             logger.info("%s OK!", msg)
 
-    def download_static_search(self) -> None:
+    def download_static_search(self, system) -> None:
         """Download static search tool."""
 
         msg = "Downloading static search ..."
 
-        static_search_download_url = self.config.get("static-search", "url")
-        static_search_download_url_win = self.config.get("static-search", "url-win")
         static_search_destination_directory = os.path.join(
             self.PROJECT_ROOT, self.config.get("static-search", "dir")
         )
@@ -157,11 +155,11 @@ class DSESetup:
 
         # posix ->  linux, os
         # nt    ->  windows
-        if os.name == "posix":
-            response = self.make_request(static_search_download_url)
-        else:
-            response = self.make_request(static_search_download_url_win)
+        sys = ""
+        if system == "nt":
+            sys = "-windows"
 
+        response = self.make_request(self.config.get("static-search", f"url{sys}"))
         if response:
             zip_file = zipfile.ZipFile(io.BytesIO(response[1]))
             zip_file.extractall(self.PROJECT_ROOT)
@@ -231,7 +229,6 @@ class DSESetup:
         ss_config_file_path = ss_config_file_path.replace("\\", "/")
 
         os.system(f"ant -f {build_file_path} -DssConfigFile={ss_config_file_path}")
-        logger.info("%s OK!", msg)
 
     def fetch_data(self) -> None:
         """Fetch transcriptions from data repository"""
@@ -267,14 +264,13 @@ class DSESetup:
             self.download_imprints()
             self.download_saxon()
             if self.config.get("cookiecutter", "search") == "staticsearch":
-                self.download_static_search()
+                self.download_static_search(os.name)
                 self.download_stopword_list()
         elif argument == "bi":
             logger.info("Building index ...")
             self.build_index()
         elif argument == "fd":
-            # fetch_data()
-            pass
+            fetch_data()
 
 
 if __name__ == "__main__":
