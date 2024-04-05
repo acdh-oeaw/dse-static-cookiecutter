@@ -11,6 +11,7 @@ import shutil
 import tempfile
 import xml.etree.ElementTree as ET
 import zipfile
+from typing import Tuple
 from urllib.error import HTTPError, URLError
 from urllib.request import urlopen
 
@@ -29,8 +30,10 @@ class DSESetup:
 
     def __init__(self, config_path):
         self.SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
         self.config = configparser.ConfigParser()
         self.config.read(os.path.join(self.SCRIPT_DIR, config_path))
+
         self.PROJECT_ROOT = os.path.abspath(
             os.path.join(os.path.dirname(__file__), os.pardir)
         )
@@ -38,15 +41,21 @@ class DSESetup:
             self.PROJECT_ROOT, self.config.get("data", "base-dir")
         )
 
-    def make_request(self, url: str) -> tuple:
+
+    def make_request(self, url: str) -> Tuple:
         """
         Makes an HTTP request to the given URL and returns the response as a tuple.
         :param url: The URL to connect to.
         :returns: A tuple with the resonse info in [0] and the response content in [1].
         :raises HTTPError, URLError: raises an exception
         """
+
+        msg = ("Making request to %s ...", url)
+        logger.info(msg)
+
         try:
             with urlopen(url) as response:
+                logger.info("%s OK!", msg)
                 return (response.info(), response.read())
         except HTTPError as e:
             logger.error("HTTP error occured for url %s: %s", url, e)
@@ -55,11 +64,12 @@ class DSESetup:
             logger.error("URL error occured for url %s: %s", url, e)
             raise
 
+
     def cleanup(self, file_or_directory_path: str) -> None:
         """Cleanup old file/directory versions.
         :param file_or_directory_path: The path to clean up."""
 
-        msg = f"Deleting {os.path.relpath(file_or_directory_path)}"
+        msg = f"Deleting {os.path.relpath(file_or_directory_path)} ..."
 
         logger.info(msg)
 
@@ -74,6 +84,7 @@ class DSESetup:
         elif os.path.isdir(file_or_directory_path):
             shutil.rmtree(file_or_directory_path)
         logger.info("%s OK!", msg)
+
 
     def download_imprints(self) -> None:
         """Download imprint XML files for different locales."""
@@ -115,6 +126,7 @@ class DSESetup:
             xml_declaration=True,
         )
 
+
     def download_saxon(self) -> None:
         """Download Saxon HE (Home Edition)."""
 
@@ -131,6 +143,7 @@ class DSESetup:
             content = zipfile.ZipFile(io.BytesIO(response[1]))
             content.extractall(saxon_destination_directory)
             logger.info("%s OK!", msg)
+
 
     def download_static_search(self) -> None:
         """Download static search tool."""
@@ -178,6 +191,7 @@ class DSESetup:
             else:
                 logger.error("Renaming failed.")
 
+
     def download_stopword_list(self) -> None:
         """Download stopword list for static search tool."""
 
@@ -206,10 +220,12 @@ class DSESetup:
         ) as file:
             pass
 
+
     def build_index(self) -> None:
         """Build static-search index"""
 
-        logger.info("Building index ...")
+        msg = "Building index ..."
+        logger.info(msg)
 
         static_search_directory = os.path.join(
             self.PROJECT_ROOT, self.config.get("static-search", "dir")
@@ -222,6 +238,26 @@ class DSESetup:
         ss_config_file_path = ss_config_file_path.replace("\\", "/")
 
         os.system(f"ant -f {build_file_path} -DssConfigFile={ss_config_file_path}")
+        logger.info("%s OK!", msg)
+
+
+    def fetch_data(self) -> None:
+        """Fetch transcriptions from data repository"""
+        msg = "Fetching data ..."
+        logger.info(msg)
+        response = self.make_request(self.config.get("cookiecutter", "data-url"))
+
+        if response:
+            with tempfile.TemporaryDirectory() as tempdir:
+                response[1].extractall(tempdir)
+                for directory in self.config.items("data.subfolders"):
+                    directory_path = os.path.join(self.DATA_DIR, directory[1])
+                    print(directory_path)
+                    self.cleanup(directory_path)
+                    os.mkdir(directory_path)
+                    shutil.move(os.path.join(tempdir, f"{self.config.get("cookiecutter", "data_dir")}-main", self.config.get("data", "base-dir"), directory), self.DATA_DIR)
+            logger.info("%s OK!", msg)
+
 
     def run_setup(self, argument: str) -> None:
         """
