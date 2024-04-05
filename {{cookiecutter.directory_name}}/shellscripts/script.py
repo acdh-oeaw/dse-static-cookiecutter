@@ -41,7 +41,6 @@ class DSESetup:
             self.PROJECT_ROOT, self.config.get("data", "base-dir")
         )
 
-
     def make_request(self, url: str) -> Tuple:
         """
         Makes an HTTP request to the given URL and returns the response as a tuple.
@@ -64,7 +63,6 @@ class DSESetup:
             logger.error("URL error occured for url %s: %s", url, e)
             raise
 
-
     def cleanup(self, file_or_directory_path: str) -> None:
         """Cleanup old file/directory versions.
         :param file_or_directory_path: The path to clean up."""
@@ -84,7 +82,6 @@ class DSESetup:
         elif os.path.isdir(file_or_directory_path):
             shutil.rmtree(file_or_directory_path)
         logger.info("%s OK!", msg)
-
 
     def download_imprints(self) -> None:
         """Download imprint XML files for different locales."""
@@ -126,7 +123,6 @@ class DSESetup:
             xml_declaration=True,
         )
 
-
     def download_saxon(self) -> None:
         """Download Saxon HE (Home Edition)."""
 
@@ -143,7 +139,6 @@ class DSESetup:
             content = zipfile.ZipFile(io.BytesIO(response[1]))
             content.extractall(saxon_destination_directory)
             logger.info("%s OK!", msg)
-
 
     def download_static_search(self) -> None:
         """Download static search tool."""
@@ -191,7 +186,6 @@ class DSESetup:
             else:
                 logger.error("Renaming failed.")
 
-
     def download_stopword_list(self) -> None:
         """Download stopword list for static search tool."""
 
@@ -220,7 +214,6 @@ class DSESetup:
         ) as file:
             pass
 
-
     def build_index(self) -> None:
         """Build static-search index"""
 
@@ -240,7 +233,6 @@ class DSESetup:
         os.system(f"ant -f {build_file_path} -DssConfigFile={ss_config_file_path}")
         logger.info("%s OK!", msg)
 
-
     def fetch_data(self) -> None:
         """Fetch transcriptions from data repository"""
         msg = "Fetching data ..."
@@ -255,9 +247,16 @@ class DSESetup:
                     print(directory_path)
                     self.cleanup(directory_path)
                     os.mkdir(directory_path)
-                    shutil.move(os.path.join(tempdir, f"{self.config.get("cookiecutter", "data_dir")}-main", self.config.get("data", "base-dir"), directory), self.DATA_DIR)
+                    shutil.move(
+                        os.path.join(
+                            tempdir,
+                            f"{self.config.get('cookiecutter', 'data_dir')}-main",
+                            self.config.get("data", "base-dir"),
+                            directory,
+                        ),
+                        self.DATA_DIR,
+                    )
             logger.info("%s OK!", msg)
-
 
     def run_setup(self, argument: str) -> None:
         """
