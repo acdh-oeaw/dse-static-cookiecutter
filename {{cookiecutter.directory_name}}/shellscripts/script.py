@@ -29,6 +29,8 @@ class DSESetup:
     """
 
     def __init__(self, config_path):
+        self.SYSTEM = os.name
+
         self.SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
         self.config = configparser.ConfigParser()
@@ -49,7 +51,7 @@ class DSESetup:
         :raises HTTPError, URLError: raises an exception
         """
 
-        msg = "Making request to {url}"
+        msg = f"Making request to {url}"
         logger.info(msg)
 
         try:
@@ -140,7 +142,7 @@ class DSESetup:
             content.extractall(saxon_destination_directory)
             logger.info("%s OK!", msg)
 
-    def download_static_search(self, system) -> None:
+    def download_static_search(self) -> None:
         """Download static search tool."""
 
         msg = "Downloading static search ..."
@@ -156,7 +158,7 @@ class DSESetup:
         # posix ->  linux, os
         # nt    ->  windows
         sys = ""
-        if system == "nt":
+        if self.SYSTEM == "nt":
             sys = "-windows"
 
         response = self.make_request(self.config.get("static-search", f"url{sys}"))
@@ -221,7 +223,13 @@ class DSESetup:
         static_search_directory = os.path.join(
             self.PROJECT_ROOT, self.config.get("static-search", "dir")
         )
-        static_search_config_file = self.config.get("static-search", "config-file")
+
+        sys = ""
+        if self.SYSTEM == "nt":
+            sys = "-windows"
+        static_search_config_file = self.config.get(
+            "static-search", f"config-file{sys}"
+        )
 
         build_file_path = os.path.join(static_search_directory, "build.xml")
         ss_config_file_path = os.path.join(self.PROJECT_ROOT, static_search_config_file)
@@ -264,7 +272,7 @@ class DSESetup:
             self.download_imprints()
             self.download_saxon()
             if self.config.get("cookiecutter", "search") == "staticsearch":
-                self.download_static_search(os.name)
+                self.download_static_search()
                 self.download_stopword_list()
         elif argument == "bi":
             logger.info("Building index ...")
