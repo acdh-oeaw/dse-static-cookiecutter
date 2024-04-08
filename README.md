@@ -30,9 +30,8 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
 ```
 
 - change into the new created repo, by default `$ cd dse-static`
-- Run `./shellscripts/dse-gen.py` with the correct parameter.
+- Run `./shellscripts/dse_setup.py` with the correct parameter.
   This script facilitates the setup process for DSE-Cookiecutter in an OS-agnostic manner.
-
 
   Below are the available parameters and their descriptions:
 
@@ -45,9 +44,8 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
           Fetches transcriptions from the specified data repository.
 
   Usage:
-  
+
       python script.py -a [action]
-  
 
   Options:
 
@@ -55,12 +53,12 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
           Choices: "dd" (Download Dependencies), "bi" (Build Index), "fd" (Fetch Data)
 
   The script can be configured by changing
-  
+
       ./shellscripts/config.ini
 
-- run `$ ./shellscripts/dse-gen.py -a dd` to download needed libraries/files
+- run `$ ./shellscripts/dse_setup.py -a dd` to download needed libraries/files
 - run `$ ant` to build the HTML-Files
-- run `$ ./shellscripts/dse-gen.py -a bi` to build the fulltext search index. Be aware, you'll need to have ant-contrib installed.
+- run `$ ./shellscripts/dse_setup.py -a bi` to build the fulltext search index. Be aware, you'll need to have ant-contrib installed.
 - create a git repo and commit to github
 - copy you XML/TEI encoded files you'd like to publish into `data/editions`
 - adapt/modify the XSLTs
