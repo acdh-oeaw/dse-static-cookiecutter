@@ -30,32 +30,37 @@ the current repo should ease the process of publishing XML/TEIs encoded files as
 ```
 
 - change into the new created repo, by default `$ cd dse-static`
-- Run `./shellscripts.dse-gen.py` with the correct parameter
-- DSE-Cookiecutter Setup Guide
+- Run `./shellscripts/dse-gen.py` with the correct parameter.
+  This script facilitates the setup process for DSE-Cookiecutter in an OS-agnostic manner.
 
-This script facilitates the setup process for DSE-Cookiecutter in an OS-agnostic manner. Below are the available actions and their descriptions:
 
-    Download Dependencies (dd):
-        Downloads required dependencies including imprint XML files, Saxon HE (Home Edition), and optionally, the static search tool along with its stopwords list.
-    Build Index (bi):
-        Initiates the process to build the static-search index based on the configured settings.
-    Fetch Data (fd):
-        Fetches transcriptions from the specified data repository.
+  Below are the available parameters and their descriptions:
 
-Usage:
+      Download Dependencies (dd):
+          Downloads required dependencies including imprint XML files, Saxon HE (Home Edition),
+          and optionally, the static search tool along with its stopwords list.
+      Build Index (bi):
+          Initiates the process to build the static-search index based on the configured settings.
+      Fetch Data (fd):
+          Fetches transcriptions from the specified data repository.
 
-css
+  Usage:
+  
+      python script.py -a [action]
+  
 
-python script.py -a [action]
+  Options:
 
-Options:
+      -a, --action: Specifies the action to execute.
+          Choices: "dd" (Download Dependencies), "bi" (Build Index), "fd" (Fetch Data)
 
-    -a, --action: Specifies the action to execute.
-        Choices: "dd" (Download Dependencies), "bi" (Build Index), "fd" (Fetch Data)
+  The script can be configured by changing
+  
+      ./shellscripts/config.ini
 
 - run `$ ./shellscripts/dse-gen.py -a dd` to download needed libraries/files
 - run `$ ant` to build the HTML-Files
-- run `$ ./shellscripts/build_index.sh` to build the fulltext search index. Be aware, you'll need to have ant-contrib installed.
+- run `$ ./shellscripts/dse-gen.py -a bi` to build the fulltext search index. Be aware, you'll need to have ant-contrib installed.
 - create a git repo and commit to github
 - copy you XML/TEI encoded files you'd like to publish into `data/editions`
 - adapt/modify the XSLTs
