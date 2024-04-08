@@ -240,6 +240,7 @@ class DSESetup:
 
     def fetch_data(self) -> None:
         """Fetch transcriptions from data repository"""
+
         msg = "Fetching data ..."
         logger.info(msg)
         response = self.make_request(self.config.get("cookiecutter", "data-url"))
@@ -249,7 +250,6 @@ class DSESetup:
                 response[1].extractall(tempdir)
                 for directory in self.config.items("data.subfolders"):
                     directory_path = os.path.join(self.DATA_DIR, directory[1])
-                    print(directory_path)
                     self.cleanup(directory_path)
                     os.mkdir(directory_path)
                     shutil.move(
