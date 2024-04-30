@@ -7,6 +7,7 @@
     "base_url": "https://{{ cookiecutter.github_org }}.github.io/{{ cookiecutter.directory_name }}/",
     "redmine_id": "18716",
     "translations": ["no", "yes"],
+    "use_remote_data":  true,
     "data_dir": "dse-static-data",
     "data_repo": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.data_dir }}",
     "__prompts__": {
@@ -18,6 +19,7 @@
         "base_url": "The URL you have reserved for your website.",
         "redmine_id": "The ID of the Redmine-Service-Issue for you application. This is needed to generate an up do date imprint",
         "translations": "Should i18n be included to provide translations",
+        "use_remote_data": "Ideally data and code is separated. If you want to use the code repo to store/curate the data as well, type 'no' (and just confirm the following questions); If you want to fetch the data from another GitHub Repo confirm, and pay a little more attention to the next questions.",
         "data_dir": "Ideally data and code is separated. By providing the data_dir which should be the name of a GitHub Repo where the data of your app could be found. Leave blank if you want to use the dummy data or add you date into the code repo later",
         "data_repo": "A GitHub repo where the data of you app can be found. The default value is a combination of the answers 'github_repo' and 'data_dir'."
     }
