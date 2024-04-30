@@ -18,7 +18,7 @@
         "base_url": "The URL you have reserved for your website.",
         "redmine_id": "The ID of the Redmine-Service-Issue for you application. This is needed to generate an up do date imprint",
         "translations": "Should i18n be included to provide translations",
-        "data_dir": "Ideally data and code is separated. By providing the data_dir which should be the name of a GitHub Repo where the data of your app could be found",
+        "data_dir": "Ideally data and code is separated. By providing the data_dir which should be the name of a GitHub Repo where the data of your app could be found. Leave blank if you want to use the dummy data or add you date into the code repo later",
         "data_repo": "A GitHub repo where the data of you app can be found. The default value is a combination of the answers 'github_repo' and 'data_dir'."
     }
 } 
