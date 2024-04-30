@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet {% if cookiecutter.search_engine == 'staticsearch' %}
-    xmlns="http://www.w3.org/1999/xhtml" {% endif %}
+<xsl:stylesheet 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:local="http://dse-static.foo.bar"
     version="2.0" exclude-result-prefixes="xsl tei xs local">
-    {% if cookiecutter.search_engine == 'staticsearch' %}
-    <xsl:output encoding="UTF-8" media-type="text/html" method="xhtml" version="1.0" indent="yes" omit-xml-declaration="yes"/>
-    {% else %}
     <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0" indent="yes" omit-xml-declaration="yes"/>
-    {% endif %}
     
     <xsl:import href="./partials/shared.xsl"/>
     <xsl:import href="./partials/html_navbar.xsl"/>
@@ -36,13 +31,7 @@
 
 
     <xsl:template match="/">
-
-    {% if cookiecutter.search_engine == 'staticsearch' %}
-        <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
-        <html xmlns="http://www.w3.org/1999/xhtml" class="h-100">
-    {% else %}
         <html class="h-100">
-    {% endif %}
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
@@ -57,8 +46,6 @@
                 <xsl:call-template name="nav_bar"/>
                 <main class="flex-shrink-0">
                     <div class="container">
-
-
                         <div class="row">
                             <div class="col-md-2 col-lg-2 col-sm-12">
                                 <xsl:if test="ends-with($prev,'.html')">
@@ -98,14 +85,7 @@
                                 <xsl:call-template name="annotation-options"></xsl:call-template>
                             </div>
                         </div>
-                        {% if cookiecutter.search_engine == 'staticsearch' %}
-                        <div data-index="true">
-                            <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
-                        </div>
-                        {% else %}
-                            <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
-                        {% endif %}
-
+                        <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
                         <p style="text-align:center;">
                             <xsl:for-each select=".//tei:note[not(./tei:p)]">
                                 <div class="footnotes" id="{local:makeId(.)}">
@@ -139,12 +119,6 @@
                 <xsl:call-template name="html_footer"/>
                 <script src="https://unpkg.com/de-micro-editor@0.3.4/dist/de-editor.min.js"></script>
                 <script type="text/javascript" src="js/run.js"></script>
-                {% if cookiecutter.facs == "many" %}
-
-                <script type="text/javascript" src="js/osd_scroll.js"></script>
-                {% elif cookiecutter.facs == "few" %}
-                <script type="text/javascript" src="js/osd_single.js"></script>
-                {% endif %}
             </body>
         </html>
     </xsl:template>

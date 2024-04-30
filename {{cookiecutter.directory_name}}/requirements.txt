@@ -1,4 +1,2 @@
 acdh-tei-pyutils
-{% if cookiecutter.update_favicons == 'yes' %}favicons{% endif %}
-{% if cookiecutter.update_favicons == 'yes' %}rlPyCairo==0.2.0{% endif %}
-{% if cookiecutter.search_engine == 'typesense' %}acdh-cfts-pyutils{% endif %}
+acdh-cfts-pyutils

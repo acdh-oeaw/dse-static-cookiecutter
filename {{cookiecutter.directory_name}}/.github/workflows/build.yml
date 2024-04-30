@@ -16,19 +16,10 @@ jobs:
       run: |
         apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
         ./shellscripts/script.sh
-        pip install -r requirements.txt{% if cookiecutter.search_engine == 'staticsearch' %}
-    - name: Install Ant-Contrib
-      run: |
-        wget https://repo1.maven.org/maven2/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar
-        mv ant-contrib-1.0b3.jar /usr/share/ant/lib{% endif %}
+        pip install -r requirements.txt
     - name: Build
       run: |
-        ant{% if cookiecutter.search_engine == 'staticsearch' %}
-    - name: Build Index
-      run: |
-        ./shellscripts/build_index.sh{% endif %}{% if cookiecutter.update_favicons == 'yes' %}
-    - name: Update Favicons
-      run: python update_favicons.py{% endif %}{% if cookiecutter.translations == 'yes' %}
+        ant{% if cookiecutter.translations == 'yes' %}
     - name: Update Translations
       run: python make_translations.py{% endif %}
     - name: Deploy
