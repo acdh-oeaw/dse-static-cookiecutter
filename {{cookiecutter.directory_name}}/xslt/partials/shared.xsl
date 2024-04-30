@@ -15,7 +15,7 @@
     </xsl:function>
     <xsl:template match="tei:div">
         <div><xsl:apply-templates/></div>
-    </xsl>
+    </xsl:template>
     <xsl:template match="tei:pb">
         <span class="anchor-pb"></span>
         <span class="pb" source="{@facs}"><xsl:value-of select="./@n"/></span>
