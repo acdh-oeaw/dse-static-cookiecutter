@@ -119,8 +119,8 @@
                                 integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
                                 crossorigin=""></script>
                             <script>
-                                var lat = <xsl:value-of select="tokenize(./tei:location[1]/tei:geo[1]/text(), ' ')[1]"/>;
-                                var long = <xsl:value-of select="tokenize(./tei:location[1]/tei:geo[1]/text(), ' ')[last()]"/>;
+                                var lat = <xsl:value-of select="replace(tokenize(./tei:location[1]/tei:geo[1]/text(), ' ')[1], ',', '.')"/>;
+                                var long = <xsl:value-of select="replace(tokenize(./tei:location[1]/tei:geo[1]/text(), ' ')[2], ',', '.')"/>;
                                 $("#map_detail").css("height", "500px");
                                 var map = L.map('map_detail').setView([Number(lat), Number(long)], 13);
                                 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
