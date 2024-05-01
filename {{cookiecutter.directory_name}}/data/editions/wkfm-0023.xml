@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="https://id.acdh.oeaw.ac.at/dse-static" xml:id="wkfm-0023.xml" prev="https://id.acdh.oeaw.ac.at/dse-static/L041464.xml">
     <teiHeader>
       <fileDesc>
@@ -100,7 +101,7 @@
                      <listBibl>
                         <bibl>Huchler, Bürgeraufnahmen, 338 (20. Mai 1715).</bibl>
                      </listBibl>
-               <noteGrp><note target="wkfm-0023.xml" type="mentions">Wiener Merkantilprotokoll Nr. 0023</note></noteGrp></person>
+               </person>
                 <person xml:id="wkfm__43788">
                      <persName>
                         <forename>Johann Georg</forename>
@@ -112,6 +113,6 @@
                      <listBibl>
                         <bibl>Huchler, Bürgeraufnahmen, 353 (Dezember 1728).</bibl>
                      </listBibl>
-               <noteGrp><note target="wkfm-0023.xml" type="mentions">Wiener Merkantilprotokoll Nr. 0023</note></noteGrp></person>
+               </person>
                 </listPerson></back></text>
 </TEI>
