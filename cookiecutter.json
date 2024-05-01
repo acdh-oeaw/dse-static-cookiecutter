@@ -11,7 +11,7 @@
     "data_dir": "dse-static-data",
     "data_repo": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.data_dir }}",
     "__prompts__": {
-        "directory_name": "This folder will be created and is going to hold your awesome code base",
+        "directory_name": "'directory_name' \nThis folder will be created and is going to hold your awesome code base",
         "project_title": "Some nice title of your Project, will be displayed by default on the start page of your website",
         "project_short_title": "Some short(er) title of your project; shows up by default in the nav bar",
         "github_org": "Either you GitHub User Name, or if you want to host your code repo as part of GitHub Organsiation, the organisation name. This information will be used to generate a link to the code repo of your application",

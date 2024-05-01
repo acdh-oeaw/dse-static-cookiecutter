@@ -12,7 +12,9 @@ if "{{ cookiecutter.translations }}" == "no":
         os.path.join("xslt", "partials", "html_navbar.xsl"),
     )
 
-if "{{ cookiecutter.use_remote_data }}":
-    os.remove("fetch_data.sh")
-else:
-    shutil.rmtree(os.path.join("data", "editions"), ignore_errors=True)
+{% if cookiecutter.use_remote_data -%}
+shutil.rmtree(os.path.join("data", "editions"), ignore_errors=True)
+{% else %}
+os.remove("fetch_data.sh")
+{% endif %}
+    

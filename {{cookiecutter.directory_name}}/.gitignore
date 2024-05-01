@@ -1,10 +1,13 @@
 # project specific
 *.html
-!search.html
+html/*.xml
 /saxon
 data/imprint.xml
-/static-search
-html/static-search
+{% if cookiecutter.use_remote_data %}
+data/indices/*.xml
+data/editions/*.xml
+data/meta/*.xml
+{% endif %}
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
