@@ -10,6 +10,9 @@
     "use_remote_data":  true,
     "data_dir": "dse-static-data",
     "data_repo": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.data_dir }}",
+    "_copy_without_render": [
+        ".github/workflows/build.yml"
+    ],
     "__prompts__": {
         "directory_name": "'directory_name' \nThis folder will be created and is going to hold your awesome code base",
         "project_title": "Some nice title of your Project, will be displayed by default on the start page of your website",

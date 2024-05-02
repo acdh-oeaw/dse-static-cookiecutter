@@ -1,31 +1,55 @@
-name: Build and publish
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
 
-on: 
-  push:
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  build_pages:
-    name: Publish Edition as GitHub Pages Website
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     env:
-      ANT_OPTS: -Xmx5g
+      ANT_OPTS: -Xmx6g
+      TYPESENSE_HOST: typesense.acdh-dev.oeaw.ac.at
+      TYPESENSE_PORT: 443
+      TYPESENSE_PROTOCOL: https
+      TYPESENSE_API_KEY: ${{secrets.TYPESENSE_API_KEY}}
     steps:
-    - name: Perform Checkout
-      uses: actions/checkout@v4
-    - name: Install Saxon, Ant and Python
-      run: |
-        apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
-        ./shellscripts/script.sh
-        pip install -r requirements.txt{% if cookiecutter.use_remote_data %}
-    - name: Fetch Data
-      run: ./fetch_data.sh{% endif %}
-    - name: Build
-      run: |
-        ant{% if cookiecutter.translations == 'yes' %}
-    - name: Update Translations
-      run: python make_translations.py{% endif %}
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ "{{" }}secrets.GITHUB_TOKEN{{ "}}" }}
-        publish_dir: ./html
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Saxon, Ant and Fundament
+        run: |
+          apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
+          ./shellscripts/script.sh
+      - name: install python things
+        run: pip install -r requirements.txt
+      - name: Fetch the data
+        run: ./fetch_data.sh
+      - name: Build the app
+        run:  ant
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: './html'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
