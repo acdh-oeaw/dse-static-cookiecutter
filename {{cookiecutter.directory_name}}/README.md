@@ -24,4 +24,4 @@
 
 * To build the image run: `docker build -t {{ cookiecutter.directory_name }} .`
 * To run the container: `docker run -p 80:80 --rm --name {{ cookiecutter.directory_name }} {{ cookiecutter.directory_name }}`
-* in case you want to password protect you server, create a `.htpasswd` file (e.g. https://htpasswdgenerator.de/) and modifiy `Dockerfile` to your needs
+* in case you want to password protect you server, create a `.htpasswd` file (e.g. https://htpasswdgenerator.de/) and modifiy `Dockerfile` to your needs; e.g. run `htpasswd -b -c .htpasswd admin mypassword`
