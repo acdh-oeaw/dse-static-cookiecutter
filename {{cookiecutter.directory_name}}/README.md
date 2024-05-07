@@ -19,6 +19,11 @@
 * `python -m http.server`
 * go to [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
 
+## publish as GitHub Page
+
+* got to https://{{ cookiecutter.github_url}}/workflows/build.yml 
+* click the `Run workflow` button
+
 
 ## dockerize your application
 
