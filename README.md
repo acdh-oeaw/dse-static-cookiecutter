@@ -1,69 +1,42 @@
 # DSE-Static-Cookiecutter
 
-[Cookiecutter](https://github.com/cookiecutter/cookiecutter) template for a Static-Site Digital Scholarly Edition
+[Cookiecutter](https://github.com/cookiecutter/cookiecutter) template for a [Static site generator](https://en.wikipedia.org/wiki/Static_site_generator) powerd by TEI/XML files
 
 ## what is this for
 
-the current repo should ease the process of publishing XML/TEIs encoded files as a Static-Site Application
+The current repo should ease the process of publishing TEI/XML encoded files as a Static-Site Application using mainly XSLT to generate static HTML files.
 
 ## Quickstart
 
-- Install the latest Cookiecutter if you haven't installed it yet (this requires Cookiecutter 1.4.0 or higher) by running `pip install -U cookiecutter`
-- To generate a new dse-static-site project run `cookiecutter gh:acdh-oeaw/dse-static-cookiecutter` and answer the following questions, see below:
+> [!IMPORTANT]  
+> DSE-Static-Cookiecutter is tested to work on Linx/Mac. To make it work on Windows you'll need to change some parts of the initial set up.
 
-```json
-{
-  "directory_name": "dse-static",
-  "project_title": "Digital Scholarly Editions Static Site Cookiecutter",
-  "project_short_title": "DSE Static-Site",
-  "github_org": "acdh-oeaw", // or your GitHub user name
-  "github_url": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.directory_name }}",
-  "base_url": "http://url-of-my-awesome-site",
-  "redmine_id": "18716", // needed to create an ACDH-CH like imprint
-  "update_favicons": ["yes", "no"],
-  "darkmode": ["yes", "no"],
-  "translations": ["no", "yes"],
-  "search_engine": ["typesense", "staticsearch"],
-  "data_dir": "", // leave blank if you don't want to load data from a different github repo
-  "data_repo": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.data_dir }}"
-}
-```
+* Install the latest Cookiecutter if you haven't installed it yet (this requires Cookiecutter 2.1.0 or higher) by running `pip install -U cookiecutter`
+* To generate a new dse-static-site project run `cookiecutter gh:acdh-oeaw/dse-static-cookiecutter` and answer the appearing questions
+* change into the created directory and have a look at the README.md in this directory.
 
-- change into the new created repo, by default `$ cd dse-static`
-- Run `./shellscripts/dse_setup.py` with the correct parameter.
-  This script facilitates the setup process for DSE-Cookiecutter in an OS-agnostic manner.
+## Features
+* generate HTML files from your TEI/XML documents using XSLT
+* [GitHub Actions workflows](https://docs.github.com/en/actions/using-workflows) are configured to
+  * build your application and serve them via [GitHub Pages](https://pages.github.com/)
+  * bake your application into a Dockerfile publish it via GitHub's container registry.
+* XSLTs provided by DES-Static-Cookiecutter are designed in a modular fashion, trying to avoid code duplications
+* recent version of [Bootstrap](https://getbootstrap.com/) implemented
+* opinionated way to organize data/code; but everything can be changed/overwritten/customized
+* handling of indices for persons, places, organisations or works is included
+* search and filterable overview pages of your editions (table of contents) and indices
+* example code on how to implement a faceted full text search powered by [Typesense](https://typesense.org/)
+* [Digital Edition Micro-Editor](https://github.com/acdh-oeaw/de-micro-editor) for customization of interactive features is eneabled
+* geovisualisation of places via [leaflet.js](https://leafletjs.com/) powered maps
+* ships with an [Oxygen XML Editor](https://www.oxygenxml.com/) project `.xpr` including some transformation scenarios for local development/testing of TEI to HTML transformations.
 
-  Below are the available parameters and their descriptions:
+## Projects using DSE-Static-Cookiecutter
 
-      Download Dependencies (dd):
-          Downloads required dependencies including imprint XML files, Saxon HE (Home Edition),
-          and optionally, the static search tool along with its stopwords list.
-      Build Index (bi):
-          Initiates the process to build the static-search index based on the configured settings.
-      Fetch Data (fd):
-          Fetches transcriptions from the specified data repository.
+* https://schnitzler-briefe.acdh.oeaw.ac.at/
+* https://schnitzler-tagebuch.acdh.oeaw.ac.at
+* https://schnitzler-bahr.acdh.oeaw.ac.at/
+* https://amp.acdh.oeaw.ac.at
+* https://hanslick.acdh.oeaw.ac.at/
+* https://b-vg.acdh.oeaw.ac.at/
+* https://thun-korrespondenz.acdh.oeaw.ac.at/
 
-  Usage:
-
-      python script.py -a [action]
-
-  Options:
-
-      -a, --action: Specifies the action to execute.
-          Choices: "dd" (Download Dependencies), "bi" (Build Index), "fd" (Fetch Data)
-
-  The script can be configured by changing
-
-      ./shellscripts/config.ini
-
-- run `$ ./shellscripts/dse_setup.py -a dd` to download needed libraries/files
-- run `$ ant` to build the HTML-Files
-- run `$ ./shellscripts/dse_setup.py -a bi` to build the fulltext search index. Be aware, you'll need to have ant-contrib installed.
-- create a git repo and commit to github
-- copy you XML/TEI encoded files you'd like to publish into `data/editions`
-- adapt/modify the XSLTs
-- adapt/modify global params in `xslt/partials/params.xsl`
-- push to github repo and activate github-pages
-
-`docker build -t dse-static:latest .`
-`docker run -d -p 80:80 --rm --name dse-static dse-static:latest`
