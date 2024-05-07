@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="https://id.acdh.oeaw.ac.at/dse-static" xml:id="D_000002-003-000.xml" next="https://id.acdh.oeaw.ac.at/dse-static/L041464.xml">
     <teiHeader>
         <fileDesc>
@@ -556,7 +557,7 @@
 <listBibl>
     <bibl type="collections" n="5">legalkraus</bibl>
 </listBibl>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></person><person xml:id="pmb5787">
+</person><person xml:id="pmb5787">
   <persName>
       <forename>Arthur</forename>
       <surname>Schopenhauer</surname>
@@ -591,7 +592,7 @@
     <bibl type="collections" n="10">Karl Kraus 1933: Dritte Walpurgisnacht</bibl>
     <bibl type="collections" n="12">Fackel</bibl>
 </listBibl>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></person><person xml:id="pmb11673">
+</person><person xml:id="pmb11673">
   <persName>
       <forename>Theodor</forename>
       <surname>Herzl</surname>
@@ -637,7 +638,7 @@
     <bibl type="collections" n="11">ÖBL nach 1850 geboren</bibl>
     <bibl type="collections" n="12">Fackel</bibl>
 </listBibl>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></person><person xml:id="pmb11988">
+</person><person xml:id="pmb11988">
   <persName>
       <forename>Karl</forename>
       <surname>Kraus</surname>
@@ -734,7 +735,7 @@
     <bibl type="collections" n="11">ÖBL nach 1850 geboren</bibl>
     <bibl type="collections" n="12">Fackel</bibl>
 </listBibl>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></person><person xml:id="pmb21853">
+</person><person xml:id="pmb21853">
   <persName>
       <surname>Nero</surname>
   </persName>
@@ -760,7 +761,7 @@
     <bibl type="collections" n="3">Manuell angelegt</bibl>
     <bibl type="collections" n="5">legalkraus</bibl>
 </listBibl>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></person></listPerson><listOrg><org xml:id="pmb29637">
+</person></listPerson><listOrg><org xml:id="pmb29637">
   <orgName>Reichspost</orgName>
   <orgName type="werk_link-anno">http://anno.onb.ac.at/info/rpt_info.htm</orgName>
   <desc type="entity_type">Tageszeitungsredaktion</desc>
@@ -798,7 +799,7 @@
     <bibl type="collections" n="2">Erster Import</bibl>
     <bibl type="collections" n="5">legalkraus</bibl>
 </listBibl>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></org><org xml:id="pmb50491">
+</org><org xml:id="pmb50491">
   <orgName>Strafbezirksgericht I</orgName>
   <orgName type="wien-geschichte-wiki">https://www.geschichtewiki.wien.gv.at/Bezirksgericht_Josefstadt</orgName>
   <orgName type="legacy-name-merge">Strafbezirksgericht</orgName>
@@ -831,7 +832,7 @@
 <listBibl>
     <bibl type="collections" n="5">legalkraus</bibl>
 </listBibl>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></org></listOrg><listPlace><place xml:id="pmb50653">
+</org></listOrg><listPlace><place xml:id="pmb50653">
   <placeName>Strozzigasse</placeName>
   <desc type="entity_type">Straße (K.STR)</desc>
   <desc type="entity_type_id">26</desc>
@@ -847,7 +848,7 @@
 <listBibl>
     <bibl type="collections" n="5">legalkraus</bibl>
 </listBibl>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></place><place xml:id="pmb50496">
+</place><place xml:id="pmb50496">
   <placeName>Hintere Zollamtsstraße</placeName>
   <placeName type="person_namensvariante_nachname-komma-vorname">Hintere Zollamtstraße</placeName>
   <desc type="entity_type">Straße (K.STR)</desc>
@@ -864,7 +865,7 @@
 <listBibl>
     <bibl type="collections" n="5">legalkraus</bibl>
 </listBibl>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></place></listPlace><listBibl><bibl xml:id="lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,001" type="fackel"><title level="a">Vom großen Welttheaterschwindel</title><title level="s">Die
+</place></listPlace><listBibl><bibl xml:id="lk_fackel__95" corresp="https://fackel.oeaw.ac.at/f/601,001" type="fackel"><title level="a">Vom großen Welttheaterschwindel</title><title level="s">Die
                   Fackel</title><author key="pmb11988">Karl Kraus</author><editor key="pmb11988">Karl Kraus</editor><date when-iso="1922-11-01">November 1922</date><num type="volume">Jg. 24</num><num type="issue">Nr. 601–607</num><biblScope from="1" to="7">1–7</biblScope><ref target="https://fackel.oeaw.ac.at/f/601,001">2.3
                   Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner)
                   wegen Verweigerung einer Berichtigung|D_000002-003-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,005">2.3 Privatanklage von Karl Kraus
@@ -878,7 +879,7 @@
                   Berichtigung|D_000002-003-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,001">2.2 Brief Samek an Reichspost
                   (verantw. Red. Karl Schiffleitner)|D_000002-002-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,001">2.4 Urteil des Strafbezirksgerichts I
                   Wien (G.Z. U I 3/23/4, Richter: Christoph Höflmayr, Verteidiger: Heinrich
-                  Foglar-Deinhardstein)|D_000002-004-000.xml</ref><noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl>
+                  Foglar-Deinhardstein)|D_000002-004-000.xml</ref></bibl>
             <bibl xml:id="pmb58510">
   <title type="main">Theodor Herzl’s Tagebücher. 1895–1904</title>
   <title type="werk_link">https://sammlungen.ub.uni-frankfurt.de/freimann/urn/urn:nbn:de:hebis:30:1-146009</title>
@@ -892,7 +893,7 @@
   <bibl type="collections" n="5">legalkraus</bibl>
 </note>
   <note type="work_kind">Tagebuch</note>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb36374">
+</bibl><bibl xml:id="pmb36374">
   <title type="main">Neue Freie Presse</title>
   <title type="werk_link-anno">http://anno.onb.ac.at/cgi-content/anno?aid=nfp</title>
   <author key="person__10875" role="hat-herausgegeben">Benedikt, Moriz</author>
@@ -908,7 +909,7 @@
   <bibl type="collections" n="5">legalkraus</bibl>
 </note>
   <note type="work_kind">Publikationsorgan &gt;&gt; Tageszeitung</note>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="lk_fackel__96" corresp="https://fackel.oeaw.ac.at/f/601,077" type="fackel"><title level="a">Für die Neue Freie Presse existiert keine
+</bibl><bibl xml:id="lk_fackel__96" corresp="https://fackel.oeaw.ac.at/f/601,077" type="fackel"><title level="a">Für die Neue Freie Presse existiert keine
                   Judenfrage</title><title level="s">Die Fackel</title><author key="pmb11988">Karl
                   Kraus</author><editor key="pmb11988">Karl Kraus</editor><date when-iso="1922-11-01">November 1922</date><num type="volume">Jg. 24</num><num type="issue">Nr. 601–607</num><biblScope from="77" to="81">77–81</biblScope><ref target="https://fackel.oeaw.ac.at/f/601,077">2.3 Privatanklage von Karl Kraus
                   gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer
@@ -916,7 +917,7 @@
                   Privatanklägers|D_000002-009-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,077">2.10 Urteil des Landesgerichts in
                   Strafsachen I. Wien (G.Z. Bl XV 121/23, Vorsitz: Rudolf
                   Wessely)|D_000002-010-000.xml</ref><ref target="https://fackel.oeaw.ac.at/f/601,077">2.2 Brief Samek an Reichspost
-                  (verantw. Red. Karl Schiffleitner)|D_000002-002-000.xml</ref><noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl>
+                  (verantw. Red. Karl Schiffleitner)|D_000002-002-000.xml</ref></bibl>
             <bibl xml:id="pmb41244">
   <title type="main">Die Fackel</title>
   <title type="werk_link">https://fackel.oeaw.ac.at</title>
@@ -936,7 +937,7 @@
   <bibl type="collections" n="5">legalkraus</bibl>
 </note>
   <note type="work_kind">Publikationsorgan &gt;&gt; Zeitschrift</note>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb42850">
+</bibl><bibl xml:id="pmb42850">
   <title type="main">Reichspost</title>
   <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=rpt</title>
   <author key="person__53731" role="hat-herausgegeben">Funder, Friedrich</author>
@@ -950,7 +951,7 @@
   <bibl type="collections" n="5">legalkraus</bibl>
 </note>
   <note type="work_kind">Publikationsorgan &gt;&gt; Tageszeitung</note>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb62248">
+</bibl><bibl xml:id="pmb62248">
   <title type="main">Preisschrift über die Grundlage der Moral, nicht gekrönt von der königlich dänischen Sozietät der Wissenschaften</title>
   <author key="person__5787" role="hat-geschaffen">Schopenhauer, Arthur</author>
 <date notBefore-iso="1841-01-01" when-iso="1841-07-02">1841</date>
@@ -960,7 +961,7 @@
   <bibl type="collections" n="5">legalkraus</bibl>
 </note>
   <note type="work_kind">Philosophische Abhandlung</note>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl><bibl xml:id="pmb62204">
+</bibl><bibl xml:id="pmb62204">
   <title type="main">Ein Kreislauf</title>
   <title type="werk_bibliografische-angabe">EIn Kreislauf, in:  Reichspost Nr. 319, 19.11.1922 (Morgenblatt), S. 3.</title>
   <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=rpt&amp;datum=19221129&amp;seite=3</title>
@@ -971,5 +972,5 @@
   <bibl type="collections" n="5">legalkraus</bibl>
 </note>
   <note type="work_kind">Zeitungsbericht</note>
-<noteGrp><note target="D_000002-003-000.xml" type="mentions">2.3 Privatanklage von Karl Kraus gegen Reichspost (verantw. Red. Karl Schiffleitner) wegen Verweigerung einer Berichtigung</note></noteGrp></bibl></listBibl></back></text>
+</bibl></listBibl></back></text>
 </TEI>

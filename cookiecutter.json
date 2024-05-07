@@ -4,13 +4,26 @@
     "project_short_title": "DSE Static-Site",
     "github_org": "acdh-oeaw",
     "github_url": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.directory_name }}",
-    "base_url": "http://url-of-my-awesome-site",
+    "base_url": "https://{{ cookiecutter.github_org }}.github.io/{{ cookiecutter.directory_name }}/",
     "redmine_id": "18716",
-    "facs": ["none", "few", "many"],
-    "update_favicons": ["yes", "no"],
-    "darkmode": ["yes", "no"],
     "translations": ["no", "yes"],
-    "search_engine": ["typesense", "staticsearch"],
+    "use_remote_data":  true,
     "data_dir": "dse-static-data",
-    "data_repo": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.data_dir }}"
+    "data_repo": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.data_dir }}",
+    "_copy_without_render": [
+        ".github/workflows/build.yml"
+    ],
+    "__prompts__": {
+        "directory_name": "'directory_name' \nThis folder will be created and is going to hold your awesome code base",
+        "project_title": "Some nice title of your Project, will be displayed by default on the start page of your website",
+        "project_short_title": "Some short(er) title of your project; shows up by default in the nav bar",
+        "github_org": "Either you GitHub User Name, or if you want to host your code repo as part of GitHub Organsiation, the organisation name. This information will be used to generate a link to the code repo of your application",
+        "github_url": "You can write whatever URL to your coderepo you want, or you take the default value which is a combination of the 'github_org' and 'directory_name'.",
+        "base_url": "The URL you have reserved for your website.",
+        "redmine_id": "The ID of the Redmine-Service-Issue for you application. This is needed to generate an up do date imprint",
+        "translations": "Should i18n be included to provide translations",
+        "use_remote_data": "Ideally data and code is separated. If you want to use the code repo to store/curate the data as well, type 'no' (and just confirm the following questions); If you want to fetch the data from another GitHub Repo confirm, and pay a little more attention to the next questions.",
+        "data_dir": "Ideally data and code is separated. By providing the data_dir which should be the name of a GitHub Repo where the data of your app could be found. Leave blank if you want to use the dummy data or add you date into the code repo later",
+        "data_repo": "A GitHub repo where the data of you app can be found. The default value is a combination of the answers 'github_repo' and 'data_dir'."
+    }
 } 

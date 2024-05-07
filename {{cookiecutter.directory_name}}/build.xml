@@ -47,10 +47,6 @@
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
     </xslt>
-    <xslt in="./data/meta/arche_constants.rdf" out="${target}/arche.rdf" style="./xslt/arche.xsl">
-        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="${basedir}/saxon/saxon9he.jar"/>
-    </xslt>
     <xslt in="./data/indices/listperson.xml" out="${target}/beacon.txt" style="./xslt/beacon.xsl">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
@@ -63,24 +59,11 @@
         <include name="*.html"/>
         <replacetoken>xmlns:tei="http://www.tei-c.org/ns/1.0"</replacetoken>
     </replace>
-    <replace dir="${target}" value="">
-        <include name="*.html"/>
-        <replacetoken>&lt;br &gt;</replacetoken>
-    </replace>
-    <replace dir="${target}" value="">
-        <include name="*.html"/>
-        <replacetoken>&lt;br&gt;</replacetoken>
-    </replace>
-    <replace dir="${target}" value="&lt;br /&gt;">
-        <include name="*.html"/>
-        <replacetoken>&lt;/br&gt;</replacetoken>
-    </replace>
-    {% if cookiecutter.search_engine != 'staticsearch' %}
+   
     <replace dir="${target}" value="">
         <include name="*.html"/>
         <replacetoken>xmlns="http://www.w3.org/1999/xhtml"</replacetoken>
     </replace>
-    {% endif %}
     <copy todir="${target}" flatten="true">
         <fileset dir="./data/">
             <include name="**/*.xml"/>

@@ -63,23 +63,23 @@
                         </td>
                     </tr>
                 </xsl:if>
-                <xsl:if test="./tei:listEvent">
-                <tr>
-                    <th>
-                        Erwähnt in
-                    </th>
-                    <td>
-                        <ul>
-                            <xsl:for-each select="./tei:listEvent/tei:event">
-                                <li>
-                                    <a href="{replace(./tei:linkGrp/tei:link/@target, '.xml', '.html')}">
-                                        <xsl:value-of select="./tei:p/tei:title"/>
-                                    </a>
-                                </li>
-                            </xsl:for-each>
-                        </ul>
-                    </td>
-                </tr>
+                <xsl:if test="./tei:noteGrp/tei:note[@type='mentions']">
+                    <tr>
+                        <th>
+                            Erwähnt in
+                        </th>
+                        <td>
+                            <ul>
+                                <xsl:for-each select="./tei:noteGrp/tei:note[@type='mentions']">
+                                    <li>
+                                        <a href="{replace(@target, '.xml', '.html')}">
+                                            <xsl:value-of select="./text()"/>
+                                        </a>
+                                    </li>
+                                </xsl:for-each>
+                            </ul>
+                        </td>
+                    </tr>
                 </xsl:if>
             </tbody>
         </table>

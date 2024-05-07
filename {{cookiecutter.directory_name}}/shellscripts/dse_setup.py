@@ -141,103 +141,7 @@ class DSESetup:
             content = zipfile.ZipFile(io.BytesIO(response[1]))
             content.extractall(saxon_destination_directory)
             logger.info("%s OK!", msg)
-
-    def download_static_search(self) -> None:
-        """Download static search tool."""
-
-        msg = "Downloading static search ..."
-
-        static_search_destination_directory = os.path.join(
-            self.PROJECT_ROOT, self.config.get("static-search", "dir")
-        )
-
-        self.cleanup(static_search_destination_directory)
-
-        logger.info(msg)
-
-        # posix ->  linux, os
-        # nt    ->  windows
-        sys = ""
-        if self.SYSTEM == "nt":
-            sys = "-windows"
-
-        response = self.make_request(self.config.get("static-search", f"url{sys}"))
-        if response:
-            zip_file = zipfile.ZipFile(io.BytesIO(response[1]))
-            zip_file.extractall(self.PROJECT_ROOT)
-            (path,) = zipfile.Path(
-                zip_file
-            ).iterdir()  # Get name of folder in .zip file for later renaming
-
-            # relevant: https://github.com/conan-io/conan/issues/6560
-            # also relevant:
-            # https://stackoverflow.com/questions/37830326/how-to-avoid-windowserror-error-5-access-is-denied
-            for _ in range(100):
-                try:
-                    os.rename(
-                        os.path.join(self.PROJECT_ROOT, path.name),
-                        static_search_destination_directory,
-                    )
-                    logger.info("%s OK!", msg)
-                    break
-                except OSError as e:
-                    logger.error(e)
-                    logger.info("Renaming failed, retrying...")
-            else:
-                logger.error("Renaming failed.")
-
-    def download_stopword_list(self) -> None:
-        """Download stopword list for static search tool."""
-
-        msg = "Downloading stopwords list ..."
-
-        stopwords_download_url = self.config.get("stopwords", "url")
-        stopwords_filename = os.path.join(
-            self.PROJECT_ROOT, self.config.get("stopwords", "filename")
-        )
-        words_filename = os.path.join(
-            self.PROJECT_ROOT, self.config.get("words", "filename")
-        )
-
-        logger.info(msg)
-        response = self.make_request(stopwords_download_url)
-        if response:
-            charset = response[0].get_content_charset()
-            response_content = response[1].decode(charset)
-            logger.info("%s OK!", msg)
-
-        with open(stopwords_filename, "w", encoding=charset) as file:
-            file.write(response_content)
-
-        with open(
-            os.path.join(self.PROJECT_ROOT, words_filename), "w", encoding=charset
-        ) as file:
-            pass
-
-    def build_index(self) -> None:
-        """Build static-search index"""
-
-        msg = "Building index ..."
-        logger.info(msg)
-
-        static_search_directory = os.path.join(
-            self.PROJECT_ROOT, self.config.get("static-search", "dir")
-        )
-
-        sys = ""
-        if self.SYSTEM == "nt":
-            sys = "-windows"
-        static_search_config_file = self.config.get(
-            "static-search", f"config-file{sys}"
-        )
-
-        build_file_path = os.path.join(static_search_directory, "build.xml")
-        ss_config_file_path = os.path.join(self.PROJECT_ROOT, static_search_config_file)
-        # -DssConfigFile expects UNIX formatted path...
-        ss_config_file_path = ss_config_file_path.replace("\\", "/")
-
-        os.system(f"ant -f {build_file_path} -DssConfigFile={ss_config_file_path}")
-
+ 
     def fetch_data(self) -> None:
         """Fetch transcriptions from data repository"""
 
@@ -271,12 +175,6 @@ class DSESetup:
             logger.info("Downloading dependencies ...")
             self.download_imprints()
             self.download_saxon()
-            if self.config.get("cookiecutter", "search") == "staticsearch":
-                self.download_static_search()
-                self.download_stopword_list()
-        elif argument == "bi":
-            logger.info("Building index ...")
-            self.build_index()
         elif argument == "fd":
             self.fetch_data()
 
@@ -290,8 +188,8 @@ if __name__ == "__main__":
         "-a",
         "--action",
         required=True,
-        help="The desired action to execute. Choose from: gd (Get Data), bi (Build Index), fd (Fetch Data)",
-        choices=["dd", "bi", "fd"],
+        help="The desired action to execute. Choose from: dd (Download Dependencies), fd (Fetch Data)",
+        choices=["dd", "fd"],
     )
     args = parser.parse_args()
     dse_setup = DSESetup("config.ini")
