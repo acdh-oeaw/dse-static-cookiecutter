@@ -33,7 +33,7 @@
                             <xsl:value-of select="$doc_title"/>
                         </h1>
                         
-                        <table class="table" id="myTable">
+                        <table id="myTable">
                             <thead>
                                 <tr>
                                     <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>

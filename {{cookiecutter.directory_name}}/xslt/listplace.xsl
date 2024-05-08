@@ -9,8 +9,6 @@
     <xsl:import href="partials/html_navbar.xsl"/>
     <xsl:import href="partials/html_head.xsl"/>
     <xsl:import href="partials/html_footer.xsl"/>
-    <xsl:import href="partials/tabulator_dl_buttons.xsl"/>
-    <xsl:import href="partials/tabulator_js.xsl"/>
     <xsl:import href="partials/place.xsl"/>
     
     <xsl:template match="/">
@@ -23,6 +21,9 @@
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
+                <link  href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator_bootstrap5.min.css" rel="stylesheet"></link>
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+                <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
             </head>
             
             <body class="d-flex flex-column h-100">
@@ -31,14 +32,14 @@
                     <div class="container">
                         <h1><xsl:value-of select="$doc_title"/></h1>
                         <div id="map"/>
-                        <table class="table" id="myTable">
+                        <table id="placesTable">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
-                                    <th scope="col" tabulator-headerFilter="input">Ortsname</th>
-                                    <th scope="col" tabulator-headerFilter="input">Lat</th>
-                                    <th scope="col" tabulator-headerFilter="input">Long</th>
-                                    <th scope="col" tabulator-headerFilter="input">ID</th>
+                                    <th scope="col">Ortsname</th>
+                                    <th scope="col">Erwähnungen</th>
+                                    <th scope="col">lat</th>
+                                    <th scope="col">lng</th>
+                                    <th scope="col">ID</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -48,42 +49,47 @@
                                     </xsl:variable>
                                     <tr>
                                         <td>
+                                            <xsl:value-of select=".//tei:placeName[1]/text()"/>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of select="count(.//tei:note[@type='mentions'])"/>
+                                        </td>
+                                        <td>
+                                            <xsl:choose>
+                                                <xsl:when test="./tei:location/tei:geo">
+                                                    <xsl:value-of select="replace(tokenize(./tei:location[1]/tei:geo/text(), ' ')[1], ',', '.')"/>
+                                                </xsl:when>
+                                            </xsl:choose>
+                                        </td>
+                                        <td>
+                                            <xsl:choose>
+                                                <xsl:when test="./tei:location/tei:geo">
+                                                    <xsl:value-of select="replace(tokenize(./tei:location[1]/tei:geo/text(), ' ')[last()], ',', '.')"/>
+                                                </xsl:when>
+                                            </xsl:choose>
+                                        </td>
+                                        <td>
                                             <a>
-                                              <xsl:attribute name="href">
-                                              <xsl:value-of select="concat($id, '.html')"/>
-                                              </xsl:attribute>
-                                              <i class="bi bi-link-45deg"/>
+                                                <xsl:attribute name="href">
+                                                    <xsl:value-of select="concat($id, '.html')"/>
+                                                </xsl:attribute>
+                                                <xsl:value-of select="$id"/>
                                             </a>
-                                        </td>
-                                        <td>
-                                            <xsl:value-of select="./tei:placeName[1]/text()"/>
-                                        </td>
-                                        <td>
-                                            <xsl:choose>
-                                                <xsl:when test="./tei:location[1]/tei:geo[1]">
-                                                    <xsl:value-of select="tokenize(./tei:location[1]/tei:geo[1]/text(), ' ')[1]"/>
-                                                </xsl:when>
-                                            </xsl:choose>
-                                        </td>
-                                        <td>
-                                            <xsl:choose>
-                                                <xsl:when test="./tei:location[1]/tei:geo[1]">
-                                                    <xsl:value-of select="tokenize(./tei:location[1]/tei:geo[1]/text(), ' ')[last()]"/>
-                                                </xsl:when>
-                                            </xsl:choose>
-                                        </td>
-                                        <td>
-                                            <xsl:value-of select="$id"/>
                                         </td>
                                     </tr>
                                 </xsl:for-each>
                             </tbody>
                         </table>
-                        <xsl:call-template name="tabulator_dl_buttons"/>
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
-                <xsl:call-template name="tabulator_js"/>
+                <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.2/dist/js/tabulator.min.js"/>
+                <script src="js/map_table_cfg.js"/>
+                <script src="js/make_map_and_table.js"/>
+                
+                <script>
+                    build_map_and_table(map_cfg, table_cfg, wms_cfg=null, tms_cfg=tms_cfg);
+                </script>
             </body>
         </html>
         <xsl:for-each select=".//tei:place[@xml:id]">

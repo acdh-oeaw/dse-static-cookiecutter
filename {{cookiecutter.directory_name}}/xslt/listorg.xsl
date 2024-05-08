@@ -31,12 +31,12 @@
                                 <xsl:value-of select="$doc_title"/>
                             </h1>
                             
-                            <table class="table" id="myTable">
+                            <table id="myTable">
                                 <thead>
                                     <tr>
                                         <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
-                                        <th scope="col" abulator-headerFilter="input">Name</th>
-                                        <th scope="col" abulator-headerFilter="input">ID</th>
+                                        <th scope="col" tabulator-headerFilter="input">Name</th>
+                                        <th scope="col" tabulator-headerFilter="input">ID</th>
                                     </tr>
                                 </thead>
                                 <tbody>

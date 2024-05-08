@@ -29,8 +29,8 @@ The current repo should ease the process of publishing TEI/XML encoded files as 
 * Handling of indices for persons, places, organizations, or works is included
 * Search and filterable overview pages of your editions (table of contents) and indices
 * Example code on how to implement a faceted full-text search powered by [Typesense](https://typesense.org/)
-* [Digital Edition Micro-Editor](https://github.com/acdh-oeaw/de-micro-editor) for customization of interactive features is enabled
-* Geovisualization of places via [leaflet.js](https://leafletjs.com/) powered maps
+* [Digital Edition Micro-Editor](https://github.com/acdh-oeaw/de-micro-editor) for customization of interactive features is enabled; contributed by @linxOD
+* Geovisualization of places via [leaflet.js](https://leafletjs.com/) powered maps; contributed by @cfhaak and @kisram
 * Ships with an [Oxygen XML Editor](https://www.oxygenxml.com/) project `.xpr` including some transformation scenarios for local development/testing of TEI to HTML transformations.
 
 ## Full Text Search

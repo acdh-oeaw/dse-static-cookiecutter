@@ -1,0 +1,4 @@
+/* needed for interactive map in listplace.xsl */
+div#map {
+    height: 50vh;
+}
