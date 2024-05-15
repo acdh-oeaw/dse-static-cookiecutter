@@ -32,21 +32,14 @@ const columns = [
     headerFilter: "input",
     title: "Ortsname",
     field: "Ortsname",
-    formatter: "plaintext",
-    resizable: false,
+    formatter: linkToDetailView,
+    resizable: true,
   },
   {
     headerFilter: "input",
     title: "Erwähnungen",
     field: "mentions",
     formatter: "plaintext",
-    resizable: true,
-  },
-  {
-    headerFilter: "input",
-    title: "ID",
-    field: "ID",
-    formatter: "html",
     resizable: true,
   },
   /* the following fields are necessary, 
@@ -62,6 +55,13 @@ const columns = [
   {
     title: "lng",
     field: "lng",
+    formatter: "plaintext",
+    resizable: false,
+    visible: false,
+  },
+  {
+    title: "linkToEntity",
+    field: "linkToEntity",
     formatter: "plaintext",
     resizable: false,
     visible: false,
@@ -104,6 +104,9 @@ const tabulator_cfg = {
   responsiveLayout: "collapse",
   langs: langs,
   columns: columns,
+  initialSort:[
+    {column:"Ortsname", dir:"asc"},
+  ]
 };
 
 /*this is just an extra capsule to pass cfg trough the functions*/
@@ -145,71 +148,27 @@ let tms_cfg = {
 /* some functions to influence the visualization*/
 //////////////////////////////////////////////////
 
-function draw_cirlce_from_rowdata(latLng, row) {
-  /*provides a circular icon to be drawn on the map, radius is dermined by the amount
-    of child elements in the related_objects column first ul child*/
-  let row_data = Number(row.getData().mentions);
-  if (row_data > 100) {
-    row_data = 100 + row_data / 100
-  }
-  let radius_factor = row_data;
-  let radius = radius_factor * 0.2;
-  let border_width = 4;
-  let options = {
-    radius: radius,
-    weight: border_width,
-    fillOpacity: "0.5",
-    color: "#702963",
-    fillColor: "#702963",
-  }
-  let marker = L.circleMarker(latLng, options);
-  return marker;
-}
-
-/*define the way you wish to draw icons on the map in the make_map_and_table.js; 
-per default the function takes the coordinates as [lat, lng]
-from row.getData() and the row object as in the above example 
-(draw_cirlce_from_rowdata)*/
-const draw_icon = draw_cirlce_from_rowdata;
-
-
 /*define the way you want to created an popup lable on the map
 you have full acces to row data via row.getData() and can write html as in example below*/
-function get_bold_name(row) {
-  let label_string = `<b>${row.Ortsname}</b><br/>`;
-  return label_string;
+function popupLabelCreator(row) {
+  return `<a href="${row.linkToEntity}.html">${row.Ortsname}</a>`;
 }
 
-const get_popup_label_string_html = get_bold_name
+function tooltipLabelcreator(row) {
+  return `${row.Ortsname}`;
+}
+
+const get_popup_label_string_html = popupLabelCreator
+const get_tooltip_label = tooltipLabelcreator
 
 
 /*some helpers*/
 
-/*helper for scrollable cell, use in custom formatter in $columns*/
-function make_cell_scrollable(table, cell, cell_html_string_in) {
-  var cell_html_element = cell.getElement();
-  cell_html_element.style.whiteSpace = "pre-wrap";
-  cell_html_element.style.overflow = "auto";
-  cell_html_element.style.maxHeight = "100px";
-  if (cell_html_string_in !== undefined) {
-    return table.emptyToSpace(cell_html_string_in);
-  } else {
-    return table.emptyToSpace(cell.getValue());
-  }
-}
-
-/* YOU DONT NEED THIS IF YOUR LIST-DATA STEMS FROM HTML, simply provide a html-list in the cell.
-this is a helper to provide you with a scrollable table cell, containing an html list;
-use in custom formatter in $columns;*/
-function build_linklist_cell(table, cell) {
-  let values = cell.getValue();
-  let i = 0;
-  let links = [];
-  while (i < values.length) {
-    let pair = values[i];
-    links.push(get_html_link(pair[0], pair[1]));
-    i++;
-  }
-  let basic_html = get_html_list(links);
-  return make_cell_scrollable(table, cell, basic_html);
+function linkToDetailView (cell) {
+  var row = cell.getRow().getData()
+  var cellData = cell.getData()
+  var linkValue = row.linkToEntity
+  var linkText = cellData.Ortsname
+  var theLink = `<a href="${linkValue}.html">${linkText}</a>`
+  return theLink
 }
