@@ -6,7 +6,6 @@
     <delete>
         <fileset dir="${target}" includes="*.html"/>
     </delete>
-    <delete dir="${target}/static-search"/>
     <xslt in="${index}" out="${target}/index.html" style="./xslt/index.xsl">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
