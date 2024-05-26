@@ -13,7 +13,8 @@ if "{{ cookiecutter.translations }}" == "no":
     )
 
 {% if cookiecutter.use_remote_data -%}
-shutil.rmtree(os.path.join("data", "editions"), ignore_errors=True)
+for x in ["editions", "indices", "meta"]:
+    shutil.rmtree(os.path.join("data", x), ignore_errors=True)
 {% else %}
 os.remove("fetch_data.sh")
 {% endif %}
