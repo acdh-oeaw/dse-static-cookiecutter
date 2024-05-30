@@ -3,10 +3,6 @@
  * EDITIONS view properties 
  * ###########################*/
 
- .fade {
-  display: none;
-}
-
 /* The switch - the box around the slider */
 .switch {
   position: relative;

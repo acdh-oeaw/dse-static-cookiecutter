@@ -11,6 +11,8 @@
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
+    <xsl:import href="./partials/one_time_alert.xsl"/>
+
 
     <xsl:template match="/">
         <xsl:variable name="doc_title">
@@ -26,6 +28,7 @@
                 <xsl:call-template name="nav_bar"/>
                 <main class="flex-shrink-0">
                     <div class="container">
+                        <xsl:call-template name="one_time_alert"/>
                         <h1><xsl:value-of select="$project_short_title"/></h1>
                         <h2><xsl:value-of select="$project_title"/></h2>
                     </div>
