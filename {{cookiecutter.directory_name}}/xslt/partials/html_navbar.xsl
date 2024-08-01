@@ -5,7 +5,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="#all" version="2.0">
     <xsl:template match="/" name="nav_bar">
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav aria-label="Primary" class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
                         <xsl:value-of select="$project_short_title"/>
