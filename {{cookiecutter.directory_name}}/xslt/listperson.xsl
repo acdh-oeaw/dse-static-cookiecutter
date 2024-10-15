@@ -27,7 +27,7 @@
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>
 
-                <main>
+                <main class="flex-shrink-0 flex-grow-1">
                     <div class="container">
 
                         <h1>
