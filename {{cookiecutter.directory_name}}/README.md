@@ -7,9 +7,11 @@
 
 
 ## initial (one time) setup
-
-* run `./shellscripts/script.sh`{% if cookiecutter.use_remote_data %}
-* run `./fetch_data.sh`{% endif %}
+{% if cookiecutter.use_remote_data %}
+* run `./shellscripts/dl_saxon.sh`
+* run `./fetch_data.sh`{% else %}
+* run `./shellscripts/script.sh`
+{% endif %}
 * run `ant`
 
 
