@@ -6,9 +6,12 @@
     exclude-result-prefixes="#all"
     version="2.0">
     <xsl:template match="/" name="html_footer">
-        <footer class="footer mt-auto py-3 bg-body-tertiary">
-            <div class="float-end me-3">
-                <a href="{$github_url}"><i class="bi bi-github"></i></a>
+        <footer class="py-3 bg-body-tertiary">
+            <div class="text-center">
+                <a href="{$github_url}">
+                    <i aria-hidden="true" class="bi bi-github fs-2"></i>
+                    <span class="visually-hidden">GitHub repo</span>
+                </a>
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>

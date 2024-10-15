@@ -6,13 +6,12 @@
     <xsl:template match="/" name="one_time_alert">
         <div style="display:none" id="once-popup">
             <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
-                <h2 class="text-center">
+                <strong class="text-center fs-2">
                     Beta Version
-                </h2>
+                </strong>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         </div>
         <script type="text/javascript" src="js/one_time_alert.js"></script>
-
     </xsl:template>
 </xsl:stylesheet>

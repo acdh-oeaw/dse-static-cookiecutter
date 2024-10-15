@@ -13,7 +13,6 @@
     <xsl:import href="./partials/html_footer.xsl"/>
     <xsl:import href="./partials/one_time_alert.xsl"/>
 
-
     <xsl:template match="/">
         <xsl:variable name="doc_title">
             <xsl:value-of select='"{{ cookiecutter.project_short_title }}"'/>
@@ -26,7 +25,7 @@
             </head>            
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>
-                <main class="flex-shrink-0">
+                <main class="flex-shrink-0 flex-grow-1">
                     <div class="container">
                         <xsl:call-template name="one_time_alert"/>
                         <h1><xsl:value-of select="$project_short_title"/></h1>
@@ -36,33 +35,5 @@
                 <xsl:call-template name="html_footer"/>
             </body>
         </html>
-    </xsl:template>
-    <xsl:template match="tei:div//tei:head">
-        <h2 id="{generate-id()}"><xsl:apply-templates/></h2>
-    </xsl:template>
-    
-    <xsl:template match="tei:p">
-        <p id="{generate-id()}"><xsl:apply-templates/></p>
-    </xsl:template>
-    
-    <xsl:template match="tei:list">
-        <ul id="{generate-id()}"><xsl:apply-templates/></ul>
-    </xsl:template>
-    
-    <xsl:template match="tei:item">
-        <li id="{generate-id()}"><xsl:apply-templates/></li>
-    </xsl:template>
-    <xsl:template match="tei:ref">
-        <xsl:choose>
-            <xsl:when test="starts-with(data(@target), 'http')">
-                <a>
-                    <xsl:attribute name="href"><xsl:value-of select="@target"/></xsl:attribute>
-                    <xsl:value-of select="."/>
-                </a>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:apply-templates/>
-            </xsl:otherwise>
-        </xsl:choose>
     </xsl:template>
 </xsl:stylesheet>
