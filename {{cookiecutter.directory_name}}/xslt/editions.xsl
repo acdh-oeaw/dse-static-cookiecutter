@@ -47,38 +47,40 @@
                 <main class="flex-shrink-0 flex-grow-1">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-2 col-lg-2 col-sm-12">
+                            <div class="col-md-2 col-lg-2 col-sm-12 text-start">
                                 <xsl:if test="ends-with($prev,'.html')">
-                                    <h1>
-                                        <a>
-                                            <xsl:attribute name="href">
-                                                <xsl:value-of select="$prev"/>
-                                            </xsl:attribute>
-                                            <i class="bi bi-chevron-left" title="zurück"/>
-                                        </a>
-                                    </h1>
+                                    <a>
+                                        <xsl:attribute name="href">
+                                            <xsl:value-of select="$prev"/>
+                                        </xsl:attribute>
+                                        <i class="fs-2 bi bi-chevron-left" title="Zurück zum vorigen Dokument" visually-hidden="true">
+                                            <span class="visually-hidden">Zurück zum vorigen Dokument</span>
+                                        </i>
+                                    </a>
                                 </xsl:if>
                             </div>
-                            <div class="col-md-8 col-lg-8 col-sm-12">
-                                <h1 align="center">
+                            <div class="col-md-8 col-lg-8 col-sm-12 text-center">
+                                <h1>
                                     <xsl:value-of select="$doc_title"/>
                                 </h1>
-                                <h3 align="center">
+                                <div>
                                     <a href="{$teiSource}">
-                                        <i class="bi bi-download" title="TEI/XML"/>
+                                        <i class="bi bi-download fs-2" title="Zum TEI/XML Dokument" visually-hidden="true">
+                                            <span class="visually-hidden">Zum TEI/XML Dokument</span>
+                                        </i>
                                     </a>
-                                </h3>
+                                </div>
                             </div>
-                            <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right">
+                            <div class="col-md-2 col-lg-2 col-sm-12 text-start">
                                 <xsl:if test="ends-with($next, '.html')">
-                                    <h1>
-                                        <a>
-                                            <xsl:attribute name="href">
-                                                <xsl:value-of select="$next"/>
-                                            </xsl:attribute>
-                                            <i class="bi bi-chevron-right" title="weiter"/>
-                                        </a>
-                                    </h1>
+                                    <a>
+                                        <xsl:attribute name="href">
+                                            <xsl:value-of select="$next"/>
+                                        </xsl:attribute>
+                                        <i class="fs-2 bi bi-chevron-right" title="Weiter zum nächsten Dokument" visually-hidden="true">
+                                            <span class="visually-hidden">Weiter zum nächsten Dokument</span>
+                                        </i>
+                                    </a>
                                 </xsl:if>
                             </div>
                             <div id="editor-widget">
