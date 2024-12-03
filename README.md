@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14260530.svg)](https://doi.org/10.5281/zenodo.14260530)
+
+
 # DSE-Static-Cookiecutter
 
 [Cookiecutter](https://github.com/cookiecutter/cookiecutter) template for a [Static site generator](https://en.wikipedia.org/wiki/Static_site_generator) powered by TEI/XML files
