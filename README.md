@@ -39,7 +39,7 @@ The current repo should ease the process of publishing TEI/XML encoded files as 
 ## Full Text Search
 As mentioned above, DSE-Static-Cookiecutter implements a faceted full text search with [Typesense](https://typesense.org/). This breaks of course the static site paradigme but as ACDH-CH we are confident to keep our own typesense instance up and running for a long time. If you don't have your own typesense instance you could have a look at https://cloud.typesense.org/. 
 
-Alternatively you could rewrite the XSLT's to produce valid XHTML files and implement a powerful full text search using the awesom [staticSearch](https://github.com/projectEndings/staticSearch).
+Alternatively you could rewrite the XSLT's to produce valid XHTML files and implement a powerful full text search using the awesome [staticSearch](https://github.com/projectEndings/staticSearch).
 
 Previouse versions of DSE-Static-Cookiecutter shipped with an option to implement staticSearch but this had to be dropped due to limited maintainance resources.
 
