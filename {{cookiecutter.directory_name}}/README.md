@@ -23,7 +23,7 @@
 
 ## publish as GitHub Page
 
-* got to https://{{ cookiecutter.github_url}}/workflows/build.yml 
+* go to https://{{ cookiecutter.github_url}}/actions/workflows/build.yml
 * click the `Run workflow` button
 
 
