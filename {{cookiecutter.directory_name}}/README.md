@@ -14,6 +14,10 @@
 {% endif %}
 * run `ant`
 
+## set up GitHub repo
+* create a public, new, and empty (without README, .gitignore, license) GitHub repo {{ cookiecutter.github_url }} 
+* run `git init` in the root folder of your application {{ cookiecutter.directory_name }}
+* execute the commands described under `…or push an existing repository from the command line` in your new created GitHub repo {{ cookiecutter.github_url }}
 
 ## start dev server
 
