@@ -38,7 +38,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Install Saxon, Ant and Fundament
         run: |
-          apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
+          sudo apt-get update && sudo apt-get install openjdk-11-jre-headless ant -y --no-install-recommends
           ./shellscripts/script.sh
       - name: install python things
         run: pip install -r requirements.txt
