@@ -1,0 +1,23 @@
+{% extends 'header.j2' %}{% block content %}
+    <request verb="ListRecords" metadataPrefix="oai_dc">
+        {{ project_data.base_url }}/oai-pmh
+    </request>
+    <ListRecords>{% for object in object_list %}
+        <record>
+            <header>
+                <identifier>{{ object.id }}</identifier>
+                <datestamp>{{ object.datestamp }}</datestamp>
+            </header>
+            <metadata>
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                            xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/
+                            http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+                    <dc:title>{{ object.title }}</dc:title>
+                    <dc:type>Text</dc:type>
+                    <dc:identifier>{{ project_data.base_url }}/{{ object.id }}</dc:identifier>
+                </oai_dc:dc>
+            </metadata>
+        </record>{% endfor %}
+    </ListRecords>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'header.j2' %}{% block content %}
+    <request verb="ListIdentifiers" metadataPrefix="oai_dc">
+        {{ project_data.base_url }}/oai-pmh
+    </request>
+    <ListIdentifiers>{% for object in object_list %}
+        <header>
+            <identifier>{{ object.id }}</identifier>
+            <datestamp>{{ object.datestamp }}</datestamp>
+        </header>{% endfor %}
+    </ListIdentifiers>
+{% endblock %}
