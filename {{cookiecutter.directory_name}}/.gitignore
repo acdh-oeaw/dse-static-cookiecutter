@@ -2,6 +2,7 @@
 *.html
 html/*.xml
 html/beacon.txt
+/html/oai-pmh
 /saxon
 data/imprint.xml
 {% if cookiecutter.use_remote_data %}
