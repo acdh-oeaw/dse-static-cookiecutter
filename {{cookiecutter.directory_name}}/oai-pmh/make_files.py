@@ -83,5 +83,24 @@ done_doc = TeiReader(output_path)
 done_doc.tree_to_file(output_path)
 print(f"saving {output_path}")
 
+print("serializing ListMetadataFormats.xml")
+template = templateEnv.get_template("ListMetadataFormats.j2")
+output_path = os.path.join(oai_folder, "ListMetadataFormats.xml")
+with open(output_path, "w", encoding="utf-8") as f:
+    f.write(
+        template.render(
+            {
+                "project_data": project_data,
+                "object_list": object_list,
+                "current_date_time": datetime.datetime.now(datetime.UTC).strftime(
+                    "%Y-%m-%dT%H:%M:%SZ"
+                ),
+            }
+        )
+    )
+done_doc = TeiReader(output_path)
+done_doc.tree_to_file(output_path)
+print(f"saving {output_path}")
+
 index_html_path = os.path.join("oai-pmh", "index.htm")
 shutil.copy(index_html_path, os.path.join(oai_folder, "index.html"))
