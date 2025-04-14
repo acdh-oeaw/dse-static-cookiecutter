@@ -12,7 +12,8 @@
     "data_repo": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.data_dir }}",
     "_copy_without_render": [
         ".github/workflows/build.yml",
-        "oai-pmh/templates"
+        "oai-pmh/templates",
+        "html/vendor"
     ],
     "__prompts__": {
         "directory_name": "'directory_name' \nThis folder will be created and is going to hold your awesome code base",
