@@ -119,8 +119,8 @@
                     </xsl:for-each>
                 </main>
                 <xsl:call-template name="html_footer"/>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"/>
-                <script src="https://unpkg.com/de-micro-editor@0.3.4/dist/de-editor.min.js"></script>
+                <script src="vendor/openseadragon-bin-4.1.1/openseadragon.min.js"/>
+                <script src="vendor/de-micro-editor-0.4.0/de-editor.min.js"></script>
                 <script type="text/javascript" src="js/run.js"></script>
             </body>
         </html>
