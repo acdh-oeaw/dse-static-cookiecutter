@@ -40,3 +40,7 @@
 ### run image from GitHub Container Registry
 
 `docker run -p 80:80 --rm --name {{cookiecutter.directory_name}} ghcr.io/{{cookiecutter.github_org}}/{{cookiecutter.directory_name}}:main`
+
+### third-party libraries
+
+the code for all third-party libraries used is included in the `html/vendor` folder, their respective licenses can be found either in a `LICENSE.txt` file or directly in the header of the `.js` file
