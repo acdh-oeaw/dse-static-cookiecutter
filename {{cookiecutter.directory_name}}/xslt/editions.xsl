@@ -12,6 +12,7 @@
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
     <xsl:import href="./partials/aot-options.xsl"/>
+    <xsl:import href="./partials/blockquote.xsl"/>
 
     <xsl:variable name="prev">
         <xsl:value-of select="replace(tokenize(data(tei:TEI/@prev), '/')[last()], '.xml', '.html')"/>
@@ -110,6 +111,12 @@
                                 </div>
                             </xsl:for-each>
                         </p>
+
+                        <div class="text-center p-4">
+                            <xsl:call-template name="blockquote">
+                                <xsl:with-param name="pageId" select="$link"/>
+                            </xsl:call-template>
+                        </div>
 
                     </div>
                     <xsl:for-each select="//tei:back">

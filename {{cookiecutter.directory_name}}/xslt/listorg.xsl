@@ -8,9 +8,11 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
-    <xsl:import href="partials/tabulator_dl_buttons.xsl"/>
-    <xsl:import href="partials/tabulator_js.xsl"/>
-    <xsl:import href="partials/org.xsl"/> 
+    <xsl:import href="./partials/tabulator_dl_buttons.xsl"/>
+    <xsl:import href="./partials/tabulator_js.xsl"/>
+    <xsl:import href="./partials/org.xsl"/>
+    <xsl:import href="./partials/blockquote.xsl"/>
+
     <xsl:template match="/">
         <xsl:variable name="doc_title">
             <xsl:value-of select=".//tei:titleStmt/tei:title[1]/text()"/>
@@ -64,6 +66,11 @@
                                 </tbody>
                             </table>
                             <xsl:call-template name="tabulator_dl_buttons"/>
+                            <div class="text-center p-4">
+                                <xsl:call-template name="blockquote">
+                                    <xsl:with-param name="pageId" select="'listorg.html'"/>
+                                </xsl:call-template>
+                            </div>
                         </div>
                     </main>
                     <xsl:call-template name="html_footer"/>
@@ -87,7 +94,12 @@
                                 <h1>
                                     <xsl:value-of select="$name"/>
                                 </h1>
-                                <xsl:call-template name="org_detail"/>  
+                                <xsl:call-template name="org_detail"/>
+                                <div class="text-center p-4">
+                                    <xsl:call-template name="blockquote">
+                                        <xsl:with-param name="pageId" select="$filename"/>
+                                    </xsl:call-template>
+                                </div>
                             </div>
                         </main>
                         <xsl:call-template name="html_footer"/>
