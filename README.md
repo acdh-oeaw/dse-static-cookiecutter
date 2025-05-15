@@ -49,7 +49,17 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 * https://schnitzler-briefe.acdh.oeaw.ac.at/
 * https://schnitzler-tagebuch.acdh.oeaw.ac.at
 * https://schnitzler-bahr.acdh.oeaw.ac.at/
+* https://schnitzler-interviews.acdh.oeaw.ac.at/
 * https://amp.acdh.oeaw.ac.at
 * https://hanslick.acdh.oeaw.ac.at/
 * https://b-vg.acdh.oeaw.ac.at/
 * https://thun-korrespondenz.acdh.oeaw.ac.at/
+* https://kaiserin-eleonora.oeaw.ac.at/
+* https://staribacher.acdh.oeaw.ac.at/
+* https://akademieprotokolle.acdh.oeaw.ac.at/
+* https://gtrans.acdh.oeaw.ac.at/
+* https://wmp1.acdh.oeaw.ac.at/
+* https://grazer-nuntiatur.acdh.oeaw.ac.at
+* https://nuntiatur-pius-xi.acdh.oeaw.ac.at
+
+
