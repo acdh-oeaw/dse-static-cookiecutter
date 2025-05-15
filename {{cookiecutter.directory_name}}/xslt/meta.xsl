@@ -7,12 +7,18 @@
     
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
-    <xsl:import href="partials/html_footer.xsl"/>
-
+    <xsl:import href="./partials/html_footer.xsl"/>
+    <xsl:import href="./partials/blockquote.xsl"/>
 
     <xsl:template match="/">
         <xsl:variable name="doc_title">
             <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
+        </xsl:variable>
+        <xsl:variable name="teiSource">
+            <xsl:value-of select="data(tei:TEI/@xml:id)"/>
+        </xsl:variable>
+        <xsl:variable name="link">
+            <xsl:value-of select="replace($teiSource, '.xml', '.html')"/>
         </xsl:variable>
         <html class="h-100" lang="{$default_lang}">
             <head>
@@ -26,7 +32,14 @@
                 <main class="flex-shrink-0 flex-grow-1">
                     <div class="container">                        
                         <h1><xsl:value-of select="$doc_title"/></h1>    
-                        <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
+                        <xsl:apply-templates select=".//tei:body" />
+
+                        <div class="text-center p-4">
+                            <xsl:call-template name="blockquote">
+                                <xsl:with-param name="pageId" select="$link"/>
+                            </xsl:call-template>
+                        </div>
+
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>

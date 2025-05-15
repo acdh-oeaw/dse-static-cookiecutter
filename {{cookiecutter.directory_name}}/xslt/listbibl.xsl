@@ -8,9 +8,10 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
-    <xsl:import href="partials/tabulator_dl_buttons.xsl"/>
-    <xsl:import href="partials/tabulator_js.xsl"/>
+    <xsl:import href="./partials/tabulator_dl_buttons.xsl"/>
+    <xsl:import href="./partials/tabulator_js.xsl"/>
     <xsl:import href="./partials/bibl.xsl"/>
+    <xsl:import href="./partials/blockquote.xsl"/>
 
     <xsl:template match="/">
         <xsl:variable name="doc_title">
@@ -74,6 +75,12 @@
                             </tbody>
                         </table>
                         <xsl:call-template name="tabulator_dl_buttons"/>
+
+                        <div class="text-center p-4">
+                            <xsl:call-template name="blockquote">
+                                <xsl:with-param name="pageId" select="'listbibl.html'"/>
+                            </xsl:call-template>
+                        </div>
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
@@ -99,6 +106,11 @@
                                     <xsl:value-of select="$name"/>
                                 </h1>
                                 <xsl:call-template name="bibl_detail"/>
+                                <div class="text-center p-4">
+                                <xsl:call-template name="blockquote">
+                                    <xsl:with-param name="pageId" select="$filename"/>
+                                </xsl:call-template>
+                            </div>
                             </div>
                         </main>
                         <xsl:call-template name="html_footer"/>

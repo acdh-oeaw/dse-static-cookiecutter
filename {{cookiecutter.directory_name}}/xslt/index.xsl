@@ -12,6 +12,7 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
     <xsl:import href="./partials/one_time_alert.xsl"/>
+    <xsl:import href="./partials/blockquote.xsl"/>
 
     <xsl:template match="/">
         <xsl:variable name="doc_title">
@@ -30,6 +31,9 @@
                         <xsl:call-template name="one_time_alert"/>
                         <h1><xsl:value-of select="$project_short_title"/></h1>
                         <h2><xsl:value-of select="$project_title"/></h2>
+                        <div class="text-center p-4">
+                            <xsl:call-template name="blockquote"/>
+                        </div>
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>

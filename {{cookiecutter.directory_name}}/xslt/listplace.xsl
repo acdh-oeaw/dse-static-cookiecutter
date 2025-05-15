@@ -6,10 +6,11 @@
     
     <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0" indent="yes" omit-xml-declaration="yes"/>
 
-    <xsl:import href="partials/html_navbar.xsl"/>
-    <xsl:import href="partials/html_head.xsl"/>
-    <xsl:import href="partials/html_footer.xsl"/>
-    <xsl:import href="partials/place.xsl"/>
+    <xsl:import href="./partials/html_navbar.xsl"/>
+    <xsl:import href="./partials/html_head.xsl"/>
+    <xsl:import href="./partials/html_footer.xsl"/>
+    <xsl:import href="./partials/place.xsl"/>
+    <xsl:import href="./partials/blockquote.xsl"/>
     
     <xsl:template match="/">
         <xsl:variable name="doc_title">
@@ -80,6 +81,11 @@
                                 </xsl:for-each>
                             </tbody>
                         </table>
+                        <div class="text-center p-4">
+                            <xsl:call-template name="blockquote">
+                                <xsl:with-param name="pageId" select="'listplace.html'"/>
+                            </xsl:call-template>
+                        </div>
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
@@ -112,8 +118,13 @@
                                 </h1>
                                 <xsl:call-template name="place_detail"/>
                                 <xsl:if test="./tei:location/tei:geo">
-                                <div id="map_detail"/>
+                                    <div id="map_detail"/>
                                 </xsl:if>
+                                <div class="text-center p-4">
+                                    <xsl:call-template name="blockquote">
+                                        <xsl:with-param name="pageId" select="$filename"/>
+                                    </xsl:call-template>
+                                </div>
                             </div>
                         </main>
                         <xsl:call-template name="html_footer"/>
