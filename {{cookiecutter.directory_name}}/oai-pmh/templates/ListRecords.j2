@@ -15,7 +15,7 @@
                             http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
                     <dc:title>{{ object.title }}</dc:title>
                     <dc:type>Text</dc:type>
-                    <dc:identifier>{{ project_data.base_url }}/{{ object.id }}</dc:identifier>
+                    <dc:identifier>{{ project_data.base_url }}{{ object.id }}</dc:identifier>
                 </oai_dc:dc>
             </metadata>
         </record>{% endfor %}
