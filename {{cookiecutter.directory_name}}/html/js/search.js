@@ -1,0 +1,1 @@
+console.log("this is the file to configure the search client")

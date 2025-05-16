@@ -8,7 +8,8 @@
     
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
-    <xsl:import href="partials/html_footer.xsl"/>
+    <xsl:import href="./partials/html_footer.xsl"/>
+    <xsl:import href="./partials/typesense_libs.xsl"/>
     <xsl:template match="/">
         <xsl:variable name="doc_title" select="'Volltextsuche'"/>
         <html class="h-100" lang="{$default_lang}">
@@ -28,6 +29,7 @@
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
+                <xsl:call-template name="typesense_libs"/>
             </body>
         </html>
     </xsl:template>
