@@ -62,5 +62,7 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 * https://grazer-nuntiatur.acdh.oeaw.ac.at
 * https://nuntiatur-pius-xi.acdh.oeaw.ac.at
 * https://rita.acdh.oeaw.ac.at/
+* https://maechtekongresse.acdh.oeaw.ac.at/
+* https://daacda.acdh.oeaw.ac.at/
 
 
