@@ -68,10 +68,12 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 * https://grazer-nuntiatur.acdh.oeaw.ac.at
 * https://gtrans.acdh.oeaw.ac.at
 * https://maechtekongresse.acdh.oeaw.ac.at
+* https://sappho-digital.com
 * https://staribacher.acdh.oeaw.ac.at
 * https://tillich-briefe.acdh.oeaw.ac.at (ongoing)
 * https://tillich-lectures.acdh-dev.oeaw.ac.at (ongoing)
 * https://wmp1.acdh.oeaw.ac.at
+  
 
 ## 2025
 * https://daacda.acdh.oeaw.ac.at
