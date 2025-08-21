@@ -8,9 +8,8 @@
 
 ## initial (one time) setup
 {% if cookiecutter.use_remote_data %}
-* run `./shellscripts/dl_saxon.sh`
 * run `./fetch_data.sh`{% else %}
-* run `./shellscripts/script.sh`
+* run `./shellscripts/dl_imprint.sh`
 {% endif %}
 * run `ant`
 
@@ -41,6 +40,13 @@
 
 `docker run -p 80:80 --rm --name {{cookiecutter.directory_name}} ghcr.io/{{cookiecutter.github_org}}/{{cookiecutter.directory_name}}:main`
 
-### third-party libraries
+## Licenses
 
-the code for all third-party libraries used is included in the `html/vendor` folder, their respective licenses can be found either in a `LICENSE.txt` file or directly in the header of the `.js` file
+This project is released under the [MIT License](LICENSE)
+
+### third-party JavaScript libraries
+The code for all third-party JavaScript libraries used is included in the `html/vendor` folder, their respective licenses can be found either in a `LICENSE.txt` file or directly in the header of the `.js` file
+
+### SAXON-HE
+The projects also includes Saxon-HE, which is licensed separately under the Mozilla Public License, Version 2.0 (MPL 2.0). See the dedicated [LICENSE.txt](saxon/notices/LICENSE.txt)
+
