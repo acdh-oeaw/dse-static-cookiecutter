@@ -81,5 +81,6 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 * https://schnitzler-interviews.acdh.oeaw.ac.at
 * https://wienerschnitzler.org
 * [https://www.kraus.wienbibliothek.at](https://www.kraus.wienbibliothek.at/legalkraus-static/)
+* https://schnitzler-kultur.acdh.oeaw.ac.at/
 
 
