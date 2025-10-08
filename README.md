@@ -10,7 +10,7 @@
 The current repo should ease the process of publishing TEI/XML encoded files as a Static-Site Application using mainly XSLT to generate static HTML files.
 
 > [!IMPORTANT]  
-> DSE-Static-Cookiecutter is developed for digital editions projects run at the [ACDH-CH](https://www.oeaw.ac.at/acdh/acdh-ch-home). Therefore some parts of the code (especially the usage imprint service `{{cookiecutter.directory_name}}/shellscripts/dl_imprint.sh`) won't work properly outside of our institutional context.
+> DSE-Static-Cookiecutter is developed for digital editions projects run at the [ACDH](https://www.oeaw.ac.at/acdh/acdh-home). Therefore some parts of the code (especially the usage imprint service `{{cookiecutter.directory_name}}/shellscripts/dl_imprint.sh`) won't work properly outside of our institutional context.
 
 ## Quickstart
 
@@ -36,7 +36,7 @@ The current repo should ease the process of publishing TEI/XML encoded files as 
 * Ships with an [Oxygen XML Editor](https://www.oxygenxml.com/) project `.xpr` including some transformation scenarios for local development/testing of TEI to HTML transformations.
 
 ## Full Text Search
-As mentioned above, DSE-Static-Cookiecutter implements a faceted full text search with [Typesense](https://typesense.org/). This breaks of course the static site paradigme but as ACDH-CH we are confident to keep our own typesense instance up and running for a long time. If you don't have your own typesense instance you could have a look at https://cloud.typesense.org/. 
+As mentioned above, DSE-Static-Cookiecutter implements a faceted full text search with [Typesense](https://typesense.org/). This breaks of course the static site paradigme but as ACDH we are confident to keep our own typesense instance up and running for a long time. If you don't have your own typesense instance you could have a look at https://cloud.typesense.org/. 
 
 Alternatively you could rewrite the XSLT's to produce valid XHTML files and implement a powerful full text search using the awesome [staticSearch](https://github.com/projectEndings/staticSearch).
 
@@ -44,9 +44,6 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 
 ## Plug-ins/Customization
 * Try out [Digital Edition Micro-Editor](https://github.com/acdh-oeaw/de-micro-editor) for customization of interactive features
-
-
-
 
 ## Projects using DSE-Static-Cookiecutter (by start date)
 
