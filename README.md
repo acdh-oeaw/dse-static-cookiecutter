@@ -47,24 +47,24 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 
 ## Projects using DSE-Static-Cookiecutter (by start date)
 
-## 2021
+### 2021
 * https://schnitzler-tagebuch.acdh.oeaw.ac.at (ongoing)
 * https://schnitzler-lektueren.acdh.oeaw.ac.at
 
-## 2022
+### 2022
 * https://rita.acdh.oeaw.ac.at
 * https://thun-korrespondenz.acdh.oeaw.ac.at
 * https://amp.acdh.oeaw.ac.at (finished 2024)
 * https://schnitzler-briefe.acdh.oeaw.ac.at (ongoing)
 * https://schnitzler-bahr.acdh.oeaw.ac.at (ongoing)
 
-## 2023
+### 2023
 * https://b-vg.acdh.oeaw.ac.at (ongoing)
 * https://hanslick.acdh.oeaw.ac.at (ongoing)
 * https://kaiserin-eleonora.oeaw.ac.at (ongoing)
 * https://ofm-graz.acdh.oeaw.ac.at
 
-## 2024
+### 2024
 * https://akademieprotokolle.acdh.oeaw.ac.at (ongoing)
 * https://grazer-nuntiatur.acdh.oeaw.ac.at
 * https://gtrans.acdh.oeaw.ac.at
@@ -76,7 +76,7 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 * https://wmp1.acdh.oeaw.ac.at
   
 
-## 2025
+### 2025
 * https://daacda.acdh.oeaw.ac.at
 * https://nuntiatur-pius-xi.acdh.oeaw.ac.at
 * https://schnitzler-interviews.acdh.oeaw.ac.at
