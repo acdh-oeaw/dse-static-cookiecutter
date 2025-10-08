@@ -6,7 +6,7 @@
     exclude-result-prefixes="#all"
     version="2.0">
     <xsl:include href="./params.xsl"/>
-    <xsl:template match="/" name="html_head">
+    <xsl:template name="html_head">
         <xsl:param name="html_title" select="$project_short_title"></xsl:param>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
