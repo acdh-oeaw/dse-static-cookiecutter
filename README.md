@@ -32,7 +32,6 @@ The current repo should ease the process of publishing TEI/XML encoded files as 
 * Handling of indices for persons, places, organizations, or works is included
 * Search and filterable overview pages of your editions (table of contents) and indices
 * Example code on how to implement a faceted full-text search powered by [Typesense](https://typesense.org/)
-* [Digital Edition Micro-Editor](https://github.com/acdh-oeaw/de-micro-editor) for customization of interactive features is enabled; contributed by [@linxOD](https://github.com/linxOD)
 * Geovisualization of places via [leaflet.js](https://leafletjs.com/) powered maps; contributed by [@cfhaak](https://github.com/cfhaak) and [@kisram](https://github.com/kisram)
 * Ships with an [Oxygen XML Editor](https://www.oxygenxml.com/) project `.xpr` including some transformation scenarios for local development/testing of TEI to HTML transformations.
 
@@ -42,6 +41,11 @@ As mentioned above, DSE-Static-Cookiecutter implements a faceted full text searc
 Alternatively you could rewrite the XSLT's to produce valid XHTML files and implement a powerful full text search using the awesome [staticSearch](https://github.com/projectEndings/staticSearch).
 
 Previouse versions of DSE-Static-Cookiecutter shipped with an option to implement staticSearch but this had to be dropped due to limited maintainance resources.
+
+## Plug-ins/Customization
+* Try out [Digital Edition Micro-Editor](https://github.com/acdh-oeaw/de-micro-editor) for customization of interactive features
+
+
 
 
 ## Projects using DSE-Static-Cookiecutter (by start date)
