@@ -11,7 +11,6 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
-    <xsl:import href="./partials/aot-options.xsl"/>
     <xsl:import href="./partials/blockquote.xsl"/>
 
     <xsl:variable name="prev">
@@ -37,11 +36,6 @@
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
-                <style>
-                    .navBarNavDropdown ul li:nth-child(2) {
-                        display: none !important;
-                    }
-                </style>
             </head>
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>
@@ -127,8 +121,6 @@
                 </main>
                 <xsl:call-template name="html_footer"/>
                 <script src="vendor/openseadragon-bin-4.1.1/openseadragon.min.js"/>
-                <script src="vendor/de-micro-editor-0.4.0/de-editor.min.js"></script>
-                <script type="text/javascript" src="js/run.js"></script>
             </body>
         </html>
     </xsl:template>
