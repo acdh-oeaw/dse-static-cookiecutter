@@ -78,9 +78,6 @@
                                     </a>
                                 </xsl:if>
                             </div>
-                            <div id="editor-widget">
-                                <xsl:call-template name="annotation-options"></xsl:call-template>
-                            </div>
                         </div>
                         <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
                         <p style="text-align:center;">
