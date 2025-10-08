@@ -84,3 +84,6 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 * https://schnitzler-kultur.acdh.oeaw.ac.at/
 
 
+# LICENSE
+
+**dse-static-cookiecutter** is licensed under the MIT License. See the LICENSE file for details. Be aware that this does not apply to third party libraries included in this project as [Saxon]({{cookiecutter.directory_name}}/saxon) or CSS/JS libraries included in [vendor]({{cookiecutter.directory_name}}/html/vendor).
