@@ -5,7 +5,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="#all"
     version="2.0">
-    <xsl:template match="/" name="html_footer">
+    <xsl:template name="html_footer">
         <footer class="py-3 bg-body-tertiary">
             <div class="text-center">
                 <a href="{$github_url}">

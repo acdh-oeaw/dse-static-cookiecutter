@@ -3,7 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
     version="2.0">
-    <xsl:template match="/" name="one_time_alert">
+    <xsl:template name="one_time_alert">
         <div style="display:none" id="once-popup">
             <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
                 <strong class="text-center fs-2">

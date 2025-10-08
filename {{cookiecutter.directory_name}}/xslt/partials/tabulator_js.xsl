@@ -3,7 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
     version="2.0">
-    <xsl:template match="/" name="tabulator_js">
+    <xsl:template name="tabulator_js">
         <link href="vendor/tabulator-tables/css/tabulator.min.css" rel="stylesheet"></link>
         <link href="vendor/tabulator-tables/css/tabulator_bootstrap5.min.css" rel="stylesheet"></link>
         <script type="text/javascript" src="vendor/tabulator-tables/js/tabulator.min.js"></script>
