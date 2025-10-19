@@ -6,6 +6,10 @@
     xmlns:local="http://dse-static.foo.bar"
     exclude-result-prefixes="xs"
     version="2.0">
+    <xsl:import href="person.xsl"/>
+    <xsl:import href="place.xsl"/>
+    <xsl:import href="bibl.xsl"/>
+    <xsl:import href="org.xsl"/>
     <xsl:function name="local:makeId" as="xs:string">
         <xsl:param name="currentNode" as="node()"/>
         <xsl:variable name="nodeCurrNr">
@@ -238,78 +242,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <table class="table">
-                            <tbody>
-                                <xsl:if test="./tei:idno[@type='GEONAMES']">
-                                <tr>
-                                    <th>
-                                        Geonames ID
-                                    </th>
-                                    <td>
-                                        <a href="{./tei:idno[@type='GEONAMES']}" target="_blank">
-                                            <xsl:value-of select="tokenize(./tei:idno[@type='GEONAMES'], '/')[4]"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                </xsl:if>
-                                <xsl:if test="./tei:idno[@type='WIKIDATA']">
-                                <tr>
-                                    <th>
-                                        Wikidata ID
-                                    </th>
-                                    <td>
-                                        <a href="{./tei:idno[@type='WIKIDATA']}" target="_blank">
-                                            <xsl:value-of select="tokenize(./tei:idno[@type='WIKIDATA'], '/')[last()]"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                </xsl:if>
-                                <xsl:if test="./tei:idno[@type='GND']">
-                                <tr>
-                                    <th>
-                                        GND ID
-                                    </th>
-                                    <td>
-                                        <a href="{./tei:idno[@type='GND']}" target="_blank">
-                                            <xsl:value-of select="tokenize(./tei:idno[@type='GND'], '/')[last()]"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                </xsl:if>
-                                <xsl:if test="./tei:listEvent">
-                                <tr>
-                                    <th>
-                                        Erwähnungen
-                                    </th>
-                                    <td>
-                                        <ul>
-                                            <xsl:for-each select=".//tei:event">
-                                                <xsl:variable name="linkToDocument">
-                                                    <xsl:value-of select="replace(tokenize(data(.//@target), '/')[last()], '.xml', '.html')"/>
-                                                </xsl:variable>
-                                                <xsl:choose>
-                                                    <xsl:when test="position() lt $showNumberOfMentions + 1">
-                                                        <li>
-                                                            <xsl:value-of select=".//tei:title"/><xsl:text> </xsl:text>
-                                                            <a href="{$linkToDocument}">
-                                                                <i class="fas fa-external-link-alt"></i>
-                                                            </a>
-                                                        </li>
-                                                    </xsl:when>
-                                                </xsl:choose>
-                                            </xsl:for-each>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                </xsl:if>
-                                <tr>
-                                    <th></th>
-                                    <td>
-                                        Anzahl der Erwähnungen limitiert, klicke <a href="{$selfLink}">hier</a> für eine vollständige Auflistung
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <xsl:call-template name="person_detail"></xsl:call-template>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
