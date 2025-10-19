@@ -5,13 +5,14 @@
 
 
     <xsl:template match="tei:org" name="org_detail">
-
         <dl>
             <xsl:if test="./tei:orgName">
                 <dt>Name</dt>
-                <dd>
-                    <xsl:value-of select="./tei:orgName"/>
-                </dd>
+                <xsl:for-each select="./tei:orgName">
+                    <dd>
+                        <xsl:value-of select="."/>
+                    </dd>
+                </xsl:for-each>
             </xsl:if>
             <xsl:if test="./tei:desc">
                 <dt>Beschreibung</dt>
@@ -20,7 +21,7 @@
                 </dd>
             </xsl:if>
             <xsl:if test="./tei:idno">
-                <dt> Identifiers </dt>
+                <dt>Identifiers</dt>
                 <xsl:for-each select="./tei:idno">
                     <dd>
                         <xsl:choose>
