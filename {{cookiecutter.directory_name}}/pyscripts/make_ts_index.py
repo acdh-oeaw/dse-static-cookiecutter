@@ -116,4 +116,4 @@ for x in tqdm(files, total=len(files)):
 
 make_index = client.collections[COLLECTION_NAME].documents.import_(records)
 print(make_index)
-print("done with indexing jpbriefe")
+print("done with indexing")
