@@ -43,20 +43,19 @@ jobs:
           cd dse-static
           ./fetch_data.sh
           ant
-      - name: look around
-        run: |
-          ls
-          cd html
-          pwd
+          # copy the generated html site into the workspace root so Pages action can upload it
+          # the build produces a directory named 'html' inside the generated project
+          rm -rf site || true
+          cp -a html site
 
       
-      # - name: Setup Pages
-      #   uses: actions/configure-pages@v5
-      # - name: Upload artifact
-      #   uses: actions/upload-pages-artifact@v4
-      #   with:
-      #     # Upload entire repository
-      #     path: '.'
-      # - name: Deploy to GitHub Pages
-      #   id: deployment
-      #   uses: actions/deploy-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          # Upload only the generated site files
+          path: 'site'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
