@@ -1,4 +1,5 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14260530.svg)](https://doi.org/10.5281/zenodo.14260530)
+[![Test and Deploy](https://github.com/acdh-oeaw/dse-static-cookiecutter/actions/workflows/static.yml/badge.svg)](https://github.com/acdh-oeaw/dse-static-cookiecutter/actions/workflows/static.yml)
 
 
 # DSE-Static-Cookiecutter
