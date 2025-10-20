@@ -19,7 +19,7 @@
         </xsl:variable>
         <html class="h-100" lang="{$default_lang}">
 
-            <head >
+            <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
@@ -28,7 +28,19 @@
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>
 
-                <main class="flex-shrink-0 flex-grow-1">                    
+                <main class="flex-shrink-0 flex-grow-1">   
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="ps-5 p-3">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">
+                                    <xsl:value-of select="$project_short_title"/>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <xsl:value-of select="$doc_title"/>
+                            </li>
+                        </ol>
+                    </nav>                 
                     <div class="container">                        
                         <h1>
                             <xsl:value-of select="$doc_title"/>
@@ -101,6 +113,16 @@
                     <body class="d-flex flex-column h-100">
                         <xsl:call-template name="nav_bar"/>
                         <main class="flex-shrink-0 flex-grow-1">
+                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="ps-5 p-3">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html"><xsl:value-of select="$project_short_title"/></a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="listbibl.html"><xsl:value-of select="$doc_title"/></a>
+                                    </li>
+                                </ol>
+                            </nav>
                             <div class="container">
                                 <h1>
                                     <xsl:value-of select="$name"/>

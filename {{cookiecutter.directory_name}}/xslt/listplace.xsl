@@ -19,24 +19,35 @@
             <xsl:value-of select=".//tei:titleStmt/tei:title[1]/text()"/>
         </xsl:variable>
         <html class="h-100" lang="{$default_lang}">
-            
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
                 <link href="vendor/tabulator-tables/css/tabulator_bootstrap5.min.css" rel="stylesheet"/>
-            <link rel="stylesheet" href="vendor/leaflet/leaflet.css"/>
-            <script src="vendor/leaflet/leaflet.js"/>
-            <link rel="stylesheet"
-                href="vendor/leaflet.markercluster/MarkerCluster.css"/>
-            <link rel="stylesheet"
-                href="vendor/leaflet.markercluster/MarkerCluster.Default.css"/>
-            <script src="vendor/leaflet.markercluster/leaflet.markercluster.js"/>
+                <link rel="stylesheet" href="vendor/leaflet/leaflet.css"/>
+                <script src="vendor/leaflet/leaflet.js"/>
+                <link rel="stylesheet"
+                    href="vendor/leaflet.markercluster/MarkerCluster.css"/>
+                <link rel="stylesheet"
+                    href="vendor/leaflet.markercluster/MarkerCluster.Default.css"/>
+                <script src="vendor/leaflet.markercluster/leaflet.markercluster.js"/>
             </head>
             
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>
                 <main class="flex-shrink-0 flex-grow-1">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="ps-5 p-3">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">
+                                    <xsl:value-of select="$project_short_title"/>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <xsl:value-of select="$doc_title"/>
+                            </li>
+                        </ol>
+                    </nav>
                     <div class="container">
                         <h1><xsl:value-of select="$doc_title"/></h1>
                         <div id="map"/>
@@ -114,6 +125,16 @@
                     <body class="d-flex flex-column h-100">
                         <xsl:call-template name="nav_bar"/>
                         <main class="flex-shrink-0 flex-grow-1">
+                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="ps-5 p-3">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html"><xsl:value-of select="$project_short_title"/></a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="listplace.html"><xsl:value-of select="$doc_title"/></a>
+                                    </li>
+                                </ol>
+                            </nav>
                             <div class="container">
                                 <h1>
                                     <xsl:value-of select="$name"/>
