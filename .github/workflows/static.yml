@@ -28,6 +28,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    env:
+      TYPESENSE_HOST: typesense.acdh-dev.oeaw.ac.at
+      TYPESENSE_PORT: 443
+      TYPESENSE_PROTOCOL: https
+      TYPESENSE_API_KEY: ${{secrets.TYPESENSE_API_KEY}}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -44,6 +49,8 @@ jobs:
           sed -i 's|<xsl:param name="base_url">https://acdh-oeaw.github.io/dse-static/</xsl:param>|<xsl:param name="base_url">https://acdh-oeaw.github.io/dse-static-cookiecutter/</xsl:param>|' xslt/partials/params.xsl
           ./fetch_data.sh
           ant
+          uv run pyscripts/make_ts_index.py
+          uv run oai-pmh/make_files.py
           echo "Using GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
           rm -rf "$GITHUB_WORKSPACE/site" || true
           cp -a html "$GITHUB_WORKSPACE/site"
