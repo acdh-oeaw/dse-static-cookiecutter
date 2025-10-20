@@ -3,8 +3,7 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:local="http://dse-static.foo.bar"
-    version="2.0" exclude-result-prefixes="xsl tei xs local">
+    version="2.0" exclude-result-prefixes="xsl tei xs">
     <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0" indent="yes" omit-xml-declaration="yes"/>
     
     <xsl:import href="./partials/shared.xsl"/>
@@ -82,7 +81,7 @@
                         <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
                         <p style="text-align:center;">
                             <xsl:for-each select=".//tei:note[not(./tei:p)]">
-                                <div class="footnotes" id="{local:makeId(.)}">
+                                <div class="footnotes">
                                     <xsl:element name="a">
                                         <xsl:attribute name="name">
                                             <xsl:text>fn</xsl:text>

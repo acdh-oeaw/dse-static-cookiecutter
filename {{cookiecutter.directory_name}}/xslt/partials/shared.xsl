@@ -3,20 +3,11 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:local="http://dse-static.foo.bar"
     exclude-result-prefixes="xs"
     version="2.0">
-    <xsl:import href="person.xsl"/>
-    <xsl:import href="place.xsl"/>
-    <xsl:import href="bibl.xsl"/>
-    <xsl:import href="org.xsl"/>
-    <xsl:function name="local:makeId" as="xs:string">
-        <xsl:param name="currentNode" as="node()"/>
-        <xsl:variable name="nodeCurrNr">
-            <xsl:value-of select="count($currentNode//preceding-sibling::*) + 1"/>
-        </xsl:variable>
-        <xsl:value-of select="concat(name($currentNode), '__', $nodeCurrNr)"/>
-    </xsl:function>
+    
+    <xsl:import href="entities.xsl"/>
+
     <xsl:template match="tei:div">
         <div><xsl:apply-templates/></div>
     </xsl:template>
@@ -225,6 +216,9 @@
                             <xsl:apply-templates/>
                         </span>
                     </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates/>
+                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
@@ -243,7 +237,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5"><xsl:value-of select="$name"/></h1>
+                        <h1 class="modal-title fs-5"><a href="{$selfLink}"><xsl:value-of select="$name"/></a></h1>
                     </div>
                     <div class="modal-body">
                         <xsl:call-template name="person_detail"/>
@@ -269,7 +263,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5"><xsl:value-of select="$name"/></h1>
+                        <h1 class="modal-title fs-5"><a href="{$selfLink}"><xsl:value-of select="$name"/></a></h1>
                     </div>
                     <div class="modal-body">
                         <xsl:call-template name="place_detail"/>
@@ -295,7 +289,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5"><xsl:value-of select="$name"/></h1>
+                        <h1 class="modal-title fs-5"><a href="{$selfLink}"><xsl:value-of select="$name"/></a></h1>
                     </div>
                     <div class="modal-body">
                         <xsl:call-template name="org_detail"/>
@@ -322,7 +316,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5"><xsl:value-of select="$name"/></h1>
+                        <h1 class="modal-title fs-5"><a href="{$selfLink}"><xsl:value-of select="$name"/></a></h1>
                     </div>
                     <div class="modal-body">
                         <xsl:call-template name="bibl_detail"/>
