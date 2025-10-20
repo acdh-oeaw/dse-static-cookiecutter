@@ -1,4 +1,5 @@
 const indexName = "{{ cookiecutter.directory_name }}";
+{% raw %}
 const apiKey = "0drlT8CHD6T9z8QxQjYXvSWT2dZ75nPv"; /* change this */
 
 const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
@@ -230,3 +231,5 @@ search.addWidgets([
 ]);
 
 search.start();
+
+{% endraw %}
