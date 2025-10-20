@@ -35,21 +35,19 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v6
       
-      - name: tree
-        run: tree
-      
-      - name: on level down
+      - name: build the app
         run: |
           cd ..
           uvx cookiecutter dse-static-cookiecutter --no-input
           cd dse-static
-          ./shellscripts/dl_imprint.sh.sh
-          ant
-      - name: look around
-        run: |
-          ls
-          cd html
-          pwd
+          tree
+      #     ./shellscripts/dl_imprint.sh.sh
+      #     ant
+      # - name: look around
+      #   run: |
+      #     ls
+      #     cd html
+      #     pwd
 
       
       # - name: Setup Pages
