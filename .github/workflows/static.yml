@@ -43,10 +43,10 @@ jobs:
           cd dse-static
           ./fetch_data.sh
           ant
-          # copy the generated html site into the workspace root so Pages action can upload it
-          # the build produces a directory named 'html' inside the generated project
-          rm -rf site || true
-          cp -a html site
+          echo "Using GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+          rm -rf "$GITHUB_WORKSPACE/site" || true
+          cp -a html "$GITHUB_WORKSPACE/site"
+          echo "Copied html -> $GITHUB_WORKSPACE/site (size: $(du -sh "$GITHUB_WORKSPACE/site" | cut -f1))"
 
       
       - name: Setup Pages
