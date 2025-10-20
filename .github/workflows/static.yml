@@ -43,7 +43,7 @@ jobs:
           cd ..
           uvx cookiecutter dse-static-cookiecutter --no-input
           cd dse-static
-          ./fetch.sh
+          ./shellscripts/dl_imprint.sh.sh
           ant
       - name: look around
         run: |
