@@ -50,7 +50,7 @@ current_schema = {
     "enable_nested_fields": True,
     "fields": [
         {"name": "id", "type": "string"},
-        {"name": "rec_id", "type": "string", "index": False},
+        {"name": "rec_id", "type": "string", "sort": True},
         {"name": "title", "type": "string"},
         {"name": "full_text", "type": "string"},
         {"name": ".*_entities", "type": "auto", "facet": True, "optional": True},
