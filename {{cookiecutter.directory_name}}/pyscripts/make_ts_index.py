@@ -11,7 +11,7 @@ from acdh_tei_pyutils.utils import (
 from tqdm import tqdm
 from typesense.exceptions import ObjectNotFound
 
-COLLECTION_NAME = "{{ cookiecutter.data_dir }}"
+COLLECTION_NAME = "{{ cookiecutter.directory_name }}"
 files = glob.glob("./data/editions/*.xml")
 tag_blacklist = [
     "{http://www.tei-c.org/ns/1.0}abbr",
