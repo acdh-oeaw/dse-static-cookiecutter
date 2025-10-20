@@ -39,15 +39,15 @@ jobs:
         run: |
           cd ..
           uvx cookiecutter dse-static-cookiecutter --no-input
+          ls
           cd dse-static
-          tree
-      #     ./shellscripts/dl_imprint.sh.sh
-      #     ant
-      # - name: look around
-      #   run: |
-      #     ls
-      #     cd html
-      #     pwd
+          ./fetch_data.sh
+          ant
+      - name: look around
+        run: |
+          ls
+          cd html
+          pwd
 
       
       # - name: Setup Pages
