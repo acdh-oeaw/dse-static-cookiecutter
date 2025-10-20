@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="vendor/instantsearch-themes/algolia-min.css"/>
         <script src="vendor/instantsearch/instantsearch.production.min.js"></script>
         <script src="vendor/typesense-instantsearch-adapter/typesense-instantsearch-adapter.min.js"></script>
-        <script src="js/search.js"></script>
 
     </xsl:template>
 </xsl:stylesheet>
