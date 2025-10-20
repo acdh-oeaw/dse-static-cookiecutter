@@ -40,16 +40,16 @@ jobs:
       
       - name: on level down
         run: |
-          - cd ..
-          - uvx cookiecutter dse-static-cookiecutter --no-input
-          - cd dse-static
-          - ./fetch.sh
-          - ant
+          cd ..
+          uvx cookiecutter dse-static-cookiecutter --no-input
+          cd dse-static
+          ./fetch.sh
+          ant
       - name: look around
         run: |
-          - ls
-          - cd html
-          - pwd
+          ls
+          cd html
+          pwd
 
       
       # - name: Setup Pages
