@@ -39,8 +39,9 @@ jobs:
         run: |
           cd ..
           uvx cookiecutter dse-static-cookiecutter --no-input
-          ls
           cd dse-static
+          sed -i 's|<xsl:param name="github_url">https://github.com/acdh-oeaw/dse-static</xsl:param>|<xsl:param name="github_url">https://github.com/acdh-oeaw/dse-static-cookiecutter</xsl:param>|' xslt/partials/params.xsl
+          sed -i 's|<xsl:param name="base_url">https://acdh-oeaw.github.io/dse-static/</xsl:param>|<xsl:param name="base_url">https://acdh-oeaw.github.io/dse-static-cookiecutter/</xsl:param>|' xslt/partials/params.xsl
           ./fetch_data.sh
           ant
           echo "Using GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
