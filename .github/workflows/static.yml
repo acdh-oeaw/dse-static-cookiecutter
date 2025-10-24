@@ -55,7 +55,7 @@ jobs:
           git add --all
           git commit -m "initial commit"
           git branch -M main
-          git remote add origin https://github.com/acdh-oeaw/dse-static.git
+          git remote add origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/acdh-oeaw/dse-static.git
           git push -u origin main
           sed -i 's|<xsl:param name="github_url">https://github.com/acdh-oeaw/dse-static</xsl:param>|<xsl:param name="github_url">https://github.com/acdh-oeaw/dse-static-cookiecutter</xsl:param>|' xslt/partials/params.xsl
           sed -i 's|<xsl:param name="base_url">https://acdh-oeaw.github.io/dse-static/</xsl:param>|<xsl:param name="base_url">https://acdh-oeaw.github.io/dse-static-cookiecutter/</xsl:param>|' xslt/partials/params.xsl
