@@ -12,6 +12,26 @@
 {% endif %}
 * run `ant`
 
+> [!NOTE]
+> The `build.xml` triggered by the `ant` command presumes the following folder-file structure in the data repo:
+> 
+> ```
+> data/
+> ├── editions/
+> │   ├── *.xml
+> │   ├── *.xml
+> │   └── *.xml
+> ├── indices/
+> │   ├── listbibl.xml
+> │   ├── listorg.xml
+> │   ├── listperson.xml
+> │   └── listplace.xml
+> └── meta/
+>     └── about.xml
+> ```
+> 
+> Otherwise, modify the relevant lines of the `build.xml`.
+
 ## set up GitHub repo
 * create a public, new, and empty (without README, .gitignore, license) GitHub repo {{ cookiecutter.github_url }} 
 * run `git init` in the root folder of your application {{ cookiecutter.directory_name }}
