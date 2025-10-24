@@ -46,11 +46,12 @@ jobs:
           cd ..
           uvx cookiecutter dse-static-cookiecutter --no-input
           cd dse-static
-          if gh repo view acdh-oeaw/dse-static >/dev/null 2>&1; then
-            gh repo delete acdh-oeaw/dse-static --yes
-          fi
+          gh repo delete acdh-oeaw/dse-static --yes
           gh repo create acdh-oeaw/dse-static --public
+          git config --global init.defaultBranch main
           git init
+          git config user.name "csae809[bot]"
+          git config user.email "foo.bar@whater.com"
           git add --all
           git commit -m "initial commit"
           git branch -M main
