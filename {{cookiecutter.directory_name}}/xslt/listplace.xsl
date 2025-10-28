@@ -13,7 +13,8 @@
     <xsl:import href="partials/tabulator_js.xsl"/>
     <xsl:import href="partials/entities.xsl"/>
     <xsl:import href="partials/blockquote.xsl"/>
-    
+    <xsl:import href="partials/zotero.xsl"/>
+
     <xsl:template match="/">
         <xsl:variable name="doc_title">
             <xsl:value-of select=".//tei:titleStmt/tei:title[1]/text()"/>
@@ -22,6 +23,10 @@
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="zoterMetaTags">
+                    <xsl:with-param name="pageId" select="$link"></xsl:with-param>
+                    <xsl:with-param name="zoteroTitle" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
                 <link href="vendor/tabulator-tables/css/tabulator_bootstrap5.min.css" rel="stylesheet"/>
                 <link rel="stylesheet" href="vendor/leaflet/leaflet.css"/>
@@ -119,6 +124,10 @@
                     <head>
                         <xsl:call-template name="html_head">
                             <xsl:with-param name="html_title" select="$name"></xsl:with-param>
+                        </xsl:call-template>
+                        <xsl:call-template name="zoterMetaTags">
+                            <xsl:with-param name="pageId" select="$filename"></xsl:with-param>
+                            <xsl:with-param name="zoteroTitle" select="$name"></xsl:with-param>
                         </xsl:call-template>
                     </head>
 
