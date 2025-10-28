@@ -12,16 +12,22 @@
     <xsl:import href="partials/tabulator_js.xsl"/>
     <xsl:import href="partials/entities.xsl"/>
     <xsl:import href="partials/blockquote.xsl"/>
+    <xsl:import href="partials/zotero.xsl"/>
 
     <xsl:template match="/">
         <xsl:variable name="doc_title">
             <xsl:value-of select=".//tei:titleStmt/tei:title[1]/text()"/>
         </xsl:variable>
+        <xsl:variable name="link" select="'listorg.html'"/>
         <html class="h-100" lang="{$default_lang}">
 
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="zoterMetaTags">
+                    <xsl:with-param name="pageId" select="$link"></xsl:with-param>
+                    <xsl:with-param name="zoteroTitle" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
             </head>
             
@@ -97,6 +103,10 @@
                     <head>
                         <xsl:call-template name="html_head">
                             <xsl:with-param name="html_title" select="$name"></xsl:with-param>
+                        </xsl:call-template>
+                        <xsl:call-template name="zoterMetaTags">
+                            <xsl:with-param name="pageId" select="$filename"></xsl:with-param>
+                            <xsl:with-param name="zoteroTitle" select="$name"></xsl:with-param>
                         </xsl:call-template>
                     </head>
                     <body class="d-flex flex-column h-100">

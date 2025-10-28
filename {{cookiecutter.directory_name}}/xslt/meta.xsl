@@ -9,6 +9,7 @@
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
     <xsl:import href="./partials/blockquote.xsl"/>
+    <xsl:import href="partials/zotero.xsl"/>
 
     <xsl:template match="/">
         <xsl:variable name="doc_title">
@@ -25,6 +26,12 @@
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
+                <xsl:call-template name="zoterMetaTags">
+                    <xsl:with-param name="pageId" select="$link"></xsl:with-param>
+                    <xsl:with-param name="zoteroTitle" select="$doc_title"></xsl:with-param>
+                </xsl:call-template>
+                <!-- add the name of the author of the current article -->
+                <meta name="citation_author" content="Foo, Bar"/> 
             </head>
             
             <body class="d-flex flex-column h-100">
