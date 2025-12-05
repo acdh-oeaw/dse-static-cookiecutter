@@ -54,6 +54,9 @@
                             <li class="nav-item">
                                 <a title="Suche" class="nav-link" href="search.html">Suche</a>
                             </li>
+                            <!-- <li class="nav-item">
+                                <a title="Suche" class="nav-link" href="noske-search.html">Noske-Suche</a>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
