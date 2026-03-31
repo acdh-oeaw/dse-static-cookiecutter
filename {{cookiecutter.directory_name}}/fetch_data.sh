@@ -1,4 +1,4 @@
-# bin/bash
+#!/bin/bash
 
 echo "fetching transkriptions from data_repo"
 rm -rf data/
