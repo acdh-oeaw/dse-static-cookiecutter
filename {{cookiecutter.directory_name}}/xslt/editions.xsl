@@ -91,7 +91,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-2 col-lg-2 col-sm-12 text-start">
+                            <div class="col-md-2 col-lg-2 col-sm-12 text-end">
                                 <xsl:if test="ends-with($next, '.html')">
                                     <a>
                                         <xsl:attribute name="href">
