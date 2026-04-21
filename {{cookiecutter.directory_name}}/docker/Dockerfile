@@ -1,4 +1,4 @@
-FROM python:3.12-bookworm AS builder
+FROM ghcr.io/astral-sh/uv:python3.13-bookworm-slim
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         openjdk-17-jdk-headless \
@@ -8,8 +8,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 RUN ./fetch_data.sh && ant
 

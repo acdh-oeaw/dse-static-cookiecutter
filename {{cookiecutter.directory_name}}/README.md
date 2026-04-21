@@ -40,13 +40,16 @@
 ## start dev server
 
 * `cd html/`
-* `python -m http.server`
+* `uv run -m http.server`
 * go to [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
 
 ## publish as GitHub Page
 
 * go to https://{{ cookiecutter.github_url}}/actions/workflows/build.yml
 * click the `Run workflow` button
+
+## Python scripting
+The project uses [uv](https://docs.astral.sh/uv/), as Python package and project manager.
 
 
 ## dockerize your application

@@ -1,3 +1,0 @@
-acdh-tei-pyutils
-acdh-cfts-pyutils
-jinja2
