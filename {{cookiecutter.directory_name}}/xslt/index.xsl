@@ -18,12 +18,12 @@
         <xsl:variable name="doc_title">
             <xsl:value-of select='"{{ cookiecutter.project_short_title }}"'/>
         </xsl:variable>
-        <xsl:call-template name="zoterMetaTags"></xsl:call-template>
         <html class="h-100" lang="{$default_lang}">
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
+                <xsl:call-template name="zoterMetaTags"></xsl:call-template>
             </head>            
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>

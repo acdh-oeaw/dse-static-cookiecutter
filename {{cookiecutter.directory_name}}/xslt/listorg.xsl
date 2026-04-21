@@ -22,7 +22,6 @@
         </xsl:variable>
         <xsl:variable name="link" select="'listorg.html'"/>
         <html class="h-100" lang="{$default_lang}">
-
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
