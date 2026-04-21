@@ -18,8 +18,8 @@ The current repo should ease the process of publishing TEI/XML encoded files as 
 > [!IMPORTANT]  
 > DSE-Static-Cookiecutter is tested to work on Linux/Mac. To make it work on Windows you'll need to change some parts of the initial setup.
 
-* Install the latest Cookiecutter if you haven't installed it yet (this requires Cookiecutter 2.1.0 or higher) by running `pip install -U cookiecutter`
-* To generate a new dse-static-site project run `cookiecutter gh:acdh-oeaw/dse-static-cookiecutter` and answer the appearing questions
+* Make sure you have [uv](https://docs.astral.sh/uv/) as Python package and project manager installed
+* To generate a new dse-static-site project run `uvx cookiecutter gh:acdh-oeaw/dse-static-cookiecutter` and answer the appearing questions
 * Change into the created directory, have a look at the README.md in this directory and start developing/customizing your great digital editions project.
 
 ## Features

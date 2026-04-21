@@ -35,20 +35,19 @@ jobs:
       IMAGE_NAME: ${{ '{{' }} github.repository {{ '}}' }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
-      - name: install python things
-        run: pip install -r requirements.txt {% if cookiecutter.use_remote_data %}
+        uses: actions/checkout@v6
+      - name: set up uv (Python)
+        uses: astral-sh/setup-uv@v8.1.0 {% if cookiecutter.use_remote_data %}
       - name: Fetch the data
         run: ./fetch_data.sh{% endif %}
       - name: Build the app
         run: ant
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
-          # Upload entire repository
           path: './html'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
