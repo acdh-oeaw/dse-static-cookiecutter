@@ -80,7 +80,7 @@ for x in tqdm(files, total=len(files)):
         item["id"] = get_xmlid(y)
         item["label"] = make_entity_label(
             y.xpath("./tei:persName[1]", namespaces=namespaces)[0]
-        )
+        )[0]
         record["person_entities"].append(item)
 
     record["place_entities"] = []
@@ -89,7 +89,7 @@ for x in tqdm(files, total=len(files)):
         item["id"] = get_xmlid(y)
         item["label"] = make_entity_label(
             y.xpath("./tei:placeName[1]", namespaces=namespaces)[0]
-        )
+        )[0]
         record["place_entities"].append(item)
 
     record["org_entities"] = []
@@ -98,7 +98,7 @@ for x in tqdm(files, total=len(files)):
         item["id"] = get_xmlid(y)
         item["label"] = make_entity_label(
             y.xpath("./tei:orgName[1]", namespaces=namespaces)[0]
-        )
+        )[0]
         record["org_entities"].append(item)
 
     record["bibl_entities"] = []
