@@ -22,7 +22,7 @@
             
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>
-                <main class="flex-shrink-0 flex-grow-1">
+                <main id="main" tabindex="-1" class="flex-shrink-0 flex-grow-1">
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="ps-5 p-3">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">

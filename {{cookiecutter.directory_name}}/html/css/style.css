@@ -13,3 +13,8 @@ div#map {
     text-decoration: underline dotted;
     cursor: pointer;
 }
+
+/* Add buffer above main frame for skip-link focus */
+#main {
+    scroll-margin-top: 1rem;
+}
