@@ -52,33 +52,32 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 
 ### 2021
 
-* <https://schnitzler-tagebuch.acdh.oeaw.ac.at> (ongoing)
-* <https://schnitzler-lektueren.acdh.oeaw.ac.at>
+* [Arthur Schnitzler: Tagebuch](https://schnitzler-tagebuch.acdh.oeaw.ac.at) (ongoing)
+* [Arthur Schnitzler: Lektüren](https://schnitzler-lektueren.acdh.oeaw.ac.at)
 
 ### 2022
 
-* <https://rita.acdh.oeaw.ac.at>
-* <https://thun-korrespondenz.acdh.oeaw.ac.at>
-* <https://amp.acdh.oeaw.ac.at> (finished 2024)
-* <https://schnitzler-briefe.acdh.oeaw.ac.at> (ongoing)
-* <https://schnitzler-bahr.acdh.oeaw.ac.at> (ongoing)
+* [Lesen im Alpental](https://rita.acdh.oeaw.ac.at)
+* [Die Korrespondenz von Leo von Thun-Hohenstein](https://thun-korrespondenz.acdh.oeaw.ac.at)
+* [A Digital Edition of W. H. Auden's Letters to Stella Musulin](https://amp.acdh.oeaw.ac.at)
+* [Arthur Schnitzler: Briefe](https://schnitzler-briefe.acdh.oeaw.ac.at) (ongoing)
+* [Hermann Bahr – Arthur Schnitzler](https://schnitzler-bahr.acdh.oeaw.ac.at)
 
 ### 2023
 
-* <https://b-vg.acdh.oeaw.ac.at> (ongoing)
-* <https://hanslick.acdh.oeaw.ac.at> (ongoing)
-* <https://kaiserin-eleonora.oeaw.ac.at> (ongoing)
-* <https://ofm-graz.acdh.oeaw.ac.at>
+* [Die Entstehung des Bundes-Verfassungsgesetzes 1920](https://b-vg.acdh.oeaw.ac.at) (ongoing)
+* [Hanslick Online](https://hanslick.acdh.oeaw.ac.at) (ongoing)
+* [Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)](https://kaiserin-eleonora.oeaw.ac.at) (ongoing)
+* [Choralhandschriften und Drucke der Zentralbibliothek der Wiener Franziskanerprovinz Graz](https://ofm-graz.acdh.oeaw.ac.at)
 
 ### 2024
 
-* <https://akademieprotokolle.acdh.oeaw.ac.at> (ongoing)
-* <https://grazer-nuntiatur.acdh.oeaw.ac.at>
-* <https://gtrans.acdh.oeaw.ac.at>
-* <https://maechtekongresse.acdh.oeaw.ac.at>
-* <https://sappho-digital.com>
+* [Sitzungsprotokolle der Österreichischen Akademie der Wissenschaften](https://akademieprotokolle.acdh.oeaw.ac.at) (ongoing)
+* [Grazer Nuntiatur: Korrespondenz 1580–1602](https://grazer-nuntiatur.acdh.oeaw.ac.at)
+* [Die große Transformation](https://gtrans.acdh.oeaw.ac.at)
+* [Mächtekongresse 1818–1822](https://maechtekongresse.acdh.oeaw.ac.at)
 * [Josef Staribacher: Tagebücher](https://staribacher.acdh.oeaw.ac.at)
-* Paul Tillich: Korrespondenz 1886–1933(ongoing)
+* Paul Tillich: Korrespondenz 1886–1933 (ongoing)
 * [Religion and Culture by Paul Tillich](https://tillich-lectures.acdh-dev.oeaw.ac.at) (ongoing)
 * [Das erste Wiener Merkantilprotokoll](https://wmp1.acdh.oeaw.ac.at)
   
