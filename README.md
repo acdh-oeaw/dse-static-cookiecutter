@@ -92,6 +92,7 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 * <https://schnitzler-kultur.acdh.oeaw.ac.at/>
 * <https://auden.acdh.oeaw.ac.at/> (ongoing)
 * <https://kraus1933.acdh.oeaw.ac.at/> (ongoing)
+* <https://okar.acdh.oeaw.ac.at/>
 
 ### 2026
 
