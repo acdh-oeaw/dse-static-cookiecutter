@@ -93,6 +93,13 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 * <https://auden.acdh.oeaw.ac.at/> (ongoing)
 * <https://kraus1933.acdh.oeaw.ac.at/> (ongoing)
 
+### 2026
+
+* Die Protokolle des österreichischen Kabinettsrates 1919–1920 (ongoing)
+* Die Ministerratsprotokolle 1848–1918 (conversion to static)
+* Leopold I. Korrespondenz (ongoing)
+* Letters 1916 (conversion to static)
+
 # LICENSE
 
 **dse-static-cookiecutter** is licensed under the MIT License. See the LICENSE file for details. Be aware that this does not apply to third party libraries included in this project as [Saxon]({{cookiecutter.directory_name}}/saxon) or CSS/JS libraries included in [vendor]({{cookiecutter.directory_name}}/html/vendor).
