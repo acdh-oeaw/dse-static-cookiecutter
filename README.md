@@ -77,22 +77,22 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 * <https://gtrans.acdh.oeaw.ac.at>
 * <https://maechtekongresse.acdh.oeaw.ac.at>
 * <https://sappho-digital.com>
-* <https://staribacher.acdh.oeaw.ac.at>
-* <https://tillich-briefe.acdh.oeaw.ac.at> (ongoing)
-* <https://tillich-lectures.acdh-dev.oeaw.ac.at> (ongoing)
-* <https://wmp1.acdh.oeaw.ac.at>
+* [Josef Staribacher: Tagebücher](https://staribacher.acdh.oeaw.ac.at)
+* Paul Tillich: Korrespondenz 1886–1933(ongoing)
+* [Religion and Culture by Paul Tillich](https://tillich-lectures.acdh-dev.oeaw.ac.at) (ongoing)
+* [Das erste Wiener Merkantilprotokoll](https://wmp1.acdh.oeaw.ac.at)
   
 ### 2025
 
-* <https://daacda.acdh.oeaw.ac.at>
-* <https://nuntiatur-pius-xi.acdh.oeaw.ac.at>
-* <https://schnitzler-interviews.acdh.oeaw.ac.at>
-* <https://wienerschnitzler.org>
-* <https://www.kraus.wienbibliothek.at/>
-* <https://schnitzler-kultur.acdh.oeaw.ac.at/>
-* <https://auden.acdh.oeaw.ac.at/> (ongoing)
-* <https://kraus1933.acdh.oeaw.ac.at/> (ongoing)
-* <https://okar.acdh.oeaw.ac.at/>
+* [Downed Allied Air Crew Database Austria 1940–1945](https://daacda.acdh.oeaw.ac.at)
+* [Nuntiatur Pius XI: Korrespondenz 1923–1936](https://nuntiatur-pius-xi.acdh.oeaw.ac.at)
+* [Arthur Schnitzler: Interviews](https://schnitzler-interviews.acdh.oeaw.ac.at)
+* [Wiener Schnitzler – Schnitzlers Wien](https://wienerschnitzler.org)
+* [Karl Kraus: Rechtsakten der Kanzlei Oskar Samek](https://www.kraus.wienbibliothek.at/)
+* [Arthur Schnitzler: Kulturveranstaltungen](https://schnitzler-kultur.acdh.oeaw.ac.at)
+* [Auden in Austria Digital](https://auden.acdh.oeaw.ac.at/) (ongoing)
+* [Karl Kraus 1933: Dritte Walpurgisnacht](https://kraus1933.acdh.oeaw.ac.at/) (ongoing)
+* [Oberkammeramtsrechnungsbücher der Stadt Wien 1424 bis 1768](https://okar.acdh.oeaw.ac.at/)
 
 ### 2026
 
