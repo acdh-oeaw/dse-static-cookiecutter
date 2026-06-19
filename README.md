@@ -97,9 +97,10 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 ### 2026
 
 * Die Protokolle des österreichischen Kabinettsrates 1919–1920 (ongoing)
-* Die Ministerratsprotokolle 1848–1918 (conversion to static)
+* Digitale Edition des Tagebuchs von Max Kalbeck (1896–1897)
 * Leopold I. Korrespondenz (ongoing)
 * Letters 1916 (conversion to static)
+* Die Ministerratsprotokolle 1848–1918 (conversion to static)
 
 # LICENSE
 
