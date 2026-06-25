@@ -7,7 +7,7 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
     apiKey: apiKey,
     nodes: [
       {
-        host: "typesense.acdh-dev.oeaw.ac.at",
+        host: "typesense.acdh.oeaw.ac.at",
         port: "443",
         protocol: "https",
       },

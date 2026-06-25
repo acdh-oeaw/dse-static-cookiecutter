@@ -48,6 +48,11 @@ except ObjectNotFound:
 current_schema = {
     "name": COLLECTION_NAME,
     "enable_nested_fields": True,
+    "metadata": {
+        "owners": ["dse-static-cookiecutter"],
+        "description": "Used by {{ cookiecutter.github_url }}",
+        "service_ids": [{{ cookiecutter.redmine_id }}],
+    },
     "fields": [
         {"name": "id", "type": "string"},
         {"name": "rec_id", "type": "string", "sort": True},
