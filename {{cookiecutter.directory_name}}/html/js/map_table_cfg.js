@@ -15,11 +15,11 @@ const map_cfg = {
   on_row_click_zoom: 10,
   initial_coordinates: [47.0708, 15.4386],
   base_map_url:
-    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+    "https://tile.openstreetmap.org/{z}/{x}/{y}{r}.png",
   /* some map providers need subdomains */
   subdomains: "abcd",
   attribution:
-    '<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors & <a href="https://carto.com/attributions">CARTO</a>',
+    '<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   base_map_label: "Aktuelle Karte"
 };
 
