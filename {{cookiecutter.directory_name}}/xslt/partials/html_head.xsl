@@ -11,7 +11,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="{$project_logo}" sizes="any" />
-        <title><xsl:value-of select="$html_title"/></title>
+        <title><xsl:value-of select="$html_title"/></title>{% if cookiecutter.avoid_google_indexing %}
+        <meta name="robots" content="noindex" />{% endif %}
 
         <!-- <link rel="canonical" href="{$base_url}" /> -->
         <meta name="description" content="{$project_title}" />
