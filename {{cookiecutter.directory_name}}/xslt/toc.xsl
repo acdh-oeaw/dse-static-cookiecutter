@@ -13,6 +13,7 @@
     <xsl:import href="./partials/tabulator_js.xsl"/>
     <xsl:import href="./partials/blockquote.xsl"/>
     <xsl:import href="./partials/zotero.xsl"/>
+    <xsl:import href="./partials/datatables_import.xsl"/>
     <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0" indent="yes" omit-xml-declaration="yes"/>
 
 
@@ -28,6 +29,8 @@
                     <xsl:with-param name="pageId" select="$link"></xsl:with-param>
                     <xsl:with-param name="zoteroTitle" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
+                <xsl:call-template name="datatables_import"/>
+                
             </head>
             
             <body class="d-flex flex-column h-100">
@@ -47,44 +50,38 @@
                     </nav>
                     <div class="container">
                         <h1><xsl:value-of select="$doc_title"/></h1>
-                        <table id="myTable">
+                        <div id="custom-info-box" class="text-muted small text-center"></div>
+                        <table id="myTable" class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
                                     <th scope="col" tabulator-headerFilter="input">Titel</th>
-                                    <th scope="col" tabulator-headerFilter="input">Dateinname</th>
+                                    <th scope="col" tabulator-headerFilter="input">ID</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <xsl:for-each
                                     select="collection('../data/editions?select=*.xml')//tei:TEI">
-                                    <xsl:variable name="full_path">
-                                        <xsl:value-of select="document-uri(/)"/>
+                                    <xsl:variable name="link2doc">
+                                        <xsl:value-of select="replace(./@xml:id, '.xml', '.html')"/>
                                     </xsl:variable>
                                     <tr>
                                         <td>
-                                            <a>
-                                                <xsl:attribute name="href">
-                                                  <xsl:value-of
-                                                  select="replace(tokenize($full_path, '/')[last()], '.xml', '.html')"
-                                                  />
-                                                </xsl:attribute>
-                                                <i class="bi bi-link-45deg"/>
-                                            </a>
+                                            <a href="{$link2doc}"><xsl:value-of
+                                                    select=".//tei:titleStmt/tei:title[@level='a']/text()"/></a>
                                         </td>
                                         <td>
-                                            <xsl:value-of
-                                                select=".//tei:titleStmt/tei:title[1]/text()"/>
+                                            <xsl:value-of select=".//tei:msIdentifier[1]/tei:collection"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="tokenize($full_path, '/')[last()]"
-                                            />
+                                            <xsl:value-of select=".//tei:msIdentifier[1]/tei:idno"/>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of select="./@xml:id"/>
                                         </td>
                                     </tr>
                                 </xsl:for-each>
                             </tbody>
                         </table>
-                        <xsl:call-template name="tabulator_dl_buttons"/>
                         <div class="text-center p-4">
                             <xsl:call-template name="blockquote">
                                 <xsl:with-param name="pageId" select="'toc.html'"/>
@@ -93,7 +90,7 @@
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
-                <xsl:call-template name="tabulator_js"/>
+                <script src="js/datatables_custom/datatables_custom.js"></script>
             </body>
         </html>
     </xsl:template>
