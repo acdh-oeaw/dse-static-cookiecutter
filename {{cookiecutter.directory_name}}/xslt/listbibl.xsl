@@ -61,22 +61,22 @@
                                     <th scope="col">Titel</th>
                                     <th scope="col">Autor</th>
                                     <th scope="col">Datum</th>
-                                    <th scope="col">ID</th>
+                                    <th scope="col" data-dt-visible="false">ID</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <xsl:for-each select=".//tei:bibl">
+                                <xsl:for-each select=".//tei:bibl[@xml:id]">
                                     <xsl:variable name="id">
                                         <xsl:value-of select="data(@xml:id)"/>
                                     </xsl:variable>
                                     <tr>
                                         <td>
                                             <a href="{$id||'.html'}">
-                                                <xsl:value-of select=".//tei:title[1]/text()"/>
+                                                <xsl:value-of select="./tei:title[1]"/>
                                             </a>
                                         </td>
                                         <td>
-                                            <xsl:value-of select=".//tei:author[1]//text()"/>
+                                            <xsl:value-of select=".//tei:author[1]"/>
                                         </td>
                                         <td>
                                             <xsl:value-of select=".//tei:date[1]/text()"/>

@@ -51,8 +51,9 @@
                             <h1>
                                 <xsl:value-of select="$doc_title"/>
                             </h1>
+                            <div id="custom-info-box" class="text-muted small text-center"></div>
                             
-                            <table id="myTable" class="text-muted small text-center">
+                            <table id="myTable" class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th scope="col">Name</th>
@@ -77,7 +78,6 @@
                                     </xsl:for-each>
                                 </tbody>
                             </table>
-                            <xsl:call-template name="tabulator_dl_buttons"/>
                             <div class="text-center p-4">
                                 <xsl:call-template name="blockquote">
                                     <xsl:with-param name="pageId" select="'listorg.html'"/>

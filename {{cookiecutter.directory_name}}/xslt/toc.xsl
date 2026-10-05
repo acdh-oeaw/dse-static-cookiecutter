@@ -9,8 +9,6 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
-    <xsl:import href="./partials/tabulator_dl_buttons.xsl"/>
-    <xsl:import href="./partials/tabulator_js.xsl"/>
     <xsl:import href="./partials/blockquote.xsl"/>
     <xsl:import href="./partials/zotero.xsl"/>
     <xsl:import href="./partials/datatables_import.xsl"/>
@@ -54,8 +52,8 @@
                         <table id="myTable" class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th scope="col" tabulator-headerFilter="input">Titel</th>
-                                    <th scope="col" tabulator-headerFilter="input">ID</th>
+                                    <th scope="col">Titel</th>
+                                    <th scope="col">ID</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -66,14 +64,9 @@
                                     </xsl:variable>
                                     <tr>
                                         <td>
-                                            <a href="{$link2doc}"><xsl:value-of
-                                                    select=".//tei:titleStmt/tei:title[@level='a']/text()"/></a>
-                                        </td>
-                                        <td>
-                                            <xsl:value-of select=".//tei:msIdentifier[1]/tei:collection"/>
-                                        </td>
-                                        <td>
-                                            <xsl:value-of select=".//tei:msIdentifier[1]/tei:idno"/>
+                                            <a href="{$link2doc}">
+                                                <xsl:value-of select=".//tei:titleStmt/tei:title[1]/text()"/>
+                                            </a>
                                         </td>
                                         <td>
                                             <xsl:value-of select="./@xml:id"/>
