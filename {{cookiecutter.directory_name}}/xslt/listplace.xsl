@@ -31,6 +31,13 @@
                     <xsl:with-param name="zoteroTitle" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
                 <xsl:call-template name="datatables_import"/>
+                <link rel="stylesheet" href="vendor/leaflet/leaflet.css"/>
+                <link rel="stylesheet"
+                    href="vendor/leaflet.markercluster/MarkerCluster.css"/>
+                <link rel="stylesheet"
+                    href="vendor/leaflet.markercluster/MarkerCluster.Default.css"/>
+                <script src="vendor/leaflet/leaflet.js"/>
+                <script src="vendor/leaflet.markercluster/leaflet.markercluster.js"/>
             </head>
             
             <body class="d-flex flex-column h-100">
@@ -49,7 +56,10 @@
                         </ol>
                     </nav>
                     <div class="container">
-                        <h1><xsl:value-of select="$doc_title"/></h1>
+                        <h1>
+                            <xsl:value-of select="$doc_title"/>
+                        </h1>
+                        <div id="map"></div>
                         <div id="custom-info-box" class="text-muted small text-center"></div>
                         <table id="myTable" class="table table-striped">
                             <thead>
@@ -105,6 +115,7 @@
                 </main>
                 <xsl:call-template name="html_footer"/>
                 <script src="js/datatables_custom/datatables_custom.js"></script>
+                <script src="js/maptable.js"></script>
             </body>
         </html>
         <xsl:for-each select=".//tei:place[@xml:id]">
