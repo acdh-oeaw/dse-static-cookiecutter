@@ -9,11 +9,10 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
-    <xsl:import href="./partials/tabulator_dl_buttons.xsl"/>
-    <xsl:import href="./partials/tabulator_js.xsl"/>
     <xsl:import href="./partials/entities.xsl"/>
     <xsl:import href="./partials/blockquote.xsl"/>
     <xsl:import href="./partials/zotero.xsl"/>
+    <xsl:import href="./partials/datatables_import.xsl"/>
     <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0" indent="yes" omit-xml-declaration="yes"/>
 
 
@@ -31,14 +30,7 @@
                     <xsl:with-param name="pageId" select="$link"></xsl:with-param>
                     <xsl:with-param name="zoteroTitle" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
-                <link href="vendor/tabulator-tables/css/tabulator_bootstrap5.min.css" rel="stylesheet"/>
-                <link rel="stylesheet" href="vendor/leaflet/leaflet.css"/>
-                <script src="vendor/leaflet/leaflet.js"/>
-                <link rel="stylesheet"
-                    href="vendor/leaflet.markercluster/MarkerCluster.css"/>
-                <link rel="stylesheet"
-                    href="vendor/leaflet.markercluster/MarkerCluster.Default.css"/>
-                <script src="vendor/leaflet.markercluster/leaflet.markercluster.js"/>
+                <xsl:call-template name="datatables_import"/>
             </head>
             
             <body class="d-flex flex-column h-100">
@@ -58,15 +50,15 @@
                     </nav>
                     <div class="container">
                         <h1><xsl:value-of select="$doc_title"/></h1>
-                        <div id="map"/>
-                        <table id="placesTable">
+                        <div id="custom-info-box" class="text-muted small text-center"></div>
+                        <table id="myTable" class="table table-striped">
                             <thead>
                                 <tr>
                                     <th scope="col">Ortsname</th>
                                     <th scope="col">Erwähnungen</th>
                                     <th scope="col">lat</th>
                                     <th scope="col">lng</th>
-                                    <th scope="col">linkToEntity</th>
+                                    <th scope="col" data-dt-visible="false">ID</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -76,7 +68,9 @@
                                     </xsl:variable>
                                     <tr>
                                         <td>
-                                            <xsl:value-of select="./tei:placeName[1]/text()"/>
+                                            <a href="{$id||'.html'}">
+                                                <xsl:value-of select=".//tei:placeName[1]"/>
+                                            </a>
                                         </td>
                                         <td>
                                             <xsl:value-of select="count(.//tei:note[@type='mentions'])"/>
@@ -110,13 +104,7 @@
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
-                <script type="text/javascript" src="vendor/tabulator-tables/js/tabulator.min.js"/>
-                <script src="js/map_table_cfg.js"/>
-                <script src="js/make_map_and_table.js"/>
-                
-                <script>
-                    build_map_and_table(map_cfg, table_cfg, wms_cfg=null, tms_cfg=tms_cfg);
-                </script>
+                <script src="js/datatables_custom/datatables_custom.js"></script>
             </body>
         </html>
         <xsl:for-each select=".//tei:place[@xml:id]">
