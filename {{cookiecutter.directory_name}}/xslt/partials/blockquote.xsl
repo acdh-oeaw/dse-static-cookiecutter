@@ -7,7 +7,7 @@
         <xsl:param name="pageId" select="''"></xsl:param>
         <xsl:param name="customUrl" select="$base_url"></xsl:param>
         <xsl:variable name="fullUrl" select="concat($customUrl, $pageId)"/>
-        <div>
+        <div id="how-to-cite">
             <h2 class="fs-4">How to cite</h2>
             <blockquote class="blockquote">
                 <p>
