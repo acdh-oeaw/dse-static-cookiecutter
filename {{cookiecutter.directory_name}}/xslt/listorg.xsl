@@ -9,11 +9,10 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
-    <xsl:import href="./partials/tabulator_dl_buttons.xsl"/>
-    <xsl:import href="./partials/tabulator_js.xsl"/>
     <xsl:import href="./partials/entities.xsl"/>
     <xsl:import href="./partials/blockquote.xsl"/>
     <xsl:import href="./partials/zotero.xsl"/>
+    <xsl:import href="./partials/datatables_import.xsl"/>
     <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0" indent="yes" omit-xml-declaration="yes"/> 
 
     <xsl:template match="/">
@@ -30,6 +29,7 @@
                     <xsl:with-param name="pageId" select="$link"></xsl:with-param>
                     <xsl:with-param name="zoteroTitle" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
+                <xsl:call-template name="datatables_import"/>
             </head>
             
             <body class="d-flex flex-column h-100">
@@ -52,12 +52,11 @@
                                 <xsl:value-of select="$doc_title"/>
                             </h1>
                             
-                            <table id="myTable">
+                            <table id="myTable" class="text-muted small text-center">
                                 <thead>
                                     <tr>
-                                        <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
-                                        <th scope="col" tabulator-headerFilter="input">Name</th>
-                                        <th scope="col" tabulator-headerFilter="input">ID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">ID</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -67,15 +66,9 @@
                                         </xsl:variable>
                                         <tr>
                                             <td>
-                                                <a>
-                                                  <xsl:attribute name="href">
-                                                  <xsl:value-of select="concat($id, '.html')"/>
-                                                  </xsl:attribute>
-                                                  <i class="bi bi-link-45deg"/>
+                                                <a href="{$id||'.html'}">
+                                                    <xsl:value-of select=".//tei:orgName[1]/text()"/>
                                                 </a>
-                                            </td>
-                                            <td>
-                                                <xsl:value-of select=".//tei:orgName[1]/text()"/>
                                             </td>
                                             <td>
                                                 <xsl:value-of select="$id"/>
@@ -93,7 +86,7 @@
                         </div>
                     </main>
                     <xsl:call-template name="html_footer"/>
-                    <xsl:call-template name="tabulator_js"/>
+                    <script src="js/datatables_custom/datatables_custom.js"></script>
             </body>
         </html>
         <xsl:for-each select=".//tei:org">
