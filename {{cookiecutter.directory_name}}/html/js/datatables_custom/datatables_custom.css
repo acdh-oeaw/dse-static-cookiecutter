@@ -1,0 +1,9 @@
+/* stretch ColumnControl search inputs to the full column width */
+table.dataTable span.dtcc {
+  display: flex;
+  width: 100%;
+}
+
+#myTable tbody tr {
+    cursor: pointer;
+}
