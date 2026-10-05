@@ -6,7 +6,7 @@ div#map {
 /* Match bootstrap navlink focus outline color. */
 :focus-visible {
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
 }
 
 .entity {
@@ -17,4 +17,20 @@ div#map {
 /* Add buffer above main frame for skip-link focus */
 #main {
     scroll-margin-top: 1rem;
+}
+
+/* Stretch the container so the citation block sits just above the footer. */
+main:has(#how-to-cite) {
+    display: flex;
+    flex-direction: column;
+}
+
+main:has(#how-to-cite)>.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main:has(#how-to-cite)>.container> :has(> #how-to-cite) {
+    margin-top: auto;
 }
