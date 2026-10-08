@@ -1,7 +1,37 @@
 const columns = [];
 
-document.querySelectorAll('#myTable thead th').forEach((th) => {
+// Unique cell values of a column with their row counts, as searchList options
+function countOptions(index) {
+    const counts = new Map();
+
+    document.querySelectorAll(`#myTable tbody tr td:nth-child(${index + 1})`).forEach((td) => {
+        const value = td.textContent.trim();
+
+        if (value) {
+            counts.set(value, (counts.get(value) || 0) + 1);
+        }
+    });
+
+    return [...counts]
+        .sort(([a, countA], [b, countB]) => countB - countA || a.localeCompare(b, 'de'))
+        .map(([value, count]) => ({ label: `${value} (${count})`, value }));
+}
+
+document.querySelectorAll('#myTable thead th').forEach((th, index) => {
     const label = th.textContent.trim();
+
+    const sortContent = ['orderStatus'];
+
+    if (th.dataset.dtSearchlist === 'true') {
+        sortContent.push({
+            extend: 'dropdown',
+            icon: 'search',
+            iconActive: 'searchActive',
+            className: 'searchlist',
+            text: `Werte auswählen: ${label}`,
+            content: [{ extend: 'searchList', options: countOptions(index) }]
+        });
+    }
 
     columns.push({
         data: th.textContent.trim().toLowerCase(),
@@ -9,7 +39,7 @@ document.querySelectorAll('#myTable thead th').forEach((th) => {
         columnControl: [
             {
                 target: 0,
-                content: ['orderStatus']
+                content: sortContent
             },
             {
                 target: 1,
@@ -56,7 +86,10 @@ const table = new DataTable('#myTable', {
     initComplete: function () {
         updateInfo(this.api());
         // ColumnControl builds its search-row DOM asynchronously after initComplete fires
-        setTimeout(labelSearchLogicSelects, 0);
+        setTimeout(() => {
+            labelSearchLogicSelects();
+            addSearchListTooltips();
+        }, 0);
     },
 
     columns: columns,
@@ -87,6 +120,13 @@ function updateInfo(table) {
 
     document.querySelector('#custom-info-box').textContent =
         `${info.recordsDisplay} von ${info.recordsTotal} Einträgen`;
+}
+
+// ColumnControl has no tooltip option for buttons
+function addSearchListTooltips() {
+    document.querySelectorAll('#myTable thead .dtcc-button_searchlist').forEach((button) => {
+        button.title = 'Liste aller Werte öffnen und nach Werten filtern';
+    });
 }
 
 // ColumnControl renders the search-logic <select> without an accessible name

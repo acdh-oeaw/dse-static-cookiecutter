@@ -7,3 +7,11 @@ table.dataTable span.dtcc {
 #myTable tbody tr {
     cursor: pointer;
 }
+
+/* show full searchList entries instead of truncating them */
+div.dtcc-dropdown button.dtcc-button span.dtcc-button-text {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    height: auto;
+}
