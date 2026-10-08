@@ -59,7 +59,7 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Nachname</th>
-                                    <th scope="col">Vorname</th>
+                                    <th scope="col" data-dt-searchlist="true">Vorname</th>
                                     <th scope="col" data-dt-visible="false">ID</th>
                                 </tr>
                             </thead>
