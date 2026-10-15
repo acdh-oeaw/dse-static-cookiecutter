@@ -1,21 +1,23 @@
 # {{cookiecutter.project_title}}
 
 {% if cookiecutter.use_remote_data %}
+
 * data is fetched from {{ cookiecutter.data_repo }}{% endif %}
 * build with [DSE-Static-Cookiecutter](https://github.com/acdh-oeaw/dse-static-cookiecutter)
 
-
 ## initial (one time) setup
+
 {% if cookiecutter.use_remote_data %}
-* run `./fetch_data.sh`{% else %}
+
+* run `./shellscripts/fetch_data.sh`{% else %}
 * run `./shellscripts/dl_imprint.sh`
 {% endif %}
 * run `ant`
 
 > [!NOTE]
 > The `build.xml` triggered by the `ant` command presumes the following folder-file structure in the data repo:
-> 
-> ```
+>
+> ```shell
 > data/
 > ├── editions/
 > │   ├── *.xml
@@ -29,11 +31,12 @@
 > └── meta/
 >     └── about.xml
 > ```
-> 
+>
 > Otherwise, modify the relevant lines of the `build.xml`.
 
 ## set up GitHub repo
-* create a public, new, and empty (without README, .gitignore, license) GitHub repo {{ cookiecutter.github_url }} 
+
+* create a public, new, and empty (without README, .gitignore, license) GitHub repo {{ cookiecutter.github_url }}
 * run `git init` in the root folder of your application {{ cookiecutter.directory_name }}
 * execute the commands described under `…or push an existing repository from the command line` in your new created GitHub repo {{ cookiecutter.github_url }}
 
@@ -49,8 +52,8 @@
 * click the `Run workflow` button
 
 ## Python scripting
-The project uses [uv](https://docs.astral.sh/uv/), as Python package and project manager.
 
+The project uses [uv](https://docs.astral.sh/uv/), as Python package and project manager.
 
 ## dockerize your application
 
@@ -62,8 +65,9 @@ The project uses [uv](https://docs.astral.sh/uv/), as Python package and project
 This project is released under the [MIT License](LICENSE)
 
 ### third-party JavaScript libraries
+
 The code for all third-party JavaScript libraries used is included in the `html/vendor` folder, their respective licenses can be found either in a `LICENSE.txt` file or directly in the header of the `.js` file
 
 ### SAXON-HE
-The projects also includes Saxon-HE, which is licensed separately under the Mozilla Public License, Version 2.0 (MPL 2.0). See the dedicated [LICENSE.txt](saxon/notices/LICENSE.txt)
 
+The projects also includes Saxon-HE, which is licensed separately under the Mozilla Public License, Version 2.0 (MPL 2.0). See the dedicated [LICENSE.txt](saxon/notices/LICENSE.txt)
