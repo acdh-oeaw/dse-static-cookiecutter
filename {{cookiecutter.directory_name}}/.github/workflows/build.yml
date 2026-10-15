@@ -35,9 +35,9 @@ jobs:
       IMAGE_NAME: ${{ '{{' }} github.repository {{ '}}' }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: set up uv (Python)
-        uses: astral-sh/setup-uv@v8.1.0 {% if cookiecutter.use_remote_data %}
+        uses: astral-sh/setup-uv@v10.3.0 {% if cookiecutter.use_remote_data %}
       - name: Fetch the data
         run: ./fetch_data.sh{% endif %}
       - name: Build the app
