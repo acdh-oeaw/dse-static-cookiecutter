@@ -39,7 +39,7 @@ jobs:
       - name: set up uv (Python)
         uses: astral-sh/setup-uv@v10.3.0 {% if cookiecutter.use_remote_data %}
       - name: Fetch the data
-        run: ./fetch_data.sh{% endif %}
+        run: ./shellscripts/fetch_data.sh{% endif %}
       - name: Build the app
         run: ant
       - name: Setup Pages
