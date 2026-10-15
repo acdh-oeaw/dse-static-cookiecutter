@@ -5,6 +5,12 @@
 
 [Cookiecutter](https://github.com/cookiecutter/cookiecutter) template for a [Static site generator](https://en.wikipedia.org/wiki/Static_site_generator) powered by TEI/XML files
 
+## TL;DR
+
+```bash
+uvx cookiecutter gh:acdh-oeaw/dse-static-cookiecutter
+```
+
 ## What is this for
 
 The current repo should ease the process of publishing TEI/XML encoded files as a Static-Site Application using mainly XSLT to generate static HTML files.
