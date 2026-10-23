@@ -101,8 +101,8 @@ Previouse versions of DSE-Static-Cookiecutter shipped with an option to implemen
 
 ### 2026
 
-* Die Protokolle des österreichischen Kabinettsrates 1919–1920 (ongoing)
-* Digitale Edition des Tagebuchs von Max Kalbeck (1896–1897)
+* [Die Protokolle des österreichischen Kabinettsrates 1919–1920](https://krp-project.github.io/krp-static/) (ongoing)
+* [Digitale Edition des Tagebuchs von Max Kalbeck (1896–1897)](https://max-kalbeck.github.io/kalbeck-tagebuch-static-dev/) (ongoing)
 * Leopold I. Korrespondenz (ongoing)
 * Digitale Karl Kraus Bibliographie (ongoing)
 * Letters 1916 (conversion to static)
