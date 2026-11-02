@@ -2,13 +2,12 @@
 
 echo "fetching transkriptions from data_repo"
 rm -rf data/
-curl -LO {{ cookiecutter.data_repo }}/archive/refs/heads/main.zip
-unzip main
-
-mv ./{{ cookiecutter.data_dir }}-main/data/ .
-
-rm main.zip
-rm -rf ./{{ cookiecutter.data_dir }}-main
-
+git clone --depth=1 --branch main --single-branch {{ cookiecutter.data_repo }}.git
+dataHash=$(git -C ./{{ cookiecutter.data_dir }} rev-parse HEAD)
+mv ./{{ cookiecutter.data_dir }}/data .
+rm -rf ./{{ cookiecutter.data_dir }}
 echo "fetch imprint"
 ./shellscripts/dl_imprint.sh
+echo "${dataHash}"
+
+
