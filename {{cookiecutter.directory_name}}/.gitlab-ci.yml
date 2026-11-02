@@ -1,0 +1,24 @@
+# The Docker image that will be used to build your app
+image: ghcr.io/astral-sh/uv:bookworm
+
+variables:
+  LANG: "C.UTF-8"
+  LC_ALL: "C.UTF-8"
+  TYPESENSE_HOST: "typesense.acdh-dev.oeaw.ac.at"
+  TYPESENSE_PORT: "443"
+  TYPESENSE_PROTOCOL: "https"
+create-pages:
+  pages:
+    # The folder that contains the files to be exposed at the Page URL
+    publish: html
+  rules:
+    # This ensures that only pushes to the default branch will trigger
+    # a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+  # Functions that should be executed before the build script is run
+  before_script:
+    - apt-get update && apt-get install -y --no-install-recommends
+      openjdk-17-jdk-headless ant git curl && rm -rf /var/lib/apt/lists/*
+  script:
+    - ./shellscripts/fetch_data.sh
+    - ant
