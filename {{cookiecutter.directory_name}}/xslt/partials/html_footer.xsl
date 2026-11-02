@@ -12,6 +12,13 @@
                     <i aria-hidden="true" class="bi bi-github fs-2"></i>
                     <span class="visually-hidden">GitHub repo</span>
                 </a>
+                <xsl:if test="$DATAHASH">
+                    <span class="fs-2"><xsl:text> | </xsl:text></span>
+                    <a href="{$data_repo||'/tree/'||$DATAHASH}">
+                        <i class="bi bi-filetype-xml fs-2"></i>
+                        <span class="visually-hidden">GitHub data repo</span>
+                    </a>
+                </xsl:if>
             </div>
         </footer>
         <script src="vendor/jquery/jquery-3.7.1.min.js"></script>

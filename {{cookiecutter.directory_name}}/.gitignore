@@ -1,4 +1,5 @@
 # project specific
+datahash.txt
 *.html
 html/*.xml
 html/beacon.txt
