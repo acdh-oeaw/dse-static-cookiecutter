@@ -18,4 +18,8 @@ for x in ["editions", "indices", "meta"]:
 {% else %}
 os.remove("fetch_data.sh")
 {% endif %}
-    
+
+if "gitlab" in "{{ cookiecutter.github_url}}":
+    shutil.rmtree(os.path.join(".github"))
+else:
+    os.remove(".gitlab-ci.yml")
