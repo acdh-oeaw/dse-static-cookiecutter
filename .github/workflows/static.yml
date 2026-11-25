@@ -23,11 +23,12 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
-  deploy:
+  build:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    outputs:
+      artifact_name: github-pages-${{ github.run_attempt }}
     env:
       TYPESENSE_HOST: typesense.acdh-dev.oeaw.ac.at
       TYPESENSE_PORT: 443
@@ -39,7 +40,7 @@ jobs:
         uses: actions/checkout@v7
       
       - name: Install uv
-        uses: astral-sh/setup-uv@v10.3.0
+        uses: astral-sh/setup-uv@v10.4.0
       
       - name: build the app
         run: |
@@ -78,6 +79,17 @@ jobs:
         with:
           # Upload only the generated site files
           path: 'site'
+          name: github-pages-${{ github.run_attempt }}
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          artifact_name: ${{ needs.build.outputs.artifact_name }}
