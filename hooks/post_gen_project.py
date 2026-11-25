@@ -16,7 +16,7 @@ if "{{ cookiecutter.translations }}" == "no":
 for x in ["editions", "indices", "meta"]:
     shutil.rmtree(os.path.join("data", x), ignore_errors=True)
 {% else %}
-os.remove("fetch_data.sh")
+os.remove(os.path.join("shellscripts", "fetch_data.sh"))
 {% endif %}
 
 if "gitlab" in "{{ cookiecutter.github_url}}":
