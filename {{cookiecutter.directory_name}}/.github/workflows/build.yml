@@ -20,11 +20,12 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
-  deploy:
+  build:
     environment:
       name: github-pages
-      url: ${{ '{{' }} steps.deployment.outputs.page_url {{ '}}' }}
     runs-on: ubuntu-latest
+    outputs:
+      artifact_name: github-pages-${{ '{{' }} github.run_attempt {{ '}}' }}
     env:
       ANT_OPTS: -Xmx6g
       TYPESENSE_HOST: typesense.acdh.oeaw.ac.at
@@ -37,7 +38,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
       - name: set up uv (Python)
-        uses: astral-sh/setup-uv@v10.3.0 {% if cookiecutter.use_remote_data %}
+        uses: astral-sh/setup-uv@v10.4.0 {% if cookiecutter.use_remote_data %}
       - name: Fetch the data
         run: ./shellscripts/fetch_data.sh{% endif %}
       - name: Build the app
@@ -48,6 +49,17 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: './html'
+          name: github-pages-${{ '{{' }} github.run_attempt {{ '}}' }}
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ '{{' }} steps.deployment.outputs.page_url {{ '}}' }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          artifact_name: ${{ '{{' }} needs.build.outputs.artifact_name {{ '}}' }}
